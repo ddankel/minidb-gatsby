@@ -16,5 +16,13 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "minis",
+        path: "./src/minis",
+      },
+    },
+    "gatsby-transformer-remark",
   ],
 };
