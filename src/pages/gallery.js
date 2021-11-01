@@ -1,11 +1,12 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 export const query = graphql`
   query {
     allMarkdownRemark {
       nodes {
         frontmatter {
+          slug
           title
           line
           categories
@@ -32,6 +33,7 @@ const HomePage = ({ data }) => {
         return (
           <div key={index}>
             <h2>{mini.frontmatter.title}</h2>
+            <Link to={`/minis/${mini.frontmatter.slug}`}>{mini.frontmatter.title}</Link>
           </div>
         );
       })}
