@@ -19,6 +19,7 @@ armor:
 race:
   - human
   - elf
+mini_count: 6
 ---
 
 ## Blog Post

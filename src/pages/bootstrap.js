@@ -55,15 +55,6 @@ const BootstrapPage = () => {
       <p>We now have Toasts</p>
     </Container>
   );
-
-  // return (
-  //   <Container className="p-3">
-  //     <Jumbotron>
-  //       <h1 className="header">Welcome To React-Bootstrap</h1>
-  //       We now have Toasts
-  //     </Jumbotron>
-  //   </Container>
-  // );
 };
 
 export default BootstrapPage;

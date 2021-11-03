@@ -3,7 +3,6 @@ slug: bright-wizard
 layout: mini
 title: Bright Wizard
 name: Bright Wizard
-painted: ????
 line:
   - Warhammer
   - Empire

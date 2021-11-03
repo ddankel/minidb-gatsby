@@ -2,29 +2,32 @@ import { graphql } from "gatsby";
 import * as React from "react";
 // import Layout from "../components/layout";
 // import Seo from "../components/seo";
+import { Navbar, Nav } from "react-bootstrap";
 
-import { StaticImage } from "gatsby-plugin-image";
+import { StaticImage, getImage, GatsbyImage } from "gatsby-plugin-image";
+import { Col, Container, Row, Tab, Tabs, Breadcrumb, Stack } from "react-bootstrap";
+import splitRenderedHtml from "../../utils/split_rendered_html";
+import Miniature from "../../components/Miniature";
+
+import PageLayout from "../../layouts/PageLayout";
 
 export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
 
   console.log(frontmatter);
+  console.log(html);
+  console.log("split", html.split(/(?=<h2>)/g));
+  console.log("title", html.split(/(?=<h2>)/g)[0].match(/(?<=<h2>).*(?=<\/h2>)/g));
   // const foo = require("../../images/icon.png");
   // const bar = require("./test_img.jpg");
 
+  console.log(splitRenderedHtml(html));
+  const htmlSections = splitRenderedHtml(html);
+
   return (
-    <div>
-      <h1>{frontmatter.title}</h1>
-      <h2>{frontmatter.date}</h2>
-      <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
-
-      {frontmatter.photos &&
-        frontmatter.photos.map((src, index) => <img alt="" src={src.publicURL} key={index} />)}
-
-      {/* <StaticImage alt="" src="../../images/Malifaux-DecemberAcolyte-Dankel_1.jpg" /> */}
-      {/* <StaticImage alt="" src="../../minis/Malifaux-DecemberAcolyte-Dankel_1.jpg" /> */}
-      <div></div>
-    </div>
+    <PageLayout>
+      <Miniature {...{ frontmatter, html }} />
+    </PageLayout>
   );
 }
 
@@ -43,6 +46,9 @@ export const pageQuery = graphql`
         categories
         photos {
           publicURL
+          childImageSharp {
+            gatsbyImageData(width: 400, aspectRatio: 1, formats: [AUTO])
+          }
         }
         weapons
         armor

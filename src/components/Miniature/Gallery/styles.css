@@ -1,0 +1,15 @@
+/* Overrides to fix nav icon size in react-image-gallery */
+
+#gatsby-focus-wrapper
+  div.image-gallery-slide-wrapper.bottom
+  button.image-gallery-icon.image-gallery-right-nav
+  svg {
+  height: 50px;
+}
+
+#gatsby-focus-wrapper
+  div.image-gallery-slide-wrapper.bottom
+  button.image-gallery-icon.image-gallery-left-nav
+  svg {
+  height: 50px;
+}
