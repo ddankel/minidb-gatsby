@@ -17,7 +17,7 @@ const Miniature = ({ frontmatter, html }) => {
 
   return (
     <Container style={{ maxWidth: "600px" }}>
-      <h1>{frontmatter.title}</h1>
+      <h1>{frontmatter.name}</h1>
       <p>{miniatureLine}</p>
       {frontmatter.painted && <p>Painted: {frontmatter.painted}</p>}
       <Gallery photos={frontmatter.photos} />

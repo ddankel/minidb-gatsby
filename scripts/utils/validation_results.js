@@ -51,12 +51,32 @@ class ValidationResults {
   }
 
   /**
+   * Add a 'deprecated field' warning
+   *
+   * This warning should be used if a frontmatter field is found that has been deprecated
+   *
+   * @param   {String}  file   The name of the file where the warning occured
+   * @param   {String}  field  The frontmater field which contained the warning
+   * @param   {String}  value  The value of the deprecated fieldfield
+   */
+  addFieldDeprecationWarning({ file, field, value }) {
+    this.warningCount++;
+
+    const msg =
+      `    ${chalk.yellow("W")}  ${chalk.yellow("deprecated")} ` +
+      `field ${chalk.whiteBright(field)} ` +
+      `(value: ${chalk.whiteBright(value)})`;
+
+    this.#addReport({ file, msg });
+  }
+
+  /**
    * Add a 'deprecated value' warning
    *
    * This warning should be used if a frontmatter value is found that has been deprecated
    *
-   * @param   {String}  file   The name of the file where the error occured
-   * @param   {String}  field  The frontmater field which contained the error
+   * @param   {String}  file   The name of the file where the warning occured
+   * @param   {String}  field  The frontmater field which contained the warning
    * @param   {String}  value  The errant frontmatter value
    */
   addDeprecationWarning({ file, field, value }) {

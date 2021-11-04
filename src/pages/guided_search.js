@@ -7,7 +7,7 @@ export const query = graphql`
       nodes {
         frontmatter {
           slug
-          title
+          name
           line
           categories
           photos {
@@ -23,8 +23,6 @@ export const query = graphql`
 `;
 
 const HomePage = ({ data }) => {
-  console.log(data);
-
   return (
     <div>
       <div>DATA!</div>
@@ -32,8 +30,8 @@ const HomePage = ({ data }) => {
       {data.allMarkdownRemark.nodes.map((mini, index) => {
         return (
           <div key={index}>
-            <h2>{mini.frontmatter.title}</h2>
-            <Link to={`/minis/${mini.frontmatter.slug}`}>{mini.frontmatter.title}</Link>
+            <h2>{mini.frontmatter.name}</h2>
+            <Link to={`/minis/${mini.frontmatter.slug}`}>{mini.frontmatter.name}</Link>
           </div>
         );
       })}

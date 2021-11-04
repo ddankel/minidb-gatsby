@@ -5,7 +5,9 @@ const splitRenderedHtml = (html) => {
 
   sections.forEach((section) => {
     const title = section.match(/(?<=<h2>).*(?=<\/h2>)/g);
-    result.push({ title, html: section });
+    if (html.length) {
+      result.push({ title, html: section });
+    }
   });
 
   return result;

@@ -1,0 +1,19 @@
+---
+slug: bretonnian-archer
+name: Bretonnian Archer
+line:
+  - Warhammer
+  - Bretonnians
+categories:
+  - Other Miniatures
+photos:
+  - ./GW-BretonnianArcher.jpg
+mini_count: 2
+weapons:
+  - bow
+armor:
+  - clothing
+race:
+  - human
+is_painted: unpainted
+---

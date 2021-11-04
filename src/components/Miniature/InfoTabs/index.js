@@ -4,17 +4,14 @@ import TagList from "../TagList";
 
 const InfoTabs = ({ frontmatter, bodySections }) => {
   return (
-    <Tabs
-      defaultActiveKey={bodySections[0].title || "Description"}
-      id="uncontrolled-tab-example"
-      className="mb-3"
-    >
-      {bodySections.map(({ title, html }) => {
-        title = title || "Description";
+    <Tabs defaultActiveKey={0} id="uncontrolled-tab-example" className="mb-3">
+      {bodySections.map(({ title, html }, index) => {
         return (
-          <Tab eventKey={title} title={title}>
-            <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
-          </Tab>
+          html.length && (
+            <Tab eventKey={index} title={title || "Description"} key={index}>
+              <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
+            </Tab>
+          )
         );
       })}
 

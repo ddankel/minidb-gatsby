@@ -1,17 +1,24 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 import ImageGallery from "react-image-gallery";
+
+import styled from "styled-components";
 import "./styles.css";
 
 const miniImages = [];
 
-const Gallery = ({ photos }) => {
-  const [selectedImage, setSelectedImage] = React.useState(0);
+const GalleryWrapper = styled.div`
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  align-contents: center;
+`;
 
+const Gallery = ({ photos }) => {
   if (photos.length === 1) {
     return (
       <center>
-        <img alt="" src={photos[selectedImage].publicURL} />
+        <img alt="" src={photos[0].publicURL} />
       </center>
     );
   }
@@ -22,10 +29,9 @@ const Gallery = ({ photos }) => {
       thumbnail: getImage(src).images.fallback.src,
     });
   });
-  console.log("miniImages", miniImages);
 
   return (
-    <>
+    <GalleryWrapper>
       <ImageGallery
         items={miniImages}
         showPlayButton={false}
@@ -33,7 +39,7 @@ const Gallery = ({ photos }) => {
         useBrowserFullscreen={false}
         showNav={true}
       />
-    </>
+    </GalleryWrapper>
   );
 };
 

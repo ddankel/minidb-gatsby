@@ -13,14 +13,14 @@ const PageLayout = ({ children }) => {
     <>
       <StyledNavbar variant="dark" bg="primary">
         <Container>
-          <Navbar.Brand as={Link} href="/">
+          <Navbar.Brand as={Link} to="/">
             Miniature DB
           </Navbar.Brand>
           <Nav>
-            <Nav.Link as={Link} href="/guided_search">
+            <Nav.Link as={Link} to="/guided_search">
               Guided Search
             </Nav.Link>
-            <Nav.Link as={Link} href="/">
+            <Nav.Link as={Link} to="/">
               Painted Gallery
             </Nav.Link>
           </Nav>

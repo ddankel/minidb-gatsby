@@ -1,7 +1,5 @@
 ---
 slug: dark-elf-assassin-2
-layout: mini
-title: Dark Elf Assassin
 name: Dark Elf Assassin
 line:
   - Warhammer
@@ -11,7 +9,6 @@ categories:
   - Other Miniatures
 photos:
   - ./DarkElfAssassin-Dankel.jpg
-paints:
 weapons:
   - claw
   - axe

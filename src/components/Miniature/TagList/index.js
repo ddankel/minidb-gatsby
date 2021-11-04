@@ -3,6 +3,7 @@ import React from "react";
 const TagList = ({ frontmatter }) => {
   return (
     <div>
+      <h2>Metadata</h2>
       <ul>
         {frontmatter.race && <li>Race: {frontmatter.race.sort().join(", ")}</li>}
         {frontmatter.weapons && <li>Weapon(s): {frontmatter.weapons.sort().join(", ")}</li>}
