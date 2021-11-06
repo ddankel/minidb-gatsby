@@ -10,30 +10,30 @@ function useMiniatureFilter(collection) {
   const [filteredMiniatures, setFilteredMiniatures] = useState(collection);
 
   useEffect(() => {
+    const applyFilter = () => {
+      return collection.filter((mini) => {
+        return (
+          allOrMatchesFilter({ value: mini.frontmatter.race, filter: raceFilter }) &&
+          allOrMatchesFilter({ value: mini.frontmatter.weapons, filter: weaponFilter }) &&
+          allOrMatchesFilter({ value: mini.frontmatter.armor, filter: armorFilter }) &&
+          allOrMatchesFilter({
+            value: mini.frontmatter.is_painted || "painted",
+            filter: paintedFilter,
+          }) &&
+          allOrMatchesFilter({ value: mini.frontmatter.name, filter: nameFilter }) &&
+          allOrMatchesFilter({ value: mini.frontmatter.line, filter: lineFilter })
+        );
+      });
+    };
+
     setFilteredMiniatures(applyFilter());
-  }, [raceFilter, weaponFilter, armorFilter, paintedFilter, nameFilter, lineFilter]);
+  }, [raceFilter, weaponFilter, armorFilter, paintedFilter, nameFilter, lineFilter, collection]);
 
   const allOrMatchesFilter = ({ value, filter }) => {
     value = [value || ""].flat().map((item) => item.toLowerCase());
     filter = filter.toLowerCase();
 
     return filter === "all" || value.includes(filter);
-  };
-
-  const applyFilter = () => {
-    return collection.filter((mini) => {
-      return (
-        allOrMatchesFilter({ value: mini.frontmatter.race, filter: raceFilter }) &&
-        allOrMatchesFilter({ value: mini.frontmatter.weapons, filter: weaponFilter }) &&
-        allOrMatchesFilter({ value: mini.frontmatter.armor, filter: armorFilter }) &&
-        allOrMatchesFilter({
-          value: mini.frontmatter.is_painted || "painted",
-          filter: paintedFilter,
-        }) &&
-        allOrMatchesFilter({ value: mini.frontmatter.name, filter: nameFilter }) &&
-        allOrMatchesFilter({ value: mini.frontmatter.line, filter: lineFilter })
-      );
-    });
   };
 
   return {

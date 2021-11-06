@@ -11,7 +11,6 @@ export const query = graphql`
           slug
           name
           line
-          categories
           photos {
             publicURL
             childImageSharp {
@@ -21,6 +20,7 @@ export const query = graphql`
           weapons
           armor
           race
+          is_painted
         }
       }
     }

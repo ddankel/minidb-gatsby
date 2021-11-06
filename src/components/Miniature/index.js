@@ -15,7 +15,7 @@ const Spacer = styled.div`
 
 const Miniature = ({ frontmatter, html }) => {
   const bodySections = splitRenderedHtml(html);
-  const miniatureLine = [...frontmatter.line, frontmatter.name].join(" > ");
+  const miniatureLine = [...frontmatter.line, frontmatter.sku || frontmatter.name].join(" > ");
 
   return (
     <MiniatureLayout>

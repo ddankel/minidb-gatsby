@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const GalleryWrapper = styled.div`
   display: inline-flex;
@@ -29,7 +29,7 @@ export const Caption = styled.div`
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  height: 3rem;
+  height: 3.5rem;
   background-color: #303030;
 
   & > p {
@@ -37,5 +37,6 @@ export const Caption = styled.div`
     font-size: 75%;
     text-align: center;
     margin: 0;
+    padding: 0 5px 0 5px;
   }
 `;

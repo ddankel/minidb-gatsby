@@ -18,14 +18,12 @@ const GuidedSearch = ({ minis }) => {
     setArmorFilter,
     paintedFilter,
     setPaintedFilter,
-    nameFilter,
-    setNameFilter,
-    lineFilter,
-    setLineFilter,
+    // nameFilter,
+    // setNameFilter,
+    // lineFilter,
+    // setLineFilter,
     filteredMiniatures,
   } = useMiniatureFilter(minis);
-
-  console.log("taglist", tagList);
 
   return (
     <>

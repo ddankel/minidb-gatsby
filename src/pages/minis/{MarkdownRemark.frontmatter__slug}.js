@@ -18,7 +18,6 @@ export const pageQuery = graphql`
         name
         line
         painted
-        categories
         photos {
           publicURL
           childImageSharp {
