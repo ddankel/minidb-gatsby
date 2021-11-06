@@ -1,5 +1,7 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+
+import MiniatureLayout from "../../layouts/MiniatureLayout";
+
 import styled from "styled-components";
 
 import splitRenderedHtml from "../../utils/split_rendered_html";
@@ -16,7 +18,7 @@ const Miniature = ({ frontmatter, html }) => {
   const miniatureLine = [...frontmatter.line, frontmatter.name].join(" > ");
 
   return (
-    <Container style={{ maxWidth: "600px" }}>
+    <MiniatureLayout>
       <h1>{frontmatter.name}</h1>
       <p>{miniatureLine}</p>
       {frontmatter.painted && <p>Painted: {frontmatter.painted}</p>}
@@ -27,7 +29,7 @@ const Miniature = ({ frontmatter, html }) => {
       ) : (
         <TagList frontmatter={frontmatter} />
       )}
-    </Container>
+    </MiniatureLayout>
   );
 };
 

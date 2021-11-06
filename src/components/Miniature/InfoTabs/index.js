@@ -5,6 +5,10 @@ import TagList from "../TagList";
 const InfoTabs = ({ frontmatter, bodySections }) => {
   return (
     <Tabs defaultActiveKey={0} id="uncontrolled-tab-example" className="mb-3">
+      <Tab eventKey="metadata" title="Metadata">
+        <TagList frontmatter={frontmatter} />
+      </Tab>
+
       {bodySections.map(({ title, html }, index) => {
         return (
           html.length && (
@@ -14,10 +18,6 @@ const InfoTabs = ({ frontmatter, bodySections }) => {
           )
         );
       })}
-
-      <Tab eventKey="metadata" title="Metadata">
-        <TagList frontmatter={frontmatter} />
-      </Tab>
     </Tabs>
   );
 };

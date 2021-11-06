@@ -1,9 +1,11 @@
 import * as React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+import GuidedSearch from "../components/GuidedSearch";
+import PageLayout from "../layouts/PageLayout";
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___name], order: ASC }) {
       nodes {
         frontmatter {
           slug
@@ -12,6 +14,9 @@ export const query = graphql`
           categories
           photos {
             publicURL
+            childImageSharp {
+              gatsbyImageData(width: 100, quality: 80, aspectRatio: 1, formats: [AUTO])
+            }
           }
           weapons
           armor
@@ -24,18 +29,9 @@ export const query = graphql`
 
 const HomePage = ({ data }) => {
   return (
-    <div>
-      <div>DATA!</div>
-
-      {data.allMarkdownRemark.nodes.map((mini, index) => {
-        return (
-          <div key={index}>
-            <h2>{mini.frontmatter.name}</h2>
-            <Link to={`/minis/${mini.frontmatter.slug}`}>{mini.frontmatter.name}</Link>
-          </div>
-        );
-      })}
-    </div>
+    <PageLayout>
+      <GuidedSearch minis={data.allMarkdownRemark.nodes} />
+    </PageLayout>
   );
 };
 

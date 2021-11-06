@@ -1,6 +1,6 @@
 ---
 slug: dark-elf-assassin-2
-name: Dark Elf Assassin
+name: Dark Elf Assassin 2
 line:
   - Warhammer
   - Dark Elves

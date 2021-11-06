@@ -3,3 +3,4 @@ import "bootswatch/dist/darkly/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min";
 
 import "react-image-gallery/styles/css/image-gallery.css";
+import "bootstrap-icons/font/bootstrap-icons.css";

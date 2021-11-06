@@ -2,12 +2,12 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import AppLayout from "./AppLayout";
 
-const PageLayout = ({ children }) => {
+const MiniatureLayout = ({ children }) => {
   return (
     <AppLayout>
-      <Container>{children}</Container>
+      <Container style={{ maxWidth: "650px" }}>{children}</Container>
     </AppLayout>
   );
 };
 
-export default PageLayout;
+export default MiniatureLayout;

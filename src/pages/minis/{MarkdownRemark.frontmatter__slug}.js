@@ -7,11 +7,7 @@ import PageLayout from "../../layouts/PageLayout";
 export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
 
-  return (
-    <PageLayout>
-      <Miniature {...{ frontmatter, html }} />
-    </PageLayout>
-  );
+  return <Miniature {...{ frontmatter, html }} />;
 }
 
 export const pageQuery = graphql`
