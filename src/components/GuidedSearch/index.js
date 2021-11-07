@@ -1,11 +1,16 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Form, Button } from "react-bootstrap";
+import styled from "styled-components";
 
 import Filter from "./Filter";
 import Gallery from "./Gallery";
 
 import useMiniatureFilter from "./hooks/use_miniature_filter";
 import { aggregateTags } from "./utils";
+
+const Spacer = styled.div`
+  height: 2rem;
+`;
 
 const GuidedSearch = ({ minis }) => {
   const tagList = aggregateTags(minis);
@@ -18,31 +23,30 @@ const GuidedSearch = ({ minis }) => {
     setArmorFilter,
     paintedFilter,
     setPaintedFilter,
-    // nameFilter,
-    // setNameFilter,
-    // lineFilter,
-    // setLineFilter,
+    ignoreMonsters,
+    setIgnoreMonsters,
     filteredMiniatures,
   } = useMiniatureFilter(minis);
+
+  const resetAll = () => {
+    setRaceFilter("all");
+    setWeaponFilter("all");
+    setArmorFilter("all");
+    setPaintedFilter("all");
+    setIgnoreMonsters(false);
+  };
 
   return (
     <>
       <Row className="mx-3">
         <Col md={6}>
-          <Filter
-            title="Race"
-            value={raceFilter}
-            setValue={setRaceFilter}
-            defaultValue="all"
-            options={tagList.race}
-          />
+          <Filter title="Race" value={raceFilter} setValue={setRaceFilter} options={tagList.race} />
         </Col>
         <Col md={6}>
           <Filter
             title="Weapon"
             value={weaponFilter}
             setValue={setWeaponFilter}
-            defaultValue="all"
             options={tagList.weapons}
           />
         </Col>
@@ -51,7 +55,6 @@ const GuidedSearch = ({ minis }) => {
             title="Armor"
             value={armorFilter}
             setValue={setArmorFilter}
-            defaultValue="all"
             options={tagList.armor}
           />
         </Col>
@@ -60,12 +63,30 @@ const GuidedSearch = ({ minis }) => {
             title="Painted"
             value={paintedFilter}
             setValue={setPaintedFilter}
-            defaultValue="all"
             options={tagList.is_painted}
           />
         </Col>
+        <Col sm={6}>
+          <div className="float-end mb-2">
+            <Form.Check
+              checked={ignoreMonsters}
+              type="switch"
+              id="hide-monsters"
+              label="Hide beasts & constructs"
+              onChange={() => setIgnoreMonsters(!ignoreMonsters)}
+            />
+          </div>
+        </Col>
+        <Col sm={6}>
+          <div className="float-end">
+            <Button variant="primary" onClick={() => resetAll()}>
+              Reset All Filters
+            </Button>
+          </div>
+        </Col>
       </Row>
 
+      <Spacer />
       <Gallery minis={filteredMiniatures} />
     </>
   );

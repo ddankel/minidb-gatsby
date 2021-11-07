@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
+import useLocalStorage from "./useLocalStorage";
 
 function useMiniatureFilter(collection) {
-  const [raceFilter, setRaceFilter] = useState("all");
-  const [weaponFilter, setWeaponFilter] = useState("all");
-  const [armorFilter, setArmorFilter] = useState("all");
-  const [paintedFilter, setPaintedFilter] = useState("all");
-  const [nameFilter, setNameFilter] = useState("all");
-  const [lineFilter, setLineFilter] = useState("all");
+  const [raceFilter, setRaceFilter] = useLocalStorage("race-filter", "all");
+  const [weaponFilter, setWeaponFilter] = useLocalStorage("weapon-filter", "all");
+  const [armorFilter, setArmorFilter] = useLocalStorage("armor-filter", "all");
+  const [paintedFilter, setPaintedFilter] = useLocalStorage("painted-filter", "all");
+  const [nameFilter, setNameFilter] = useLocalStorage("name-filter", "all");
+  const [lineFilter, setLineFilter] = useLocalStorage("line-filter", "all");
   const [filteredMiniatures, setFilteredMiniatures] = useState(collection);
+  const [ignoreMonsters, setIgnoreMonsters] = useLocalStorage("switch-ignore-monsters", false);
 
   useEffect(() => {
     const applyFilter = () => {
@@ -21,18 +23,34 @@ function useMiniatureFilter(collection) {
             filter: paintedFilter,
           }) &&
           allOrMatchesFilter({ value: mini.frontmatter.name, filter: nameFilter }) &&
-          allOrMatchesFilter({ value: mini.frontmatter.line, filter: lineFilter })
+          allOrMatchesFilter({ value: mini.frontmatter.line, filter: lineFilter }) &&
+          (!ignoreMonsters || !isMonster(mini))
         );
       });
     };
 
     setFilteredMiniatures(applyFilter());
-  }, [raceFilter, weaponFilter, armorFilter, paintedFilter, nameFilter, lineFilter, collection]);
+  }, [
+    raceFilter,
+    weaponFilter,
+    armorFilter,
+    paintedFilter,
+    nameFilter,
+    lineFilter,
+    ignoreMonsters,
+    collection,
+  ]);
+
+  const isMonster = (mini) => {
+    return (
+      mini.frontmatter.race === ["dragonspawn"] ||
+      mini.frontmatter.race?.some((item) => ["golem", "warjack"].includes(item))
+    );
+  };
 
   const allOrMatchesFilter = ({ value, filter }) => {
     value = [value || ""].flat().map((item) => item.toLowerCase());
     filter = filter.toLowerCase();
-
     return filter === "all" || value.includes(filter);
   };
 
@@ -49,6 +67,8 @@ function useMiniatureFilter(collection) {
     setNameFilter,
     lineFilter,
     setLineFilter,
+    ignoreMonsters,
+    setIgnoreMonsters,
     filteredMiniatures,
   };
 }

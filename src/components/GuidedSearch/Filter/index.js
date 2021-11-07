@@ -1,7 +1,10 @@
 import React from "react";
-import { Col, Form, InputGroup, Row } from "react-bootstrap";
+import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 
-const Filter = ({ value, setValue, defaultValue, title, options = [] }) => {
+const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) => {
+  const buttonVariant = value !== defaultValue ? "primary" : "secondary";
+  const isBtnDisabled = value !== defaultValue ? false : true;
+
   return (
     <Form.Group as={Row} className="mb-3">
       <Form.Label column sm={3}>
@@ -19,9 +22,13 @@ const Filter = ({ value, setValue, defaultValue, title, options = [] }) => {
                 </option>
               ))}
           </Form.Select>
-          <button className="btn btn-primary" type="button" onClick={() => setValue(defaultValue)}>
+          <Button
+            variant={buttonVariant}
+            onClick={() => setValue(defaultValue)}
+            disabled={isBtnDisabled}
+          >
             <i className="bi bi-arrow-clockwise" alt="reset"></i>
-          </button>
+          </Button>
         </InputGroup>
       </Col>
     </Form.Group>

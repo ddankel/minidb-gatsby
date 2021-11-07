@@ -5,8 +5,6 @@ import ImageGallery from "react-image-gallery";
 import styled from "styled-components";
 import "./styles.css";
 
-const miniImages = [];
-
 const GalleryWrapper = styled.div`
   max-width: 450px;
   margin-left: auto;
@@ -15,6 +13,8 @@ const GalleryWrapper = styled.div`
 `;
 
 const Gallery = ({ photos }) => {
+  const miniImages = [];
+
   if (photos.length === 1) {
     return (
       <center>
