@@ -13,8 +13,11 @@ function useMiniatureFilter(collection) {
 
   useEffect(() => {
     const applyFilter = () => {
+      console.log("filtering", ignoreMonsters);
+
       return collection.filter((mini) => {
         return (
+          (!ignoreMonsters || !isMonster(mini)) &&
           allOrMatchesFilter({ value: mini.frontmatter.race, filter: raceFilter }) &&
           allOrMatchesFilter({ value: mini.frontmatter.weapons, filter: weaponFilter }) &&
           allOrMatchesFilter({ value: mini.frontmatter.armor, filter: armorFilter }) &&
@@ -23,8 +26,7 @@ function useMiniatureFilter(collection) {
             filter: paintedFilter,
           }) &&
           allOrMatchesFilter({ value: mini.frontmatter.name, filter: nameFilter }) &&
-          allOrMatchesFilter({ value: mini.frontmatter.line, filter: lineFilter }) &&
-          (!ignoreMonsters || !isMonster(mini))
+          allOrMatchesFilter({ value: mini.frontmatter.line, filter: lineFilter })
         );
       });
     };
@@ -43,7 +45,7 @@ function useMiniatureFilter(collection) {
 
   const isMonster = (mini) => {
     return (
-      mini.frontmatter.race === ["dragonspawn"] ||
+      JSON.stringify(mini.frontmatter.race) === JSON.stringify(["dragonspawn"]) ||
       mini.frontmatter.race?.some((item) => ["golem", "warjack"].includes(item))
     );
   };
