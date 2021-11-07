@@ -1,5 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
+
 import GuidedSearch from "../components/GuidedSearch";
 import PageLayout from "../layouts/PageLayout";
 
@@ -30,6 +32,9 @@ export const query = graphql`
 const IndexPage = ({ data }) => {
   return (
     <PageLayout>
+      <Helmet>
+        <title>MiniDB</title>
+      </Helmet>
       <GuidedSearch minis={data.allMarkdownRemark.nodes} />
     </PageLayout>
   );

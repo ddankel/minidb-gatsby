@@ -1,11 +1,16 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
+
 import PageLayout from "../layouts/PageLayout";
 
 // markup
 const NotFoundPage = () => {
   return (
     <PageLayout>
+      <Helmet>
+        <title>Page Not Found | MiniDB</title>
+      </Helmet>
       <div class="page-wrap d-flex flex-row align-items-center">
         <div class="container">
           <div class="row justify-content-center">

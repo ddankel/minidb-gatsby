@@ -22,6 +22,7 @@ const SearchField = () => {
             nodes {
               frontmatter {
                 slug
+                sku
                 name
                 line
                 photos {

@@ -1,13 +1,20 @@
 import * as React from "react";
 import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
 
 import Miniature from "../../components/Miniature";
-import PageLayout from "../../layouts/PageLayout";
 
 export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
 
-  return <Miniature {...{ frontmatter, html }} />;
+  return (
+    <>
+      <Helmet>
+        <title>{frontmatter.sku || frontmatter.name} | MiniDB</title>
+      </Helmet>
+      <Miniature {...{ frontmatter, html }} />
+    </>
+  );
 }
 
 export const pageQuery = graphql`
@@ -18,6 +25,7 @@ export const pageQuery = graphql`
         name
         line
         painted
+        sku
         photos {
           publicURL
           childImageSharp {
