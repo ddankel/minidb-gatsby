@@ -1,6 +1,6 @@
-exports.arrayFields = ["weapons", "armor", "race"];
+exports.arrayFields = ["weapons", "armor", "race", "line"];
 exports.scalarFields = ["is_painted", "slug"];
-exports.deprecatedFields = ["title", "paints", "layout"];
+exports.deprecatedFields = ["title", "paints", "layout", "categories"];
 
 exports.invalidValues = {
   slug: [undefined],

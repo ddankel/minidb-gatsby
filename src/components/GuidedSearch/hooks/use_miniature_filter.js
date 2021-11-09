@@ -13,8 +13,6 @@ function useMiniatureFilter(collection) {
 
   useEffect(() => {
     const applyFilter = () => {
-      console.log("filtering", ignoreMonsters);
-
       return collection.filter((mini) => {
         return (
           (!ignoreMonsters || !isMonster(mini)) &&
