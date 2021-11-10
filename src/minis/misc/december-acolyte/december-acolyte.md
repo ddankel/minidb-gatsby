@@ -5,8 +5,6 @@ line:
   - Malifaux
   - Arcanists
 painted: Nov 2012 - Feb 2014
-categories:
-  - Other Miniatures
 photos:
   - ./Malifaux-DecemberAcolyte-Dankel_1.jpg
   - ./Malifaux-DecemberAcolyte-Dankel_2.jpg

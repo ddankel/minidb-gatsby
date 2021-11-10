@@ -7,8 +7,6 @@ line:
   - Hordes
   - Minions
 painted: 2007
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-Hordes-Minion-AltenAshley-Dankel_1.jpg
   - ./PP-Hordes-Minion-AltenAshley-Dankel_2.jpg

@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Protectorate of Menoth
 painted: 2010
-categories:
-  - Warmachine & Hordes
 photos:
   - ./Rhoven-DDankel-1.jpg
   - ./Rhoven-DDankel-2.jpg

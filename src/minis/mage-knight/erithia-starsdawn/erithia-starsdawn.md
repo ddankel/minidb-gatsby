@@ -3,8 +3,6 @@ slug: erithia-starsdawn
 name: Erithia Starsdawn
 line:
   - Mage Knight
-categories:
-  - Other Miniatures
 photos:
   - ./MK-ErithiaStarsdawn.jpg
 weapons:

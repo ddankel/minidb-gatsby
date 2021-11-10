@@ -4,8 +4,6 @@ name: Priest
 line:
   - Ral Partha
 painted: 2004
-categories:
-  - Other Miniatures
 photos:
   - ./RalPartha-Priest-Dankel_1.jpg
   - ./RalPartha-Priest-Dankel_2.jpg

@@ -4,8 +4,6 @@ name: Everfrost Ranger
 line:
   - D&D Miniatures
 painted: Feb 2015
-categories:
-  - Other Miniatures
 photos:
   - ./DnDMiniatures-EverfrostRanger-Dankel.jpg
 weapons:

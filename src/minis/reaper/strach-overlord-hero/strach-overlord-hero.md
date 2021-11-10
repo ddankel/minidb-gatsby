@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Warlord
 painted: 2013
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper14287-StrachOverlordHero-Dankel_1.jpg
   - ./Reaper14287-StrachOverlordHero-Dankel_2.jpg

@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Pathfinder Miniatures
 painted: 2010
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper6001-ValerosIconicMaleHumanFighter-Dankel_1.jpg
   - ./Reaper6001-ValerosIconicMaleHumanFighter-Dankel_2.jpg

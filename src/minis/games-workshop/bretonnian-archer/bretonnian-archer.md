@@ -4,8 +4,6 @@ name: Bretonnian Archer
 line:
   - Warhammer
   - Bretonnians
-categories:
-  - Other Miniatures
 photos:
   - ./GW-BretonnianArcher.jpg
 mini_count: 2

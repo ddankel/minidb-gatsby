@@ -5,8 +5,6 @@ line:
   - Warhammer
   - Dark Elves
 painted: April 2016 - June 2016
-categories:
-  - Other Miniatures
 photos:
   - ./DarkElfAssassin-Dankel.jpg
 weapons:

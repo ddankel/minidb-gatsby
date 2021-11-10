@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Kilsek
 painted: 2004
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-TroglodyteWarrior-Dankel_1.jpg
 race:

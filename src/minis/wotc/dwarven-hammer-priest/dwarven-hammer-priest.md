@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Mordengard
 painted: 2004
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-HammerPriest-Dankel_1.jpg
 race:

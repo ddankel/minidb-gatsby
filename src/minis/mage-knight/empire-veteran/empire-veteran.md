@@ -3,8 +3,6 @@ slug: empire-veteran
 name: Empire Veteran
 line:
   - Mage Knight
-categories:
-  - Other Miniatures
 photos:
   - ./MK-EmpireVeteran.jpg
 weapons:

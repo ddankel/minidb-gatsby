@@ -6,8 +6,6 @@ line:
   - Privateer Press
   - Warmachine
   - Khdor
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-WM-Khador-WidowmakerKapitan-Dankel_1.jpg
   - ./PP-WM-Khador-WidowmakerKapitan-Dankel_2.jpg

@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2016
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper77093-DragoVossMaleAssassin-Dankel_1.jpg
   - ./Reaper77093-DragoVossMaleAssassin-Dankel_2.jpg

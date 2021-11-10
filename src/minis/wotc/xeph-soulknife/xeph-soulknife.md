@@ -3,8 +3,6 @@ slug: xeph-soulknife
 name: Xeph Soulknife
 line:
   - D&D Miniatures
-categories:
-  - Other Miniatures
 photos:
   - ./DnDMiniatures-XephSoulknife.jpg
 weapons:

@@ -3,8 +3,6 @@ slug: free-league-ranger
 name: Free League Ranger
 line:
   - D&D Miniatures
-categories:
-  - Other Miniatures
 photos:
   - ./DnDMiniatures-FreeLeagueRanger.jpg
 weapons:

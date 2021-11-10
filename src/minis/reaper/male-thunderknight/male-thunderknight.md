@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Bones
 painted: June 2016 - July 1016
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper77304-MaleThunderknight-Dankel.jpg
 weapons:

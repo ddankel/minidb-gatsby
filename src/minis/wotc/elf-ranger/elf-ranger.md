@@ -4,8 +4,6 @@ name: Elf Ranger
 line:
   - Wizards of the Coast
 painted: 2010
-categories:
-  - Other Miniatures
 photos:
   - ./WotC-ElfRanger-Dankel_1.jpg
   - ./WotC-ElfRanger-Dankel_2.jpg

@@ -7,8 +7,6 @@ line:
   - Hordes
   - Minions
 painted: 2007
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-Hordes-Minion-SwampGobbers-Dankel_1.jpg
   - ./PP-Hordes-Minion-SwampGobbers-Dankel_2.jpg

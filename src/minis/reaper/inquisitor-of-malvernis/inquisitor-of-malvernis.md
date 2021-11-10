@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2003
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2720-InquisitorOfMalvernis-Dankel_1.jpg
   - ./Reaper2720-InquisitorOfMalvernis-Dankel_2.jpg

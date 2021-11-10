@@ -3,8 +3,6 @@ slug: dragonstrike-elf
 name: Dragonstrike Elf
 line:
   - Dragonstrike
-categories:
-  - Other Miniatures
 photos:
   - ./Dragonstrike-Elf.jpg
 weapons:

@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Warlord
 painted: 2010
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper14060-LeisynnMercenariesMage-Dankel_1.jpg
   - ./Reaper14060-LeisynnMercenariesMage-Dankel_1.jpg

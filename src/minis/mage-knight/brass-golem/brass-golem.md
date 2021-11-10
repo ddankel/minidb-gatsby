@@ -4,8 +4,6 @@ name: Brass Golem
 line:
   - Mage Knight
 painted: 2005
-categories:
-  - Other Miniatures
 photos:
   - ./MK-BrassGolem-Dankel_1.jpg
   - ./MK-BrassGolem-Dankel_2.jpg

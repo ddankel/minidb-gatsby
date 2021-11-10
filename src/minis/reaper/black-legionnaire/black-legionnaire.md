@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: May 2014 - June 2014
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2464-BlackLegionnaire-Dankel_1.jpg
   - ./Reaper2464-BlackLegionnaire-Dankel_2.jpg

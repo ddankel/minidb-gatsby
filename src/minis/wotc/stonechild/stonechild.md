@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Mordengard
 painted: 2003
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-Stonechild-Dankel_1.jpg
   - ./Chainmail-Stonechild-Dankel_2.jpg
@@ -15,6 +13,7 @@ weapons:
 armor:
   - plate
 race:
+  - obsidiman
   - stonechild
 ---
 

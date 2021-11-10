@@ -4,8 +4,6 @@ name: Drow Wizard
 line:
   - Chainmail
   - Kilsek
-categories:
-  - Warmachine & Hordes
 photos:
   - ./Chainmail-DrowWizard-Dankel.jpg
 race:

@@ -5,8 +5,6 @@ line:
   - Warhammer
   - Dark Elves
 painted: "2001"
-categories:
-  - Other Miniatures
 photos:
   - ./GW-DarkElfSorceress-Dankel_1.jpg
   - ./GW-DarkElfSorceress-Dankel_2.jpg

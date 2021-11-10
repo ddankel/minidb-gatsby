@@ -3,8 +3,6 @@ slug: scale-magus
 name: Scale Magus
 line:
   - Mage Knight
-categories:
-  - Other Miniatures
 photos:
   - ./MK-ScaleMagus-Dankel_1.jpg
   - ./MK-ScaleMagus-Dankel_2.jpg

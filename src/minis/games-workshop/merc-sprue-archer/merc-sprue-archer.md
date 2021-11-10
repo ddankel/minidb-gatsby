@@ -5,8 +5,6 @@ line:
   - Mordheim
   - Mercenaries
 painted: 2004
-categories:
-  - Other Miniatures
 photos:
   - ./GW-MordheimMercSprue-Dankel_1.jpg
   - ./GW-MordheimMercSprue-Dankel_2.jpg

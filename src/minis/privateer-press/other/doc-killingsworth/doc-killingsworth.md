@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Mercenaries
 painted: 2007
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-WM-Mercs-DocKillingsworth-Dankel_1.jpg
   - ./PP-WM-Mercs-DocKillingsworth-Dankel_2.jpg

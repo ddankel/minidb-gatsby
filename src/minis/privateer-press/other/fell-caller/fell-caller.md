@@ -7,8 +7,6 @@ line:
   - Hordes
   - Trollbloods
 painted: 2007
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-Hordes-Trollbloods-FellCaller-Dankel_1.jpg
   - ./PP-Hordes-Trollbloods-FellCaller-Dankel_2.jpg

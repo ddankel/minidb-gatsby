@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Mercenaries
 painted: 2006
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-WM-Merc-Eiryss-Dankel_1.jpg
   - ./PP-WM-Merc-Eiryss-Dankel_2.jpg

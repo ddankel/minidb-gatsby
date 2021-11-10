@@ -5,8 +5,6 @@ line:
   - Hundred Kingdoms
   - Panthera
 painted: 2007
-categories:
-  - Other Miniatures
 photos:
   - ./HundredKingdoms-BlackPantherAssassin-Dankel.jpg
 race:

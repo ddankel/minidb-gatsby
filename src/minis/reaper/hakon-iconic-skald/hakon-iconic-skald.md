@@ -5,7 +5,6 @@ line:
   - Reaper Miniatures
   - Pathfinder
 painted: 2016
-categories: Reaper Miniatures
 photos:
   - ../../missing-image.png
 race:

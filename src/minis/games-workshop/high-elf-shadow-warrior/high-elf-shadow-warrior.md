@@ -5,8 +5,6 @@ line:
   - Warhammer
   - High Elves
 painted: 2003
-categories:
-  - Other Miniatures
 photos:
   - ./GW-HighElfShadowWarrior1-Dankel_1.jpg
   - ./GW-HighElfShadowWarrior1-Dankel_2.jpg

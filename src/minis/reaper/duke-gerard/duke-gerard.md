@@ -4,8 +4,6 @@ name: Duke Gerard
 line:
   - Reaper Miniatures
   - Bones
-categories:
-  - Other Miniatures
 photos:
   - ./Reaper77063-DukeGerard-Dankel.jpg
 weapons:

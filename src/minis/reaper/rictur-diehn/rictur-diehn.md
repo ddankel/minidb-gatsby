@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2002
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2430-RicturDiehn-Dankel_1.jpg
   - ./Reaper2430-RicturDiehn-Dankel_2.jpg

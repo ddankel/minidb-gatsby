@@ -4,8 +4,6 @@ name: Amber Wizard
 line:
   - Warhammer
   - Empire
-categories:
-  - Other Miniatures
 photos:
   - ./GW-AmberWizard.jpg
 weapons:

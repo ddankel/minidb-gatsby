@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Ravilla
 painted: 2004
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-GrayElfWizard-Dankel_1.jpg
   - ./Chainmail-GrayElfWizard-Dankel_2.jpg

@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Protectorate of Menoth
 painted: 2006
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-WM-PoM-Devout-Dankel_1.jpg
   - ./PP-WM-PoM-Devout-Dankel_2.jpg

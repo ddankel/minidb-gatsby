@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2010
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2834-DeladrinAssassin-Dankel_1.jpg
   - ./Reaper2834-DeladrinAssassin-Dankel_2.jpg

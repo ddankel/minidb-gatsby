@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Thalos
 painted: 2003
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-HalfElfSorc-Dankel_1.jpg
   - ./Chainmail-HalfElfSorc-Dankel_2.jpg

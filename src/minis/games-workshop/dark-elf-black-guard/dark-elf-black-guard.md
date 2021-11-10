@@ -5,8 +5,6 @@ line:
   - Warhammer
   - Dark Elves
 painted: "2001"
-categories:
-  - Other Miniatures
 photos:
   - ./GW-DarkElfBlackGuard-Dankel_1.jpg
   - ./GW-DarkElfBlackGuard-Dankel_2.jpg

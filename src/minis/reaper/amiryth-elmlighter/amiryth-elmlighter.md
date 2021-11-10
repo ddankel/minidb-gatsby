@@ -5,7 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2005
-categories: Reaper Miniatures
 photos:
   - ./Reaper2711-AmirythElmlighter-Dankel_1.jpg
   - ./Reaper2711-AmirythElmlighter-Dankel_1.jpg

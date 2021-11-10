@@ -4,8 +4,6 @@ name: Troll Brawler
 line:
   - Mage Knight
 painted: 2014-2015
-categories:
-  - Other Miniatures
 photos:
   - ./MK-TrollBrawler-Dankel_1.jpg
   - ./MK-TrollBrawler-Dankel_3.jpg

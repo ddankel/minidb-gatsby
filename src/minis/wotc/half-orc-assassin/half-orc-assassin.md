@@ -4,8 +4,6 @@ name: Half Orc Assassin
 line:
   - Wizards of the Coast
 painted: 2014
-categories:
-  - Other Miniatures
 photos:
   - ./WotC-HalfOrcAssassin-Dankel_1.jpg
   - ./WotC-HalfOrcAssassin-Dankel_2.jpg

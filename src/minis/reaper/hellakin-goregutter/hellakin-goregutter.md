@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: May 2014
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper3071-HellakinGoregutterHalflingThief-Dankel_1.jpg
   - ./Reaper3071-HellakinGoregutterHalflingThief-Dankel_2.jpg

@@ -5,8 +5,6 @@ line:
   - Warhammer
   - Dwarves
 painted: 2010
-categories:
-  - Other Miniatures
 photos:
   - ./GW-DwarfWarriors-Dankel_1.jpg
   - ./GW-DwarfWarriors-Dankel_2.jpg

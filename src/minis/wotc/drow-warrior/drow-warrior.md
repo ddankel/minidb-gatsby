@@ -4,8 +4,6 @@ name: Drow Warrior
 line:
   - Chainmail
   - Kilsek
-categories:
-  - Warmachine & Hordes
 photos:
   - ./Chainmail-DrowWarrior-Dankel.jpg
 race:

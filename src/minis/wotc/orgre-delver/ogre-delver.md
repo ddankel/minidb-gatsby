@@ -4,8 +4,6 @@ name: Ogre Delver
 line:
   - Chainmail
   - Kilsek
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-OgreDelver-Dankel_1.jpg
   - ./Chainmail-OgreDelver-Dankel_2.jpg

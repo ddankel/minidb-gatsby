@@ -7,8 +7,6 @@ line:
   - Hordes
   - Minions
 painted: 2008
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-Hordes-Minion-Gudrun-Dankel_1.jpg
   - ./PP-Hordes-Minion-Gudrun-Dankel_2.jpg

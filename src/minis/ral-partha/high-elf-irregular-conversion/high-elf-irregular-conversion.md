@@ -4,8 +4,6 @@ name: High Elf Irregular Conversion
 line:
   - Ral Partha
 painted: 2003
-categories:
-  - Other Miniatures
 photos:
   - ./RalPartha-HighElfIrregularConversion-Dankel_1.jpg
   - ./RalPartha-HighElfIrregularConversion-Dankel_2.jpg

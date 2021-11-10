@@ -7,8 +7,6 @@ line:
   - Hordes
   - Legion of Everblight
 painted: 2010
-categories:
-  - Warmachine & Hordes
 photos:
   - ./absylonia_ddankel_1.jpg
   - ./absylonia_ddankel_2.jpg

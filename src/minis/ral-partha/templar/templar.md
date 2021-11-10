@@ -4,8 +4,6 @@ name: Templar
 line:
   - Ral Partha
 painted: May 2016 - June 2016
-categories:
-  - Other Miniatures
 photos:
   - ./RalPartha-Templar-Dankel.jpg
 weapons:

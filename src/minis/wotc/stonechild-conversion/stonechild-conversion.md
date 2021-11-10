@@ -4,8 +4,6 @@ name: Stonechild Conversion
 line:
   - D&D Miniatures
 painted: 2005
-categories:
-  - Other Miniatures
 photos:
   - ./DnDMiniatures-Stonechild-Conversion-Dankel_1.jpg
   - ./DnDMiniatures-Stonechild-Conversion-Dankel_2.jpg
@@ -18,6 +16,7 @@ armor:
   - plate
   - shield
 race:
+  - obsidiman
   - stonechild
 ---
 

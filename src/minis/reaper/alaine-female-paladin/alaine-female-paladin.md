@@ -6,10 +6,9 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2004
-categories: Reaper Miniatures
 photos:
   - ./Reaper2725-AlaineFemalePaladin-Dankel_1.jpg
-  - ./Reaper2725-AlaineFemalePaladin-Dankel_1.jpg
+  - ./Reaper2725-AlaineFemalePaladin-Dankel_2.jpg
 race:
   - human
 weapons:

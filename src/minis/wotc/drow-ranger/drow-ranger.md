@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Kilsek
 painted: April 2014 - May 2014
-categories:
-  - Other Miniatures
 photos:
   - ../../missing-image.png
 weapons:

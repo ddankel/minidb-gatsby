@@ -4,8 +4,6 @@ name: Tomb Wizard
 line:
   - Warhammer
   - Tomb Kings
-categories:
-  - Other Miniatures
 photos:
   - ./GW-TombWizard.jpg
 weapons:

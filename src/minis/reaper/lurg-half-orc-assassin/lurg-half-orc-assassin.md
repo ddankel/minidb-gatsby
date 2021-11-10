@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Warlord
 painted: 2004
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper14043-LurgHalfOrc-Dankel_1.jpg
   - ./Reaper14043-LurgHalfOrc-Dankel_2.jpg

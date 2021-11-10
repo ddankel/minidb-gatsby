@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2004
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2384-GordIronhead-Dankel_1.jpg
   - ./Reaper2384-GordIronhead-Dankel_2.jpg

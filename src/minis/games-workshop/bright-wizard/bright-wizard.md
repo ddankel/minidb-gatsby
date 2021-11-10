@@ -4,8 +4,6 @@ name: Bright Wizard
 line:
   - Warhammer
   - Empire
-categories:
-  - Other Miniatures
 photos:
   - ./BrightWizard-Dankel.jpg
 weapons:

@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Mercenaries
 painted: 2008
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-WM-Merc-Bartolo-Dankel_1.jpg
   - ./PP-WM-Merc-Bartolo-Dankel_2.jpg
