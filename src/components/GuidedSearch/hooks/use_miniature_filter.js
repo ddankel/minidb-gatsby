@@ -42,9 +42,12 @@ function useMiniatureFilter(collection) {
   ]);
 
   const isMonster = (mini) => {
+    const jsonRace = JSON.stringify(mini.frontmatter.race);
+
     return (
-      JSON.stringify(mini.frontmatter.race) === JSON.stringify(["dragonspawn"]) ||
-      mini.frontmatter.race?.some((item) => ["golem", "warjack"].includes(item))
+      jsonRace === JSON.stringify(["dragonspawn"]) ||
+      jsonRace === JSON.stringify(["golem"]) ||
+      mini.frontmatter.race?.some((item) => ["warjack"].includes(item))
     );
   };
 
