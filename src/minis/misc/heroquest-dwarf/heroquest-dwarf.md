@@ -8,7 +8,7 @@ photos:
   - ./Heroquest-Dwarf-Dankel_2.jpg
 race:
   - dwarf
-weapon:
+weapons:
   - axe
 armor:
   - mail

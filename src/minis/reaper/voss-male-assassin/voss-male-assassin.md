@@ -18,3 +18,16 @@ armor:
   - leather
 is_painted: wip
 ---
+
+## Recipes
+
+Coat:
+
+- P3 Ironhull Gray
+- Shade Black
+- Highlight VMC Sky Gray
+
+Ruffles:
+
+- Base P3 Arcane Blue
+- Mix P3 Coal Black wash

@@ -1,7 +1,7 @@
 const deprecatedValues = {
   weapons: [null],
   armor: [null],
-  race: [null],
+  race: ["lizardman", "cat"],
 };
 
 const validValues = {
@@ -42,14 +42,16 @@ const validValues = {
     "half-orc",
     "halfling",
     "human",
+    "lizardfolk",
     "lizardman",
     "obsidiman",
     "ogre",
     "stonechild",
+    "tabaxi",
     "troll",
     "warjack",
   ],
-  is_painted: ["prepainted", "unpainted", "wip", "painted", undefined],
+  is_painted: ["prepainted", "unpainted", "wip", "painted", "unassembled", undefined],
 };
 
 /**
