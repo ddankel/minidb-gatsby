@@ -3,8 +3,6 @@ slug: half-orc-fighter
 name: Half Orc Fighter
 line:
   - D&D Miniatures
-categories:
-  - Other Miniatures
 photos:
   - ./DnDMiniatures-HalfOrcFighter.jpg
 weapons:

@@ -9,7 +9,7 @@ const TagList = ({ frontmatter }) => {
         {frontmatter.weapons && <li>Weapon(s): {frontmatter.weapons.sort().join(", ")}</li>}
         {frontmatter.armor && <li>Armor: {frontmatter.armor.sort().join(", ")}</li>}
         <li>Count: {frontmatter.mini_count || 1}</li>
-        <li>Status: {frontmatter.painted || "unpainted"}</li>
+        <li>Status: {frontmatter.is_painted || "unpainted"}</li>
       </ul>
     </div>
   );

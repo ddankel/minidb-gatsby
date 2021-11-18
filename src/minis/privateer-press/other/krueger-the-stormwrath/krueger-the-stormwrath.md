@@ -7,8 +7,6 @@ line:
   - Hordes
   - Circle Orboros
 painted: 2006
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-Hordes-Circle-Krueger-Dankel_1.jpg
   - ./PP-Hordes-Circle-Krueger-Dankel_2.jpg

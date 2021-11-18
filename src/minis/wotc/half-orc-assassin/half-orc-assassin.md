@@ -4,8 +4,6 @@ name: Half Orc Assassin
 line:
   - Wizards of the Coast
 painted: 2014
-categories:
-  - Other Miniatures
 photos:
   - ./WotC-HalfOrcAssassin-Dankel_1.jpg
   - ./WotC-HalfOrcAssassin-Dankel_2.jpg
@@ -23,4 +21,4 @@ armor:
 
 This old Wizards of the Coast miniature is a relatively simple sculpt but he's got some nice character. The sculpt of the face in particular was fun to paint and took the darker skin tone I wanted to use on this miniature perfectly.
 
-Painted up to use as an ork in Earthdawn, I went with darker and muted colors to go with his thuggish clothes. He's since been adopted by a player for his thief character.
+Painted up to use as an ork in Earthdawn, I went with darker and muted colors to go with his thuggish clothing. He's since been adopted by a player for his thief character.

@@ -5,8 +5,6 @@ line:
   - Heartbreaker Hobbies
   - Earthdawn
 painted: 2004
-categories:
-  - Other Miniatures
 photos:
   - ./Heartbreaker-EarthdawnTrollSkyRaider-Dankel_1.jpg
   - ./Heartbreaker-EarthdawnTrollSkyRaider-Dankel_2.jpg

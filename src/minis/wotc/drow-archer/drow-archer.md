@@ -4,8 +4,6 @@ name: Drow Archer
 line:
   - Chainmail
   - Kilsek
-categories:
-  - Warmachine & Hordes
 photos:
   - ./Chainmail-DrowArcher-Dankel.jpg
 race:

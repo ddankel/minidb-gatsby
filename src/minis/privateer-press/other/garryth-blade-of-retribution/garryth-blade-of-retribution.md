@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Retribution of Scyrah
 painted: 2011
-categories:
-  - Warmachine & Hordes
 photos:
   - ./garryth_ddankel_1.jpg
   - ./garryth_ddankel_2.jpg

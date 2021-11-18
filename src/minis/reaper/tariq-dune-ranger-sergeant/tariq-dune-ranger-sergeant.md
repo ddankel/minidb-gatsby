@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Warlord
 painted: 2005
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper14094-TariqDuneRangerSergeant-Dankel_1.jpg
   - ./Reaper14094-TariqDuneRangerSergeant-Dankel_2.jpg

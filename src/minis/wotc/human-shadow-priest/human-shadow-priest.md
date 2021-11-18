@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Ahmut's Legion
 painted: 2010
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-HumanShadowPriest-Dankel_1.jpg
   - ./Chainmail-HumanShadowPriest-Dankel_2.jpg

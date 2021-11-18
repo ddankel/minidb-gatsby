@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Ravilla
 painted: "2001"
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-WoodElfScout-Dankel_1.jpg
   - ./Chainmail-WoodElfScout-Dankel_2.jpg

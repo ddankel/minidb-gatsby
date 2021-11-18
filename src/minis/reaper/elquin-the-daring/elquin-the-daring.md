@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2004
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2246-ElquinTheDaring-Dankel_1.jpg
   - ./Reaper2246-ElquinTheDaring-Dankel_2.jpg

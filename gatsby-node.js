@@ -7,10 +7,10 @@ exports.createSchemaCustomization = ({ actions }) => {
   type Frontmatter {
     slug: String!
     title: String
+    sku: String
     name: String
     line: [String]
     painted: String
-    categories: [String]
     paints: [String]
     weapons: [String]
     armor: [String]

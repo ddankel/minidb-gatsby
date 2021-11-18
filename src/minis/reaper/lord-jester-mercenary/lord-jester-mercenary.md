@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2012
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2884-LordJesterMercenary-Dankel_1.jpg
   - ./Reaper2884-LordJesterMercenary-Dankel_2.jpg

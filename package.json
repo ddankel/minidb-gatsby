@@ -1,6 +1,6 @@
 {
   "name": "mini-db",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "MiniDB",
   "author": "Dave Dankel",
@@ -13,8 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "list-tags": "node ./scripts/list_tags",
-    "validate-tags": "node ./scripts/validate_tags"
+    "aggregate-fm": "node ./scripts/aggregate_frontmatter",
+    "validate-fm": "node ./scripts/validate_frontmatter"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.13.3",

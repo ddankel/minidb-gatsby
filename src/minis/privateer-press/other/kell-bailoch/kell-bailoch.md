@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Mercenaries
 painted: 2007
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-WM-Merc-KellBailoch-Dankel_1.jpg
   - ./PP-WM-Merc-KellBailoch-Dankel_2.jpg

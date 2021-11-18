@@ -7,8 +7,6 @@ line:
   - Hordes
   - Minions
 painted: June 2014 - July 2014
-categories:
-  - Hordes Miniatures
 photos:
   - ./PP-Hordes-Minion-SaxonOrrik-Dankel_1.jpg
   - ./PP-Hordes-Minion-SaxonOrrik-Dankel_2.jpg

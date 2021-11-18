@@ -3,8 +3,6 @@ slug: elf-fighter-mage-1
 name: Elf Fighter Mage
 line:
   - Ral Partha
-categories:
-  - Other Miniatures
 photos:
   - ./RalPartha-ElfFighterMage1-Dankel.jpg
 weapons:

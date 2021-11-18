@@ -4,8 +4,6 @@ name: Air Sailor
 line:
   - Heartbreaker Hobbies
   - Earthdawn
-categories:
-  - Other Miniatures
 photos:
   - ./Earthdawn-AirSailor-Dankel.jpg
 race:

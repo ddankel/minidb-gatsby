@@ -4,8 +4,6 @@ name: Human Journeyman
 line:
   - Heartbreaker Hobbies
   - Earthdawn
-categories:
-  - Other Miniatures
 photos:
   - ./Earthdawn-HumanJourneyman-Dankel.jpg
 race:

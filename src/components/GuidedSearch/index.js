@@ -1,19 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
+import { InputGroup } from "react-bootstrap";
+
 import styled from "styled-components";
 
 import Filter from "./Filter";
 import Gallery from "./Gallery";
 
 import useMiniatureFilter from "./hooks/use_miniature_filter";
-import { aggregateTags } from "./utils";
+import useAggregatedTags from "./hooks/use_aggregated_tags";
 
 const Spacer = styled.div`
   height: 2rem;
 `;
 
 const GuidedSearch = ({ minis }) => {
-  const tagList = aggregateTags(minis);
+  // const tagList = useAggregatedTags(minis);
+  const [tagList] = React.useState(useAggregatedTags(minis));
+
   const {
     raceFilter,
     setRaceFilter,
@@ -23,6 +27,8 @@ const GuidedSearch = ({ minis }) => {
     setArmorFilter,
     paintedFilter,
     setPaintedFilter,
+    lineFilter,
+    setLineFilter,
     ignoreMonsters,
     setIgnoreMonsters,
     filteredMiniatures,
@@ -33,8 +39,17 @@ const GuidedSearch = ({ minis }) => {
     setWeaponFilter("all");
     setArmorFilter("all");
     setPaintedFilter("all");
+    setLineFilter("all");
     setIgnoreMonsters(false);
   };
+
+  useEffect(() => {
+    console.log("tagList", tagList);
+  }, [tagList]);
+
+  useEffect(() => {
+    console.log("selectedLine", lineFilter);
+  }, [lineFilter]);
 
   return (
     <>
@@ -59,6 +74,9 @@ const GuidedSearch = ({ minis }) => {
           />
         </Col>
         <Col md={6}>
+          <Filter title="Line" value={lineFilter} setValue={setLineFilter} options={tagList.line} />
+        </Col>
+        <Col md={6}>
           <Filter
             title="Painted"
             value={paintedFilter}
@@ -77,7 +95,7 @@ const GuidedSearch = ({ minis }) => {
             />
           </div>
         </Col>
-        <Col sm={6}>
+        <Col sm={6} md={12}>
           <div className="float-end">
             <Button variant="primary" onClick={() => resetAll()}>
               Reset All Filters

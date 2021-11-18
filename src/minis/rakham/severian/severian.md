@@ -4,8 +4,6 @@ name: Severian
 line:
   - Confrontation
   - Griffins of Akkylannie
-categories:
-  - Other Miniatures
 photos:
   - ./Confrontation-Severian.jpg
 weapons:

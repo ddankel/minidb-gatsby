@@ -7,8 +7,6 @@ line:
   - Hordes
   - Legion of Everblight
 painted: 2009
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-Hordes-LoE-Deathstalker-Dankel_1.jpg
   - ./PP-Hordes-LoE-Deathstalker-Dankel_2.jpg

@@ -5,8 +5,6 @@ line:
   - Warhammer
   - Dark Elves
 painted: 2003
-categories:
-  - Other Miniatures
 photos:
   - ./GW-DarkElfCorasirConversion-Dankel_1.jpg
   - ./GW-DarkElfCorasirConversion-Dankel_2.jpg

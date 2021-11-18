@@ -5,8 +5,6 @@ line:
   - Warhammer
   - Dark Elves
 painted: 2008
-categories:
-  - Other Miniatures
 photos:
   - ./GW-DarkElfWarriors-Dankel_1.jpg
   - ./GW-DarkElfWarriors-Dankel_2.jpg

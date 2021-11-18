@@ -6,8 +6,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: April 2014 - May 2014
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper3166-AlistrileeElfArcher-Dankel_1.jpg
   - ./Reaper3166-AlistrileeElfArcher-Dankel_2.jpg

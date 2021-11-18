@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Mercenaries
 painted: 2010
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-WM-Merc-Anastasia-Dankel_1.jpg
   - ./PP-WM-Merc-Anastasia-Dankel_2.jpg

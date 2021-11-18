@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2005
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2938-BorisEvilFighter-Dankel_1.jpg
   - ./Reaper2938-BorisEvilFighter-Dankel_2.jpg

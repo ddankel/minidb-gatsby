@@ -7,8 +7,6 @@ line:
   - Warmachine
   - Mercenaries
 painted: 2008
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-WM-Merc-AiyanaAndHolt-Dankel_1.jpg
   - ./PP-WM-Merc-AiyanaAndHolt-Dankel_2.jpg

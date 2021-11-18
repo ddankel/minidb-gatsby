@@ -4,8 +4,6 @@ name: High Elf Irregular
 line:
   - Ral Partha
 painted: 2004
-categories:
-  - Other Miniatures
 photos:
   - ./RalPartha-HighElfIrregular-Dankel_1.jpg
   - ./RalPartha-HighElfIrregular-Dankel_2.jpg

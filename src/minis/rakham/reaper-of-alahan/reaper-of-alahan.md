@@ -5,8 +5,6 @@ line:
   - Confrontation
   - Lions of Alahan
 painted: 2003
-categories:
-  - Other Miniatures
 photos:
   - ./Confrontation-LionReaper-Dankel_1.jpg
   - ./Confrontation-LionReaper-Dankel_2.jpg

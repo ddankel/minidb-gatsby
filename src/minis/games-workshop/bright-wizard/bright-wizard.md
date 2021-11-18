@@ -4,8 +4,6 @@ name: Bright Wizard
 line:
   - Warhammer
   - Empire
-categories:
-  - Other Miniatures
 photos:
   - ./BrightWizard-Dankel.jpg
 weapons:
@@ -17,3 +15,9 @@ armor:
 race:
   - human
 ---
+
+## Recipes
+
+Antique Golds:
+
+- GW Chainmail : GW Golds in 1:1

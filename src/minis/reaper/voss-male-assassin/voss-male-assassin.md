@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2016
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper77093-DragoVossMaleAssassin-Dankel_1.jpg
   - ./Reaper77093-DragoVossMaleAssassin-Dankel_2.jpg
@@ -20,3 +18,16 @@ armor:
   - leather
 is_painted: wip
 ---
+
+## Recipes
+
+Coat:
+
+- P3 Ironhull Gray
+- Shade Black
+- Highlight VMC Sky Gray
+
+Ruffles:
+
+- Base P3 Arcane Blue
+- Mix P3 Coal Black wash

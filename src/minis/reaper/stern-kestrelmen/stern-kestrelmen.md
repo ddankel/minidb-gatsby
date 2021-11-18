@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: May 2009
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper3324-SternKestrelmen-Dankel_1.jpg
   - ./Reaper3324-SternKestrelmen-Dankel_2.jpg

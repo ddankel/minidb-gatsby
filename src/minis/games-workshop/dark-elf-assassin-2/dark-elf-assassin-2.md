@@ -5,8 +5,6 @@ line:
   - Warhammer
   - Dark Elves
 painted: April 2016 - June 2016
-categories:
-  - Other Miniatures
 photos:
   - ./DarkElfAssassin-Dankel.jpg
 weapons:
@@ -31,3 +29,9 @@ Cloak:
 
 - Base P3 Meridius Blue
 - Shade P3 Coal Black
+
+Skin:
+
+- Base P3 Idrian Flesh
+- Shade mixing in black
+- Highlight mixing in P3 Midlund Flesh

@@ -5,8 +5,6 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2009
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2591-ValdarynnArchMage-Dankel_1.jpg
   - ./Reaper2591-ValdarynnArchMage-Dankel_2.jpg

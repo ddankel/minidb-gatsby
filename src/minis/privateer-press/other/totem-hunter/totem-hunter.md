@@ -7,8 +7,6 @@ line:
   - Hordes
   - Minions
 painted: 2007
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-Hordes-Minion-TotemHunter-Dankel_1.jpg
   - ./PP-Hordes-Minion-TotemHunter-Dankel_2.jpg

@@ -5,8 +5,6 @@ line:
   - Confrontation
   - Griffins of Akkylannie
 painted: 2003
-categories:
-  - Other Miniatures
 photos:
   - ./Confrontation-GriffonInquisitor-Dankel_1.jpg
   - ./Confrontation-GriffonInquisitor-Dankel_2.jpg

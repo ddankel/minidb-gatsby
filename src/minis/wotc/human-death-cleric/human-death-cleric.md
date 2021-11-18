@@ -5,8 +5,6 @@ line:
   - Chainmail
   - Ahmut's Legion
 painted: 2005
-categories:
-  - Other Miniatures
 photos:
   - ./Chainmail-HumanDeathCleric-Dankel_1.jpg
   - ./Chainmail-HumanDeathCleric-Dankel_2.jpg

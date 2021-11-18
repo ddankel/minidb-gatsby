@@ -7,7 +7,7 @@ function useMiniatureFilter(collection) {
   const [armorFilter, setArmorFilter] = useLocalStorage("armor-filter", "all");
   const [paintedFilter, setPaintedFilter] = useLocalStorage("painted-filter", "all");
   const [nameFilter, setNameFilter] = useLocalStorage("name-filter", "all");
-  const [lineFilter, setLineFilter] = useLocalStorage("line-filter", "all");
+  const [lineFilter, setLineFilter] = useLocalStorage("line-filter", "All");
   const [filteredMiniatures, setFilteredMiniatures] = useState(collection);
   const [ignoreMonsters, setIgnoreMonsters] = useLocalStorage("switch-ignore-monsters", false);
 
@@ -24,7 +24,7 @@ function useMiniatureFilter(collection) {
             filter: paintedFilter,
           }) &&
           allOrMatchesFilter({ value: mini.frontmatter.name, filter: nameFilter }) &&
-          allOrMatchesFilter({ value: mini.frontmatter.line, filter: lineFilter })
+          matchesLine({ value: mini.frontmatter.line, filter: lineFilter })
         );
       });
     };
@@ -42,9 +42,12 @@ function useMiniatureFilter(collection) {
   ]);
 
   const isMonster = (mini) => {
+    const jsonRace = JSON.stringify(mini.frontmatter.race);
+
     return (
-      JSON.stringify(mini.frontmatter.race) === JSON.stringify(["dragonspawn"]) ||
-      mini.frontmatter.race?.some((item) => ["golem", "warjack"].includes(item))
+      jsonRace === JSON.stringify(["dragonspawn"]) ||
+      jsonRace === JSON.stringify(["golem"]) ||
+      mini.frontmatter.race?.some((item) => ["warjack"].includes(item))
     );
   };
 
@@ -52,6 +55,13 @@ function useMiniatureFilter(collection) {
     value = [value || ""].flat().map((item) => item.toLowerCase());
     filter = filter.toLowerCase();
     return filter === "all" || value.includes(filter);
+  };
+
+  const matchesLine = ({ value, filter }) => {
+    if (filter === "all") return true;
+
+    const compiledLine = [value || ""].flat().join(" > ");
+    return compiledLine.startsWith(filter);
   };
 
   return {

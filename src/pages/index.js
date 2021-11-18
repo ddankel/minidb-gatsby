@@ -17,6 +17,10 @@ export const query = graphql`
             publicURL
             childImageSharp {
               gatsbyImageData(width: 100, quality: 80, aspectRatio: 1, formats: [AUTO])
+              fixed(cropFocus: NORTH) {
+                src
+                srcSet
+              }
             }
           }
           weapons

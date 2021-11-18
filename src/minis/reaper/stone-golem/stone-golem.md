@@ -5,14 +5,12 @@ line:
   - Reaper Miniatures
   - Dark Heaven Legends
 painted: 2004
-categories:
-  - Reaper Miniatures
 photos:
   - ./Reaper2751-StoneGolem-Dankel_1.jpg
   - ./Reaper2751-StoneGolem-Dankel_2.jpg
 race:
+  - obsidiman
   - golem
-  - stonechild
 ---
 
 ## Blog Post

@@ -5,8 +5,6 @@ line:
   - Confrontation
   - Mercenaries
 painted: 2009
-categories:
-  - Other Miniatures
 photos:
   - ./Confrontation-MercenaryAssassin-Dankel_1.jpg
   - ./Confrontation-MercenaryAssassin-Dankel_2.jpg

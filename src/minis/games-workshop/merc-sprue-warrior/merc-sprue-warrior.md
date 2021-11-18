@@ -4,8 +4,6 @@ name: Mercenary Sprue Warrior
 line:
   - Mordheim
   - Mercenaries
-categories:
-  - Other Miniatures
 photos:
   - ./GW-MercSprueWarrior-Dankel.jpg
 weapons:

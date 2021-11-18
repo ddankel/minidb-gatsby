@@ -7,8 +7,6 @@ line:
   - Hordes
   - Legion of Everblight
 painted: 2007, 2008
-categories:
-  - Warmachine & Hordes
 photos:
   - ./PP-Hordes-LoE-Seraph-Dankel_1.jpg
   - ./PP-Hordes-LoE-Seraph-Dankel_2.jpg

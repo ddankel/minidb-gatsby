@@ -4,8 +4,6 @@ name: Chaos Wizard
 line:
   - Warhammer
   - Chaos
-categories:
-  - Other Miniatures
 photos:
   - ./GW-ChaosWizard.jpg
 weapons:

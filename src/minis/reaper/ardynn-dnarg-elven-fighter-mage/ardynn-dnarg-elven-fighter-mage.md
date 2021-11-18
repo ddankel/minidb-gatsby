@@ -5,7 +5,6 @@ line:
   - Reaper Miniatures
   - Warlord
 painted: 2005
-categories: Reaper Miniatures
 photos:
   - ./Reaper14046-ArdynnDNarg-Dankel_1.jpg
   - ./Reaper14046-ArdynnDNarg-Dankel_2.jpg
