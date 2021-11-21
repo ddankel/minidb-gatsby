@@ -1,15 +1,39 @@
-import { useState, useEffect } from "react";
-import useLocalStorage from "./useLocalStorage";
+import React, { useState, useEffect, useContext } from "react";
+import useMiniatureCollection from "../hooks/useMiniatureCollection";
+import useSessionStorage from "../hooks/useSessionStorage";
 
-function useMiniatureFilter(collection) {
-  const [raceFilter, setRaceFilter] = useLocalStorage("race-filter", "all");
-  const [weaponFilter, setWeaponFilter] = useLocalStorage("weapon-filter", "all");
-  const [armorFilter, setArmorFilter] = useLocalStorage("armor-filter", "all");
-  const [paintedFilter, setPaintedFilter] = useLocalStorage("painted-filter", "all");
-  const [nameFilter, setNameFilter] = useLocalStorage("name-filter", "all");
-  const [lineFilter, setLineFilter] = useLocalStorage("line-filter", "All");
+const defaultState = {
+  raceFilter: "all",
+  setRaceFilter: () => {},
+  weaponFilter: "all",
+  setWeaponFilter: () => {},
+  armorFilter: "all",
+  setArmorFilter: () => {},
+  paintedFilter: "all",
+  setPaintedFilter: () => {},
+  nameFilter: "all",
+  setNameFilter: () => {},
+  lineFilter: "all",
+  setLineFilter: () => {},
+  ignoreMonsters: false,
+  setIgnoreMonsters: () => {},
+  filteredMiniatures: [],
+  isFiltered: false,
+};
+
+export const FilterContext = React.createContext(defaultState);
+export const useFilterContext = () => useContext(FilterContext);
+
+export const FilterProvider = (props) => {
+  const collection = useMiniatureCollection();
+  const [raceFilter, setRaceFilter] = useSessionStorage("race-filter", "all");
+  const [weaponFilter, setWeaponFilter] = useSessionStorage("weapon-filter", "all");
+  const [armorFilter, setArmorFilter] = useSessionStorage("armor-filter", "all");
+  const [paintedFilter, setPaintedFilter] = useSessionStorage("painted-filter", "all");
+  const [nameFilter, setNameFilter] = useSessionStorage("name-filter", "all");
+  const [lineFilter, setLineFilter] = useSessionStorage("line-filter", "all");
   const [filteredMiniatures, setFilteredMiniatures] = useState(collection);
-  const [ignoreMonsters, setIgnoreMonsters] = useLocalStorage("switch-ignore-monsters", false);
+  const [ignoreMonsters, setIgnoreMonsters] = useSessionStorage("switch-ignore-monsters", false);
 
   useEffect(() => {
     const applyFilter = () => {
@@ -64,7 +88,13 @@ function useMiniatureFilter(collection) {
     return compiledLine.startsWith(filter);
   };
 
-  return {
+  const isFiltered =
+    ignoreMonsters ||
+    [raceFilter, weaponFilter, armorFilter, paintedFilter, lineFilter].some(
+      (item) => item !== "all"
+    );
+
+  const state = {
     raceFilter,
     setRaceFilter,
     weaponFilter,
@@ -80,7 +110,8 @@ function useMiniatureFilter(collection) {
     ignoreMonsters,
     setIgnoreMonsters,
     filteredMiniatures,
+    isFiltered,
   };
-}
 
-export default useMiniatureFilter;
+  return <FilterContext.Provider value={state}>{props.children}</FilterContext.Provider>;
+};

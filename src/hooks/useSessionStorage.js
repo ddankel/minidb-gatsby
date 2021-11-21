@@ -1,21 +1,25 @@
-/**
- * useLocalStorage
- *
- * Sync state to local storage so that it persists through a page refresh. Usage
- * is similar to useState except we pass in a local storage key so that we can
- * default to that value on page load instead of the specified initial value.
- *
- * @see https://usehooks.com/useLocalStorage/
- */
 import { useState } from "react";
 
-function useLocalStorage(key, initialValue) {
+/**
+ * SessionStorage-backed useState-like hook
+ *
+ * @param   {String}  key           Key to store the value in
+ * @param   {*}       initialValue  Initial value of the state
+ *
+ * @return  {Array}
+ */
+function useSessionStorage(key, initialValue) {
+  const isBrowser = typeof window !== "undefined";
+
   // State to store our value
   // Pass initial state function to useState so logic is only executed once
   const [storedValue, setStoredValue] = useState(() => {
     try {
       // Get from local storage by key
-      const item = window.localStorage.getItem(key);
+      let item;
+      if (isBrowser) {
+        item = window.sessionStorage.getItem(key);
+      }
       // Parse stored json or if none return initialValue
       return item ? JSON.parse(item) : initialValue;
     } catch (error) {
@@ -26,7 +30,7 @@ function useLocalStorage(key, initialValue) {
   });
 
   // Return a wrapped version of useState's setter function that ...
-  // ... persists the new value to localStorage.
+  // ... persists the new value to sessionStorage.
   const setValue = (value) => {
     try {
       // Allow value to be a function so we have same API as useState
@@ -34,7 +38,9 @@ function useLocalStorage(key, initialValue) {
       // Save state
       setStoredValue(valueToStore);
       // Save to local storage
-      window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      if (isBrowser) {
+        window.sessionStorage.setItem(key, JSON.stringify(valueToStore));
+      }
     } catch (error) {
       // A more advanced implementation would handle the error case
       console.log(error);
@@ -44,4 +50,4 @@ function useLocalStorage(key, initialValue) {
   return [storedValue, setValue];
 }
 
-export default useLocalStorage;
+export default useSessionStorage;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
+import { FaUndo } from "react-icons/fa";
 
 const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) => {
   const buttonVariant = value !== defaultValue ? "primary" : "secondary";
@@ -27,7 +28,7 @@ const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) 
             onClick={() => setValue(defaultValue)}
             disabled={isBtnDisabled}
           >
-            <i className="bi bi-arrow-clockwise" alt="reset"></i>
+            <FaUndo />
           </Button>
         </InputGroup>
       </Col>

@@ -1,21 +1,22 @@
-import React, { useEffect } from "react";
-import { Row, Col, Form, Button } from "react-bootstrap";
-import { InputGroup } from "react-bootstrap";
+import React from "react";
 
+import { Row, Col, Form, Button } from "react-bootstrap";
 import styled from "styled-components";
 
 import Filter from "./Filter";
 import Gallery from "./Gallery";
 
-import useMiniatureFilter from "./hooks/use_miniature_filter";
-import useAggregatedTags from "./hooks/use_aggregated_tags";
+import useAggregatedTags from "../../hooks/useAggregatedTags";
+import useMiniatureCollection from "../../hooks/useMiniatureCollection";
+
+import { useFilterContext } from "../../context/FilterContext";
 
 const Spacer = styled.div`
   height: 2rem;
 `;
 
-const GuidedSearch = ({ minis }) => {
-  // const tagList = useAggregatedTags(minis);
+const GuidedSearchPage = () => {
+  const minis = useMiniatureCollection();
   const [tagList] = React.useState(useAggregatedTags(minis));
 
   const {
@@ -32,7 +33,8 @@ const GuidedSearch = ({ minis }) => {
     ignoreMonsters,
     setIgnoreMonsters,
     filteredMiniatures,
-  } = useMiniatureFilter(minis);
+    isFiltered,
+  } = useFilterContext();
 
   const resetAll = () => {
     setRaceFilter("all");
@@ -42,14 +44,6 @@ const GuidedSearch = ({ minis }) => {
     setLineFilter("all");
     setIgnoreMonsters(false);
   };
-
-  useEffect(() => {
-    console.log("tagList", tagList);
-  }, [tagList]);
-
-  useEffect(() => {
-    console.log("selectedLine", lineFilter);
-  }, [lineFilter]);
 
   return (
     <>
@@ -97,7 +91,12 @@ const GuidedSearch = ({ minis }) => {
         </Col>
         <Col sm={6} md={12}>
           <div className="float-end">
-            <Button variant="primary" onClick={() => resetAll()}>
+            <Button
+              variant="primary"
+              onClick={() => resetAll()}
+              disabled={!isFiltered}
+              variant={isFiltered ? "primary" : "secondary"}
+            >
               Reset All Filters
             </Button>
           </div>
@@ -110,4 +109,4 @@ const GuidedSearch = ({ minis }) => {
   );
 };
 
-export default GuidedSearch;
+export default GuidedSearchPage;

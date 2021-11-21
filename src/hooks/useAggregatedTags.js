@@ -1,5 +1,13 @@
 import { useState } from "react";
 
+/**
+ * Aggregate the specified attribute tag (frontmatter) for all miniatures
+ *
+ * @param   {Array}   minis      Miniatures to aggregate
+ * @param   {String}  attribute  Attribute key to aggregate
+ *
+ * @return  {Array}              Unique, sorted array
+ */
 const _attributesToArray = (minis, attribute) => {
   const allValues = minis
     .map((item) => item.frontmatter[attribute])
@@ -10,6 +18,18 @@ const _attributesToArray = (minis, attribute) => {
   return dedupedArray.sort();
 };
 
+/**
+ * Aggregate the 'lines' values for the provided miniatures
+ *
+ * Lines are aggregated differently.  If a miniature has a line of
+ * "Manufacturer > Game > Faction", then "Manufacturer",
+ * "Manufacturer > Game", and Manufacturer > Game > Faction" will all
+ * be added to the aggregate collection.
+ *
+ * @param   {Array}  minis  Miniatures to aggregate
+ *
+ * @return  {Array}         Unique, sorted array
+ */
 const _collectLines = (minis) => {
   const allLines = [];
 
@@ -27,6 +47,13 @@ const _collectLines = (minis) => {
   return [...new Set([...allLines])].sort();
 };
 
+/**
+ * Parse all miniatures and aggregate their frontmatter tags
+ *
+ * @param   {Array}  collection  Array of miniatures
+ *
+ * @return  {Object}
+ */
 const useAggregatedTags = (collection) => {
   const [minis] = useState(collection);
 
