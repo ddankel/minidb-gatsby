@@ -3,7 +3,7 @@ slug: valeros-iconic-male-human-fighter
 name: Valeros, Iconic Male Human Fighter
 line:
   - Reaper Miniatures
-  - Pathfinder Miniatures
+  - Pathfinder
 painted: 2010
 photos:
   - ./Reaper6001-ValerosIconicMaleHumanFighter-Dankel_1.jpg

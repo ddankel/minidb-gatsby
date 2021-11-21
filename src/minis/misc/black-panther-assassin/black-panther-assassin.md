@@ -8,7 +8,7 @@ painted: 2007
 photos:
   - ./HundredKingdoms-BlackPantherAssassin-Dankel.jpg
 race:
-  - cat
+  - tabaxi
 weapons:
   - sword
 armor:

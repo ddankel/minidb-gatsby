@@ -6,7 +6,7 @@ line:
   - Pathfinder
 painted: 2016
 photos:
-  - ../../missing-image.png
+  - ./Reaper60182-HakonIconicSkald-Dankel_wip.jpg
 race:
   - human
 weapons:

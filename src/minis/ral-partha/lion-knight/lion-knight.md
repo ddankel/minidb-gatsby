@@ -11,5 +11,5 @@ armor:
   - plate
   - cloak
 race:
-  - cat
+  - tabaxi
 ---

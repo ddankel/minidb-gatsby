@@ -2,6 +2,8 @@ import React from "react";
 import { getImage } from "gatsby-plugin-image";
 import ImageGallery from "react-image-gallery";
 
+import GatsbyImage from "../../GatsbyImage";
+
 import styled from "styled-components";
 import "./styles.css";
 
@@ -16,9 +18,10 @@ const Gallery = ({ photos }) => {
   const miniImages = [];
 
   if (photos.length === 1) {
+    const photo = getImage(photos[0]);
     return (
       <center>
-        <img alt="" src={photos[0].publicURL} />
+        <GatsbyImage image={photo} alt="" />
       </center>
     );
   }

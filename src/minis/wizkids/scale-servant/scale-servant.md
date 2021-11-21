@@ -12,5 +12,6 @@ armor:
   - leather
   - shield
 race:
-  - lizardman
+  - t'skrang
+  - lizardfolk
 ---

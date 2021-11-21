@@ -17,6 +17,8 @@ weapons:
 armor:
   - plate
   - mail
+race:
+  - unknown
 ---
 
 ## Blog Post
