@@ -1,5 +1,5 @@
 ---
-slug: blighted-ogrun-warmonger
+slug: blighted-ogrun-warmonger-war-chiefs
 name: Blighted Ogrun Warmonger War Chiefs
 sku: Blighted Ogrun Warmonger War Chiefs, Legion Solo
 line:

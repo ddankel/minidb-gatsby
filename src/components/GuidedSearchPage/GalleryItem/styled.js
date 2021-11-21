@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-export const GalleryWrapper = styled.div`
-  display: inline-flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-`;
-
 export const Miniature = styled.div`
   padding: 0.25rem;
   cursor: pointer;

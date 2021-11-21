@@ -8,19 +8,23 @@ import splitRenderedHtml from "../../utils/split_rendered_html";
 import Gallery from "./Gallery";
 import InfoTabs from "./InfoTabs";
 import TagList from "./TagList";
+import Navigator from "./Navigator";
 
 const Spacer = styled.div`
   height: 2rem;
 `;
 
-const Miniature = ({ frontmatter, html }) => {
+const MiniaturePage = ({ frontmatter, html }) => {
   const bodySections = splitRenderedHtml(html);
-  const miniatureLine = [...frontmatter.line, frontmatter.sku || frontmatter.name].join(" > ");
+  const miniatureLine = [...frontmatter.line].join(" > ");
 
   return (
     <MiniatureLayout>
+      <Navigator current={frontmatter.slug} />
+      <p className="mb-0">
+        {miniatureLine} {">"}
+      </p>
       <h1>{frontmatter.name}</h1>
-      <p>{miniatureLine}</p>
       {frontmatter.painted && <p>Painted: {frontmatter.painted}</p>}
       <Gallery photos={frontmatter.photos} />
       <Spacer />
@@ -33,4 +37,4 @@ const Miniature = ({ frontmatter, html }) => {
   );
 };
 
-export default Miniature;
+export default MiniaturePage;

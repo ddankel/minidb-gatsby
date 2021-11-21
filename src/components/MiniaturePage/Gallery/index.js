@@ -23,7 +23,7 @@ const Gallery = ({ photos }) => {
     );
   }
 
-  photos.forEach((src, index) => {
+  photos.forEach((src) => {
     miniImages.push({
       original: src.publicURL,
       thumbnail: getImage(src).images.fallback.src,
