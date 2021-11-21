@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://minidb.dankelzahn.com",
     title: "MiniDB",
   },
   plugins: [
@@ -8,14 +8,14 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "images",
+    //     path: "./src/images/",
+    //   },
+    //   __key: "images",
+    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -26,5 +26,13 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        sitemap: null,
+        host: null,
+        policy: [{ userAgent: "*", disallow: "/" }],
+      },
+    },
   ],
 };
