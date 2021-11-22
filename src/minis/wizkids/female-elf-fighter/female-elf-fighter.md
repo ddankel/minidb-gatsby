@@ -5,7 +5,7 @@ sku: 73410 Female Elf Fighter
 line:
   - WizKids
   - Pathfinder Deep Cuts
-is_painted: wip
+status: wip
 photos:
   - ./WizKids-Pathfinder73410-FemaleElfFighter.jpg
 weapons:

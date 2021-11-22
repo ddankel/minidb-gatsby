@@ -3,7 +3,7 @@ slug: troglodyte
 name: Troglodyte
 line:
   - D&D Miniatures
-is_painted: prepainted
+status: prepainted
 photos:
   - ./DnDMiniatures-Troglodyte_1.jpg
 weapons:

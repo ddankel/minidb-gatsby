@@ -13,5 +13,5 @@ armor:
 race:
   - t'skrang
   - lizardfolk
-is_painted: prepainted
+status: prepainted
 ---

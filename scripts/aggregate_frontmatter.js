@@ -3,7 +3,7 @@ const getMarkdownFiles = require("./utils/get_markdown_files");
 const getFrontmatter = require("./utils/get_frontmatter");
 
 const miniPath = path.join(__dirname, "../src/minis");
-const indexableAttributes = ["weapons", "armor", "race", "is_painted"];
+const indexableAttributes = ["weapons", "armor", "race", "status"];
 const aggregatableAttributes = ["line"];
 const attributeIndex = {};
 

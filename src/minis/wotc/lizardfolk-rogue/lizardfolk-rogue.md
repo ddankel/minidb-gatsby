@@ -3,7 +3,7 @@ slug: lizardfolk-rogue
 name: Lizardfolk Rogue
 line:
   - D&D Miniatures
-is_painted: prepainted
+status: prepainted
 photos:
   - ./DnDMiniatures-LizardfolkRogue_1.jpg
 weapons:

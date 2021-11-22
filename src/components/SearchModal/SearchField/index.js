@@ -34,7 +34,7 @@ const SearchField = () => {
                 weapons
                 armor
                 race
-                is_painted
+                status
               }
             }
           }

@@ -16,7 +16,7 @@ weapons:
 armor:
   - plate
   - leather
-is_painted: wip
+status: wip
 ---
 
 ## Recipes

@@ -66,7 +66,7 @@ const useAggregatedTags = (collection) => {
   weaponTags.push(..._attributesToArray(minis, "weapons"));
   armorTags.push(..._attributesToArray(minis, "armor"));
   raceTags.push(..._attributesToArray(minis, "race"));
-  paintedTags.push(..._attributesToArray(minis, "is_painted"));
+  paintedTags.push(..._attributesToArray(minis, "status"));
   lineTags.push(..._collectLines(minis));
 
   // TODO: Manufacturer/Lines
@@ -75,7 +75,7 @@ const useAggregatedTags = (collection) => {
     weapons: weaponTags,
     armor: armorTags,
     race: raceTags,
-    is_painted: paintedTags,
+    status: paintedTags,
     line: lineTags,
   };
 };

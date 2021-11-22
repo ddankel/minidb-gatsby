@@ -14,7 +14,7 @@ const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) 
       <Col sm={9}>
         <InputGroup>
           <Form.Select value={value} onChange={(e) => setValue(e.target.value)}>
-            <option value="all">All</option>
+            <option value="all">Any</option>
             {options
               .filter((item) => item !== null)
               .map((item) => (

@@ -72,10 +72,10 @@ const GuidedSearchPage = () => {
         </Col>
         <Col md={6}>
           <Filter
-            title="Painted"
+            title="Status"
             value={paintedFilter}
             setValue={setPaintedFilter}
-            options={tagList.is_painted}
+            options={tagList.status}
           />
         </Col>
         <Col sm={6}>

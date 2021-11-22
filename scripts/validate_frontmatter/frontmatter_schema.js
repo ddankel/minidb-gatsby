@@ -55,7 +55,7 @@ const validValues = {
     "unknown",
     "warjack",
   ],
-  is_painted: ["prepainted", "unpainted", "wip", "painted", "unassembled", undefined],
+  status: ["prepainted", "unpainted", "wip", "painted", "unassembled", undefined],
 };
 
 /**
@@ -95,11 +95,11 @@ const schema = [
     required: false,
   },
   {
-    key: "is_painted",
+    key: "status",
     type: "scalar",
     required: false,
-    values: validValues.is_painted,
-    deprecatedValues: deprecatedValues.is_painted,
+    values: validValues.status,
+    deprecatedValues: deprecatedValues.status,
   },
   {
     key: "photos",

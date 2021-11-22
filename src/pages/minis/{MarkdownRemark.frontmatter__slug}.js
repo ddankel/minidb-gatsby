@@ -23,7 +23,7 @@ export const pageQuery = graphql`
         weapons
         armor
         race
-        is_painted
+        status
       }
     }
   }

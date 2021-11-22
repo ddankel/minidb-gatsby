@@ -13,7 +13,7 @@ armor:
   - shield
 race:
   - human
-is_painted: prepainted
+status: prepainted
 ---
 
 n.a

@@ -4,7 +4,7 @@ name: Leech Troll
 line:
   - WizKids
   - Mage Knight
-is_painted: prepainted
+status: prepainted
 photos:
   - ./MK-LeechTroll_1.jpg
 weapons:

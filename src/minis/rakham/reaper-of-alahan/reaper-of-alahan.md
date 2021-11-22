@@ -15,7 +15,7 @@ weapons:
   - pistol
 armor:
   - clothing
-is_painted: painted
+status: painted
 ---
 
 ## Blog Post

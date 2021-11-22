@@ -16,7 +16,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "aggregate-fm": "node ./scripts/aggregate_frontmatter",
+    "list-fm": "node ./scripts/aggregate_frontmatter",
     "validate-fm": "node ./scripts/validate_frontmatter"
   },
   "dependencies": {

@@ -12,5 +12,5 @@ armor:
   - plate
 race:
   - human
-is_painted: prepainted
+status: prepainted
 ---

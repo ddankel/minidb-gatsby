@@ -20,7 +20,7 @@ export const query = graphql`
           name
           line
           painted
-          is_painted
+          status
           sku
           weapons
           armor

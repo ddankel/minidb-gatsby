@@ -44,7 +44,7 @@ export const FilterProvider = (props) => {
           allOrMatchesFilter({ value: mini.frontmatter.weapons, filter: weaponFilter }) &&
           allOrMatchesFilter({ value: mini.frontmatter.armor, filter: armorFilter }) &&
           allOrMatchesFilter({
-            value: mini.frontmatter.is_painted || "painted",
+            value: mini.frontmatter.status || "painted",
             filter: paintedFilter,
           }) &&
           allOrMatchesFilter({ value: mini.frontmatter.name, filter: nameFilter }) &&

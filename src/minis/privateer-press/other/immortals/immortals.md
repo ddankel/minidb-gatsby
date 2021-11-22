@@ -6,7 +6,7 @@ line:
   - Privateer Press
   - Hordes
   - Skorne
-is_painted: unassembled
+status: unassembled
 photos:
   - ./WM-Skorne-Immortals.png
 weapons:

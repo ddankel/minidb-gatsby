@@ -14,5 +14,5 @@ weapons:
   - instrument
 armor:
   - clothing
-is_painted: wip
+status: wip
 ---

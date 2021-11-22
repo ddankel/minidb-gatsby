@@ -4,7 +4,7 @@ name: Troll Smasher
 line:
   - WizKids
   - Mage Knight
-is_painted: prepainted
+status: prepainted
 photos:
   - ./MK-TrollSmasher.jpg
 weapons:

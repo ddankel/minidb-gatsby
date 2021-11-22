@@ -13,5 +13,5 @@ armor:
   - plate
 race:
   - half-orc
-is_painted: prepainted
+status: prepainted
 ---

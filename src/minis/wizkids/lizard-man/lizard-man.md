@@ -4,7 +4,7 @@ name: Lizard Man
 line:
   - WizKids
   - Mage Knight
-is_painted: prepainted
+status: prepainted
 photos:
   - ./MK-LizardMan_1.jpg
 weapons:
