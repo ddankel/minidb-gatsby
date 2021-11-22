@@ -6,7 +6,8 @@ line:
   - Kilsek
 painted: April 2014 - May 2014
 photos:
-  - ../../missing-image.png
+  - ./Chainmail-DrowRanger-Dankel_1.jpg
+  - ./Chainmail-DrowRanger-Dankel_2.jpg
 weapons:
   - sword
 armor:
@@ -14,7 +15,6 @@ armor:
   - cloak
 race:
   - elf
-is_painted: wip
 ---
 
 ## Recipe

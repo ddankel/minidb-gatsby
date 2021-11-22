@@ -12,5 +12,5 @@ armor:
   - clothing
 race:
   - human
-is_painted: prepainted
+status: prepainted
 ---

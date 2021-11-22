@@ -11,6 +11,7 @@ weapons:
 armor:
   - clothing
 race:
-  - lizardman
-is_painted: prepainted
+  - t'skrang
+  - lizardfolk
+status: prepainted
 ---

@@ -15,5 +15,5 @@ armor:
 race:
   - human
   - elf
-is_painted: prepainted
+status: prepainted
 ---

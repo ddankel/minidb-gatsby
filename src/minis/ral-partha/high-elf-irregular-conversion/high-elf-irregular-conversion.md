@@ -15,7 +15,7 @@ armor:
   - leather
   - cloak
 race:
-  - cat
+  - tabaxi
 ---
 
 ## Blog Post

@@ -8,7 +8,8 @@ painted: 2004
 photos:
   - ./Chainmail-TroglodyteWarrior-Dankel_1.jpg
 race:
-  - lizardman
+  - t'skrang
+  - lizardfolk
 weapons:
   - sword
 armor:

@@ -13,7 +13,7 @@ armor:
   - plate
 race:
   - human
-is_painted: wip
+status: wip
 ---
 
 ## Recipes

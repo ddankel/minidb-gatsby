@@ -15,5 +15,6 @@ weapons:
 armor:
   - clothing
 race:
-  - lizardman
+  - t'skrang
+  - lizardfolk
 ---

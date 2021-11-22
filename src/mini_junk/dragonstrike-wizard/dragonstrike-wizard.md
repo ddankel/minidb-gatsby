@@ -12,5 +12,5 @@ armor:
   - clothing
 race:
   - human
-is_painted: unpainted
+status: unpainted
 ---

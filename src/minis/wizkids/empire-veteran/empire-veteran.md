@@ -12,5 +12,5 @@ armor:
   - leather
 race:
   - human
-is_painted: prepainted
+status: prepainted
 ---

@@ -1,0 +1,40 @@
+import React from "react";
+
+import MiniatureLayout from "../../layouts/MiniatureLayout";
+
+import styled from "styled-components";
+
+import splitRenderedHtml from "../../utils/split_rendered_html";
+import Gallery from "./Gallery";
+import InfoTabs from "./InfoTabs";
+import TagList from "./TagList";
+import Navigator from "./Navigator";
+
+const Spacer = styled.div`
+  height: 2rem;
+`;
+
+const MiniaturePage = ({ frontmatter, html }) => {
+  const bodySections = splitRenderedHtml(html);
+  const miniatureLine = [...frontmatter.line].join(" > ");
+
+  return (
+    <MiniatureLayout>
+      <Navigator current={frontmatter.slug} />
+      <p className="mb-0">
+        {miniatureLine} {">"}
+      </p>
+      <h1>{frontmatter.name}</h1>
+      {frontmatter.painted && <p>Painted: {frontmatter.painted}</p>}
+      <Gallery photos={frontmatter.photos} />
+      <Spacer />
+      {bodySections.length ? (
+        <InfoTabs frontmatter={frontmatter} bodySections={bodySections} />
+      ) : (
+        <TagList frontmatter={frontmatter} />
+      )}
+    </MiniatureLayout>
+  );
+};
+
+export default MiniaturePage;

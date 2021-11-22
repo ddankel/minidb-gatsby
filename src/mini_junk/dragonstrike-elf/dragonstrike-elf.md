@@ -11,5 +11,5 @@ armor:
   - leather
 race:
   - elf
-is_painted: unpainted
+status: unpainted
 ---

@@ -11,6 +11,7 @@ const validValues = {
     "bow",
     "chain weapon",
     "claw",
+    "club",
     "crossbow",
     "dagger",
     "grenade",
@@ -24,6 +25,7 @@ const validValues = {
     "rifle",
     "rocket pack",
     "scroll",
+    "scythe",
     "spear",
     "spell effect",
     "staff",
@@ -33,7 +35,7 @@ const validValues = {
   ],
   armor: ["cloak", "clothing", "leather", "mail", "plate", "powered armor", "robes", "shield"],
   race: [
-    "cat",
+    "draconian",
     "dragonspawn",
     "dwarf",
     "elf",
@@ -43,15 +45,17 @@ const validValues = {
     "halfling",
     "human",
     "lizardfolk",
-    "lizardman",
     "obsidiman",
     "ogre",
     "stonechild",
     "tabaxi",
+    "t'skrang",
     "troll",
+    "undead",
+    "unknown",
     "warjack",
   ],
-  is_painted: ["prepainted", "unpainted", "wip", "painted", "unassembled", undefined],
+  status: ["prepainted", "unpainted", "wip", "painted", "unassembled", undefined],
 };
 
 /**
@@ -67,7 +71,6 @@ const validValues = {
  *
  *
  */
-
 const schema = [
   {
     key: "slug",
@@ -92,11 +95,11 @@ const schema = [
     required: false,
   },
   {
-    key: "is_painted",
+    key: "status",
     type: "scalar",
     required: false,
-    values: validValues.is_painted,
-    deprecatedValues: deprecatedValues.is_painted,
+    values: validValues.status,
+    deprecatedValues: deprecatedValues.status,
   },
   {
     key: "photos",

@@ -12,5 +12,5 @@ armor:
   - cloak
 race:
   - human
-is_painted: prepainted
+status: prepainted
 ---

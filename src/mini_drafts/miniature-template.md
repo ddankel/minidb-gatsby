@@ -4,7 +4,7 @@ name: Miniature Template
 line:
   - Manufacturer
   - Line
-is_painted: prepainted
+status: prepainted
 painted: Nov 2012 - Feb 2014
 photos:
   - ./Line-MiniatureName-Dankel_1.jpg

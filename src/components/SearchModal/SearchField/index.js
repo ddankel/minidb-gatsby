@@ -34,7 +34,7 @@ const SearchField = () => {
                 weapons
                 armor
                 race
-                is_painted
+                status
               }
             }
           }
@@ -53,7 +53,6 @@ const SearchField = () => {
             clearButton
             highlightOnlyResult={true}
             onFocus={(e) => e.target.select()}
-            autoFocus={true}
             id="search miniatures by name"
             onChange={(selected) => navigateTo(selected)}
             options={options}

@@ -6,7 +6,7 @@ line:
   - Privateer Press
   - Warmachine
   - Retribution of Scyrah
-is_painted: unassembled
+status: unassembled
 photos:
   - ./280px-Lys_Healer.jpg
 weapons:
