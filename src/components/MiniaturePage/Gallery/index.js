@@ -41,6 +41,7 @@ const Gallery = ({ photos }) => {
         showBullets={true}
         useBrowserFullscreen={false}
         showNav={true}
+        thumbnailPosition="top"
       />
     </GalleryWrapper>
   );

@@ -17,7 +17,13 @@ export const pageQuery = graphql`
         photos {
           publicURL
           childImageSharp {
-            gatsbyImageData(width: 400, aspectRatio: 1, formats: [AUTO])
+            gatsbyImageData(
+              width: 400
+              aspectRatio: 1
+              formats: [AUTO]
+              placeholder: BLURRED
+              transformOptions: { cropFocus: NORTH }
+            )
           }
         }
         weapons

@@ -32,11 +32,14 @@ export const query = graphql`
           photos {
             publicURL
             childImageSharp {
-              gatsbyImageData(width: 100, quality: 80, aspectRatio: 1, formats: [AUTO])
-              fixed(cropFocus: NORTH) {
-                src
-                srcSet
-              }
+              gatsbyImageData(
+                width: 100
+                quality: 80
+                aspectRatio: 1
+                formats: [AUTO]
+                placeholder: BLURRED
+                transformOptions: { cropFocus: NORTH }
+              )
             }
           }
         }
