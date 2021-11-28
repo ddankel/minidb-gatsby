@@ -18,7 +18,7 @@ armor:
   - plate
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I tried something a little bit different with the Nephilim here compared with the rest of my early beasts. Instead of using a Sky Blue to highlight my Midnight Blue I use for a base coat I went with Rain Grey, hoping the result would be slightly more muted when compared with the Carnivean and the others. I think the experiment was a success, and the more detailed musculature on the Nephilim here really brought out the difference.
 

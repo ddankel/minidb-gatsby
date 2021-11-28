@@ -19,7 +19,7 @@ armor:
   - clothing
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Sometimes I think I go too far with muted color schemes. I always prefer them for something like Anastasia here instead of painting the spy in bright and garish colors but it doesn't translate to the table top nearly well.
 

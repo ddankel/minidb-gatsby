@@ -17,7 +17,7 @@ weapons:
   - natural weapons
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I wish that the Raek was as good in-game as it was as a model. I love this sleek, bitey little guy but I don't see him hitting the table very often. He receieved a much-needed boost in Mk II but I always seemed to spend his points on other options.
 

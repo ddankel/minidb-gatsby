@@ -20,7 +20,7 @@ armor:
   - shield
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Wielder of the dreaded butter knife of Menoth, the Avatar was a fun jack to paint. I chose to do more of my tannish white color on this as opposed to the purple armored plates I usually do on my warjacks to make it stand out from its brethren on the gaming table. Because I wanted the plates to look almost white I couldn't shade them too darkly. As a result the effect it subtle but I think that adds to the overall effect. The gradient is most evident on the sides pictures on the upper body and the forearms.
 

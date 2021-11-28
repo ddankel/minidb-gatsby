@@ -23,7 +23,7 @@ weapons:
   - mace
 ---
 
-## Blog Post
+## Archived Blog Post
 
 ### First Miniature
 

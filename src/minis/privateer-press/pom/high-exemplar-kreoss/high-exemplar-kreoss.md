@@ -22,7 +22,7 @@ armor:
   - robes
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Kreoss was the last model of my original battlebox I painted, and going back to cloth and a human-scale figure was surprisingly awkward for me. I had gotten such into the swing of painting steam-powered robots that I had to stop and think about it for a few moments.
 

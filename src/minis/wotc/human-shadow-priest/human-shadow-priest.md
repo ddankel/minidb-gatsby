@@ -16,7 +16,7 @@ armor:
   - plate
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I worked on the Shadow Priest, another figure from the old D&D Chainmail line, on and off for a while as a side project. It was originally meant to carry a shield, but I gave the shield to the a Death Cleric I painted from the same line as part of a weapon swap conversion.
 

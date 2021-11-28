@@ -19,7 +19,7 @@ weapons:
   - natural weapons
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I've found that the serpentine miniatures are some of the most difficult to paint, and the Angelius is the most serpentine Legion miniature there is. I had some good success with my Nephilim and Raek as of late primarily because of the more detailed musculature on those models whereas the more serpentine beasts with their smoother expansive areas of flesh seemed more difficult to pull off realistically. There's not as many wrinkles, creases, or other hints where to place shadows and highlights.
 

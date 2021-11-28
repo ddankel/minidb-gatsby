@@ -17,7 +17,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 The Earthdawn RPG has races and classes that are somewhat non-standard by traditional means. One of the characters in the game I ran, Tridae, was a Beastmaster. In Earthdawn Beastmasters typically learn to shape their hands into claws. Since we really only use miniatures in battle scenes, finding something that looked as close as possible was our goal. Luckily Reaper put out Lurg here, and since Tridae was an ork to begin with, it was the best match we could come up with. The claw weapon and the dirty looking dreadlocks really helped set the tone.
 

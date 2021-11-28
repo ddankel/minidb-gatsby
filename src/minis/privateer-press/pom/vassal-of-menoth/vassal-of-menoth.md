@@ -17,7 +17,7 @@ armor:
   - robes
 ---
 
-## Blog Post
+## Archived Blog Post
 
 The Vassal of Menoth isn't one of the more exciting sculpts Privateer Press has released. Then again, they're infinitely useful on the tabletop so maybe there's some sort of inverse correlation there.
 

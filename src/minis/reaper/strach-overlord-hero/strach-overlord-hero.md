@@ -18,7 +18,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Comparing Strach here to the original sculpt I made a few minor changes. The original sword was damaged pretty much beyond repair, and my attempts at straightening it weakened the blade to the point I decided to replace it completely.
 

@@ -19,7 +19,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Actually deciding what colors to paint on a miniature is usually very difficult for me. I'm a more technically minded person, and grasp the application of colors and shading much faster than actually deciding what colors go together well. However when I saw Boris in the blister at my local store, I immediately knew exactly how I wanted to paint him up.
 

@@ -18,7 +18,7 @@ weapons:
   - polearm
 ---
 
-## Blog Post
+## Archived Blog Post
 
 The Guardian was one of those models that say unassembled on my desk for so long that I wanted to get it finished just to have it finished. I'm not a fan of back-banners of any type in Warmachine or Hordes so I left them off, which had the side effect of making him far more practical to store in an army transport tray.
 

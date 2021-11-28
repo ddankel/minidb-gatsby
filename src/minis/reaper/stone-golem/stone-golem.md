@@ -13,7 +13,7 @@ race:
   - golem
 ---
 
-## Blog Post
+## Archived Blog Post
 
 This is another miniature painted up for an Earthdawn game and was used as an Obsidiman Wizard until the player decided he wanted to play something else. This one is a Reaper fig that is larger than standard 25mm figures.
 

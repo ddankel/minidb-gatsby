@@ -21,7 +21,7 @@ race:
   - unknown
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Despite how much I disliked the stock pose on this miniature I wasn't willing to spend the time required to do a complete re-pose on a figure I wasn't expecting to field too often to begin with. So I decided to work with the stock pose as best I could.
 

@@ -17,7 +17,7 @@ armor:
   - clothing
 ---
 
-## Blog Post
+## Archived Blog Post
 
 There's not a lot to say about this older model I painted what now seems like ages ago. He's another one of the rather 2-dimensional Chainmail sculpts that lack much depth. I mostly drybrushed the black areas but the green sash on this figure was one of my first ever attempts at highlighting via layering.
 

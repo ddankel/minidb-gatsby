@@ -19,7 +19,7 @@ armor:
   - clothing
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Kell was painted up pretty quickly in a color scheme that would fairly label him a Browncoat. I can't say it's my best work but I'm more than a little unhappy with how it photographed. Results like this are making me seriously consider revamping my photography set-up again.
 

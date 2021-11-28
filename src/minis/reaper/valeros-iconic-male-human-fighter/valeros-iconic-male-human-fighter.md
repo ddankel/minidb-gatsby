@@ -20,7 +20,7 @@ armor:
   - plate
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Although it's a very dynamic pose, I wasn't as much of a fan of Valeros after assembly as I thought I would be. I picked it - like many of my miniatures - up to use as a character in an RPG. Even games where we don't use miniatures I tend to do go out and get one that matches a character or too. It's just one of my more consistent ways I find inspiration for what to paint.
 

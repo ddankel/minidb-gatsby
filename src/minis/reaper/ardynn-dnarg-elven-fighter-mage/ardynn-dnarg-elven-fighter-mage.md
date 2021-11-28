@@ -19,7 +19,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Ardynn is yet another miniature inspired by a character in my Earthdawn campaign- this time an NPC Warrior/Nethermancer. I wanted to stay away from the stereotypical "necromancer black" though so decided to use a few different blues as the miniature's primary color.
 

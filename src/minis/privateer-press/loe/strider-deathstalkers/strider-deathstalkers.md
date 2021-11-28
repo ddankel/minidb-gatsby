@@ -24,7 +24,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Even though they suffer the "2D" affliction that's affected many of Privateer's recent sculpts, I do like the Deathstalker models. Plenty of cloak to play with blending cloth on and enough different surfaces that even a monochromatic scheme can be executed without looking boring.
 

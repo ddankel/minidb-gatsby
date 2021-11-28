@@ -16,7 +16,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Back when Wizards of the Coast was releasing Chainmail, the metal unpainted non-collectable precursor to D&D Miniatures, their price point was low enough that I picked up a few figures to use in RPGs and the like. Back then I had just started painting and I was using the Wood Elves (this one and the Ranger) to work on some basic painting techniques. The Scout didn't turn out nearly as well as the ranger did.
 

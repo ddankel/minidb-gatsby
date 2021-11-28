@@ -18,7 +18,7 @@ weapons:
   - mace
 ---
 
-## Blog Post
+## Archived Blog Post
 
 This Repenter was a lot of firsts for me. It was my first warmachine miniature, and actually my first time doing anything with a more "industrial" feel to it. It was also the first time I had to come up with a color scheme for an entire army, not just a single miniature.
 

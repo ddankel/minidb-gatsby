@@ -17,7 +17,7 @@ race:
   - elf
 ---
 
-## Blog Post
+## Archived Blog Post
 
 This miniature is an out-of-print Games Workshop High Elf Hero that has had it's headpiece trimmed down to look less phallic. I had originally purchased it for a specific conversion, but never had the time to start it. Instead a player picked this miniature out to use for his Children of the Sun character, so I painted it up for him.
 

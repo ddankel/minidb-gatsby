@@ -28,7 +28,7 @@ race:
   - human
 ---
 
-## Blog Post
+## Archived Blog Post
 
 As much as painting ceremonial Exemplar armor [can be tedious](http://www.dankelzahn.com/blog/2009/09/29/exemplar-of-hate/) at times I really like way Exemplar look on the tabletop.
 

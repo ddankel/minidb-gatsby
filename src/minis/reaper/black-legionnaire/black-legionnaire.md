@@ -28,7 +28,7 @@ recipes:
     - Shade w/ DC Dark Burnt Umber
 ---
 
-## Blog Post
+## Archived Blog Post
 
 The Black Legionnaire is actually a repaint. It was originally one of my first paint jobs and while functional I wanted another shot at the sculpt. After a Pinesol soak and scrubbing I forced myself out of my muted-color-safe-zone.
 

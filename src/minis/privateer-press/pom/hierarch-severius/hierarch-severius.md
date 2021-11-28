@@ -20,7 +20,7 @@ armor:
   - powered armor
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Much like the Harbinger of Menoth, I wasn't a big fan of the extra people on the stock version of this model's base. The Hierarch standing on the backs of a couple zealots might be fluffy, but it's not what I wanted to put on the table. Instead I decided to model my conversion after Severius' encounter with Vlad in Warmachine: Legends. I build a large rock outrcopping for Severius to stand on out of cork, and fashoned a small book stand out of foam and cardstock to hold the Covenant of Menoth (bits ordered separately).
 

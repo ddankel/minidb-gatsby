@@ -21,7 +21,7 @@ race:
   - human
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Vilmon was a fun sculpt to paint, but I had to keep his arms separate until after painting was complete or I wouldn't have been able to get to this face and upper chest. More than anything else though I was pretty happy with his base.
 

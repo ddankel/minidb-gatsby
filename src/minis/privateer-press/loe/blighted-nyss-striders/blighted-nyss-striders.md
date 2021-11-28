@@ -25,7 +25,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Once I finished up my blighted archers I decided to go ahead and get the last nyss unit, the Striders, done as well. Although I had been looking at blighted elves long enough I wanted to get the Striders done while I was comfortable with to the techniques I was going to have to use. I could have waited, but with my luck that would have resulted in the Striders looking differently than the archers.
 

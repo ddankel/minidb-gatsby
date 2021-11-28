@@ -23,7 +23,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Painting Incubii introduced a challenge I hadn't experienced yet on any of my Legion models. I had established very similar but distinct skintones for my Nyss and warbeast models, and the Incubii had both stretched over each other across the figure. That meant maintaining the preexisting schemes without the areas just looking like half were mis-painted.
 

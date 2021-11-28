@@ -18,6 +18,6 @@ weapons:
   - mace
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I definitely prefer the 'newer' Menite heavy warjack chassis features on the Reckoner and Castigator to the 'older' Crusader-based chassis. The gentle curves of the larger plates make it seem less boxy and more organic.

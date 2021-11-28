@@ -22,7 +22,7 @@ armor:
   - plate
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I picked up Rhyas as soon as she came out and got her assembled the next day. I was ready to start painting her when I realized it would be better to wait for Saeryn, her twin, to be released. With my luck if I had painted them separately they wouldn't look anything alike. A month later Saeryn was finally released and I was finally able to start.
 

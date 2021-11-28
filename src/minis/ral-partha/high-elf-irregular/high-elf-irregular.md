@@ -16,6 +16,6 @@ race:
   - elf
 ---
 
-## Blog Post
+## Archived Blog Post
 
 This is one of the miniatures from the Ral Partha High Elf Irregular blister I picked up in a bargain bin at my local gaming ship. It's one of the apparently few miniatures that I didn't either paint up for a miniature game or for specific use in a role-playing game - I just really liked the sculpt.

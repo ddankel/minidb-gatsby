@@ -19,7 +19,7 @@ armor:
   - powered armor
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Severius was the first of my Protectorate pieces where I broke down and decided to try some actual miniature paint as opposed to the craft paint I had been using up to that point. I took my Delta Ceramcoat Royal Plum out to the game store and compared it to the Reaper Master Series paints they had to find a match. I wound up finding a color called Dusky Grape that was remarkable similar so I picked it up.
 

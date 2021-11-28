@@ -20,7 +20,7 @@ armor:
   - clothing
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Even though I only really use Alten with my Protectorate forces for mixed games, and even then almost primarily in Mk I, I really like the model and wanted to get it painted. He really captures the 'dirty old hunter' look and the bell-shaped riffle barrel is a nice touch.
 

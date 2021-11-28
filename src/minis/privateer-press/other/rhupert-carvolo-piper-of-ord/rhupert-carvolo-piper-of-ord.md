@@ -21,7 +21,7 @@ armor:
   - clothing
 ---
 
-## Blog Post
+## Archived Blog Post
 
 After an one-armed, no-handed Piper lead my troops to victory enough times I decided it was time to reward the faithful musician with an assembly and paint job. My first instinct was to paint him in a similar color to my Menite army, but I decided to go with something completely different instead - if I don't paint something non-Menite every once in a while I tend to burn out.
 

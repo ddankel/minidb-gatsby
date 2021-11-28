@@ -22,7 +22,7 @@ armor:
   - powered armor
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Despite my desire to keep away from traditionally "evil" color schemes for my Protectorate forces, I decided to go dark on the High Reclaimer. His fluff depicts him as clad in black, so I went with black and silver armor instead of white and gold. I also kept his robes a shade darker than what I normally do, continuing the theme.
 

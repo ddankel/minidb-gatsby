@@ -16,7 +16,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Tariq was a fun and relatively simple miniature to paint. Typically I pick miniatures to paint based on need for various table top games, but Tariq is one of the few figures that I purchased and painted simply because I wanted to paint it. Despite being one of my older pieces, it stands up pretty good next to many of my newer pieces.
 

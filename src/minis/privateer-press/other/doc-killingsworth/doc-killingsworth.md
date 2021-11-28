@@ -18,7 +18,7 @@ armor:
   - clothing
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Doc is a fun character in the Iron Kindgoms/Warmachine world. Serving as both ship's cook and surgeon, his stew was suspect and his presence made sailors fight beyond normally crippling injuries since they rather face an opponent injured than be subjected to "surgery."
 

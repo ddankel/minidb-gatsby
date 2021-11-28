@@ -20,7 +20,7 @@ armor:
   - powered armor
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Reznik was the first model that the Protectorate has gotten in a while that required some thought as to how to apply my color scheme to it. I like to stick to white armored plates and purple cloth, but Reznik's lack of robes combined with his layered shoulder pads meant I was going to have to modify my standard rules a bit. In the end I wound up with what you see above.
 

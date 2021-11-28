@@ -37,7 +37,7 @@ recipes:
     - Edge pure chainmail
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I painted up Saxon to use as an RPG figure for a desert-flavored character in my Earthdawn game. This required a replacement for his left hand which held a rifle that would be out of place in that game, and mounting on a smaller 25mm base which is easier to use on 1" grids the few times we actually use them.
 

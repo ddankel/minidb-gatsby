@@ -16,7 +16,7 @@ armor:
   - robes
 ---
 
-## Blog Post
+## Archived Blog Post
 
 The Gray Elf War Wizard was a miniature from the Ravilla faction of the Wizards of the Coast's now-defunct Chainmail miniature game. Like many of the Chainmail figs, the Gray Elf War Wizard was very two-dimensional and lacked any real depth but were reasonably priced... especially once the line was cancelled and the blisters were introduced to the FLGS's discount bins.
 

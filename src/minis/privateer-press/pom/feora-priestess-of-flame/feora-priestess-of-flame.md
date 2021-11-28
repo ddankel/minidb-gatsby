@@ -19,7 +19,7 @@ armor:
   - powered armor
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Feora was the second warcaster model I painted after Kreoss and I think a bit of a step backwards for me. Maybe I was rushing too quickly or maybe it was just all of the mechanics (which I seem to struggle with) but compared to most of my other work Feora unfortunately just doesn't quite match up. Which is a shame since she won me the first tournament I ever attended back in '06.
 

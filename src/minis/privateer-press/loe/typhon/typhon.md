@@ -16,7 +16,7 @@ weapons:
   - natural weapons
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I really like the aesthetics of the Legion Nephilim warbeasts and the Protector is no exception. The large expanses of armor were a bit daunting at first but I wound up giving them a similar treatment as my Warmongers, but instead of the flat black inner armor I went with a very dark metallic. I think the result looks great on this sculpt.
 

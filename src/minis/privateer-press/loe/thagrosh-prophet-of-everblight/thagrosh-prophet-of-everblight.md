@@ -20,7 +20,7 @@ race:
   - ogre
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I decided to try and switch up my flesh tone color a bit for Thagrosh from the typical Nyss blue. Instead of going with primarily blue colors, I started with a gray base, washed with a dark navy blue, then highlighted back up with a mix of the two. This resulted in a more neutral color scheme that was close enough to the Nyss to look natural next to them but was different enough to make him stand out.
 

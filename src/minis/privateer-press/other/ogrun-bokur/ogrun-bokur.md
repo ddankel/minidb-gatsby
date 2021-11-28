@@ -23,7 +23,7 @@ race:
   - ogre
 ---
 
-## Blog Post
+## Archived Blog Post
 
 In early 2006 I was getting pretty burned out on painting Protectorate colors over and over and over and over again. There really wasn't as much experimenting with new models as there was putting the same colors in the same locations on the same miniatures repeatedly and I needed a break. So after one of our weekly gaming sessions I told one of the players that if he left his Bokur behind I'd paint it for him.
 
