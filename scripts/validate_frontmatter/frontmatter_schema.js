@@ -136,6 +136,11 @@ const schema = [
       return value === undefined || Number.isInteger(value);
     },
   },
+  {
+    key: "recipes",
+    type: "array",
+    required: false
+  }
 ];
 
 module.exports = schema;

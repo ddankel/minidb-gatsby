@@ -16,19 +16,14 @@ armor:
   - plate
 race:
   - elf
+recipes:
+  - Cloak
+    - Base P3 Menoth White Base
+    - Highlight w/ VMC White
+    - Shade/smooth Menoth White Base
+    - Mix in DC Dark Burnt Umber for deepest recesses
+  - Armor
+    - Base GW Chainmail
+    - Wash GW Badab Black
+    - For stains, mix P3 Blue Ink and Yellow Paint 2:1. Thin + wash/stain
 ---
-
-## Recipes
-
-Cloak:
-
-- Base P3 Menoth White Base
-- Highlight w/ VMC White
-- Shade/smooth Menoth White Base
-- Mix in DC Dark Burnt Umber for deepest recesses
-
-Armor:
-
-- Base GW Chainmail
-- Wash GW Badab Black
-- For stains, mix P3 Blue Ink and Yellow Paint 2:1. Thin + wash/stain

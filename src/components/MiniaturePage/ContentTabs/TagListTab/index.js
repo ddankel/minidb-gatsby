@@ -1,6 +1,6 @@
 import React from "react";
 
-const TagList = ({ frontmatter }) => {
+const TagListTab = ({ frontmatter }) => {
   return (
     <div>
       <h2>Metadata</h2>
@@ -15,4 +15,4 @@ const TagList = ({ frontmatter }) => {
   );
 };
 
-export default TagList;
+export default TagListTab;

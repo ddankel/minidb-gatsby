@@ -14,10 +14,7 @@ armor:
   - clothing
 race:
   - human
+recipes:
+  - Antique Golds
+    - GW Chainmail:GW Golds in 1:1
 ---
-
-## Recipes
-
-Antique Golds:
-
-- GW Chainmail : GW Golds in 1:1

@@ -15,23 +15,16 @@ armor:
   - clothing
 race:
   - elf
+recipes:
+  - Tabbard
+    - DC Tangerine
+    - Shade mixing AB Brown Oxide
+    - Deep Shade mix in DC Dark Burnt Umber
+  - Cloak
+    - Base P3 Meridius Blue
+    - Shade P3 Coal Black
+  - Skin
+    - Base P3 Idrian Flesh
+    - Shade mixing in black
+    - Highlight mixing in P3 Midlund Flesh
 ---
-
-## Paint Recipes
-
-Tabbard:
-
-- DC Tangerine
-- Shade mixing AB Brown Oxide
-- Deep Shade mix in DC Dark Burnt Umber
-
-Cloak:
-
-- Base P3 Meridius Blue
-- Shade P3 Coal Black
-
-Skin:
-
-- Base P3 Idrian Flesh
-- Shade mixing in black
-- Highlight mixing in P3 Midlund Flesh
