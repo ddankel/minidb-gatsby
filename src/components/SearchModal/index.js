@@ -4,10 +4,11 @@ import SearchField from "./SearchField";
 
 function SearchModal(props) {
   return (
-    <Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter">
+    <Modal keyboard={false} size="lg" {...props}>
       <Modal.Body>
-        <p>Search by name</p>
+        <h5>Search by name</h5>
         <SearchField />
+        <small className="text-muted">Enter 2 or more character to search</small>
       </Modal.Body>
     </Modal>
   );

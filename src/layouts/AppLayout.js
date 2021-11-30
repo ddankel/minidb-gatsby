@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "gatsby";
 
 import { Container, Nav, Navbar } from "react-bootstrap";
+import styled from "styled-components";
 import SSRProvider from "react-bootstrap/SSRProvider";
 import { BiSearch } from "react-icons/bi";
-import styled from "styled-components";
 
 import SearchModal from "../components/SearchModal";
 
@@ -15,6 +15,17 @@ const StyledNavbar = styled(Navbar)`
 
 const AppLayout = ({ children }) => {
   const [modalShow, setModalShow] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleSearchShortcut = (e) => {
+      if (e.key !== "/") return;
+
+      e.preventDefault();
+      setModalShow(true);
+    };
+    window.addEventListener("keydown", handleSearchShortcut);
+    return () => window.removeEventListener("keydown", handleSearchShortcut);
+  }, []);
 
   return (
     <SSRProvider>
