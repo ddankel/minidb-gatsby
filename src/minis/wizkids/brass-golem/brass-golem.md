@@ -13,7 +13,7 @@ race:
   - golem
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I painted this figure up a few months before I started playing Warmachine as a test piece. I wasn't sure how easy it would be to use colors such as green on a large flat metallic area like a robot's body and wanted to get a feel for it before I decided if I'd be able to do a Warmachine warjack. While the golem is hardly a work of art, it was good enough for a first attempt to convince me that I'd be able to do more mechanical miniatures with a little practice.
 

@@ -16,7 +16,7 @@ race:
   - human
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I picked up a number of Confrontation miniatures back in the early 2000's when I was beginning to get into miniature painting. I loved the sculpts but new my paint jobs wouldn't do them justice at the time. The Griffin Inquisitor was the first one I tried painting once I built up enough confidence to try and give them a shot.
 

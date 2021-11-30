@@ -15,12 +15,9 @@ armor:
   - shield
 race:
   - elf
+recipes:
+  - Cloak
+    - Delta Ceramcoat Medium Victorian Teal
+    - Shade w/ DC Dark Victorian Teal + Black mix
+    - Highlight base + White
 ---
-
-## Recipes
-
-Cloak:
-
-- Delta Ceramcoat Medium Victorian Teal
-- Shade w/ DC Dark Victorian Teal + Black mix
-- Highlight base + White

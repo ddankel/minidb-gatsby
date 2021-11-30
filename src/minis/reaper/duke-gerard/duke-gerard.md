@@ -14,10 +14,7 @@ armor:
   - cloak
 race:
   - human
+recipes:
+  - armor
+    - Base 2:1 GW Chainmail:Vallejo Gold
 ---
-
-## Recipes
-
-Armor:
-
-- Base 2:1 GW Chainmail : Vallejo Gold

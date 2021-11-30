@@ -18,6 +18,6 @@ weapons:
   - sword
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Unlike the Devout - which is on a similar chassis - the Dervish's stock pose wasn't too bad. The only issue was the height of the model. The sword in its left hand was meant to be vertical, but this made the piece higher than the foam tray I use to store my light jacks in so I had to tilt it to the side.

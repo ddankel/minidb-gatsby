@@ -21,7 +21,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Epic Lylyth - just like regular Lylyth but with more Lylyth.
 

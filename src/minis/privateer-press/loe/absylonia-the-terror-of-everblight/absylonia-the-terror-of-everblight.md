@@ -18,7 +18,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Absylonia sports quite a bit of detail that takes painting well. She's very similar to the Forsaken in that respect - made up of different design elements of different models. It makes her relatively easy to paint as there's not really anything "new" to the Legion about her but the discord of her design stands out on the tabletop.
 

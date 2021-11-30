@@ -21,7 +21,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I'm a big fan of the Aiyana and Holt. On top of being a solid unit on the tabletop, they're some of my favorite sculpts in the Warmachine miniature line. They're not swamped with accessories, but they're great sculpts and fit right in with the look and feel of the Iron Kingdoms.
 

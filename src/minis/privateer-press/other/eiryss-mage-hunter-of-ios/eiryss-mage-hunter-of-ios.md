@@ -21,7 +21,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Eiryss, dubbed the Soulless Elven Hooker by those in the know, was originally purchased to use as a character when I started re-running Privateer Press's Witchfire Trilogy again. Eventually as we started playing Warmachine she transitioned to a wargaming piece.
 

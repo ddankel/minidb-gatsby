@@ -20,7 +20,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Although my first try at painting a light source, I was rather pleased with how Gorman turned out. All of his garments were painted in various browns to create a dull, utilitarian look. This was meant to contrast the glowing vials hanging from his waist. I think the end result really highlights the vials.
 

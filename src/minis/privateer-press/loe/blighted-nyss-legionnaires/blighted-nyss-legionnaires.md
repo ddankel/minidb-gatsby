@@ -26,7 +26,7 @@ armor:
   - mail
 ---
 
-## Blog Post
+## Archived Blog Post
 
 The Blighted Nyss Legionnaires are poster-children for how I grew unhappy with my Legion color scheme. Technically speaking I was pleased with how my Legionnaires turned out. But on the tabletop they just blended together in to a black and blue mass. The color scheme - originally picked out to be cold and hard and evoke the Nyss' wintery homeland - wound up just not lending itself to _pop_ on the tabletop.
 

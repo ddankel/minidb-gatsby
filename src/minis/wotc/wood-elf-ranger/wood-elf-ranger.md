@@ -18,7 +18,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Back when Wizards of the Coast was releasing Chainmail, the metal unpainted non-collectable precursor to D&D Miniatures, their price point was low enough that I picked up a few figures to use in RPGs and the like. Back then I had just started painting and I was using the Wood Elves (this one and the Scout) to work on my basic techniques. At the time I was really happy with how the Ranger here turned out; particularly my first successful layering on the inside of the cloak and the highlighting on the back of the cloak.
 

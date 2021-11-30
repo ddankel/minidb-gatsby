@@ -19,7 +19,7 @@ armor:
   - powered armor
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I purchased Kaelyssa and Garryth back when the Retribution of Scyrah was first released just to have them to paint. After a knocking the loosest of the rust off with a few test figures I sat down to see what I could do with my Retribution figures.
 

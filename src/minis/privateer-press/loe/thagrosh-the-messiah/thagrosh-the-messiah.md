@@ -17,7 +17,7 @@ weapons:
   - sword-staff
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I painted Epic Thagrosh up just before DieCon 9 to use as the centerpiece of my Hardcore army, and as of now he's still my favorite model in the Warmachine and Hordes lines. It doesn't have the full metal fantasy look of the Warmachine side of things but he's just an impressive model.
 

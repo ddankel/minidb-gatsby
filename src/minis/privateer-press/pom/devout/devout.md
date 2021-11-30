@@ -20,7 +20,7 @@ armor:
   - shield
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Compared to the rest of the Warmachine warjack, the stock Devout pose is actually pretty dynamic. Unfortunately the Running Man thing doesn't do anything for me so I decided early on to convert this miniature into a more static pose. Since I had a pretty large backlog on my painting desk I decided for the quick fix - file and bend some joints and attach the leg so that it's resting on a raised surface. But what to prop up the leg with? A stone was the easy solution, but seemed to plain. Enter the bonejack.
 

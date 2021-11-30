@@ -22,7 +22,7 @@ race:
   - human
 ---
 
-## Blog Post
+## Archived Blog Post
 
 With the exception of the Mangled Metal format (which doesn't allow infantry, just jacks), I don't think I've ever fielded an army without the choir. They're just too good and too utilitarian for their points not to. So since they hit the table so often, they definitely needed to get painted. I started of with what has become my standard paint scheme for the Protectorate, throwing in the accent color on their sashes since according to their fluff they're warcasters in training.
 

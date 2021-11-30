@@ -18,7 +18,7 @@ race:
   - human
 ---
 
-## Blog Post
+## Archived Blog Post
 
 This figure was chosen by the player of our "knight in shining armor" character in the rotating GM game to use on the tabletop, so I went with bright plate armor accentuated with a bright regal blue. The stock figure is armed with a sword but I swapped it out for a hammer from the Games Workshop Mordheim Mercenary Sprue at the player's request.
 

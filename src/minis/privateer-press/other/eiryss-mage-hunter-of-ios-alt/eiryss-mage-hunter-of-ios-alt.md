@@ -22,7 +22,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 This alternate sculpt of Eiryss, Mage-Hunter of Ios was available as a giveaway to people who sent the redemption form in a few issues of No Quarter magazine in to Privateer Press. Although I much prefer the dynamic nature of the original pose this one is definitely a higher quality sculpt overall.
 

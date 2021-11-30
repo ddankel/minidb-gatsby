@@ -17,7 +17,7 @@ armor:
   - robes
 ---
 
-## Blog Post
+## Archived Blog Post
 
 This miniature is the Half-Elf Sorcerer from the Talos faction in Wizards of the Coast's now defunct Chainmail game. They put out a plastic re-sculpt for their D&D Miniatures which looks similar, but this is one of the original metal versions. This miniature was originally painted to be used as a Zheol-Jhe in Misguided Games' Children of the Sun RPG. He was a spear-wielding Kwai Chang Caine type of character - a healer/protector.
 

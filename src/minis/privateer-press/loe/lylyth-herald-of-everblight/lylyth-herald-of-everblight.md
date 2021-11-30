@@ -22,7 +22,7 @@ armor:
   - leather
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Lylyth proved to be a bit difficult to paint as I threw ideas around as to what colors to use to match the scheme that started with the Legion warbeasts. I knew I needed blue and bone, but it came down to how much and where on the model.
 

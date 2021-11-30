@@ -17,7 +17,7 @@ armor:
   - robes
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Leisynn probably lived on my painting desk in various stages of completion for close to a couple of years. I started and stopped him a number of times as I picked up other projects until I decided to finally buckle down and finish him up.
 

@@ -21,7 +21,7 @@ race:
   - human
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I wasn't a big fan of the stock pose of the Knight Exemplar Seneschal figure. Extraneous back banners aside, there was just something about how it held its swords that didn't work for me. So that meant breaking out the jeweler's saw and some putty and making some changes.
 

@@ -18,7 +18,7 @@ race:
   - elf
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I picked this figure up a while ago and was holding on to him until I got inspired enough to paint him. When I dug him up while searching through my bare pewter collection for a good figure for a rogue/assassin character I figured it was as good of a time as any.
 

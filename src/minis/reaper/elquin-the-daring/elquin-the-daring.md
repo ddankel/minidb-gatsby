@@ -16,7 +16,7 @@ armor:
   - robes
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Elquin was chosen to represent an elven Earthdawn character, and with that character came a few color-related challenges. Elves of that world typically follow a philosophy called the Wheel of Life, where each of the five stages is represented by a different outlook on life and different color schemes of dress. Talon followed the path of the scholar, the colors of which are red and yellow.
 

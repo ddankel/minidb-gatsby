@@ -22,7 +22,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 For the most part Vayl was a pretty standard paint job - a more muted dark blue cloak over blue robes with basic cool metallics. The colors are slightly more distinct in person, but the similarity between the two was intentional. My Nyssian paint scheme is all about being monochromatic and cold and I think these two colors together really help convey that. I went with a rather risqué way of painting her up; my initial intent was to take a light ink and make her chest and stomach look as if it was covered in translucent fabric like Vayl's concept art in Hordes: Primal but I decided to change at the last minute and leave it as bare skin.
 

@@ -18,7 +18,7 @@ race:
   - elf
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I've shown Deladrin a while back in a previous post but never got around to posting the finished version. Only about four years later, no biggie right?
 

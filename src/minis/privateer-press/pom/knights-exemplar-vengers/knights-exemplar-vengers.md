@@ -25,6 +25,6 @@ race:
   - human
 ---
 
-## Blog Post
+## Archived Blog Post
 
 The Exempler Vengers took forever and a day to paint. They started out relatively quickly - the horse flesh and hair came together well but once I hit the armor (on both the knights and the horses) progress stalled. That said I'm still rather pleased with how the figures turned out. My only real complaint is that the horses themselves came out far redder than intended.

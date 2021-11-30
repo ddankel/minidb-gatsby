@@ -13,19 +13,13 @@ armor:
   - plate
 race:
   - human
-status: wip
+recipes:
+  - Outer Tabard
+    - Base DC Burnt Sienna
+    - Mix in P3 Skorne Red to highlight
+    - Shade with DC Dark Burnt Umber
+    - Highlight futher mixing in Applebarrel Yellow and a little white at highest
+  - Inner Tabbard
+    - Base RMS Yellowed Bone and Goosefeather
+    - Wash Brown, remix Dark Burnt Umber + Goosefeather and wet blend into base
 ---
-
-## Recipes
-
-Outer Tabard:
-
-- Base DC Burnt Sienna
-- Mix in P3 Skorne Red to highlight
-- Shade with DC Dark Burnt Umber
-- Highlight futher mixing in Applebarrel Yellow and a little white at highest
-
-Inner Tabbard:
-
-- Base: RMS Yellowed Bone and Goosefeather
-- Wash Brown, remix Dark Burnt Umber + Goosefeather and wet blend into base

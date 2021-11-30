@@ -20,7 +20,7 @@ armor:
   - plate
 ---
 
-## Blog Post
+## Archived Blog Post
 
 It seems like it's been forever that I've had the Harbinger lying around but I've finally managed to finish painting her up. Early on when trying to decide what to do with the Harbinger I knew I wanted to ditch the acolytes that come with her. For those unfamiliar with Warmachine, this model also includes three robed acolytes to fit on the base and hold chains that hang from her armor. However in the fluff the Harbinger is supposed to be the voice of Menoth. She is so holy that she cannot touch the ground - it just won't let her. And yet she needs robed clerics to pull her around the battlefield? Yeah... not so much.
 

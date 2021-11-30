@@ -19,7 +19,7 @@ armor:
   - shield
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I don't want to think about how long it took me to paint my character jacks, but they're finally done and ready for the tabletop. Unfortunately Blessing lost a few of his cooler abilities in MkII, but he's still a solid jack with Severius.
 

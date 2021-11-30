@@ -17,7 +17,7 @@ weapons:
   - natural weapons
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Just like most of the other Legion models, Hordes fans either love the Terpah or they hate it. I tend to fall on the positive side myself. There's something about the sleek draconic look that I find visually appealing.
 

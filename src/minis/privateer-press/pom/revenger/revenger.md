@@ -24,7 +24,7 @@ weapons:
   - spear
 ---
 
-## Blog Post
+## Archived Blog Post
 
 ### First Mini
 

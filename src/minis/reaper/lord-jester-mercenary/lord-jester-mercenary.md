@@ -18,7 +18,7 @@ armor:
   - clothing
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I was particularly happy with how Lord Jester turned out. Faces are always hard and this is one of my better products. Likewise the bright teal jacket turned out to pop sufficiently. The end result is one of my favorite recent pieces.
 

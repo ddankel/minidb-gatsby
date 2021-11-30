@@ -21,7 +21,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Of the two Retribution warcasters I've painted at this point, I think Kaelyssa came out better. I really like Garryth's sculpt but hers just turned out far easier to paint.
 

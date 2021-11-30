@@ -22,7 +22,7 @@ weapons:
   - natural weapons
 ---
 
-## Blog Post
+## Archived Blog Post
 
 ### Seraph 1
 

@@ -17,17 +17,12 @@ armor:
   - plate
   - leather
 status: wip
+recipes:
+  - Coat
+    - P3 Ironhull Gray
+    - Shade Black
+    - Highlight VMC Sky Gray
+  - Ruffles
+    - Base P3 Arcane Blue
+    - Mix P3 Coal Black wash
 ---
-
-## Recipes
-
-Coat:
-
-- P3 Ironhull Gray
-- Shade Black
-- Highlight VMC Sky Gray
-
-Ruffles:
-
-- Base P3 Arcane Blue
-- Mix P3 Coal Black wash

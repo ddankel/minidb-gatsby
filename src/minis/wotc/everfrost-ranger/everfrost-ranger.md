@@ -15,17 +15,12 @@ armor:
   - cloak
 race:
   - human
+recipes:
+  - Pants
+    - Base 50/50 AB Golden Brown & AB Brown Oxide
+    - Wash Delvin Mud
+    - Start highlighting by mixing in AB Goosefeather
+  - Brown Fur
+    - DC Burnt Sienna
+    - Highlight mixing in DC Maple Sugar
 ---
-
-# Recipes
-
-Pants:
-
-- Base 50/50 AB Golden Brown & AB Brown Oxide
-- Wash Delvin Mud
-- Start highlighting by mixing in AB Goosefeather
-
-Brown Fur:
-
-- DC Burnt Sienna
-- Highlight mixing in DC Maple Sugar

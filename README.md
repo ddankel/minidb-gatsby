@@ -1,54 +1,65 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Miniature DB
 
-## 🚀 Quick start
+[View Site](https://minidb.dankelzahn.com/)
 
-1.  **Create a Gatsby site.**
+A visual miniature database. Its main purpose was to provide my gaming group a way to find miniatures for use in roleplaying and tabletop games.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+The primary requirements are:
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- Provide a searchable interface to filter miniatures by tags
+- Archive old blog post contents from an old wordpress-driven painted miniature gallery
+- Electronic copy of the painting journal I kept to record paint recipes used
 
-2.  **Start developing.**
+Originally written using [Jekyll](https://jekyllrb.com/), this project was migrated to [Gatsby](https://www.gatsbyjs.com/) to try out the framework and get more experience with [React](https://reactjs.org/).
 
-    Navigate into your new site’s directory and start it up.
+### Built With
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- [Gatsby](https://www.gatsbyjs.com/)
+  - Primary framework, using frontmatter-loaded `.md` files as the datasource.
+- [React-Bootstrap](https://react-bootstrap.github.io/)
+  - UI toolkit, used with a template from [Bootswatch](bootswatch.com).
+  - Styling was applied via [styled-components](https://styled-components.com/)
+  - Icons provided by [React Icons](https://react-icons.github.io/react-icons/)
+- [react-image-gallery](https://github.com/xiaolin/react-image-gallery)
+  - Providing gallery functionality on individual miniature pages.
 
-3.  **Open the code and start customizing!**
+### Installation
 
-    Your site is now running at http://localhost:8000!
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ddankel/minidb-gatsby
+   ```
+2. Install packages
+   ```sh
+   npm install
+   ```
+3. Run
+   ```sh
+   npm run develop
+   ```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+Default settings (build for node14, output to /dist) are configured in package.json and can be overwritten as needed.
 
-4.  **Learn more**
+## Development Scripts
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Since Gatsby has stricter Frontmatter formatting requirements than Jekyll, the following two scripts were created to help with the conversion
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Frontmatter Validation
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```sh
+npm run validate-fm
+```
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+This script reads the frontmatter schema from `scripts/validate_frontmatter/frontmatter_schema.js` and checks each file for missing, disallowed, or deprecated formats and values. Any errors are reported in detail for easy fixing.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Frontmatter Aggregation
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```sh
+npm run list-fm
+```
 
-## 🚀 Quick start (Gatsby Cloud)
+This script parses all of the markdown pages and aggregates all current values for the frontmatter keys. This allows a quick review of current listed options as well as copying those lists into the frontmatter schema to set the allowlists.
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+## Contact
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Project Link: [https://github.com/ddankel/minidb-gatsby](https://github.com/ddankel/minidb-gatsby)

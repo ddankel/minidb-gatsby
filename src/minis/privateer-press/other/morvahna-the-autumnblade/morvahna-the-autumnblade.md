@@ -20,7 +20,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I painted Morvahna up to give away to a local circle player a few years ago. I spent most of the time working on the wet blends on her cloak - everything else seemed to come together quickly. Morvahna's flesh was done in all P3 paints in an effort to experiment & practice using them and I'm happy with how they came out. They're smoother than some of the other female skin tones I've done before.
 

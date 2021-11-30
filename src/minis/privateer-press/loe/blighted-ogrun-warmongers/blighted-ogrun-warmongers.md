@@ -27,7 +27,7 @@ race:
   - ogre
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I knew how I wanted to paint my Warmongers for quite some time, I just had so many other models I wanted to paint that they fell by the wayside. When I finally got to them I took my blighted Nyss skin recipe and replaced the Sky Blue with Quaker Gray. The resulting color was very similar but was a more muted blue.
 

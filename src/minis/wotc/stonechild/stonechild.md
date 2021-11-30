@@ -17,7 +17,7 @@ race:
   - stonechild
 ---
 
-## Blog Post
+## Archived Blog Post
 
 This miniature is a Chainmail miniature - WotC's metal predecessor to D&D Miniatures. The line as a whole contained mostly two-dimensional sculpts with no depth, but the Stonechild makes an excellent obsidiman for Earthdawn. It's even scaled a bit taller than most 25mm figures which is perfect, but it's also nearly impossible to find at this point.
 

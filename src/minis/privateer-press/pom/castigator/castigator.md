@@ -16,7 +16,7 @@ race:
   - warjack
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I modeled the Castigator's paint job after my Reckoner, but I'm relatively disappointed in the end result of the Castigator. The shading on the white areas is smooth but they're just not dark enough to stand out sufficiently in my mind. It's an attractive sculpt but I just wasn't quite as happy with the end result as I could have been. Still, with the big backlog of miniatures I'm trying to get through I decided to call it close enough.
 

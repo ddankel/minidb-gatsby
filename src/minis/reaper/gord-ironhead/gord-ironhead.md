@@ -17,7 +17,7 @@ armor:
   - cloak
 ---
 
-## Blog Post
+## Archived Blog Post
 
 Gord was originally purchased to serve as the captain of a friend's Mordheim squad, and remained unpainted for years even after it was given to me when its owner quit playing. I eventually decided to go ahead and give him a really fast paint job just so I'd have another dwarf painted and ready for use.
 

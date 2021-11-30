@@ -20,7 +20,7 @@ armor:
   - powered armor
 ---
 
-## Blog Post
+## Archived Blog Post
 
 As [Privateer Press Weekend at DieCon 8](http://www.dankelzahn.com/blog/2008/06/24/dieconprivateer-press-weekend-wrap-up/) was being planned, the organizers approached some of the local painters with an idea to give away models as door prizes and as an overall prize over the weekend. I had enough on my plate that I had to finish before DieCon that I couldn't do too many figures, but I did agree to paint Broadsides Bart here.
 

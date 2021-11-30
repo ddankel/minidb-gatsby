@@ -22,7 +22,7 @@ armor:
   - powered armor
 ---
 
-## Blog Post
+## Archived Blog Post
 
 I did some further experimentation with the Reaper Master Series Dusky Grape color that I picked up to use on Severius and realized it was just too much of a cool tone to match my color scheme. After another trip to one of the local gaming stores I picked up Burgundy Wine to try out. Although the tone is ever so slightly off from the Delta Ceramcoat Royal Plum I used, the difference was nearly indistinguishable and the end result (especially once I mixed it with Dusky Grape for the base coat) fit with my scheme.
 
