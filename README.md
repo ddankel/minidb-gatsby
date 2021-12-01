@@ -44,13 +44,25 @@ Default settings (build for node14, output to /dist) are configured in package.j
 
 Since Gatsby has stricter Frontmatter formatting requirements than Jekyll, the following two scripts were created to help with the conversion
 
+### Create New Draft
+
+```sh
+npm run new
+
+# Examples:
+npm run new single-miniuature
+npm run new first-mini second-mini-third-mini
+```
+
+Creates a new folder and markdown file, named correctly, in `src/mini_drafts`, with the `slug` frontmatter value pre-populated.
+
 ### Frontmatter Validation
 
 ```sh
 npm run validate-fm
 ```
 
-This script reads the frontmatter schema from `scripts/validate_frontmatter/frontmatter_schema.js` and checks each file for missing, disallowed, or deprecated formats and values. Any errors are reported in detail for easy fixing.
+This script reads the frontmatter schema from `scripts/validate_frontmatter/frontmatter_schema.js` and checks each mini `.md` file for missing, disallowed, or deprecated formats and values. Any errors are reported in detail for easy fixing.
 
 ### Frontmatter Aggregation
 
@@ -58,7 +70,7 @@ This script reads the frontmatter schema from `scripts/validate_frontmatter/fron
 npm run list-fm
 ```
 
-This script parses all of the markdown pages and aggregates all current values for the frontmatter keys. This allows a quick review of current listed options as well as copying those lists into the frontmatter schema to set the allowlists.
+This script parses all of the mini `.md` pages and aggregates all current values for the frontmatter keys. This allows a quick review of current listed options as well as copying those lists into the frontmatter schema to change the allowlists if desired.
 
 ## Contact
 
