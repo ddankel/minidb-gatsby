@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 
 export const Contents = styled.div`
   background-color: rgb(55, 90, 127);
-  border-radius: 0 0 5% 5%;
+  border-radius: 0 0 0.25rem 0.25rem;
 `;
 
 export const ToggleButton = styled.div`

@@ -37,9 +37,10 @@ const AppLayout = ({ children }) => {
           <Nav>
             <Nav.Link onClick={() => setModalShow(true)}>
               <BiSearch />
+              Search
             </Nav.Link>
             <Nav.Link as={Link} to="/">
-              Index
+              Home
             </Nav.Link>
           </Nav>
         </Container>
