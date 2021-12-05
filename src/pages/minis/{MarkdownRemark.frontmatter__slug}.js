@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
 import MiniaturePage from "../../components/MiniaturePage";
+import AppLayout from "../../layouts/AppLayout";
 
 export const pageQuery = graphql`
   query ($id: String!) {
@@ -40,12 +41,12 @@ const MiniaturePageTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
 
   return (
-    <>
+    <AppLayout variant="narrow">
       <Helmet>
         <title>{frontmatter.sku || frontmatter.name} | MiniDB</title>
       </Helmet>
       <MiniaturePage {...{ frontmatter, html }} />
-    </>
+    </AppLayout>
   );
 };
 export default MiniaturePageTemplate;
