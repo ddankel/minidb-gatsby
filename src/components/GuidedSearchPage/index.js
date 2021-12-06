@@ -92,7 +92,6 @@ const GuidedSearchPage = () => {
         <Col sm={6} md={12}>
           <div className="float-end">
             <Button
-              variant="primary"
               onClick={() => resetAll()}
               disabled={!isFiltered}
               variant={isFiltered ? "primary" : "secondary"}

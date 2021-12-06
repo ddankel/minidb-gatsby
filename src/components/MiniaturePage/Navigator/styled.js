@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin-top: -32px;
-  margin-bottom: 32px;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
 `;
 
 export const Contents = styled.div`
   background-color: rgb(55, 90, 127);
-  border-radius: 0 0 5% 5%;
+  border-radius: 0 0 0.25rem 0.25rem;
 `;
 
 export const ToggleButton = styled.div`

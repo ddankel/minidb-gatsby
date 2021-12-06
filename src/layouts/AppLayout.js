@@ -9,11 +9,15 @@ import { BiSearch } from "react-icons/bi";
 import SearchModal from "../components/SearchModal";
 
 const StyledNavbar = styled(Navbar)`
-  margin-bottom: 2rem;
-  height: 50px;
+  height: 3rem;
+  margin-bottom: 3rem;
 `;
 
-const AppLayout = ({ children }) => {
+const Contents = styled(Container)`
+  max-width: ${({ variant }) => (variant === "narrow" ? "650px !important" : null)};
+`;
+
+const AppLayout = ({ children, variant }) => {
   const [modalShow, setModalShow] = React.useState(false);
 
   React.useEffect(() => {
@@ -37,15 +41,16 @@ const AppLayout = ({ children }) => {
           <Nav>
             <Nav.Link onClick={() => setModalShow(true)}>
               <BiSearch />
+              Search
             </Nav.Link>
             <Nav.Link as={Link} to="/">
-              Index
+              Home
             </Nav.Link>
           </Nav>
         </Container>
       </StyledNavbar>
       <SearchModal show={modalShow} onHide={() => setModalShow(false)} />
-      {children}
+      <Contents variant={variant}>{children}</Contents>
     </SSRProvider>
   );
 };

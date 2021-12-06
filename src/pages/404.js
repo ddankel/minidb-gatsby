@@ -2,12 +2,12 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { Helmet } from "react-helmet";
 
-import PageLayout from "../layouts/PageLayout";
+import AppLayout from "../layouts/AppLayout";
 
 // markup
 const NotFoundPage = () => {
   return (
-    <PageLayout>
+    <AppLayout>
       <Helmet>
         <title>Page Not Found | MiniDB</title>
       </Helmet>
@@ -22,7 +22,7 @@ const NotFoundPage = () => {
           </div>
         </div>
       </div>
-    </PageLayout>
+    </AppLayout>
   );
 };
 
