@@ -42,6 +42,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.3.1",
     "react-image-gallery": "^1.2.7",
+    "react-use-storage": "github:ddankel/react-use-storage#main",
     "sass": "^1.43.4",
     "styled-components": "^5.3.3"
   },

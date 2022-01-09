@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
+import { useSessionStorage } from "react-use-storage";
 import useMiniatureCollection from "../hooks/useMiniatureCollection";
-import useSessionStorage from "../hooks/useSessionStorage";
 
 const defaultState = {
   raceFilter: "all",
