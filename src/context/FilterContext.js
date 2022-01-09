@@ -21,6 +21,29 @@ const defaultState = {
   isFiltered: false,
 };
 
+const allOrMatchesFilter = ({ value, filter }) => {
+  value = [value || ""].flat().map((item) => item.toLowerCase());
+  filter = filter.toLowerCase();
+  return filter === "all" || value.includes(filter);
+};
+
+const matchesLine = ({ value, filter }) => {
+  if (filter === "all") return true;
+
+  const compiledLine = [value || ""].flat().join(" > ");
+  return compiledLine.startsWith(filter);
+};
+
+const isMonster = (mini) => {
+  const jsonRace = JSON.stringify(mini.frontmatter.race);
+
+  return (
+    jsonRace === JSON.stringify(["dragonspawn"]) ||
+    jsonRace === JSON.stringify(["golem"]) ||
+    mini.frontmatter.race?.some((item) => ["warjack"].includes(item))
+  );
+};
+
 export const FilterContext = React.createContext(defaultState);
 export const useFilterContext = () => useContext(FilterContext);
 
@@ -34,6 +57,7 @@ export const FilterProvider = (props) => {
   const [lineFilter, setLineFilter] = useSessionStorage("line-filter", "all");
   const [filteredMiniatures, setFilteredMiniatures] = useState(collection);
   const [ignoreMonsters, setIgnoreMonsters] = useSessionStorage("switch-ignore-monsters", false);
+  const [isFiltered, setIsFiltered] = useState(defaultState.isFiltered);
 
   useEffect(() => {
     const applyFilter = () => {
@@ -54,6 +78,13 @@ export const FilterProvider = (props) => {
     };
 
     setFilteredMiniatures(applyFilter());
+
+    setIsFiltered(
+      ignoreMonsters ||
+        [raceFilter, weaponFilter, armorFilter, paintedFilter, lineFilter].some(
+          (item) => item !== "all"
+        )
+    );
   }, [
     raceFilter,
     weaponFilter,
@@ -64,35 +95,6 @@ export const FilterProvider = (props) => {
     ignoreMonsters,
     collection,
   ]);
-
-  const isMonster = (mini) => {
-    const jsonRace = JSON.stringify(mini.frontmatter.race);
-
-    return (
-      jsonRace === JSON.stringify(["dragonspawn"]) ||
-      jsonRace === JSON.stringify(["golem"]) ||
-      mini.frontmatter.race?.some((item) => ["warjack"].includes(item))
-    );
-  };
-
-  const allOrMatchesFilter = ({ value, filter }) => {
-    value = [value || ""].flat().map((item) => item.toLowerCase());
-    filter = filter.toLowerCase();
-    return filter === "all" || value.includes(filter);
-  };
-
-  const matchesLine = ({ value, filter }) => {
-    if (filter === "all") return true;
-
-    const compiledLine = [value || ""].flat().join(" > ");
-    return compiledLine.startsWith(filter);
-  };
-
-  const isFiltered =
-    ignoreMonsters ||
-    [raceFilter, weaponFilter, armorFilter, paintedFilter, lineFilter].some(
-      (item) => item !== "all"
-    );
 
   const state = {
     raceFilter,

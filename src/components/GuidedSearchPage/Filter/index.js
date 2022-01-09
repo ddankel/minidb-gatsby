@@ -3,8 +3,13 @@ import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 import { FaUndo } from "react-icons/fa";
 
 const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) => {
-  const buttonVariant = value !== defaultValue ? "primary" : "secondary";
-  const isBtnDisabled = value !== defaultValue ? false : true;
+  const [buttonVariant, setButtonVariant] = React.useState("secondary");
+  const [isBtnDisabled, setIsBtnDisabled] = React.useState(true);
+
+  React.useEffect(() => {
+    setButtonVariant(value !== defaultValue ? "primary" : "secondary");
+    setIsBtnDisabled(value !== defaultValue ? false : true);
+  }, [value, defaultValue]);
 
   return (
     <Form.Group as={Row} className="mb-3">
