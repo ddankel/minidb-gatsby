@@ -2,9 +2,9 @@ import React from "react";
 
 import { Collapse, Stack } from "react-bootstrap";
 import { BiCaretUp, BiCaretDown } from "react-icons/bi";
+import { useSessionStorage } from "react-use-storage";
 
 import NavButton from "./NavButton";
-import useSessionStorage from "../../../hooks/useSessionStorage";
 import { useFilterContext } from "../../../context/FilterContext";
 import { findAdjacentMinis } from "./utils";
 import { Wrapper, Contents, ToggleButton } from "./styled";
