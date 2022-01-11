@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useSessionStorage } from "react-use-storage";
-import useMiniatureCollection from "../hooks/useMiniatureCollection";
+import useMiniatureCollection from "../../hooks/useMiniatureCollection";
+import GalleryFilter from "./gallery_filter";
 
 const defaultState = {
   raceFilter: "all",
@@ -21,29 +22,6 @@ const defaultState = {
   isFiltered: false,
 };
 
-const allOrMatchesFilter = ({ value, filter }) => {
-  value = [value || ""].flat().map((item) => item.toLowerCase());
-  filter = filter.toLowerCase();
-  return filter === "all" || value.includes(filter);
-};
-
-const matchesLine = ({ value, filter }) => {
-  if (filter === "all") return true;
-
-  const compiledLine = [value || ""].flat().join(" > ");
-  return compiledLine.startsWith(filter);
-};
-
-const isMonster = (mini) => {
-  const jsonRace = JSON.stringify(mini.frontmatter.race);
-
-  return (
-    jsonRace === JSON.stringify(["dragonspawn"]) ||
-    jsonRace === JSON.stringify(["golem"]) ||
-    mini.frontmatter.race?.some((item) => ["warjack"].includes(item))
-  );
-};
-
 export const FilterContext = React.createContext(defaultState);
 export const useFilterContext = () => useContext(FilterContext);
 
@@ -59,32 +37,33 @@ export const FilterProvider = (props) => {
   const [ignoreMonsters, setIgnoreMonsters] = useSessionStorage("switch-ignore-monsters", false);
   const [isFiltered, setIsFiltered] = useState(defaultState.isFiltered);
 
+  // Set isFiltered state to if any of the filters are a value other than the default
   useEffect(() => {
-    const applyFilter = () => {
-      return collection.filter((mini) => {
-        return (
-          (!ignoreMonsters || !isMonster(mini)) &&
-          allOrMatchesFilter({ value: mini.frontmatter.race, filter: raceFilter }) &&
-          allOrMatchesFilter({ value: mini.frontmatter.weapons, filter: weaponFilter }) &&
-          allOrMatchesFilter({ value: mini.frontmatter.armor, filter: armorFilter }) &&
-          allOrMatchesFilter({
-            value: mini.frontmatter.status || "painted",
-            filter: paintedFilter,
-          }) &&
-          allOrMatchesFilter({ value: mini.frontmatter.name, filter: nameFilter }) &&
-          matchesLine({ value: mini.frontmatter.line, filter: lineFilter })
-        );
-      });
-    };
-
-    setFilteredMiniatures(applyFilter());
-
     setIsFiltered(
       ignoreMonsters ||
         [raceFilter, weaponFilter, armorFilter, paintedFilter, lineFilter].some(
           (item) => item !== "all"
         )
     );
+  }, [ignoreMonsters, raceFilter, weaponFilter, armorFilter, paintedFilter, lineFilter]);
+
+  // Set the filteredMiniatures state with only minis matching the filters
+  useEffect(() => {
+    const applyFilter = () => {
+      const galleryFilter = new GalleryFilter({
+        raceFilter,
+        weaponFilter,
+        armorFilter,
+        paintedFilter,
+        nameFilter,
+        lineFilter,
+        ignoreMonsters,
+      });
+
+      return collection.filter((mini) => galleryFilter.includes(mini));
+    };
+
+    setFilteredMiniatures(applyFilter());
   }, [
     raceFilter,
     weaponFilter,
@@ -96,6 +75,7 @@ export const FilterProvider = (props) => {
     collection,
   ]);
 
+  // Assign context state
   const state = {
     raceFilter,
     setRaceFilter,

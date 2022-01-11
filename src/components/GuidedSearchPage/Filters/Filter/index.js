@@ -12,13 +12,13 @@ const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) 
   }, [value, defaultValue]);
 
   return (
-    <Form.Group as={Row} className="mb-3">
-      <Form.Label column sm={3}>
+    <Form.Group as={Row}>
+      <Form.Label column sm={12}>
         {title}:
       </Form.Label>
-      <Col sm={9}>
+      <Col sm={12}>
         <InputGroup>
-          <Form.Select value={value} onChange={(e) => setValue(e.target.value)}>
+          <Form.Select size="sm" value={value} onChange={(e) => setValue(e.target.value)}>
             <option value="all">Any</option>
             {options
               .filter((item) => item !== null)
@@ -29,6 +29,7 @@ const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) 
               ))}
           </Form.Select>
           <Button
+            size="sm"
             variant={buttonVariant}
             onClick={() => setValue(defaultValue)}
             disabled={isBtnDisabled}
