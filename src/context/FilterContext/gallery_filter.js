@@ -63,6 +63,7 @@ class GalleryFilter {
     return (
       jsonRace === JSON.stringify(["dragonspawn"]) ||
       jsonRace === JSON.stringify(["golem"]) ||
+      jsonRace === JSON.stringify(["lupine"]) ||
       race?.some((item) => ["warjack"].includes(item))
     );
   }

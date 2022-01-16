@@ -14,7 +14,7 @@ race:
   - human
 armor:
   - plate
-  - robes
+  - robe
 ---
 
 ## Archived Blog Post

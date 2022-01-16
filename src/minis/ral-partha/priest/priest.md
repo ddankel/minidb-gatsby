@@ -10,7 +10,7 @@ photos:
 weapons:
   - mace
 armor:
-  - robes
+  - robe
   - mail
 race:
   - human

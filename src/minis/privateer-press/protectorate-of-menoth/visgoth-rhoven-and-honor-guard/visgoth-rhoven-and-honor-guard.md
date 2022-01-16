@@ -15,7 +15,7 @@ photos:
 mini_count: 3
 armor:
   - cloak
-  - robes
+  - robe
   - plate
 weapons:
   - staff

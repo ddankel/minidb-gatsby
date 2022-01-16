@@ -14,7 +14,7 @@ photos:
   - ./PP-WM-PoM-Choir-Dankel_4.jpg
 mini_count: 6
 armor:
-  - robes
+  - robe
 weapons:
   - staff
   - scroll

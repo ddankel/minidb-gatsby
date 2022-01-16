@@ -18,7 +18,7 @@ weapons:
   - polearm
   - staff
 armor:
-  - robes
+  - robe
 ---
 
 ## Archived Blog Post

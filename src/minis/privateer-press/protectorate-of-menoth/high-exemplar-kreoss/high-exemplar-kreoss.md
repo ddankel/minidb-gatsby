@@ -19,7 +19,7 @@ weapons:
 armor:
   - plate
   - powered armor
-  - robes
+  - robe
 ---
 
 ## Archived Blog Post

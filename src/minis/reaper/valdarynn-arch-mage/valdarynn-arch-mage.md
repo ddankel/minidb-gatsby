@@ -15,7 +15,7 @@ weapons:
   - book
   - spell effect
 armor:
-  - robes
+  - robe
 ---
 
 ## Archived Blog Post

@@ -18,7 +18,7 @@ race:
 weapons:
   - spell effect
 armor:
-  - robes
+  - robe
   - cloak
 ---
 

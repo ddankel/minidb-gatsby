@@ -16,7 +16,7 @@ race:
 weapons:
   - staff
 armor:
-  - robes
+  - robe
   - powered armor
 ---
 

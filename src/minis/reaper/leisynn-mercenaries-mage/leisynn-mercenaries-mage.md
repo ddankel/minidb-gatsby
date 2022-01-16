@@ -14,7 +14,7 @@ weapons:
   - staff
   - book
 armor:
-  - robes
+  - robe
 ---
 
 ## Archived Blog Post
