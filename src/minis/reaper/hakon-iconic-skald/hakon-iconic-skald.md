@@ -4,7 +4,7 @@ name: Hakon, Iconic Skald
 line:
   - Reaper Miniatures
   - Pathfinder
-painted: 2016
+painted: November 2020
 photos:
   - ./Reaper60182-HakonIconicSkald-Dankel_wip.jpg
 race:
