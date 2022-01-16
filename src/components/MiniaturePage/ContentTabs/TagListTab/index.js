@@ -1,8 +1,6 @@
 import React from "react";
 
 const TagListTab = ({ frontmatter }) => {
-  console.log(frontmatter);
-
   return (
     <div>
       <h2>Metadata</h2>
