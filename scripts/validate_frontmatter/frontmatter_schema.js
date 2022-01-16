@@ -33,7 +33,7 @@ const validValues = {
     "sword",
     "sword-staff",
   ],
-  armor: ["cloak", "clothing", "leather", "mail", "plate", "powered armor", "robes", "shield"],
+  armor: ["cloak", "clothing", "leather", "mail", "plate", "powered armor", "robe", "shield"],
   race: [
     "draconian",
     "dragonspawn",
@@ -45,6 +45,7 @@ const validValues = {
     "halfling",
     "human",
     "lizardfolk",
+    "lupine",
     "obsidiman",
     "ogre",
     "stonechild",
@@ -139,8 +140,8 @@ const schema = [
   {
     key: "recipes",
     type: "array",
-    required: false
-  }
+    required: false,
+  },
 ];
 
 module.exports = schema;

@@ -13,7 +13,7 @@ race:
 weapons:
   - spear
 armor:
-  - robes
+  - robe
 ---
 
 ## Archived Blog Post

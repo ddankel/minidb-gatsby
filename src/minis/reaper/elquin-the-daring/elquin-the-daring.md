@@ -13,7 +13,7 @@ race:
 weapons:
   - staff
 armor:
-  - robes
+  - robe
 ---
 
 ## Archived Blog Post

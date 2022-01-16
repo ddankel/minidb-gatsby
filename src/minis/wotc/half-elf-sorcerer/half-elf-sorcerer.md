@@ -14,7 +14,7 @@ weapons:
   - spear
 armor:
   - leather
-  - robes
+  - robe
 ---
 
 ## Archived Blog Post

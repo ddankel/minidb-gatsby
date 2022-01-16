@@ -11,7 +11,7 @@ weapons:
   - staff
   - scythe
 armor:
-  - robes
+  - robe
   - cloak
 race:
   - human

@@ -12,7 +12,7 @@ weapons:
   - staff
   - sword
 armor:
-  - robes
+  - robe
   - shield
 race:
   - human

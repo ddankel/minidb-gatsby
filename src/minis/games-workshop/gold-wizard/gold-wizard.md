@@ -9,7 +9,7 @@ photos:
 weapons:
   - scroll
 armor:
-  - robes
+  - robe
 race:
   - human
 ---

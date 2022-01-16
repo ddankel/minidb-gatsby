@@ -4,6 +4,7 @@ name: Griffin Inquisitor
 line:
   - Confrontation
   - Griffins of Akkylannie
+status: painted
 painted: 2003
 photos:
   - ./Confrontation-GriffonInquisitor-Dankel_1.jpg

@@ -8,7 +8,7 @@ photos:
 weapons:
   - staff
 armor:
-  - robes
+  - robe
   - cloak
 race:
   - human
