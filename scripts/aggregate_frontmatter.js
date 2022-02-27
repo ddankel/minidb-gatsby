@@ -20,5 +20,3 @@ getMarkdownFiles(miniPath).forEach((file) => {
     attributeIndex[i] = [...new Set([...attributeIndex[i], frontmatter[i].join(" > ")])].sort();
   });
 });
-
-console.log(attributeIndex);
