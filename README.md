@@ -31,11 +31,11 @@ Originally written using [Jekyll](https://jekyllrb.com/), this project was migra
    ```
 2. Install packages
    ```sh
-   npm install
+   yarn install
    ```
 3. Run
    ```sh
-   npm run develop
+   yarn run develop
    ```
 
 Default settings (build for node14, output to /dist) are configured in package.json and can be overwritten as needed.
@@ -47,11 +47,11 @@ Since Gatsby has stricter Frontmatter formatting requirements than Jekyll, the f
 ### Create New Draft
 
 ```sh
-npm run new
+yarn run new
 
 # Examples:
-npm run new single-miniuature
-npm run new first-mini second-mini-third-mini
+yarn run new single-miniuature
+yarn run new first-mini second-mini-third-mini
 ```
 
 Creates a new folder and markdown file, named correctly, in `src/mini_drafts`, with the `slug` frontmatter value pre-populated.
@@ -59,7 +59,7 @@ Creates a new folder and markdown file, named correctly, in `src/mini_drafts`, w
 ### Frontmatter Validation
 
 ```sh
-npm run validate-fm
+yarn run validate-fm
 ```
 
 This script reads the frontmatter schema from `scripts/validate_frontmatter/frontmatter_schema.js` and checks each mini `.md` file for missing, disallowed, or deprecated formats and values. Any errors are reported in detail for easy fixing.
@@ -67,7 +67,7 @@ This script reads the frontmatter schema from `scripts/validate_frontmatter/fron
 ### Frontmatter Aggregation
 
 ```sh
-npm run list-fm
+yarn run list-fm
 ```
 
 This script parses all of the mini `.md` pages and aggregates all current values for the frontmatter keys. This allows a quick review of current listed options as well as copying those lists into the frontmatter schema to change the allowlists if desired.
