@@ -11,3 +11,7 @@ updates:
       interval: "weekly"
     # Raise pull requests for version updates against the `develop` branch
     target-branch: "develop"
+    assignees:
+      - "ddankel"
+    reviewers:
+      - "ddankel"
