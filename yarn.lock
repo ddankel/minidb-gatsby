@@ -9778,7 +9778,8 @@ react-transition-group@^4.4.2:
 
 "react-use-storage@github:ddankel/react-use-storage#main":
   version "0.1.0"
-  resolved "https://codeload.github.com/ddankel/react-use-storage/tar.gz/6823c25943cda7a78fecd6b9e6cac911587f5e32"
+  uid fe91cefeedcedbfda49da8ed5efc1d09d5a17399
+  resolved "https://codeload.github.com/ddankel/react-use-storage/tar.gz/fe91cefeedcedbfda49da8ed5efc1d09d5a17399"
 
 react@^17.0.2:
   version "17.0.2"
