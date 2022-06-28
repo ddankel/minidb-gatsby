@@ -43,7 +43,7 @@
     "react-icons": "^4.3.1",
     "react-image-gallery": "^1.2.7",
     "react-use-storage": "github:ddankel/react-use-storage#main",
-    "sass": "^1.52.3",
+    "sass": "^1.53.0",
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
