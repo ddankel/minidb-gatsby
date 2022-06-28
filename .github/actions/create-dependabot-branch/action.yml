@@ -1,0 +1,34 @@
+name: "Create Dependency-Updates Branch If It Does Not Exist"
+description: "Create dependency-updates branch if it does not exist"
+author: "Dave Dankel"
+branding:
+  icon: "upload"
+  color: "green"
+runs:
+  using: "composite"
+  steps:
+    - name: Branch name
+      id: branch_name
+      shell: bash
+      run: |
+        echo ::set-output name=SOURCE_NAME::${GITHUB_REF#refs/*/}
+        echo ::set-output name=SOURCE_BRANCH::${GITHUB_REF#refs/heads/}
+        echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
+    - id: github-pages-exists
+      run: |
+        existed_in_remote=$(git ls-remote --heads origin dependency-updates)
+        if [[ -z ${existed_in_remote} ]]; then
+          echo "Creating dependency-updates branch"
+          git config --global user.email "ddankel@users.noreply.github.com"
+          git config --global user.name "Dave Dankel"
+          git checkout develop
+          git checkout -b dependabot/updates
+          git reset --hard
+          git commit --allow-empty -m "Initializing dependabot/updates branch"
+          git push origin dependabot/updates
+          echo "Created dependabot/updates branch"
+        else
+          echo "Branch dependabot/updates already exists"
+        fi
+      shell: bash
+# Reference: https://github.com/ChristopherDavenport/create-ghpages-ifnotexists/blob/main/action.yml
