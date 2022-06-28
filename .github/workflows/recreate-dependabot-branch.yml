@@ -1,0 +1,13 @@
+name: "Recreate Dependabot Branch"
+
+on: delete
+jobs:
+  recreate-branch:
+    runs-on: ubuntu-latest
+    steps:
+      # This step checks out a copy of your repository.
+      - uses: actions/checkout@v3
+        with:
+          ref: develop
+      # Run action from local directory
+      - uses: ./.github/actions/create-dependabot-branch
