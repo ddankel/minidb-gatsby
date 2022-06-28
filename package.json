@@ -29,7 +29,7 @@
     "gatsby-plugin-image": "^2.16.1",
     "gatsby-plugin-react-helmet": "^5.2.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
-    "gatsby-plugin-sass": "^5.15.1",
+    "gatsby-plugin-sass": "^5.17.0",
     "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-plugin-styled-components": "^5.2.0",
     "gatsby-source-filesystem": "^4.2.0",
