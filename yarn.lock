@@ -5802,28 +5802,7 @@ gatsby-cli@^4.16.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^3.16.0:
-  version "3.16.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.16.0.tgz#055e250614221b77168d0ca507a56a87d2cdbf35"
-  integrity sha512-cr3aIlzfzQkXSKng0dfAkg+v+Q0WOFJ1CCpM6HFvMykYtw5vSdaLxs6gwNmtPowG1wmCHkQ+pcyqppP+IdmVsg==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
-    ci-info "2.0.0"
-    configstore "^5.0.1"
-    fastq "^1.13.0"
-    file-type "^16.5.3"
-    fs-extra "^10.1.0"
-    got "^11.8.3"
-    import-from "^4.0.0"
-    lmdb "2.3.10"
-    lock "^1.1.0"
-    node-object-hash "^2.3.10"
-    proper-lockfile "^4.1.2"
-    resolve-from "^5.0.0"
-    tmp "^0.2.1"
-    xdg-basedir "^4.0.0"
-
-gatsby-core-utils@^3.17.0:
+gatsby-core-utils@^3.16.0, gatsby-core-utils@^3.17.0:
   version "3.17.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.17.0.tgz#5fe33c4267a3d0a7439b8065ee9c16f5cc2aead1"
   integrity sha512-1e0YaqTAEpSSBkpWkY703lu+Bl76ASXUvUcpnNO3CavCYZsRQxAXtMXIKIEvhm1z6zWJmY9HILo6/DjP+PHeyw==
@@ -5991,10 +5970,10 @@ gatsby-plugin-sharp@^4.16.1:
     sharp "^0.30.3"
     svgo "1.3.2"
 
-gatsby-plugin-styled-components@^5.2.0:
-  version "5.16.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-5.16.0.tgz#4a70d1f9e862b0a37e8edafe6b1bc219ed476c9f"
-  integrity sha512-V0gfYGtygO5BUFCbLALrvwlYEUnut9C8Eh+ePT8pI2FcefMnuT35qLQssGmsAMrDs0j5FmqOxQBnp9Zf7RMTMQ==
+gatsby-plugin-styled-components@^5.17.0:
+  version "5.17.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-5.17.0.tgz#bf3130860f087a49b23fc82496844a34b9a4ff87"
+  integrity sha512-VhDXtHuBcgiD/7DYWuzo3lgNRIyM1fk3h0Zl4S8d0PBkTSKbU67atesAqMOOeaX6kGt6qzy4UU30w2ztvrVZXg==
   dependencies:
     "@babel/runtime" "^7.15.4"
 
@@ -6057,16 +6036,16 @@ gatsby-sharp@^0.11.0:
     "@types/sharp" "^0.30.0"
     sharp "^0.30.3"
 
-gatsby-source-filesystem@^4.2.0:
-  version "4.16.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.16.0.tgz#0dd5a7cfd2ac147ade68931a69644fd6b5e19c28"
-  integrity sha512-wiDWx+3UcugmEJZw+Oa1O53R7UbjdTMowmE/bWioDoDkN+91q0bp7AdYjz5sTwhqu4pNhDasNDaBaFbPRPqtdA==
+gatsby-source-filesystem@^4.17.0:
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-4.17.0.tgz#5cbb8615151aa5ac167aea328be340453cfca0a9"
+  integrity sha512-1UErm5fcAqHOB3439V2BmSB5Kz+yDN15qj5J503/f6nL44kPPhJKSjjR64A5iz2y/3nCSTyZfmSs44jw9I1hhg==
   dependencies:
     "@babel/runtime" "^7.15.4"
     chokidar "^3.5.2"
     file-type "^16.5.3"
     fs-extra "^10.1.0"
-    gatsby-core-utils "^3.16.0"
+    gatsby-core-utils "^3.17.0"
     got "^9.6.0"
     md5-file "^5.0.0"
     mime "^2.5.2"
@@ -6094,13 +6073,13 @@ gatsby-telemetry@^3.16.0:
     lodash "^4.17.21"
     node-fetch "^2.6.7"
 
-gatsby-transformer-remark@^5.2.0:
-  version "5.16.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-5.16.0.tgz#647f704e97cd4e38e342244f60c504a065134e1d"
-  integrity sha512-hJO7VPWwDq71QsSQ28GafVVczmMQm3Qt0oydzKdcSbF4b2tc8+QTQGn3EhPDDUt+2mDBat2hNohS8EvNaiEpEA==
+gatsby-transformer-remark@^5.17.0:
+  version "5.17.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-5.17.0.tgz#1bacf7ea4bf2b6fc200172e5bc1fe3c245656d8b"
+  integrity sha512-xgkz2OsJAf0+L/StFjh5xEIZzs1R2ZMAEQ8uOh+z2zCPHSFwLM62DZvszfcpF/vaxV3AtzAonEBYUbao4x3G3Q==
   dependencies:
     "@babel/runtime" "^7.15.4"
-    gatsby-core-utils "^3.16.0"
+    gatsby-core-utils "^3.17.0"
     gray-matter "^4.0.3"
     hast-util-raw "^6.0.2"
     hast-util-to-html "^7.1.3"
@@ -10356,10 +10335,10 @@ sass-loader@^10.1.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.52.3:
-  version "1.52.3"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.52.3.tgz#b7cc7ffea2341ccc9a0c4fd372bf1b3f9be1b6cb"
-  integrity sha512-LNNPJ9lafx+j1ArtA7GyEJm9eawXN8KlA1+5dF6IZyoONg1Tyo/g+muOsENWJH/2Q1FHbbV4UwliU0cXMa/VIA==
+sass@^1.53.0:
+  version "1.53.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.53.0.tgz#eab73a7baac045cc57ddc1d1ff501ad2659952eb"
+  integrity sha512-zb/oMirbKhUgRQ0/GFz8TSAwRq2IlR29vOUJZOx0l8sV+CkHUfHa4u5nqrG+1VceZp7Jfj59SVW9ogdhTvJDcQ==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
