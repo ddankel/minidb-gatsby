@@ -5,6 +5,7 @@ import Navigator from "./Navigator";
 import ContentTabs from "./ContentTabs";
 
 import { MiniatureLine, Spacer, Title } from "./styled";
+import Breadcrumbs from "./Breadcrumbs";
 
 const MiniaturePage = ({ frontmatter, html }) => {
   const miniatureLine = [...frontmatter.line, ""].join(" > ");
@@ -16,6 +17,7 @@ const MiniaturePage = ({ frontmatter, html }) => {
             direct link */}
         <Navigator current={frontmatter.slug} />
       </div>
+      <Breadcrumbs miniatureLines={frontmatter.line} />
       <MiniatureLine>{miniatureLine}</MiniatureLine>
       <Title>{frontmatter.name}</Title>
       {frontmatter.painted && <p>Painted: {frontmatter.painted}</p>}

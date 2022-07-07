@@ -18,7 +18,7 @@ armor:
 
 ## Archived Blog Post
 
-I picked up this ranger ears after my first two attempts at painting WotC wood elf sculpts back in 2001 with the intent of doing a comparison piece. The brown leather color scheme wasn't anything extraordinary but that wasn't the point - the point was to create a spiritual successor to the Chainmail wood elves using what I'd learned over the years.
+I picked up this ranger years after my first two attempts at painting WotC wood elf sculpts back in 2001 with the intent of doing a comparison piece. The brown leather color scheme wasn't anything extraordinary but that wasn't the point - the point was to create a spiritual successor to the Chainmail wood elves using what I'd learned over the years.
 
 Immediate standouts for me are the face and the arrows. I used a basic wash technique on the face but it still came out far better than the originals. Then again, the originals were done with craft paint back when I was using that exclusively so that's no surprise.
 
