@@ -2,8 +2,8 @@
 slug: drow-soldier
 name: Drow Soldier
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Kilsek
 photos:
   - ./Chainmail-DrowSoldier-Dankel.jpg
 race:

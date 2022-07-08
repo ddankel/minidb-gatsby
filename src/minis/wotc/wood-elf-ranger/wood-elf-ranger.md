@@ -2,8 +2,8 @@
 slug: wood-elf-ranger
 name: Wood Elf Ranger
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Ravilla
 painted: "2001"
 photos:
   - ./Chainmail-WoodElfRanger-Dankel_1.jpg

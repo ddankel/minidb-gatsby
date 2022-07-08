@@ -2,8 +2,8 @@
 slug: dark-elf-assassin-2
 name: Dark Elf Assassin 2
 line:
+  - Games Workshop
   - Warhammer
-  - Dark Elves
 painted: April 2016 - June 2016
 photos:
   - ./DarkElfAssassin-Dankel.jpg

@@ -2,6 +2,7 @@
 slug: stonechild-conversion
 name: Stonechild Conversion
 line:
+  - Wizards of the Coast
   - D&D Miniatures
 painted: 2005
 photos:

@@ -3,6 +3,7 @@ slug: elf-ranger
 name: Elf Ranger
 line:
   - Wizards of the Coast
+  - Vintage
 painted: 2010
 photos:
   - ./WotC-ElfRanger-Dankel_1.jpg

@@ -2,8 +2,8 @@
 slug: dark-elf-sorceress
 name: Dark Elf Sorceress
 line:
+  - Games Workshop
   - Warhammer
-  - Dark Elves
 painted: "2001"
 photos:
   - ./GW-DarkElfSorceress-Dankel_1.jpg

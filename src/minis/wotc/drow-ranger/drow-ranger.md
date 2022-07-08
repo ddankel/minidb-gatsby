@@ -2,8 +2,8 @@
 slug: drow-ranger
 name: Drow Ranger
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Kilsek
 painted: April 2014 - May 2014
 photos:
   - ./Chainmail-DrowRanger-Dankel_1.jpg

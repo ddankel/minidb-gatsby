@@ -2,8 +2,8 @@
 slug: dark-elf-corsair-conversion
 name: Dark Elf Corsair Conversion
 line:
+  - Games Workshop
   - Warhammer
-  - Dark Elves
 painted: 2003
 photos:
   - ./GW-DarkElfCorasirConversion-Dankel_1.jpg

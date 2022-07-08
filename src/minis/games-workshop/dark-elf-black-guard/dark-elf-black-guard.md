@@ -2,8 +2,8 @@
 slug: dark-elf-black-guard
 name: Dark Elf Black Guard
 line:
+  - Games Workshop
   - Warhammer
-  - Dark Elves
 painted: "2001"
 photos:
   - ./GW-DarkElfBlackGuard-Dankel_1.jpg

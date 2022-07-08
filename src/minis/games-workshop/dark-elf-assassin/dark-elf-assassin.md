@@ -2,8 +2,8 @@
 slug: dark-elf-assassin
 name: Dark Elf Assassin
 line:
+  - Games Workshop
   - Warhammer
-  - Dark Elves
 painted: 2001
 photos:
   - ./GW-DarkElfAssassin-Dankel_1.jpg

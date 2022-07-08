@@ -2,8 +2,8 @@
 slug: drow-warrior
 name: Drow Warrior
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Kilsek
 photos:
   - ./Chainmail-DrowWarrior-Dankel.jpg
 race:

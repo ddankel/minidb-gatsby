@@ -2,8 +2,8 @@
 slug: wood-elf-scout
 name: Wood Elf Scout
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Ravilla
 painted: "2001"
 photos:
   - ./Chainmail-WoodElfScout-Dankel_1.jpg

@@ -1,6 +1,6 @@
 ---
-slug: knight-of-autumn-gate
-name: Miniature Template
+slug: knight-of-autumn
+name: Knight of Autumn
 line:
   - Wizards of the Coast
   - Dreamblade

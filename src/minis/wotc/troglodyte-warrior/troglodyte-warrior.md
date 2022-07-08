@@ -2,8 +2,8 @@
 slug: troglodyte-warrior
 name: Troglodyte Warrior
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Kilsek
 painted: 2004
 photos:
   - ./Chainmail-TroglodyteWarrior-Dankel_1.jpg

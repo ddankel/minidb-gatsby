@@ -2,8 +2,8 @@
 slug: gray-elf-snakestrike-duelist
 name: Gray Elf Snakestrike Duelist
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Ravilla
 painted: 2009
 photos:
   - ./Chainmail-GrayElfSnakeStrikeDuelist-Dankel_1.jpg

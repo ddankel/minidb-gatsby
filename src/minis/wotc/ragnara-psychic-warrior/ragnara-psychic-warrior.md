@@ -2,6 +2,7 @@
 slug: ragnara-psychic-warrior
 name: Ragnara, Psychic Warrior
 line:
+  - Wizards of the Coast
   - D&D Miniatures
 photos:
   - ./DnDMiniature-RagnaraPsychicWarrior.jpg

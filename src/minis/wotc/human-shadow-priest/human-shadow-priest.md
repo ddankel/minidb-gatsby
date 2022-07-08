@@ -2,8 +2,8 @@
 slug: human-shadow-priest
 name: Human Shadow Priest
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Ahmut's Legion
 painted: 2010
 photos:
   - ./Chainmail-HumanShadowPriest-Dankel_1.jpg

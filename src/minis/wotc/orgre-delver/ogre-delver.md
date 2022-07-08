@@ -2,8 +2,8 @@
 slug: ogre-delver
 name: Ogre Delver
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Kilsek
 photos:
   - ./Chainmail-OgreDelver-Dankel_1.jpg
   - ./Chainmail-OgreDelver-Dankel_2.jpg

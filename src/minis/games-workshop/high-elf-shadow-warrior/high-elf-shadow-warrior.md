@@ -2,8 +2,8 @@
 slug: shadow-warrior
 name: Shadow Warrior
 line:
+  - Games Workshop
   - Warhammer
-  - High Elves
 painted: 2003
 photos:
   - ./GW-HighElfShadowWarrior1-Dankel_1.jpg

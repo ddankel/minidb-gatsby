@@ -2,8 +2,8 @@
 slug: human-death-cleric
 name: Human Death Cleric
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Ahmut's Legion
 painted: 2005
 photos:
   - ./Chainmail-HumanDeathCleric-Dankel_1.jpg

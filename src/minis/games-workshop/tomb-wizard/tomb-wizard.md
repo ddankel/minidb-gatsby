@@ -2,8 +2,8 @@
 slug: tomb-wizard
 name: Tomb Wizard
 line:
+  - Games Workshop
   - Warhammer
-  - Tomb Kings
 photos:
   - ./GW-TombWizard.jpg
 weapons:
