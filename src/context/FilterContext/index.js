@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { useSessionStorage } from "react-use-storage";
 import useMiniatureCollection from "../../hooks/useMiniatureCollection";
 import GalleryFilter from "./gallery_filter";
+import useFilterState from "./useFilterState";
 
 const defaultState = {
   raceFilter: "all",
@@ -32,7 +33,7 @@ export const FilterProvider = (props) => {
   const [armorFilter, setArmorFilter] = useSessionStorage("armor-filter", "all");
   const [paintedFilter, setPaintedFilter] = useSessionStorage("painted-filter", "all");
   const [nameFilter, setNameFilter] = useSessionStorage("name-filter", "all");
-  const [lineFilter, setLineFilter] = useSessionStorage("line-filter", "all");
+  const [lineFilter, setLineFilter] = useFilterState("line", "all");
   const [filteredMiniatures, setFilteredMiniatures] = useState(collection);
   const [ignoreMonsters, setIgnoreMonsters] = useSessionStorage("switch-ignore-monsters", false);
   const [isFiltered, setIsFiltered] = useState(defaultState.isFiltered);

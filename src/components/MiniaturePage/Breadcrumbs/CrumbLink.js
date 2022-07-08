@@ -17,13 +17,12 @@ const CrumbLink = ({ to, line, children, ...restProps }) => {
 
   const handleClick = (event) => {
     event.preventDefault();
-    console.log("foo");
+    navigate(`/`);
     setLineFilter(line);
-    navigate("/");
   };
 
   return (
-    <StyledLink to={to} onClick={handleClick} {...restProps}>
+    <StyledLink to={`/?line=${line}`} onClick={handleClick} {...restProps}>
       {children}
     </StyledLink>
   );
