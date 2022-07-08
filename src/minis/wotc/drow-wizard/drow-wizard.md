@@ -2,8 +2,8 @@
 slug: drow-wizard
 name: Drow Wizard
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Kilsek
 photos:
   - ./Chainmail-DrowWizard-Dankel.jpg
 race:

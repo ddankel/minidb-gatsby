@@ -2,6 +2,7 @@
 slug: knight-of-the-chalice
 name: Knight of the Chalice
 line:
+  - Wizards of the Coast
   - D&D Miniatures
 painted: "2015"
 photos:

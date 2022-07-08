@@ -2,8 +2,8 @@
 slug: skink-skirmisher
 name: Skink Skirmisher
 line:
+  - Games Workshop
   - Warhammer
-  - Lizardmen
 photos:
   - ./GW-LizardmenSkinkSkirmisher-Dankel_1.jpg
 weapons:

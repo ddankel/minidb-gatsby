@@ -2,8 +2,8 @@
 slug: high-elf-hero
 name: High Elf Hero
 line:
+  - Games Workshop
   - Warhammer
-  - High Elves
 painted: 2003
 photos:
   - ./GW-HighElfHero-Dankel_1.jpg

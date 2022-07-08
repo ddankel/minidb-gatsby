@@ -2,8 +2,8 @@
 slug: half-elf-sorcerer
 name: Half Elf Sorcerer
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Thalos
 painted: 2003
 photos:
   - ./Chainmail-HalfElfSorc-Dankel_1.jpg

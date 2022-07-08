@@ -2,8 +2,8 @@
 slug: dark-elf-shades
 name: Dark Elf Shades
 line:
+  - Games Workshop
   - Warhammer
-  - Dark Elves
 painted: "2001"
 photos:
   - ./GW-DarkElfShades-Dankel_1.jpg

@@ -2,8 +2,8 @@
 slug: gold-wizard
 name: Gold Wizard
 line:
+  - Games Workshop
   - Warhammer
-  - Empire
 photos:
   - ./GW-GoldWizard-Dankel_1.jpg
 weapons:

@@ -2,6 +2,7 @@
 slug: troglodyte
 name: Troglodyte
 line:
+  - Wizards of the Coast
   - D&D Miniatures
 status: prepainted
 photos:

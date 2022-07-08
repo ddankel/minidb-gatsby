@@ -3,6 +3,7 @@ slug: half-orc-assassin
 name: Half Orc Assassin
 line:
   - Wizards of the Coast
+  - Vintage
 painted: 2014
 photos:
   - ./WotC-HalfOrcAssassin-Dankel_1.jpg

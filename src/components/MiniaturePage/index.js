@@ -4,11 +4,10 @@ import Gallery from "./Gallery";
 import Navigator from "./Navigator";
 import ContentTabs from "./ContentTabs";
 
-import { MiniatureLine, Spacer, Title } from "./styled";
+import { Spacer, Title } from "./styled";
+import Breadcrumbs from "./Breadcrumbs";
 
 const MiniaturePage = ({ frontmatter, html }) => {
-  const miniatureLine = [...frontmatter.line, ""].join(" > ");
-
   return (
     <>
       <div>
@@ -16,7 +15,7 @@ const MiniaturePage = ({ frontmatter, html }) => {
             direct link */}
         <Navigator current={frontmatter.slug} />
       </div>
-      <MiniatureLine>{miniatureLine}</MiniatureLine>
+      <Breadcrumbs miniatureLines={frontmatter.line} />
       <Title>{frontmatter.name}</Title>
       {frontmatter.painted && <p>Painted: {frontmatter.painted}</p>}
       <Gallery photos={frontmatter.photos} />

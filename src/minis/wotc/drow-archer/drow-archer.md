@@ -2,8 +2,8 @@
 slug: drow-archer
 name: Drow Archer
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Kilsek
 photos:
   - ./Chainmail-DrowArcher-Dankel.jpg
 race:

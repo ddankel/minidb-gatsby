@@ -13,5 +13,3 @@ updates:
     target-branch: "develop"
     assignees:
       - "ddankel"
-    reviewers:
-      - "ddankel"

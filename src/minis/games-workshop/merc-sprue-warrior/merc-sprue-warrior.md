@@ -2,8 +2,8 @@
 slug: mercenary-sprue-warrior
 name: Mercenary Sprue Warrior
 line:
+  - Games Workshop
   - Mordheim
-  - Mercenaries
 photos:
   - ./GW-MercSprueWarrior-Dankel.jpg
 weapons:

@@ -2,8 +2,8 @@
 slug: mercenary-sprue-archer
 name: Mercenary Sprue Archer
 line:
+  - Games Workshop
   - Mordheim
-  - Mercenaries
 painted: 2004
 photos:
   - ./GW-MordheimMercSprue-Dankel_1.jpg

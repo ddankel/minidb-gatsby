@@ -2,6 +2,7 @@
 slug: half-orc-fighter
 name: Half Orc Fighter
 line:
+  - Wizards of the Coast
   - D&D Miniatures
 photos:
   - ./DnDMiniatures-HalfOrcFighter.jpg

@@ -2,8 +2,8 @@
 slug: gray-elf-wizard
 name: Gray Elf Wizard
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Ravilla
 painted: 2004
 photos:
   - ./Chainmail-GrayElfWizard-Dankel_1.jpg

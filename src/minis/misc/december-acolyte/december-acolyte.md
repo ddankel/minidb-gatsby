@@ -3,7 +3,6 @@ slug: december-acolyte
 name: December Acolyte
 line:
   - Malifaux
-  - Arcanists
 painted: Nov 2012 - Feb 2014
 photos:
   - ./Malifaux-DecemberAcolyte-Dankel_1.jpg

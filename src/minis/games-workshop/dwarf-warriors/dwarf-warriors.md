@@ -2,8 +2,8 @@
 slug: dwarf-warriors
 name: Dwarf Warriors
 line:
+  - Games Workshop
   - Warhammer
-  - Dwarves
 painted: 2010
 photos:
   - ./GW-DwarfWarriors-Dankel_1.jpg

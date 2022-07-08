@@ -2,8 +2,8 @@
 slug: dark-elf-warriors
 name: Dark Elf Warriors
 line:
+  - Games Workshop
   - Warhammer
-  - Dark Elves
 painted: 2008
 photos:
   - ./GW-DarkElfWarriors-Dankel_1.jpg

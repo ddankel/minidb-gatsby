@@ -2,6 +2,7 @@
 slug: everfrost-ranger
 name: Everfrost Ranger
 line:
+  - Wizards of the Coast
   - D&D Miniatures
 painted: Feb 2015
 photos:

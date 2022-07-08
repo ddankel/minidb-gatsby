@@ -2,8 +2,8 @@
 slug: bretonnian-archer
 name: Bretonnian Archer
 line:
+  - Games Workshop
   - Warhammer
-  - Bretonnians
 photos:
   - ./GW-BretonnianArcher.jpg
 mini_count: 2

@@ -2,8 +2,8 @@
 slug: dwarven-hammer-priest
 name: Dwarven Hammer Priest
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Mordengard
 painted: 2004
 photos:
   - ./Chainmail-HammerPriest-Dankel_1.jpg

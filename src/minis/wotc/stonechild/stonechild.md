@@ -2,8 +2,8 @@
 slug: stonechild
 name: Stonechild
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Mordengard
 painted: 2003
 photos:
   - ./Chainmail-Stonechild-Dankel_1.jpg

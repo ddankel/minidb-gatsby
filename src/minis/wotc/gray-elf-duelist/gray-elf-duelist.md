@@ -2,8 +2,8 @@
 slug: gray-elf-duelist
 name: Gray Elf Duelist
 line:
+  - Wizards of the Coast
   - Chainmail
-  - Ravilla
 painted: 2002
 photos:
   - ./Chainmail-GrayElfDuelist-Dankel_1.jpg

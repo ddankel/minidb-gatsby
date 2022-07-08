@@ -2,8 +2,8 @@
 slug: bright-wizard
 name: Bright Wizard
 line:
+  - Games Workshop
   - Warhammer
-  - Empire
 photos:
   - ./BrightWizard-Dankel.jpg
 weapons:

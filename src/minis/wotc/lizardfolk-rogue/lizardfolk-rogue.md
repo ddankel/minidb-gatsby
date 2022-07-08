@@ -2,6 +2,7 @@
 slug: lizardfolk-rogue
 name: Lizardfolk Rogue
 line:
+  - Wizards of the Coast
   - D&D Miniatures
 status: prepainted
 photos:

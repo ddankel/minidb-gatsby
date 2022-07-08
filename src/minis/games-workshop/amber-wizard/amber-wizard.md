@@ -2,8 +2,8 @@
 slug: amber-wizard
 name: Amber Wizard
 line:
+  - Games Workshop
   - Warhammer
-  - Empire
 photos:
   - ./GW-AmberWizard.jpg
 weapons:

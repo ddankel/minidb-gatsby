@@ -2,8 +2,8 @@
 slug: jade-wizard
 name: Jade Wizard
 line:
+  - Games Workshop
   - Warhammer
-  - Empire
 painted: June 2016
 photos:
   - ./GW-JadeWizard-Dankel_1.jpg

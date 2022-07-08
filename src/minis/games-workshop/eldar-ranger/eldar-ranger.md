@@ -2,8 +2,8 @@
 slug: eldar-ranger
 name: Eldar Ranger
 line:
+  - Games Workshop
   - Warhammer 40k
-  - Eldar
 photos:
   - ./EldarRanger-Dankel_1.jpg
   - ./EldarRanger-Dankel_2.jpg
