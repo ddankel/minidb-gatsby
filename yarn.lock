@@ -9994,6 +9994,16 @@ query-string@^6.13.8, query-string@^6.14.1:
     split-on-first "^1.0.0"
     strict-uri-encode "^2.0.0"
 
+query-string@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-7.1.1.tgz#754620669db978625a90f635f12617c271a088e1"
+  integrity sha512-MplouLRDHBZSG9z7fpuAAcI7aAYjDLhtsiVZsevsfaHWDS2IDdORKbSd1kWUA+V4zyva/HZoSfpwnYMMQDhb0w==
+  dependencies:
+    decode-uri-component "^0.2.0"
+    filter-obj "^1.1.0"
+    split-on-first "^1.0.0"
+    strict-uri-encode "^2.0.0"
+
 querystring@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.1.tgz#40d77615bb09d16902a85c3e38aa8b5ed761c2dd"
@@ -10220,9 +10230,15 @@ react-transition-group@^4.4.2:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-use-query-param-string@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-use-query-param-string/-/react-use-query-param-string-2.0.3.tgz#e1b986f9c49c5b9caad7a6a1c3c5a8f0bb841483"
+  integrity sha512-6rAimAH+IL0Ghq9EDs0Ywg0E51eeT1Uo6wY+JbwUEQvLiKfMKY8lsHlEqLtEj6udnVFUA4kEspGf2LBxpiknVw==
+  dependencies:
+    query-string "^7.1.1"
+
 "react-use-storage@github:ddankel/react-use-storage#main":
   version "1.0.0"
-  uid "37aba9a28568b184586e0e13188baecc5f376fda"
   resolved "https://codeload.github.com/ddankel/react-use-storage/tar.gz/37aba9a28568b184586e0e13188baecc5f376fda"
   dependencies:
     jest-environment-jsdom "^28.1.1"
