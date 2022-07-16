@@ -1,15 +1,8 @@
 import React from "react";
 import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 import { FaUndo } from "react-icons/fa";
-import styled from "styled-components";
 
-const Select = styled(Form.Select)`
-  word-wrap: break-word; /* IE*/
-  white-space: -moz-pre-wrap; /* Firefox */
-  white-space: pre-wrap; /* other browsers */
-  // width: 150px;
-  display: inline-block;
-`;
+import Select from "./Select";
 
 const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) => {
   const [buttonVariant, setButtonVariant] = React.useState("secondary");

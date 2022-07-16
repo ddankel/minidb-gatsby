@@ -11,8 +11,7 @@ const MiniaturePage = ({ frontmatter, html }) => {
   return (
     <>
       <div>
-        {/* Wrapping div is a fix for bug in rendering single-mini pages via
-            direct link */}
+        {/* Wrapping div is a fix for bug in rendering single-mini pages via direct link */}
         <Navigator current={frontmatter.slug} />
       </div>
       <Breadcrumbs miniatureLines={frontmatter.line} />
