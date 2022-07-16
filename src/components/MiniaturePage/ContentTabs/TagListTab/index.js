@@ -9,7 +9,7 @@ const TagListTab = ({ frontmatter }) => {
         {frontmatter.weapons && <li>Weapon(s): {frontmatter.weapons.sort().join(", ")}</li>}
         {frontmatter.armor && <li>Armor: {frontmatter.armor.sort().join(", ")}</li>}
         <li>Count: {frontmatter.mini_count || 1}</li>
-        <li>Status: {frontmatter.status || "unpainted"}</li>
+        <li>Status: {frontmatter.status || "painted"}</li>
       </ul>
     </div>
   );
