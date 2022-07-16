@@ -1,7 +1,7 @@
 ---
 slug: eiryss-angel-of-retribution
-name: Eiryss, Mage-Hunter of Ios
-sku: Eiryss, Mage-Hunter of Ios, Mercenary Solo
+name: Eiryss, Angel of Retribution
+sku: Eiryss, Angel of Retribution, Mercenary Solo
 line:
   - Privateer Press
   - Warmachine
