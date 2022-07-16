@@ -1,6 +1,15 @@
 import React from "react";
 import { Button, Col, Form, InputGroup, Row } from "react-bootstrap";
 import { FaUndo } from "react-icons/fa";
+import styled from "styled-components";
+
+const Select = styled(Form.Select)`
+  word-wrap: break-word; /* IE*/
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: pre-wrap; /* other browsers */
+  // width: 150px;
+  display: inline-block;
+`;
 
 const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) => {
   const [buttonVariant, setButtonVariant] = React.useState("secondary");
@@ -18,7 +27,7 @@ const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) 
       </Form.Label>
       <Col sm={12}>
         <InputGroup>
-          <Form.Select size="sm" value={value} onChange={(e) => setValue(e.target.value)}>
+          <Select size="sm" value={value} onChange={(e) => setValue(e.target.value)}>
             <option value="all">Any</option>
             {options
               .filter((item) => item !== null)
@@ -27,7 +36,7 @@ const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) 
                   {item}
                 </option>
               ))}
-          </Form.Select>
+          </Select>
           <Button
             size="sm"
             variant={buttonVariant}
