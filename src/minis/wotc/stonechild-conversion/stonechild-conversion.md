@@ -21,8 +21,6 @@ race:
   - stonechild
 ---
 
-## Archived Blog Post
-
 I typically prefer working with pewter miniatures over plastic ones, but for my first attempt at a fairly extensive conversion the plastic WotC uses on their D&D Miniatures was a good start. I actually picked up a couple of Stonechild miniatures just for conversions for Earthdawn obsidimen. The pose isn't as interesting as the Chainmail sculpt and seems more compact, but considering how rare it is to find miniatures to pass as obsidimen you learn to deal with what you have.
 
 For this one I decided to try my hand at a conversion. The last image shows an unconverted version of this miniature for reference. The first step was to cut off the arms, slice them apart, and remove the weapon. I then repositioned the left arm and re-sculpted the shoulder around a pin. The right arm took more work; it was cut apart in three pieces and one was discarded. The other two were connected with a couple of pins and a greenstuff joint. I then resculpted the arm from greenstuff and pinned it to the body.

@@ -21,8 +21,6 @@ armor:
   - cloak
 ---
 
-## Archived Blog Post
-
 Epic Lylyth - just like regular Lylyth but with more Lylyth.
 
 That's a pretty fair statement, but there are some differences between the two models. First off I went away from the bone armor that I had used on the original Lylyth. It looked ok on the model but I wound up not carrying it through on the rest of the faction so switched back to metallic armor on Epic Lylyth.

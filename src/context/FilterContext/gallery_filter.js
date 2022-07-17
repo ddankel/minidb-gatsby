@@ -35,27 +35,49 @@ class GalleryFilter {
       this._matchesFilter(frontmatter.armor, this.armorFilter) &&
       this._matchesFilter(frontmatter.weapons, this.weaponFilter) &&
       this._matchesFilter(frontmatter.race, this.raceFilter) &&
-      this._matchesFilter(frontmatter.status, this.paintedFilter || "painted") &&
+      this._matchesFilter(frontmatter.status || "painted", this.paintedFilter) &&
       this._matchesLine(frontmatter.line)
     );
   }
 
-  _matchesFilter(value, filter) {
-    if (filter === "all") return true;
-    if (!value) return false;
+  /**
+   * If the currently set filter value includes the miniature's frontmater value
+   *
+   * @param   {String}  miniatureValue
+   * @param   {String}  filterValue
+   *
+   * @return  {Boolean}
+   */
+  _matchesFilter(miniatureValue, filterValue) {
+    if (filterValue === "all") return true;
+    if (!miniatureValue) return false;
 
-    value = [value].flat().map((item) => item.toLowerCase());
-    filter = filter.toLowerCase();
-    return value.includes(filter);
+    miniatureValue = [miniatureValue].flat().map((item) => item.toLowerCase());
+    filterValue = filterValue.toLowerCase();
+    return miniatureValue.includes(filterValue);
   }
 
-  _matchesLine(value) {
+  /**
+   * If the currently set miniature line filter matches the current miniature
+   *
+   * @param   {String}  miniatureValue
+   *
+   * @return  {Boolean}
+   */
+  _matchesLine(miniatureValue) {
     if (this.lineFilter === "all") return true;
 
-    const compiledLine = [value || ""].flat().join(" > ");
+    const compiledLine = [miniatureValue || ""].flat().join(" > ");
     return compiledLine.startsWith(this.lineFilter);
   }
 
+  /**
+   * If the current miniature is a "monsterous race"
+   *
+   * @param   {String}  race
+   *
+   * @return  {Boolean}
+   */
   _isFilteredMonster(race) {
     if (!this.ignoreMonsters) return false;
 

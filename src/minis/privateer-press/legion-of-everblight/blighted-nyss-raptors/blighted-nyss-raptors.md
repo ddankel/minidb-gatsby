@@ -12,7 +12,7 @@ photos:
   - ./PP-Hordes-LoE-Raptors-Dankel_2.jpg
   - ./PP-Hordes-LoE-Raptors-Dankel_3.jpg
   - ./PP-Hordes-LoE-Raptors-Dankel_4.jpg
-mini_count: 5
+quantity: 5
 race:
   - dragonspawn
   - elf
@@ -22,8 +22,6 @@ weapons:
 armor:
   - leather
 ---
-
-## Archived Blog Post
 
 I was really excited to paint the Raptors back when they were released while the game was still in Mk I. I really liked the sculpt and I was also a huge fan of their rules on the table. Painting blighted ulk was definitely easer than the Protectorate Vengers' horses.
 

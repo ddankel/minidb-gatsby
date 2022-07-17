@@ -23,26 +23,28 @@ const Navigator = ({ current }) => {
   const ToggleIcon = open ? BiCaretUp : BiCaretDown;
 
   return (
-    <Wrapper>
-      <Collapse in={open}>
-        <Contents id="navigation-buttons">
-          <Stack direction="horizontal">
-            <NavButton variant="prev" slug={prevMini.slug} />
-            <NavButton variant="next" slug={nextMini.slug} className="ms-auto" />
-          </Stack>
-        </Contents>
-      </Collapse>
-      <center>
-        <ToggleButton
-          onClick={() => setOpen(!open)}
-          aria-controls="navigation-buttons"
-          aria-expanded={open}
-          sz="sm"
-          className="bg-primary"
-        >
-          {toggleLabel} <ToggleIcon />
-        </ToggleButton>
-      </center>
+    <Wrapper style={{ display: "flex", justifyContent: "center" }}>
+      <div style={{ maxWidth: "650px", width: "650px" }}>
+        <Collapse in={open}>
+          <Contents id="navigation-buttons">
+            <Stack direction="horizontal">
+              <NavButton variant="prev" slug={prevMini.slug} />
+              <NavButton variant="next" slug={nextMini.slug} className="ms-auto" />
+            </Stack>
+          </Contents>
+        </Collapse>
+        <center>
+          <ToggleButton
+            onClick={() => setOpen(!open)}
+            aria-controls="navigation-buttons"
+            aria-expanded={open}
+            sz="sm"
+            className="bg-primary"
+          >
+            {toggleLabel} <ToggleIcon />
+          </ToggleButton>
+        </center>
+      </div>
     </Wrapper>
   );
 };

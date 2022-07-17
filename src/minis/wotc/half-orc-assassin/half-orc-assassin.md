@@ -18,8 +18,6 @@ armor:
   - cloak
 ---
 
-## Archived Blog Post
-
 This old Wizards of the Coast miniature is a relatively simple sculpt but he's got some nice character. The sculpt of the face in particular was fun to paint and took the darker skin tone I wanted to use on this miniature perfectly.
 
 Painted up to use as an ork in Earthdawn, I went with darker and muted colors to go with his thuggish clothing. He's since been adopted by a player for his thief character.

@@ -14,5 +14,5 @@ armor:
   - cloak
 race:
   - elf
-mini_count: 1
+quantity: 1
 ---

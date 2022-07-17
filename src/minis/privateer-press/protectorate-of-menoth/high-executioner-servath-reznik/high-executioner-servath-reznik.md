@@ -20,8 +20,6 @@ armor:
   - powered armor
 ---
 
-## Archived Blog Post
-
 Reznik was the first model that the Protectorate has gotten in a while that required some thought as to how to apply my color scheme to it. I like to stick to white armored plates and purple cloth, but Reznik's lack of robes combined with his layered shoulder pads meant I was going to have to modify my standard rules a bit. In the end I wound up with what you see above.
 
 The stock pose has Reznik facing to his left as if displaying his scroll for someone to read. I decided while assembling the model that I didn't like that so turned his head as if he was attacking with his sword. Unfortunately Reznik's body and right arm were one peace, which limited my options when it came to making his arm look as if it was being held min-swing. But the repose still looked a little more dynamic in my mind so I left it that way.

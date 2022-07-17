@@ -13,5 +13,5 @@ armor:
   - leather
 race:
   - human
-mini_count: 1
+quantity: 1
 ---

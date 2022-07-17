@@ -10,7 +10,7 @@ painted: 2008
 photos:
   - ./PP-WM-Merc-AiyanaAndHolt-Dankel_1.jpg
   - ./PP-WM-Merc-AiyanaAndHolt-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 race:
   - elf
   - human
@@ -20,8 +20,6 @@ armor:
   - clothing
   - cloak
 ---
-
-## Archived Blog Post
 
 I'm a big fan of the Aiyana and Holt. On top of being a solid unit on the tabletop, they're some of my favorite sculpts in the Warmachine miniature line. They're not swamped with accessories, but they're great sculpts and fit right in with the look and feel of the Iron Kingdoms.
 

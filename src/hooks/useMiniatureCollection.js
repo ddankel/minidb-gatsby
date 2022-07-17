@@ -25,7 +25,7 @@ export const query = graphql`
           weapons
           armor
           race
-          mini_count
+          quantity
         }
       }
     }

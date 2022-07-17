@@ -19,8 +19,6 @@ armor:
   - shield
 ---
 
-## Archived Blog Post
-
 This miniature is a converted Human Death Cleric from the old Wizards of the Coast Chainmail line. The original miniature (shown in the last image below) carried a heavy scythe which I replaced with a sword and shield. The shield was graciously donated by a Human Shadow Priest from the same line and army as the Death Cleric and the sword was from an old Ral Partha Half-Elf Ranger (also pictured in the last image) I've had sitting around for way too long. I had other options to choose from, but most were far too large for this miniature.
 
 The bone armor is pretty obvious on this one. The skirt was done in a greyish color to be reminiscent of a burial shroud. I contemplated just doing black hair, decided to go with this bright red instead. I like the unexpectedness of it.

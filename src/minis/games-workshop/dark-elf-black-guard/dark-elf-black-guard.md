@@ -8,7 +8,7 @@ painted: "2001"
 photos:
   - ./GW-DarkElfBlackGuard-Dankel_1.jpg
   - ./GW-DarkElfBlackGuard-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 weapons:
   - sword
 armor:
@@ -17,8 +17,6 @@ armor:
 race:
   - elf
 ---
-
-## Archived Blog Post
 
 The Dark Elf Black Guard were originally used to represent Fell Blades in my old Dark Elf Mordheim warband. As some of my earliest pieces, they really show my "basecoat, wash, drybush" techinques of the time. As unimpressive as they are now putting together a cohesive looking force was an accomplishment for me back then.
 

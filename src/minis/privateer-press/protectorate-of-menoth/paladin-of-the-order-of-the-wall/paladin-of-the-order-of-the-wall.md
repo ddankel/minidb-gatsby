@@ -11,7 +11,7 @@ photos:
   - ./PP-WM-PoM-Paladin-Dankel_1.jpg
   - ./PP-WM-PoM-Paladin-Dankel_2.jpg
   - ./PP-WM-PoM-Paladin-Dankel_3.jpg
-mini_count: 2
+quantity: 2
 armor:
   - plate
   - cloak
@@ -21,8 +21,6 @@ weapons:
 race:
   - human
 ---
-
-## Archived Blog Post
 
 The Paladin of the Order of the Wall was too interesting a sculpt to pass up, even if it's not quite as useful in-game as some of my other options. It was fun to paint up and looks great on the table. It's also recently been used as a battle-chaplain of Morrow in the Witchfire Trilogy. Sweet, sweet irony.
 

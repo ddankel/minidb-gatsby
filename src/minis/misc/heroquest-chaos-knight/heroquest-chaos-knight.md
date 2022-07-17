@@ -5,7 +5,7 @@ line:
   - Heroquest
 photos:
   - ./Heroquest-ChaosKnight.jpg
-mini_count: 4
+quantity: 4
 race:
   - human
 weapons:

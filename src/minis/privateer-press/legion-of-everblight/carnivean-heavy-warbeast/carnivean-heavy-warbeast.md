@@ -15,16 +15,14 @@ photos:
   - ./PP-Hordes-LoE-Carnivean2-Dankel_1.jpg
   - ./PP-Hordes-LoE-Carnivean2-Dankel_2.jpg
   - ./PP-Hordes-LoE-Carnivean2-Dankel_3.jpg
-mini_count: 2
+quantity: 2
 race:
   - dragonspawn
 weapons:
   - natural weapons
 ---
 
-## Archived Blog Post
-
-### Carnivean 1
+#### Carnivean 1
 
 Ah, the Carnivean. If not for the lack of opposable thumbs, he would overran the lowlands and rid Immoren of Everblight's enemies long ago.
 
@@ -36,6 +34,6 @@ That's when I realized that a hunk of pewter can qualify as 'bloodthirsty.' Fort
 
 With its increased size came larger expanses of flesh that needed blending together. As a result the Carnivean wasn't as simple to do as the Shredders - blending was a far slower and meticulous process. Upon completion I was initially concerned that there weren't any stark highlights along his back half, but then I decided that was a good thing. It gave him a much smoother, sleeker look than if I had gone too far and had very prominent clear razor highlights on his musculature.
 
-### Carnivean 2
+#### Carnivean 2
 
 For my second Carnivean I decided to change up its pose in two ways - I placed the head on facing forward instead of to the side (filing and greenstuffing the neck to accomodate this change) and I put a wrecked bonejack on the base under his front foot. Minor changes overall but just enough to make my two Carniveans easily differentiated on the table.

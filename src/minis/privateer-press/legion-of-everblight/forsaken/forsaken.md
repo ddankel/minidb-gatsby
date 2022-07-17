@@ -12,15 +12,13 @@ photos:
   - ./PP-Hordes-LoE-Forsaken-Dankel_2.jpg
   - ./PP-Hordes-LoE-Forsaken-Dankel_3.jpg
   - ./PP-Hordes-LoE-Forsaken-Dankel_4.jpg
-mini_count: 2
+quantity: 2
 race:
   - dragonspawn
   - elf
 weapons:
   - natural weapons
 ---
-
-## Archived Blog Post
 
 This little creature is one of the more blighted nyss in the Legion's forces. Although I'm not completely sold on the sculpt, it's stylistically an interesting piece. The limbs are very evocative of their bigger versions on the Carnivean and Seraph, which makes it fit in well with the army on the table . The elf itself just looks good and blighted in general but I just would have preferred something a bit more dynamic.
 

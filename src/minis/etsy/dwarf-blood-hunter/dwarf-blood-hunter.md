@@ -13,5 +13,5 @@ armor:
   - leather
 race:
   - dwarf
-mini_count: 1
+quantity: 1
 ---

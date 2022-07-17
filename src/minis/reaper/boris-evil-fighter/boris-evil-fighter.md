@@ -19,8 +19,6 @@ armor:
   - cloak
 ---
 
-## Archived Blog Post
-
 Actually deciding what colors to paint on a miniature is usually very difficult for me. I'm a more technically minded person, and grasp the application of colors and shading much faster than actually deciding what colors go together well. However when I saw Boris in the blister at my local store, I immediately knew exactly how I wanted to paint him up.
 
 When I saw Boris' armor, I immediately thought 'Dragon Highlord.' All you Dragonlance fans out there know exactly what I'm talking about. For the scales I chose to go with blue and metal banding. The skull breastplate screamed to be actual bone, and the spikes, kneepad, and sword haft were painted to match. The cloak and tabard were painted black as most blue dragon highlords were pictured. I decided to go with an 'evil black blade' highlighted with just a bit of blue along the edges. After the miniature was dullcoated, the sword was given a gloss overcoat so it's highly reflective in person.

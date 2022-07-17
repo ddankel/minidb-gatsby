@@ -1,7 +1,7 @@
 import React from "react";
 
 import { GalleryWrapper } from "./styled";
-import GalleryItem from "../GalleryItem";
+import GalleryItem from "./GalleryItem";
 
 const Gallery = ({ minis }) => {
   return (

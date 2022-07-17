@@ -17,7 +17,7 @@ photos:
   - ./PP-Hodes-PoM-ExemplarErrant-Dankel_7.jpg
   - ./PP-Hodes-PoM-ExemplarErrant-Dankel_8.jpg
   - ./PP-Hodes-PoM-ExemplarErrant-Dankel_9.jpg
-mini_count: 12
+quantity: 12
 armor:
   - plate
   - shield
@@ -27,8 +27,6 @@ weapons:
 race:
   - human
 ---
-
-## Archived Blog Post
 
 As much as painting ceremonial Exemplar armor [can be tedious](http://www.dankelzahn.com/blog/2009/09/29/exemplar-of-hate/) at times I really like way Exemplar look on the tabletop.
 

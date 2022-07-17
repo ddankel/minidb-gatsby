@@ -13,7 +13,7 @@ photos:
   - ./PP-WM-PoM-DaughtersOfTheFlame-Dankel_3.jpg
   - ./PP-WM-PoM-DaughtersOfTheFlame-Dankel_4.jpg
   - ./PP-WM-PoM-DaughtersOfTheFlame-Dankel_5.jpg
-mini_count: 6
+quantity: 6
 armor:
   - plate
 weapons:
@@ -21,8 +21,6 @@ weapons:
 race:
   - human
 ---
-
-## Archived Blog Post
 
 The Daughters of the Flame, aka Menoth's Angels, were a relatively dainty unit to paint compared to the bulky knights and spearmen that are more common in the Protectorate army. But they fit together well and once I got them on my painting desk it I was able to work through them relatively easily.
 

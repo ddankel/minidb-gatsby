@@ -13,7 +13,7 @@ photos:
   - ./PP-Hordes-LoE-Warchief-Dankel_3.jpg
   - ./PP-Hordes-LoE-Warchief-Dankel_4.jpg
   - ./PP-Hordes-LoE-Warchief-Dankel_5.jpg
-mini_count: 2
+quantity: 2
 weapons:
   - polearm
   - spear
@@ -25,8 +25,6 @@ race:
   - troll
   - ogre
 ---
-
-## Archived Blog Post
 
 Enough time had past since I painted my initial Warmongers that I was worried about being able to match their skin tones, but the War Chiefs turned out pretty close when I was done with them. That's one of the biggest hurdle I've come cross as my Legion army grows - matching blends I did on previous models.
 

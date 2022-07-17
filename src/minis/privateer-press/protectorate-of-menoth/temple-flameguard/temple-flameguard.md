@@ -14,7 +14,7 @@ photos:
   - ./PP-WM-PoM-TempleFlameguard-Dankel_4.jpg
   - ./PP-WM-PoM-TempleFlameguard-Dankel_5.jpg
   - ./PP-WM-PoM-TempleFlameguard-Dankel_6.jpg
-mini_count: 12
+quantity: 12
 armor:
   - plate
   - shield
@@ -24,8 +24,6 @@ weapons:
 race:
   - human
 ---
-
-## Archived Blog Post
 
 I painted the Temple Flameguard up during a business trip in 2006, back when taking fluids on an airplane wasn't restricted. They were done with what is at this point my standard Menite process. They flew home with me just a little short of complete but I finished the shields and spears and attached them all soon afterwards.
 

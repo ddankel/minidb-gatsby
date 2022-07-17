@@ -12,7 +12,7 @@ photos:
   - ./PP-Hordes-LoE-Deathstalker-Dankel_2.jpg
   - ./PP-Hordes-LoE-Deathstalker-Dankel_3.jpg
   - ./PP-Hordes-LoE-Deathstalker-Dankel_4.jpg
-mini_count: 2
+quantity: 2
 race:
   - dragonspawn
   - elf
@@ -23,8 +23,6 @@ armor:
   - cloak
   - leather
 ---
-
-## Archived Blog Post
 
 Even though they suffer the "2D" affliction that's affected many of Privateer's recent sculpts, I do like the Deathstalker models. Plenty of cloak to play with blending cloth on and enough different surfaces that even a monochromatic scheme can be executed without looking boring.
 

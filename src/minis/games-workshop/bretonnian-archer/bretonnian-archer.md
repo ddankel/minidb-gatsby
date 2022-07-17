@@ -6,7 +6,7 @@ line:
   - Warhammer
 photos:
   - ./GW-BretonnianArcher.jpg
-mini_count: 2
+quantity: 2
 weapons:
   - bow
 armor:

@@ -16,7 +16,6 @@ weapons:
 armor:
   - plate
   - leather
-status: wip
 recipes:
   - Coat
     - P3 Ironhull Gray

@@ -7,7 +7,7 @@ line:
 painted: 2010
 photos:
   - ./Reaper14060-LeisynnMercenariesMage-Dankel_1.jpg
-  - ./Reaper14060-LeisynnMercenariesMage-Dankel_1.jpg
+  - ./Reaper14060-LeisynnMercenariesMage-Dankel_2.jpg
 race:
   - human
 weapons:
@@ -16,8 +16,6 @@ weapons:
 armor:
   - robe
 ---
-
-## Archived Blog Post
 
 Leisynn probably lived on my painting desk in various stages of completion for close to a couple of years. I started and stopped him a number of times as I picked up other projects until I decided to finally buckle down and finish him up.
 

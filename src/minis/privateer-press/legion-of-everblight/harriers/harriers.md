@@ -10,14 +10,12 @@ painted: 2007
 photos:
   - ./PP-Hordes-LoE-Harriers-Dankel_1.jpg
   - ./PP-Hordes-LoE-Harriers-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 race:
   - dragonspawn
 weapons:
   - natural weapons
 ---
-
-## Archived Blog Post
 
 The Shredders were the first part of the Legion of Everblight battlebox that I decided to tackle. I figured that they were small enough that they'd be quick to finsih and I'd be able to see my intended color scheme to determine if I liked it. They became a template I would eventually follow on other beasts as my collection grew - light blue skin, bone carapace, and pink gums. Since Shredders are little more than walking mouths in Hordes, I wanted their toothy maws to be suitably prominent.
 

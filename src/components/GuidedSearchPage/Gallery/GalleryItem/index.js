@@ -3,7 +3,7 @@ import { Link, navigate } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import { Miniature, ImageContainer, Caption } from "./styled";
-import usePhotos from "../../../hooks/usePhotos";
+import usePhotos from "../../../../hooks/usePhotos";
 
 const GalleryItem = ({ mini }) => {
   const { slug, name } = mini.frontmatter;

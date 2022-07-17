@@ -21,8 +21,6 @@ race:
   - unknown
 ---
 
-## Archived Blog Post
-
 Despite how much I disliked the stock pose on this miniature I wasn't willing to spend the time required to do a complete re-pose on a figure I wasn't expecting to field too often to begin with. So I decided to work with the stock pose as best I could.
 
 The flesh tones were done by starting with an olive color that I mixed with some gray to make it a more neutral tone. I shaded with a brown wash and started highlighting by mixing a lighter gray into the base color and layering up from there. Once that was done I added the brown specks to the forehead and washed over it with the olive color to blend it back into the flesh color.

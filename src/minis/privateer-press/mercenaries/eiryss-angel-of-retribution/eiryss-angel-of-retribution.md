@@ -1,7 +1,7 @@
 ---
 slug: eiryss-angel-of-retribution
-name: Eiryss, Mage-Hunter of Ios
-sku: Eiryss, Mage-Hunter of Ios, Mercenary Solo
+name: Eiryss, Angel of Retribution
+sku: Eiryss, Angel of Retribution, Mercenary Solo
 line:
   - Privateer Press
   - Warmachine
@@ -21,8 +21,6 @@ armor:
   - mail
   - leather
 ---
-
-## Archived Blog Post
 
 As interesting as the scenic base the [stock Epic Eiryss](http://privateerpress.com/warmachine/gallery/mercenaries/solos/eiryss-angel-of-retribution) is perched on is, it illustrates one of the biggest problem with pre-attached scenic bases. None of my Protectorate models were mounted on anything resembling urban bases, so using eEiryss stock would mean the base not fitting in with the rest of my army. It's not like I could toss some dirt and gravel around the bottom and call it done.... who puts a chimney in the middle of the wastes?
 

@@ -19,8 +19,6 @@ armor:
   - powered armor
 ---
 
-## Archived Blog Post
-
 I purchased Kaelyssa and Garryth back when the Retribution of Scyrah was first released just to have them to paint. After a knocking the loosest of the rust off with a few test figures I sat down to see what I could do with my Retribution figures.
 
 The gray-plated armor was particularly challenging. I had to try to make it look like gray colored plate as opposed to a nmm paint job. I think I accomplished that by not going quite as deep with the shadows and bright with the highlights. I did want to deepen the shadows just a little more but I wasn't able to get it to look right.

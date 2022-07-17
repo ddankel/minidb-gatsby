@@ -21,8 +21,6 @@ armor:
   - cloak
 ---
 
-## Archived Blog Post
-
 Of the two Retribution warcasters I've painted at this point, I think Kaelyssa came out better. I really like Garryth's sculpt but hers just turned out far easier to paint.
 
 One of the new colors I tried out on Garryth and Kaelyss was Reaper Master Series Gunmetal Blue. It's a very deep, intense color out of the bottle so I muted it by mixing in some GW Boltgun Metal. After a few washes I highlighted by mixing GW Mithril into the initial color. Thanks to Neomorte for turning me on to this color - he uses it extensively on his Legion models.

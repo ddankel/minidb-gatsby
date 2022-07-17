@@ -14,7 +14,7 @@ photos:
   - ./PP-Hordes-LoE-BlightedArchers-Dankel_5.jpg
   - ./PP-Hordes-LoE-BlightedArchers-Dankel_6.jpg
   - ./PP-Hordes-LoE-BlightedArchers-Dankel_7.jpg
-mini_count: 12
+quantity: 12
 race:
   - dragonspawn
   - elf
@@ -24,8 +24,6 @@ weapons:
 armor:
   - leather
 ---
-
-## Archived Blog Post
 
 The blighted archers were one of the first Legion units I painted, and show some of my early steps in establishing my highlighting/shading on their dark blue leathers. When I added the unit attachment, which was painted and photographed in a different batch a few months later, to the gallery I realized a couple things. First, that I had gotten used to working with the legion colors and produced smoother results. And second, that the color balance on the unit's pictures was way off.
 

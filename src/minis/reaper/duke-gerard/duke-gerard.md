@@ -15,6 +15,6 @@ armor:
 race:
   - human
 recipes:
-  - armor
+  - Armor
     - Base 2:1 GW Chainmail:Vallejo Gold
 ---

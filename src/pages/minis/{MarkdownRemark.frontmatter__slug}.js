@@ -32,7 +32,7 @@ export const pageQuery = graphql`
         race
         status
         recipes
-        mini_count
+        quantity
       }
     }
   }
@@ -42,7 +42,7 @@ const MiniaturePageTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
 
   return (
-    <AppLayout variant="narrow">
+    <AppLayout>
       <Helmet>
         <title>{frontmatter.sku || frontmatter.name} | MiniDB</title>
       </Helmet>

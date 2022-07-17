@@ -19,8 +19,6 @@ armor:
   - robe
 ---
 
-## Archived Blog Post
-
 I painted the Hierophant in time for DieCon X back in 2010. I'm pretty happy with how it turned out.
 
 I think I've already made my biggest critique of this figure in a previous WIP post about it.
