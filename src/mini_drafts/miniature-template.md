@@ -15,5 +15,5 @@ armor:
   - optional
 race:
   - optional
-mini_count: 1
+quantity: 1
 ---

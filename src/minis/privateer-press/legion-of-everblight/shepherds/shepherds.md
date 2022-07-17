@@ -10,7 +10,7 @@ painted: 2008
 photos:
   - ./PP-Hordes-LoE-Shepherds-Dankel_1.jpg
   - ./PP-Hordes-LoE-Shepherds-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 race:
   - elf
 weapons:

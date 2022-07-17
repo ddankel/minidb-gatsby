@@ -130,7 +130,7 @@ const schema = [
     deprecatedValues: deprecatedValues.race,
   },
   {
-    key: "mini_count",
+    key: "quantity",
     type: "scalar",
     required: false,
     validate(value) {

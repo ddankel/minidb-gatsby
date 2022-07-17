@@ -8,7 +8,7 @@ painted: "2001"
 photos:
   - ./GW-DarkElfShades-Dankel_1.jpg
   - ./GW-DarkElfShades-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 weapons:
   - sword
   - crossbow

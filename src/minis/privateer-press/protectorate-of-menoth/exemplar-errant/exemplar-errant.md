@@ -17,7 +17,7 @@ photos:
   - ./PP-Hodes-PoM-ExemplarErrant-Dankel_7.jpg
   - ./PP-Hodes-PoM-ExemplarErrant-Dankel_8.jpg
   - ./PP-Hodes-PoM-ExemplarErrant-Dankel_9.jpg
-mini_count: 12
+quantity: 12
 armor:
   - plate
   - shield

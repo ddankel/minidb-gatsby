@@ -12,7 +12,7 @@ photos:
   - ./PP-WM-PoM-Choir-Dankel_2.jpg
   - ./PP-WM-PoM-Choir-Dankel_3.jpg
   - ./PP-WM-PoM-Choir-Dankel_4.jpg
-mini_count: 6
+quantity: 6
 armor:
   - robe
 weapons:

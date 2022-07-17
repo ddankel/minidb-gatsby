@@ -12,7 +12,7 @@ photos:
   - ./PP-WM-PoM-Seneschal-Dankel_3.jpg
   - ./PP-WM-PoM-Seneschal2-Dankel_1.jpg
   - ./PP-WM-PoM-Seneschal2-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 armor:
   - plate
 weapons:

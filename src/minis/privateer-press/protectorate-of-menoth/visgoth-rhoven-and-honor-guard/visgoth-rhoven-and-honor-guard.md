@@ -12,7 +12,7 @@ photos:
   - ./Rhoven-DDankel-2.jpg
   - ./Rhoven-DDankel-3.jpg
   - ./Rhoven-DDankel-4.jpg
-mini_count: 3
+quantity: 3
 armor:
   - cloak
   - robe

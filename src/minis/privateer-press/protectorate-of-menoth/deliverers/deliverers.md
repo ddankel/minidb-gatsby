@@ -12,7 +12,7 @@ photos:
   - ./PP-WM-PoM-Deliverers-Dankel_3.jpg
   - ./PP-WM-PoM-Deliverers-Dankel_4.jpg
   - ./PP-WM-PoM-Deliverers-Dankel_5.jpg
-mini_count: 10
+quantity: 10
 armor:
   - plate
   - mail

@@ -14,7 +14,7 @@ photos:
   - ./PP-Hordes-LoE-Shredders-Dankel_5.jpg
   - ./PP-Hordes-LoE-Shredders-Dankel_6.jpg
   - ./PP-Hordes-LoE-Shredders-Dankel_7.jpg
-mini_count: 4
+quantity: 4
 race:
   - dragonspawn
 weapons:

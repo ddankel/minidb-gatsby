@@ -5,7 +5,7 @@ line:
   - Dragonstrike
 photos:
   - ./Dragonstrike-Thief.jpg
-mini_count: 2
+quantity: 2
 weapons:
   - dagger
 armor:

@@ -32,7 +32,7 @@ export const pageQuery = graphql`
         race
         status
         recipes
-        mini_count
+        quantity
       }
     }
   }

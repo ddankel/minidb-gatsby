@@ -12,7 +12,7 @@ photos:
   - ./PP-Hordes-LoE-Forsaken-Dankel_2.jpg
   - ./PP-Hordes-LoE-Forsaken-Dankel_3.jpg
   - ./PP-Hordes-LoE-Forsaken-Dankel_4.jpg
-mini_count: 2
+quantity: 2
 race:
   - dragonspawn
   - elf

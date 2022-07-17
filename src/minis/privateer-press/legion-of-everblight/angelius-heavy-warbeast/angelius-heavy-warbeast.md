@@ -12,7 +12,7 @@ photos:
   - ./PP-Hordes-LoE-Angelii-Dankel_2.jpg
   - ./PP-Hordes-LoE-Angelii-Dankel_3.jpg
   - ./PP-Hordes-LoE-Angelii-Dankel_4.jpg
-mini_count: 2
+quantity: 2
 race:
   - dragonspawn
 weapons:

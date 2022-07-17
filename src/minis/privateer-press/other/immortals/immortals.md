@@ -14,5 +14,5 @@ weapons:
 race:
   - golem
   - obsidiman
-mini_count: 2
+quantity: 2
 ---

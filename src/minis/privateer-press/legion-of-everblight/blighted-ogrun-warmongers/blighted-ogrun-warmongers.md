@@ -14,7 +14,7 @@ photos:
   - ./PP-Hordes-LoE-Warmongers-Dankel_4.jpg
   - ./PP-Hordes-LoE-Warmongers-Dankel_5.jpg
   - ./PP-Hordes-LoE-Warmongers-Dankel_6.jpg
-mini_count: 5
+quantity: 5
 weapons:
   - polearm
   - spear

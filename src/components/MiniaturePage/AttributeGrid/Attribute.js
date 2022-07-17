@@ -6,7 +6,7 @@ const Container = styled("div")`
 `;
 
 const Label = styled("div")`
-  width: 4rem;
+  width: 4.5rem;
   margin-right: 1rem;
 `;
 

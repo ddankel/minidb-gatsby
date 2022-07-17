@@ -12,7 +12,7 @@ photos:
   - ./PP-Hordes-LoE-Raptors-Dankel_2.jpg
   - ./PP-Hordes-LoE-Raptors-Dankel_3.jpg
   - ./PP-Hordes-LoE-Raptors-Dankel_4.jpg
-mini_count: 5
+quantity: 5
 race:
   - dragonspawn
   - elf

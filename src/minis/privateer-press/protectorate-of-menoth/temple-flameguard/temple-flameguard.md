@@ -14,7 +14,7 @@ photos:
   - ./PP-WM-PoM-TempleFlameguard-Dankel_4.jpg
   - ./PP-WM-PoM-TempleFlameguard-Dankel_5.jpg
   - ./PP-WM-PoM-TempleFlameguard-Dankel_6.jpg
-mini_count: 12
+quantity: 12
 armor:
   - plate
   - shield

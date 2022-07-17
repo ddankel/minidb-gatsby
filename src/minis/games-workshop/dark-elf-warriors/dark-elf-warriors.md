@@ -12,7 +12,7 @@ photos:
   - ./GW-DarkElfWarriors-Dankel_4.jpg
   - ./GW-DarkElfWarriors-Dankel_5.jpg
   - ./GW-DarkElfWarriors-Dankel_6.jpg
-mini_count: 12
+quantity: 12
 weapons:
   - sword
   - spear

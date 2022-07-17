@@ -15,7 +15,7 @@ photos:
   - ./PP-WM-PoM-Revenger2-Dankel_2.jpg
   - ./PP-WM-PoM-Revenger2-Dankel_3.jpg
   - ./PP-WM-PoM-Revenger2-Dankel_4.jpg
-mini_count: 2
+quantity: 2
 race:
   - warjack
 armor:

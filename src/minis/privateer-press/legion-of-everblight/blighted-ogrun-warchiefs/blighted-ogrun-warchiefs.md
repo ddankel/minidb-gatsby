@@ -13,7 +13,7 @@ photos:
   - ./PP-Hordes-LoE-Warchief-Dankel_3.jpg
   - ./PP-Hordes-LoE-Warchief-Dankel_4.jpg
   - ./PP-Hordes-LoE-Warchief-Dankel_5.jpg
-mini_count: 2
+quantity: 2
 weapons:
   - polearm
   - spear

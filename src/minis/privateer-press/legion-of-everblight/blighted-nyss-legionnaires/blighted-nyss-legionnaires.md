@@ -15,7 +15,7 @@ photos:
   - ./PP-Hodes-LoE-BlightedNyssLegionnaires-Dankel_5.jpg
   - ./PP-Hodes-LoE-BlightedNyssLegionnaires-Dankel_6.jpg
   - ./PP-Hodes-LoE-BlightedNyssLegionnaires-Dankel_7.jpg
-mini_count: 10
+quantity: 10
 race:
   - dragonspawn
   - elf

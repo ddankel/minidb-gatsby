@@ -11,7 +11,7 @@ photos:
   - ./PP-WM-PoM-Paladin-Dankel_1.jpg
   - ./PP-WM-PoM-Paladin-Dankel_2.jpg
   - ./PP-WM-PoM-Paladin-Dankel_3.jpg
-mini_count: 2
+quantity: 2
 armor:
   - plate
   - cloak

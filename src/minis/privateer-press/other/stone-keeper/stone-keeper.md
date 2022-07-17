@@ -18,5 +18,5 @@ armor:
 race:
   - human
   - elf
-mini_count: 1
+quantity: 1
 ---

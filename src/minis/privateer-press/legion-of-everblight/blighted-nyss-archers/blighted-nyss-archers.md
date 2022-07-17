@@ -14,7 +14,7 @@ photos:
   - ./PP-Hordes-LoE-BlightedArchers-Dankel_5.jpg
   - ./PP-Hordes-LoE-BlightedArchers-Dankel_6.jpg
   - ./PP-Hordes-LoE-BlightedArchers-Dankel_7.jpg
-mini_count: 12
+quantity: 12
 race:
   - dragonspawn
   - elf

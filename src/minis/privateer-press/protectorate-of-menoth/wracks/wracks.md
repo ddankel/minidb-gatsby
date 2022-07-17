@@ -9,7 +9,7 @@ line:
 painted: 2008
 photos:
   - ./PP-WM-PoM-Wracks-Dankel_1.jpg
-mini_count: 3
+quantity: 3
 race:
   - human
 ---

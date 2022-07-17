@@ -11,7 +11,7 @@ photos:
   - ./PP-Hordes-Minion-SwampGobbers-Dankel_1.jpg
   - ./PP-Hordes-Minion-SwampGobbers-Dankel_2.jpg
   - ./PP-Hordes-Minion-SwampGobbers-Dankel_3.jpg
-mini_count: 2
+quantity: 2
 race:
   - goblin
 armor:

@@ -10,7 +10,7 @@ painted: 2007
 photos:
   - ./PP-Hordes-LoE-Harriers-Dankel_1.jpg
   - ./PP-Hordes-LoE-Harriers-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 race:
   - dragonspawn
 weapons:

@@ -8,7 +8,7 @@ painted: "2001"
 photos:
   - ./GW-DarkElfBlackGuard-Dankel_1.jpg
   - ./GW-DarkElfBlackGuard-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 weapons:
   - sword
 armor:

@@ -15,7 +15,7 @@ photos:
   - ./PP-Hordes-LoE-Carnivean2-Dankel_1.jpg
   - ./PP-Hordes-LoE-Carnivean2-Dankel_2.jpg
   - ./PP-Hordes-LoE-Carnivean2-Dankel_3.jpg
-mini_count: 2
+quantity: 2
 race:
   - dragonspawn
 weapons:

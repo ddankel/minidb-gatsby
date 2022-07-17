@@ -10,7 +10,7 @@ painted: 2008
 photos:
   - ./PP-WM-Merc-AiyanaAndHolt-Dankel_1.jpg
   - ./PP-WM-Merc-AiyanaAndHolt-Dankel_2.jpg
-mini_count: 2
+quantity: 2
 race:
   - elf
   - human

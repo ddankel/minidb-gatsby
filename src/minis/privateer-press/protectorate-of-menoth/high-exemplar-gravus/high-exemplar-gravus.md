@@ -12,7 +12,7 @@ photos:
   - ./PP-WM-PoM-HighExemplarGravus-Dankel_2.jpg
   - ./PP-WM-PoM-HighExemplarGravus-Dankel_3.jpg
   - ./PP-WM-PoM-HighExemplarGravus-Dankel_4.jpg
-mini_count: 2
+quantity: 2
 armor:
   - plate
 weapons:

@@ -15,7 +15,7 @@ photos:
   - ./GW-DwarfWarriors-Dankel_7.jpg
   - ./GW-DwarfWarriors-Dankel_8.jpg
   - ./GW-DwarfWarriors-Dankel_9.jpg
-mini_count: 11
+quantity: 11
 weapons:
   - hammer
   - axe

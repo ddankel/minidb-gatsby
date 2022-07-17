@@ -14,7 +14,7 @@ photos:
   - ./PP-Hordes-LoE-Striders-Dankel_5.jpg
   - ./PP-Hordes-LoE-Striders-Dankel_6.jpg
   - ./PP-Hordes-LoE-Striders-Dankel_7.jpg
-mini_count: 8
+quantity: 8
 race:
   - dragonspawn
   - elf

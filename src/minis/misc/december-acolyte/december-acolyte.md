@@ -14,7 +14,7 @@ armor:
 race:
   - human
   - elf
-mini_count: 6
+quantity: 6
 recipes:
   - Overcoat
     - Base RMS Yellowed Bone, then AB Goosefeather

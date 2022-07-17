@@ -17,5 +17,5 @@ armor:
   - robe
 race:
   - human
-mini_count: 2
+quantity: 2
 ---

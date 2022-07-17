@@ -13,7 +13,7 @@ photos:
   - ./PP-WM-PoM-DaughtersOfTheFlame-Dankel_3.jpg
   - ./PP-WM-PoM-DaughtersOfTheFlame-Dankel_4.jpg
   - ./PP-WM-PoM-DaughtersOfTheFlame-Dankel_5.jpg
-mini_count: 6
+quantity: 6
 armor:
   - plate
 weapons:

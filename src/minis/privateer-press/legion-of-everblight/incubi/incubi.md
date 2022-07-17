@@ -13,7 +13,7 @@ photos:
   - ./PP-Hordes-LoE-Incubi-Dankel_3.jpg
   - ./PP-Hordes-LoE-Incubi-Dankel_4.jpg
   - ./PP-Hordes-LoE-Incubi-Dankel_5.jpg
-mini_count: 5
+quantity: 5
 race:
   - dragonspawn
   - elf

@@ -12,7 +12,7 @@ photos:
   - ./PP-WM-PoM-Zealots-Dankel_2.jpg
   - ./PP-WM-PoM-Zealots-Dankel_3.jpg
   - ./PP-WM-PoM-Zealots-Dankel_4.jpg
-mini_count: 11
+quantity: 11
 armor:
   - clothing
 weapons:
