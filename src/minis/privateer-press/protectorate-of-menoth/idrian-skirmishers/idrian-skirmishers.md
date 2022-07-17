@@ -24,8 +24,6 @@ race:
   - human
 ---
 
-## Archived Blog Post
-
 I'm very happy with how my Idrians turned out. I knew they were going to go into my Hardcore list for DieCon 8 (in 2009) so I really wanted them to look good. Unlike most of the Protectorate models, these had a lot of bare flesh to paint up and that's always a challenge for me.
 
 I took my time with the same flesh colors I used on Amon Ad-Raza (who is also an Idrian in the fluff). That meant starting with Vallejo Model Color Brown Rose, and layering up through Medium Flesh to Sunny Skintone.

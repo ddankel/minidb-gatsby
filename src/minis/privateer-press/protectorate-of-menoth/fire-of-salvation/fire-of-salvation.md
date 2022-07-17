@@ -17,8 +17,6 @@ weapons:
   - mace
 ---
 
-## Archived Blog Post
-
 The Fire of Salvation sat on my painting desk for about a year and a half before I finally completed it. I never really felt the desire to field him in Warmachine in Mk I and painting yet another warjack as just tedious so work slowed to a crawl. I finished him up just in time for MkII, where he got a nice little boost.
 
 My biggest complaint with this model is the metalwork on the shoulders. PP sculpted the Guardian similarly, and I just can't seem to paint those areas as well as I'd like. Metallics are one of my weak points in general and broad expanses of metal work just highlight my flaws.

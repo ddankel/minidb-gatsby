@@ -22,8 +22,6 @@ armor:
   - cloak
 ---
 
-## Archived Blog Post
-
 For the most part Vayl was a pretty standard paint job - a more muted dark blue cloak over blue robes with basic cool metallics. The colors are slightly more distinct in person, but the similarity between the two was intentional. My Nyssian paint scheme is all about being monochromatic and cold and I think these two colors together really help convey that. I went with a rather risqué way of painting her up; my initial intent was to take a light ink and make her chest and stomach look as if it was covered in translucent fabric like Vayl's concept art in Hordes: Primal but I decided to change at the last minute and leave it as bare skin.
 
 I started with the P3 paint Pig Iron for all of the metallics. It's a darker gray - even darker than GW's Boltgun - that I darkened even more with just a little black paint. Then I went over the raised portions of the metal areas with GW Chainmail to give those areas a two-tone look. A few final washes in P3 Armor Wash ink for depth and I had some nice two color plates that continued the monochromatic theme.

@@ -23,8 +23,6 @@ weapons:
   - mace
 ---
 
-## Archived Blog Post
-
 #### First Miniature
 
 The Crusader was the last warjack I painted from my battlebox, and I think it turned out better than the lights. After looking over the Repenter and my first Revenger, the first thing I decided was to do away with the razor highlighting. It just wasn't coming out as expected, so I moved on to wet blending. The blending is probably the most visible on the overhead hood in the first two images and on the shoulders in the fourth. Although I could have done a bit more contrast, I was happy with how smooth it came out using the craft paints I initially started painting with.

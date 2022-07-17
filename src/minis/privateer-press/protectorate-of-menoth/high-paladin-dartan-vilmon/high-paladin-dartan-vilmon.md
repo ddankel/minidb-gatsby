@@ -21,8 +21,6 @@ race:
   - human
 ---
 
-## Archived Blog Post
-
 Vilmon was a fun sculpt to paint, but I had to keep his arms separate until after painting was complete or I wouldn't have been able to get to this face and upper chest. More than anything else though I was pretty happy with his base.
 
 I had envisioned Vilmon's base it to be a cobblestone surface with a menofix centered underneath Vilmon, but had some trouble at first executing the concept. I wound up printing a Menofix out on cardstock, then cutting it out and gluing it to a scrap of pink insulation foam. I then heaped paint onto this and stamped it onto another piece of foam to get the outline I wanted. Then I used a ballpoint pen to create the mortar joints. Finally I drybrushed the stones gray to get texture and highlighting and stained the menofix with the Royal Plum color I use for my army.

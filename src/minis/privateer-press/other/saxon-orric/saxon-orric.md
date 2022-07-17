@@ -37,8 +37,6 @@ recipes:
     - Edge pure chainmail
 ---
 
-## Archived Blog Post
-
 I painted up Saxon to use as an RPG figure for a desert-flavored character in my Earthdawn game. This required a replacement for his left hand which held a rifle that would be out of place in that game, and mounting on a smaller 25mm base which is easier to use on 1" grids the few times we actually use them.
 
 The alterations to Saxon will would require some additional work to use him in an official Hordes event. Fortunately the inside of the bevel of a 30mm base is roughly 25mm so some BluTack would allow me to stack the bases for temporary use.

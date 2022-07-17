@@ -25,8 +25,6 @@ armor:
   - cloak
 ---
 
-## Archived Blog Post
-
 Once I finished up my blighted archers I decided to go ahead and get the last nyss unit, the Striders, done as well. Although I had been looking at blighted elves long enough I wanted to get the Striders done while I was comfortable with to the techniques I was going to have to use. I could have waited, but with my luck that would have resulted in the Striders looking differently than the archers.
 
 The flesh and armor were painted just like the Blighted Archers and Swordmasters, so there was no surprised there. I wanted the miniature to remain monochromatic so I decided to try change my colors up a little for the cloak. For the leather armor on my Nyss I had started with Appelbarrel Midnight Blue and highlighted up to Dutch Blue, which results in a more intense blue color. For the cloak I started with the same Midnight Blue, washed it with P3 Armor Wash, then started highlighting up by mixing Delta Ceramcoat Cape Cod Blue (a grayish light blue) into the Midnight Blue. The result was a more neutral dark blue cloth to compliment the intense blue armor. The difference is subtle on the table but I'm satisfied with how it looks.

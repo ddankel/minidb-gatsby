@@ -22,8 +22,6 @@ weapons:
   - natural weapons
 ---
 
-## Archived Blog Post
-
 #### Carnivean 1
 
 Ah, the Carnivean. If not for the lack of opposable thumbs, he would overran the lowlands and rid Immoren of Everblight's enemies long ago.

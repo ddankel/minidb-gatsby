@@ -18,6 +18,4 @@ armor:
   - clothing
 ---
 
-## Archived Blog Post
-
 I started up the Swamp Gobbers while I was painting Rineholdt a while back. Although they're pretty basic the figures have a lot of character and were a lot of fun to paint.

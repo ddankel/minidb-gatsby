@@ -18,8 +18,6 @@ armor:
   - cloak
 ---
 
-## Archived Blog Post
-
 Comparing Strach here to the original sculpt I made a few minor changes. The original sword was damaged pretty much beyond repair, and my attempts at straightening it weakened the blade to the point I decided to replace it completely.
 
 I also did a few quick alterations to his right arm, replacing the spell effect with the hand of another miniature in a beckoning gesture. Finally the skulls were filed off his cuffs for a little less gothic look.

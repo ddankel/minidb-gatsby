@@ -25,8 +25,6 @@ race:
   - human
 ---
 
-## Archived Blog Post
-
 I painted Rhoven and his Exemplar honor guard up at the tail end of my Protectorate collection. I've only fielded them once or twice since they were first released, and as such they kept getting pushed back to the end of my painting queue. But as PP's release schedule slowed the past couple years I was finally able to get to them.
 
 The Exemplar are pretty standard at this point so I didn't spend as much time on them as I did on Rhoven himself. I think I'm the most happy with how the robes over Rhoven's legs turned out.

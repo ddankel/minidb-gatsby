@@ -22,8 +22,6 @@ weapons:
   - natural weapons
 ---
 
-## Archived Blog Post
-
 ### Seraph 1
 
 This seraph was the first non-battlebox beast that I painted. I wanted to get it on the table and use it but I didn't want to affix it to the base before I painted it queued up next out of necessity. The Seraph is painted just like the rest of my beasts with the exception of the wings, which didn't have any precedent yet. I wound up going with a darker blue, similar to the color I used for the nyss' leather.

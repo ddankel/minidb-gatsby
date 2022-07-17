@@ -24,8 +24,6 @@ armor:
   - leather
 ---
 
-## Archived Blog Post
-
 Even though they suffer the "2D" affliction that's affected many of Privateer's recent sculpts, I do like the Deathstalker models. Plenty of cloak to play with blending cloth on and enough different surfaces that even a monochromatic scheme can be executed without looking boring.
 
 At 2 points each the Deathstalker is versatile enough to have a couple to fit into armies from time to time. Each model can put two shots into an army each turn, which can really help out against armies that rely on specific lynchpin models that they can snipe.

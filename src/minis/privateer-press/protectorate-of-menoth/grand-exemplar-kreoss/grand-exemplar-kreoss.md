@@ -23,8 +23,6 @@ armor:
   - powered armor
 ---
 
-## Archived Blog Post
-
 As impressive as the concept art for Epic Kreoss is in the Apotheosis rulebook, his miniature is only so-so. Instead of being the giant, imposing symbolic bastion of the Menite faith, he looks like a squat child wearing his father's armor.
 
 And other than painting his cloak in Reaper Master Series this miniature was painted in the exact same scheme as his non-epic version.

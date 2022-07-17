@@ -21,8 +21,6 @@ race:
   - human
 ---
 
-## Archived Blog Post
-
 I wasn't a big fan of the stock pose of the Knight Exemplar Seneschal figure. Extraneous back banners aside, there was just something about how it held its swords that didn't work for me. So that meant breaking out the jeweler's saw and some putty and making some changes.
 
 The first and most obvious change I made was to leave the back banners off of the figures. That left a couple of slots on their backs though where the flag posts were attached. To cover the holes I took some casts of the menofix-shaped decorations from their chests and used some greenstuff copies to cover the banners' attachment slots.

@@ -27,8 +27,6 @@ race:
   - dwarf
 ---
 
-## Archived Blog Post
-
 Years ago a friend of mine left his plastic dwarf boxed set with me when he left the game. They have been sitting around for a long while until I finally decided to paint up a collection of them with different weapons for use in various role-playing or miniature games.
 
 The beards were a fun shortcut. I basecoated all of them (except those that would be black) with Reaper Master Series Bleached Bone and then used washes to tint and shade them the desired color. It was a nice time-saving technique for these dorfs.

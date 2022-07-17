@@ -17,8 +17,6 @@ armor:
   - mail
 ---
 
-## Archived Blog Post
-
 The Snakestrike Duelist is an older D&D Chainmail figure I painted as a side project back in 2009 ago. The sculpt itself is typical for the Chainmail line, relatively flat and almost 2D-ish compared with more intricately sculpted miniatures. Done mostly speed-painting, the skin isn't as smooth as I'd like but is a solid tabletop piece.
 
 My main motivation for working on this figure was working on the scarf flowing down from her neck. Painting flowing robes - like on most of my Menite figures, is easier for me. For the most parts the bulges and folds on the robes dictate where highlights are placed.

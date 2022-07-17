@@ -12,5 +12,3 @@ armor:
 race:
   - elf
 ---
-
-## Archived Blog Post

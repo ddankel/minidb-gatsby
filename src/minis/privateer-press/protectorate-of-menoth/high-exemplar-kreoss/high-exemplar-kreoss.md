@@ -22,8 +22,6 @@ armor:
   - robe
 ---
 
-## Archived Blog Post
-
 Kreoss was the last model of my original battlebox I painted, and going back to cloth and a human-scale figure was surprisingly awkward for me. I had gotten such into the swing of painting steam-powered robots that I had to stop and think about it for a few moments.
 
 I changed up my recipe for metallic gold on this figure, though it doesn't come through clear on the photograph. It's less reddish and more yellow than the jacks in person. I wound up continuing this recipe on my Protectorate forces instead of my original.

@@ -24,8 +24,6 @@ weapons:
   - spear
 ---
 
-## Archived Blog Post
-
 ### First Mini
 
 I started this Revenger soon after the Repenter was completed. I decided to switch up the color scheme across the upper body of the miniature for a bit of variety, and it turned out fairly well. Taking what I had learned from the Repenter, I decided on a more subtle highlighting on the 'hood' and shoulder pieces on this figure. Unfortunately most of the highlighting wound up being washed out during photographing the mini.

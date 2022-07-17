@@ -25,8 +25,6 @@ armor:
   - leather
 ---
 
-## Archived Blog Post
-
 The blighted archers were one of the first Legion units I painted, and show some of my early steps in establishing my highlighting/shading on their dark blue leathers. When I added the unit attachment, which was painted and photographed in a different batch a few months later, to the gallery I realized a couple things. First, that I had gotten used to working with the legion colors and produced smoother results. And second, that the color balance on the unit's pictures was way off.
 
 The hardest part of these models was the swords sheaths and quivers - each and everyone was pinned to the archer's body. It resulted in a lot of tedious work but the last thing I needed was to have these pieces breaking off during play.

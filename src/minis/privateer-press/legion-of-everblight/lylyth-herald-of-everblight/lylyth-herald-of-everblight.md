@@ -22,8 +22,6 @@ armor:
   - leather
 ---
 
-## Archived Blog Post
-
 Lylyth proved to be a bit difficult to paint as I threw ideas around as to what colors to use to match the scheme that started with the Legion warbeasts. I knew I needed blue and bone, but it came down to how much and where on the model.
 
 After deciding on the bone armor and deep blue cloak, I initially painted her skin in a pale almost white skin tone shaded with a bit more pink to give her the appearance of someone who didn't get much direct sunlight at all. I was rather pleased with the end result, but when I placed Lylyth next to the warbeasts she just looked out of place. I considered other ways to bring them together but in the end decided to redo her skin in a lighter shade of blue to match the warbeasts' flesh.
