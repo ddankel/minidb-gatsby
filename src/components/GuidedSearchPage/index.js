@@ -17,6 +17,7 @@ const GalleryContainer = styled.div`
 
 const GuidedSearchPage = () => {
   const { filteredMiniatures } = useFilterContext();
+  const hasResults = !!filteredMiniatures.length;
 
   return (
     <>
@@ -24,7 +25,8 @@ const GuidedSearchPage = () => {
       <FlexContainer>
         <DesktopMenu />
         <GalleryContainer>
-          <Gallery minis={filteredMiniatures} />
+          {hasResults && <Gallery minis={filteredMiniatures} />}
+          {hasResults || <div>No matching results.</div>}
         </GalleryContainer>
       </FlexContainer>
     </>

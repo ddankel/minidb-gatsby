@@ -29,8 +29,6 @@ class GalleryFilter {
   includes(mini) {
     const frontmatter = mini.frontmatter ? mini.frontmatter : mini;
 
-    console.log("status");
-
     return (
       !this._isFilteredMonster(frontmatter.race) &&
       this._matchesFilter(frontmatter.name, this.nameFilter) &&

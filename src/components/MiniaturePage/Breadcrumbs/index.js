@@ -1,7 +1,7 @@
 import React from "react";
 import CrumbLink from "./CrumbLink";
 
-const Breadcrumbs = ({ miniatureLines = [] }) => {
+const Breadcrumbs = ({ miniatureLines = [], name }) => {
   return (
     <>
       {miniatureLines.map((item, index) => {
@@ -15,6 +15,7 @@ const Breadcrumbs = ({ miniatureLines = [] }) => {
           </React.Fragment>
         );
       })}
+      {name}
     </>
   );
 };

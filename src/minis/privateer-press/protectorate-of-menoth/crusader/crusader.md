@@ -25,7 +25,7 @@ weapons:
 
 ## Archived Blog Post
 
-### First Miniature
+#### First Miniature
 
 The Crusader was the last warjack I painted from my battlebox, and I think it turned out better than the lights. After looking over the Repenter and my first Revenger, the first thing I decided was to do away with the razor highlighting. It just wasn't coming out as expected, so I moved on to wet blending. The blending is probably the most visible on the overhead hood in the first two images and on the shoulders in the fourth. Although I could have done a bit more contrast, I was happy with how smooth it came out using the craft paints I initially started painting with.
 
@@ -33,6 +33,6 @@ I tried to position the arms to look as if the jack was reaching for its opponen
 
 I used the same techniques and colors on everything else as on my first two light warjacks, and I think my execution was better than them. After this I'm looking forward to picking up a few more jacks to paint up, but have to get through some infantry first!
 
-### Second Miniature
+#### Second Miniature
 
 I painted this Crusader quickly to match my first one. The quality isn't as high as I could have managed, but I really just needed to get this one done so I could get it on the table. As far as posing goes, I decided to assemble this one as if he was in mid swing as opposed to the first crusader which was rearing back.

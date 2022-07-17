@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: -3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 `;
 
 export const Contents = styled.div`

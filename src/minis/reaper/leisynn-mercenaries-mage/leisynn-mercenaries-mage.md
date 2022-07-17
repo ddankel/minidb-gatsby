@@ -7,7 +7,7 @@ line:
 painted: 2010
 photos:
   - ./Reaper14060-LeisynnMercenariesMage-Dankel_1.jpg
-  - ./Reaper14060-LeisynnMercenariesMage-Dankel_1.jpg
+  - ./Reaper14060-LeisynnMercenariesMage-Dankel_2.jpg
 race:
   - human
 weapons:

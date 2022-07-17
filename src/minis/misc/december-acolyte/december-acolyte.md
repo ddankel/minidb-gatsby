@@ -36,6 +36,4 @@ recipes:
     - Final highlight mixing a hair of Goosefeather in
 ---
 
-## Archived Blog Post
-
 While the stock December Acolyte sports an (aptly) wintry color scheme, I wanted to do something a little more temperate. I started by playing with trying off-white for the cloak and wound up taking a very Assassin's Creed-y route.
