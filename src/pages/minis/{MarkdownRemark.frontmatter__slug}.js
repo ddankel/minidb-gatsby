@@ -42,7 +42,7 @@ const MiniaturePageTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
 
   return (
-    <AppLayout>
+    <AppLayout variant="narrow">
       <Helmet>
         <title>{frontmatter.sku || frontmatter.name} | MiniDB</title>
       </Helmet>
