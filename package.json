@@ -26,7 +26,7 @@
     "bootstrap-icons": "^1.9.1",
     "bootswatch": "^5.1.3",
     "gatsby": "^4.19",
-    "gatsby-plugin-image": "^2.18.0",
+    "gatsby-plugin-image": "^2.19.0",
     "gatsby-plugin-react-helmet": "^5.19.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-sass": "^5.19.0",
