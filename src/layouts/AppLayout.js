@@ -43,9 +43,6 @@ const AppLayout = ({ children, variant }) => {
               <BiSearch />
               Search
             </Nav.Link>
-            <Nav.Link as={Link} to="/">
-              Home
-            </Nav.Link>
           </Nav>
         </Container>
       </StyledNavbar>

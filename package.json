@@ -1,6 +1,6 @@
 {
   "name": "mini-db",
-  "version": "1.14.1",
+  "version": "1.15",
   "private": true,
   "description": "MiniDB",
   "author": "Dave Dankel",
@@ -16,9 +16,11 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "list-fm": "node ./scripts/aggregate_frontmatter",
-    "validate-fm": "node ./scripts/validate_frontmatter",
-    "new": "node ./scripts/new_mini"
+    "new": "npm run new --prefix ./vendor/miniature-data",
+    "listfm": "npm run listfm --prefix ./vendor/miniature-data",
+    "validate": "npm run validate --prefix ./vendor/miniature-data",
+    "status": "npm run status --prefix ./vendor/miniature-data",
+    "todo": "npm run todo --prefix ./vendor/miniature-data"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",

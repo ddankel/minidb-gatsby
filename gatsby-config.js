@@ -1,3 +1,5 @@
+const exclusions = require("./vendor/miniature-data/exclusions");
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://minidb.dankelzahn.com",
@@ -8,19 +10,12 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-    // {
-    //   resolve: "gatsby-source-filesystem",
-    //   options: {
-    //     name: "images",
-    //     path: "./src/images/",
-    //   },
-    //   __key: "images",
-    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "minis",
-        path: "./src/minis",
+        path: "./vendor/miniature-data/minis",
+        ignore: [...exclusions.nonMiniDB],
       },
     },
     "gatsby-transformer-remark",
