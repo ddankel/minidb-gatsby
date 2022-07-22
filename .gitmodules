@@ -1,0 +1,5 @@
+[submodule "vendor/miniature-data"]
+  path = vendor/miniature-data
+  url = git@github.com:ddankel/miniature-data.git
+  branch = main
+  update = merge
