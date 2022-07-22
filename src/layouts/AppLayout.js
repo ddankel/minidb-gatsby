@@ -14,7 +14,7 @@ const StyledNavbar = styled(Navbar)`
 `;
 
 const Contents = styled(Container)`
-  max-width: ${({ variant }) => (variant === "narrow" ? "650px !important" : null)};
+  max-width: ${({ variant }) => (variant === "narrow" ? "1200px !important" : null)};
 `;
 
 const AppLayout = ({ children, variant }) => {
