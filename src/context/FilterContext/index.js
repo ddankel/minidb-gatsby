@@ -28,9 +28,9 @@ export const useFilterContext = () => useContext(FilterContext);
 
 export const FilterProvider = (props) => {
   const collection = useMiniatureCollection();
-  const [raceFilter, setRaceFilter] = useSessionStorage("race-filter", "all");
-  const [weaponFilter, setWeaponFilter] = useSessionStorage("weapon-filter", "all");
-  const [armorFilter, setArmorFilter] = useSessionStorage("armor-filter", "all");
+  const [raceFilter, setRaceFilter] = useFilterState("race", "all");
+  const [weaponFilter, setWeaponFilter] = useFilterState("weapon", "all");
+  const [armorFilter, setArmorFilter] = useFilterState("armor", "all");
   const [paintedFilter, setPaintedFilter] = useSessionStorage("painted-filter", "all");
   const [nameFilter, setNameFilter] = useSessionStorage("name-filter", "all");
   const [lineFilter, setLineFilter] = useFilterState("line", "all");

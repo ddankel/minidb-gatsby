@@ -50,7 +50,6 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
-    "chalk": "~4.1.0 <5.0.0",
-    "front-matter": "^4.0.2"
+    "miniature-data": "./vendor/miniature-data"
   }
 }
