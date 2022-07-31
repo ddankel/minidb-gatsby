@@ -13,6 +13,8 @@ const Filters = ({ btnClass }) => {
   const {
     raceFilter,
     setRaceFilter,
+    archetypeFilter,
+    setArchetypeFilter,
     weaponFilter,
     setWeaponFilter,
     armorFilter,
@@ -38,6 +40,12 @@ const Filters = ({ btnClass }) => {
   return (
     <Stack gap="2" className="mx-3">
       <Filter title="Race" value={raceFilter} setValue={setRaceFilter} options={tagList.race} />
+      <Filter
+        title="Archetype"
+        value={archetypeFilter}
+        setValue={setArchetypeFilter}
+        options={tagList.archetype}
+      />
       <Filter
         title="Weapon"
         value={weaponFilter}

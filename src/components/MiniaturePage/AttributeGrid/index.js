@@ -5,8 +5,9 @@ import Status from "./Status";
 import Tags from "./Tags";
 import TagList from "./Tags/TagList";
 
-const AttributeGrid = ({ quantity, armor, race, weapons, status, painted }) => {
+const AttributeGrid = ({ quantity, race, archetype, weapons, armor, status, painted }) => {
   if (!race) race = [];
+  if (!archetype) archetype = [];
   if (!armor) armor = [];
   if (!weapons) weapons = [];
   if (!status) status = "painted";
@@ -17,6 +18,7 @@ const AttributeGrid = ({ quantity, armor, race, weapons, status, painted }) => {
       <Status status={status} painted={painted} />
       <Tags>
         <TagList attribute="race" tags={race} />
+        <TagList attribute="archetype" tags={archetype} />
         <TagList attribute="weapon" tags={weapons} />
         <TagList attribute="armor" tags={armor} />
       </Tags>
