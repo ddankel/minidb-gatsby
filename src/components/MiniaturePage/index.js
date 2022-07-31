@@ -12,6 +12,8 @@ import Text from "./Text";
 export const Title = styled.h1``;
 
 const MiniaturePage = ({ frontmatter, html }) => {
+  console.log("frontmatter", frontmatter);
+
   return (
     <>
       <div>

@@ -60,21 +60,22 @@ const useAggregatedTags = (collection) => {
   const weaponTags = [];
   const armorTags = [];
   const raceTags = [];
+  const archetypeTags = [];
   const paintedTags = [];
   const lineTags = [];
 
   weaponTags.push(..._attributesToArray(minis, "weapons"));
   armorTags.push(..._attributesToArray(minis, "armor"));
   raceTags.push(..._attributesToArray(minis, "race"));
+  archetypeTags.push(..._attributesToArray(minis, "archetype"));
   paintedTags.push(..._attributesToArray(minis, "status"));
   lineTags.push(..._collectLines(minis));
 
-  // TODO: Manufacturer/Lines
-
   return {
+    race: raceTags,
+    archetype: archetypeTags,
     weapons: weaponTags,
     armor: armorTags,
-    race: raceTags,
     status: paintedTags,
     line: lineTags,
   };

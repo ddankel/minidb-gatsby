@@ -5,12 +5,14 @@ import { useFilterContext } from "../../../../context/FilterContext";
 import _ from "lodash";
 
 const TagLink = ({ to, attribute, tag, ...restProps }) => {
-  const { setRaceFilter, setWeaponFilter, setArmorFilter } = useFilterContext();
+  const { setRaceFilter, setArchetypeFilter, setWeaponFilter, setArmorFilter } = useFilterContext();
 
   const setFilter = (value) => {
     switch (attribute) {
       case "race":
         return setRaceFilter(value);
+      case "archetype":
+        return setArchetypeFilter(value);
       case "weapon":
         return setWeaponFilter(value);
       case "armor":

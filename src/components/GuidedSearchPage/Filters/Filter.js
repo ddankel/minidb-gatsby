@@ -15,10 +15,10 @@ const Filter = ({ value, setValue, defaultValue = "all", title, options = [] }) 
 
   return (
     <Form.Group as={Row}>
-      <Form.Label column sm={12}>
+      <Form.Label column xs={3} md={12}>
         {title}:
       </Form.Label>
-      <Col sm={12}>
+      <Col xs={9} md={12}>
         <InputGroup>
           <Select size="sm" value={value} onChange={(e) => setValue(e.target.value)}>
             <option value="all">Any</option>
