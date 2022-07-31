@@ -5,13 +5,13 @@ import { BiCaretUp, BiCaretDown } from "react-icons/bi";
 import { useSessionStorage } from "react-use-storage";
 
 import NavButton from "./NavButton";
-import { useFilterContext } from "../../../context/FilterContext";
 import { findAdjacentMinis } from "./utils";
 import { Wrapper, Contents, ToggleButton } from "./styled";
+import useFilteredCollection from "../../../hooks/useFilteredCollection";
 
 const Navigator = ({ current }) => {
+  const filteredMiniatures = useFilteredCollection();
   const [open, setOpen] = useSessionStorage("show-mini-nav", false);
-  const { filteredMiniatures } = useFilterContext();
 
   if (!filteredMiniatures.length) {
     // No miniatures (Gatsby is building)

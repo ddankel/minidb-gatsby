@@ -4,32 +4,24 @@ import { Form, Button, Stack } from "react-bootstrap";
 import Filter from "./Filter";
 import useAggregatedTags from "../../../hooks/useAggregatedTags";
 import useMiniatureCollection from "../../../hooks/useMiniatureCollection";
-import { useFilterContext } from "../../../context/FilterContext";
+import { useStoreItem, useStoreState } from "../../../hooks/useStore";
 
 const Filters = ({ btnClass }) => {
   const minis = useMiniatureCollection();
   const [tagList] = React.useState(useAggregatedTags(minis));
 
-  const {
-    raceFilter,
-    setRaceFilter,
-    archetypeFilter,
-    setArchetypeFilter,
-    weaponFilter,
-    setWeaponFilter,
-    armorFilter,
-    setArmorFilter,
-    paintedFilter,
-    setPaintedFilter,
-    lineFilter,
-    setLineFilter,
-    ignoreMonsters,
-    setIgnoreMonsters,
-    isFiltered,
-  } = useFilterContext();
+  const [raceFilter, setRaceFilter] = useStoreState("raceFilter");
+  const [archetypeFilter, setArchetypeFilter] = useStoreState("archetypeFilter");
+  const [weaponFilter, setWeaponFilter] = useStoreState("weaponFilter");
+  const [armorFilter, setArmorFilter] = useStoreState("armorFilter");
+  const [paintedFilter, setPaintedFilter] = useStoreState("paintedFilter");
+  const [lineFilter, setLineFilter] = useStoreState("lineFilter");
+  const [ignoreMonsters, setIgnoreMonsters] = useStoreState("ignoreMonsters");
+  const isFiltered = useStoreItem("isFiltered")();
 
   const resetAll = () => {
     setRaceFilter("all");
+    setArchetypeFilter("all");
     setWeaponFilter("all");
     setArmorFilter("all");
     setPaintedFilter("all");
@@ -60,7 +52,7 @@ const Filters = ({ btnClass }) => {
         setValue={setPaintedFilter}
         options={tagList.status}
       />
-      <div className="pt-3">
+      <div className="py-3">
         <Form.Check
           className="float-end"
           checked={ignoreMonsters}
@@ -70,17 +62,15 @@ const Filters = ({ btnClass }) => {
           onChange={() => setIgnoreMonsters(!ignoreMonsters)}
         />
       </div>
-      <div className="pt-3">
-        <Button
-          size="sm"
-          className={btnClass}
-          onClick={() => resetAll()}
-          disabled={!isFiltered}
-          variant={isFiltered ? "primary" : "secondary"}
-        >
-          Reset All Filters
-        </Button>
-      </div>
+      <Button
+        size="sm"
+        className={btnClass}
+        onClick={() => resetAll()}
+        disabled={!isFiltered}
+        variant={isFiltered ? "primary" : "secondary"}
+      >
+        Reset Filters
+      </Button>
     </Stack>
   );
 };

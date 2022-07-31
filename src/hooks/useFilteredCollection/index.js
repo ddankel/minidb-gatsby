@@ -1,0 +1,74 @@
+import { useMemo, useCallback } from "react";
+import useMiniatureCollection from "../useMiniatureCollection";
+import GalleryFilter from "./GalleryFilter";
+import { useStoreItem } from "../useStore";
+
+/**
+ * All miniatures that match the current filter values
+ *
+ * The entire miniature collection is sourced from +useMiniatureCollection+
+ * and the zustand store is referenced to determine filter states.
+ *
+ * @return  {Array}  Matching miniature pages
+ */
+const useFilteredCollection = () => {
+  // const [filteredCollection, setFilteredCollection] = useState([]);
+  const fullCollection = useMiniatureCollection();
+
+  const raceFilter = useStoreItem("raceFilter");
+  const archetypeFilter = useStoreItem("archetypeFilter");
+  const weaponFilter = useStoreItem("weaponFilter");
+  const armorFilter = useStoreItem("armorFilter");
+  const paintedFilter = useStoreItem("paintedFilter");
+  const nameFilter = useStoreItem("nameFilter");
+  const lineFilter = useStoreItem("lineFilter");
+  const ignoreMonsters = useStoreItem("ignoreMonsters");
+
+  /**
+   * Apply the filters to the provided collection
+   *
+   * @param   {Array}  collection  Collection of miniatures
+   *
+   * @return  {Array}              Only values of +collection+ matching the filters
+   */
+  const filterCollection = useCallback(
+    (collection) => {
+      const galleryFilter = new GalleryFilter({
+        raceFilter,
+        archetypeFilter,
+        weaponFilter,
+        armorFilter,
+        paintedFilter,
+        nameFilter,
+        lineFilter,
+        ignoreMonsters,
+      });
+
+      return collection.filter((mini) => galleryFilter.includes(mini));
+    },
+    [
+      raceFilter,
+      archetypeFilter,
+      weaponFilter,
+      armorFilter,
+      paintedFilter,
+      nameFilter,
+      lineFilter,
+      ignoreMonsters,
+    ]
+  );
+
+  /**
+   * Memoized application of GalleryFilter to the entire collection
+   *
+   * @return  {Array}  Filtered miniatures
+   */
+  const filteredCollection = useMemo(
+    () => filterCollection(fullCollection),
+    [fullCollection, filterCollection]
+  );
+
+  return filteredCollection;
+};
+
+export default useFilteredCollection;
