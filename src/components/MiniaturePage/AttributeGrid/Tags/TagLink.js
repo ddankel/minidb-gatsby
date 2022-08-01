@@ -1,30 +1,16 @@
 import { Link, navigate } from "gatsby";
 import React from "react";
 import { Badge } from "react-bootstrap";
-import { useFilterContext } from "../../../../context/FilterContext";
 import _ from "lodash";
+import { useFilterStoreItem } from "../../../../hooks/useFilterStore";
 
 const TagLink = ({ to, attribute, tag, ...restProps }) => {
-  const { setRaceFilter, setArchetypeFilter, setWeaponFilter, setArmorFilter } = useFilterContext();
-
-  const setFilter = (value) => {
-    switch (attribute) {
-      case "race":
-        return setRaceFilter(value);
-      case "archetype":
-        return setArchetypeFilter(value);
-      case "weapon":
-        return setWeaponFilter(value);
-      case "armor":
-        return setArmorFilter(value);
-      default:
-    }
-  };
+  const setFilter = useFilterStoreItem("setFilter");
 
   const handleClick = (event) => {
     event.preventDefault();
     navigate(`/?${attribute}=${tag}`);
-    setFilter(tag);
+    setFilter(`${attribute}Filter`, tag, { merge: false });
   };
 
   return (
