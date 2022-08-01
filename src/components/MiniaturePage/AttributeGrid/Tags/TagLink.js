@@ -2,10 +2,10 @@ import { Link, navigate } from "gatsby";
 import React from "react";
 import { Badge } from "react-bootstrap";
 import _ from "lodash";
-import { useStoreItem } from "../../../../hooks/useStore";
+import { useFilterStoreItem } from "../../../../hooks/useFilterStore";
 
 const TagLink = ({ to, attribute, tag, ...restProps }) => {
-  const setFilter = useStoreItem("setFilter");
+  const setFilter = useFilterStoreItem("setFilter");
 
   const handleClick = (event) => {
     event.preventDefault();

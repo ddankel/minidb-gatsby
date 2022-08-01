@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useQueryParamString } from "react-use-query-param-string";
-import { useStoreState } from "../useStore";
+import { useFilterStoreState } from "../useFilterStore";
 
 /**
  * Define connection between a querystring parameter value and a store value
@@ -15,7 +15,7 @@ import { useStoreState } from "../useStore";
 export const useQueryStringStateTie = (key) => {
   const stateKey = `${key}Filter`;
 
-  const [_stateValue, setState] = useStoreState(stateKey);
+  const [_stateValue, setState] = useFilterStoreState(stateKey);
   const [queryValue, setQueryValue, initialized] = useQueryParamString(key);
 
   useEffect(() => {

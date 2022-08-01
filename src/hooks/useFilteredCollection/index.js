@@ -1,7 +1,7 @@
 import { useMemo, useCallback } from "react";
 import useMiniatureCollection from "../useMiniatureCollection";
 import GalleryFilter from "./GalleryFilter";
-import { useStoreItem } from "../useStore";
+import { useFilterStoreItem } from "../useFilterStore";
 
 /**
  * All miniatures that match the current filter values
@@ -15,14 +15,14 @@ const useFilteredCollection = () => {
   // const [filteredCollection, setFilteredCollection] = useState([]);
   const fullCollection = useMiniatureCollection();
 
-  const raceFilter = useStoreItem("raceFilter");
-  const archetypeFilter = useStoreItem("archetypeFilter");
-  const weaponFilter = useStoreItem("weaponFilter");
-  const armorFilter = useStoreItem("armorFilter");
-  const paintedFilter = useStoreItem("paintedFilter");
-  const nameFilter = useStoreItem("nameFilter");
-  const lineFilter = useStoreItem("lineFilter");
-  const ignoreMonsters = useStoreItem("ignoreMonsters");
+  const raceFilter = useFilterStoreItem("raceFilter");
+  const archetypeFilter = useFilterStoreItem("archetypeFilter");
+  const weaponFilter = useFilterStoreItem("weaponFilter");
+  const armorFilter = useFilterStoreItem("armorFilter");
+  const paintedFilter = useFilterStoreItem("paintedFilter");
+  const nameFilter = useFilterStoreItem("nameFilter");
+  const lineFilter = useFilterStoreItem("lineFilter");
+  const ignoreMonsters = useFilterStoreItem("ignoreMonsters");
 
   /**
    * Apply the filters to the provided collection

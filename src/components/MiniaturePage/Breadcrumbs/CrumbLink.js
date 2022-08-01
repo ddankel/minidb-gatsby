@@ -1,7 +1,7 @@
 import { Link, navigate } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import { useStoreItem } from "../../../hooks/useStore";
+import { useFilterStoreItem } from "../../../hooks/useFilterStore";
 
 export const StyledLink = styled(Link).attrs({
   className: "text-white",
@@ -13,7 +13,7 @@ export const StyledLink = styled(Link).attrs({
 `;
 
 const CrumbLink = ({ to, line, children, ...restProps }) => {
-  const setFilter = useStoreItem("setFilter");
+  const setFilter = useFilterStoreItem("setFilter");
 
   const handleClick = (event) => {
     event.preventDefault();

@@ -4,20 +4,20 @@ import { Form, Button, Stack } from "react-bootstrap";
 import Filter from "./Filter";
 import useAggregatedTags from "../../../hooks/useAggregatedTags";
 import useMiniatureCollection from "../../../hooks/useMiniatureCollection";
-import { useStoreItem, useStoreState } from "../../../hooks/useStore";
+import { useFilterStoreItem, useFilterStoreState } from "../../../hooks/useFilterStore";
 
 const Filters = ({ btnClass }) => {
   const minis = useMiniatureCollection();
   const [tagList] = React.useState(useAggregatedTags(minis));
 
-  const [raceFilter, setRaceFilter] = useStoreState("raceFilter");
-  const [archetypeFilter, setArchetypeFilter] = useStoreState("archetypeFilter");
-  const [weaponFilter, setWeaponFilter] = useStoreState("weaponFilter");
-  const [armorFilter, setArmorFilter] = useStoreState("armorFilter");
-  const [paintedFilter, setPaintedFilter] = useStoreState("paintedFilter");
-  const [lineFilter, setLineFilter] = useStoreState("lineFilter");
-  const [ignoreMonsters, setIgnoreMonsters] = useStoreState("ignoreMonsters");
-  const isFiltered = useStoreItem("isFiltered")();
+  const [raceFilter, setRaceFilter] = useFilterStoreState("raceFilter");
+  const [archetypeFilter, setArchetypeFilter] = useFilterStoreState("archetypeFilter");
+  const [weaponFilter, setWeaponFilter] = useFilterStoreState("weaponFilter");
+  const [armorFilter, setArmorFilter] = useFilterStoreState("armorFilter");
+  const [paintedFilter, setPaintedFilter] = useFilterStoreState("paintedFilter");
+  const [lineFilter, setLineFilter] = useFilterStoreState("lineFilter");
+  const [ignoreMonsters, setIgnoreMonsters] = useFilterStoreState("ignoreMonsters");
+  const isFiltered = useFilterStoreItem("isFiltered")();
 
   const resetAll = () => {
     setRaceFilter("all");

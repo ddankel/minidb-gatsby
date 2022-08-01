@@ -1,9 +1,9 @@
 import create from "zustand";
 import { devtools, persist } from "zustand/middleware";
 
-import useStoreStateHook from "./hooks/useStoreState";
-import useStoreItemHook from "./hooks/useStoreItem";
-import useStoreItemsHook from "./hooks/useStoreItems";
+import useStoreState from "./hooks/useStoreState";
+import useStoreItem from "./hooks/useStoreItem";
+import useStoreItems from "./hooks/useStoreItems";
 
 const defaultState = {
   raceFilter: "all",
@@ -72,11 +72,11 @@ store = persist(store, { name: "minidb-store", getStorage: () => sessionStorage 
 store = devtools(store, { name: "MiniDB ZuStore" });
 
 // Build main hook
-const useStore = create(store);
+const useFilterStore = create(store);
 
-export default useStore;
+export default useFilterStore;
 
 // Helper hooks
-export const useStoreState = useStoreStateHook;
-export const useStoreItem = useStoreItemHook;
-export const useStoreItems = useStoreItemsHook;
+export const useFilterStoreState = useStoreState;
+export const useFilterStoreItem = useStoreItem;
+export const useFilterStoreItems = useStoreItems;
