@@ -34,9 +34,10 @@ export const query = graphql`
           painted
           status
           sku
+          race
+          archetype
           weapons
           armor
-          race
           quantity
           recipes
         }

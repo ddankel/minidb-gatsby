@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+import useFilteredCollection from "../../hooks/useFilteredCollection";
+
 import Gallery from "./Gallery";
-import { useFilterContext } from "../../context/FilterContext";
 import MobileMenu from "./MobileMenu";
 import DesktopMenu from "./DesktopMenu";
+import useQueryParamState from "../../hooks/useQueryStringState";
 
 const FlexContainer = styled.div`
   display: flex;
@@ -16,8 +18,9 @@ const GalleryContainer = styled.div`
 `;
 
 const GuidedSearchPage = () => {
-  const { filteredMiniatures } = useFilterContext();
+  const filteredMiniatures = useFilteredCollection();
   const hasResults = !!filteredMiniatures.length;
+  useQueryParamState();
 
   return (
     <>

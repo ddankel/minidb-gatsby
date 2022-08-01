@@ -27,9 +27,10 @@ export const pageQuery = graphql`
             )
           }
         }
+        race
+        archetype
         weapons
         armor
-        race
         status
         recipes
         quantity

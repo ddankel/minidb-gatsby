@@ -1,20 +1,13 @@
 class GalleryFilter {
-  constructor({
-    raceFilter,
-    weaponFilter,
-    armorFilter,
-    paintedFilter,
-    nameFilter,
-    lineFilter,
-    ignoreMonsters,
-  }) {
-    this.raceFilter = raceFilter;
-    this.weaponFilter = weaponFilter;
-    this.armorFilter = armorFilter;
-    this.paintedFilter = paintedFilter;
-    this.nameFilter = nameFilter;
-    this.lineFilter = lineFilter;
-    this.ignoreMonsters = ignoreMonsters;
+  constructor(args) {
+    this.raceFilter = args.raceFilter;
+    this.archetypeFilter = args.archetypeFilter;
+    this.weaponFilter = args.weaponFilter;
+    this.armorFilter = args.armorFilter;
+    this.paintedFilter = args.paintedFilter;
+    this.nameFilter = args.nameFilter;
+    this.lineFilter = args.lineFilter;
+    this.ignoreMonsters = args.ignoreMonsters;
   }
 
   /**
@@ -35,6 +28,7 @@ class GalleryFilter {
       this._matchesFilter(frontmatter.armor, this.armorFilter) &&
       this._matchesFilter(frontmatter.weapons, this.weaponFilter) &&
       this._matchesFilter(frontmatter.race, this.raceFilter) &&
+      this._matchesFilter(frontmatter.archetype, this.archetypeFilter) &&
       this._matchesFilter(frontmatter.status || "painted", this.paintedFilter) &&
       this._matchesLine(frontmatter.line)
     );

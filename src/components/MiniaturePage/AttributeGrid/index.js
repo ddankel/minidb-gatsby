@@ -3,9 +3,11 @@ import { Stack } from "react-bootstrap";
 import Count from "./Quantity";
 import Status from "./Status";
 import Tags from "./Tags";
+import TagList from "./Tags/TagList";
 
-const AttributeGrid = ({ quantity, armor, race, weapons, status, painted }) => {
+const AttributeGrid = ({ quantity, race, archetype, weapons, armor, status, painted }) => {
   if (!race) race = [];
+  if (!archetype) archetype = [];
   if (!armor) armor = [];
   if (!weapons) weapons = [];
   if (!status) status = "painted";
@@ -14,7 +16,12 @@ const AttributeGrid = ({ quantity, armor, race, weapons, status, painted }) => {
   return (
     <Stack gap={1}>
       <Status status={status} painted={painted} />
-      <Tags tags={[...race, ...weapons, ...armor]} />
+      <Tags>
+        <TagList attribute="race" tags={race} />
+        <TagList attribute="archetype" tags={archetype} />
+        <TagList attribute="weapon" tags={weapons} />
+        <TagList attribute="armor" tags={armor} />
+      </Tags>
       {quantity > 1 && <Count count={quantity} />}
     </Stack>
   );
