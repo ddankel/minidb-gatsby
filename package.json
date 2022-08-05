@@ -1,6 +1,6 @@
 {
   "name": "mini-db",
-  "version": "1.16",
+  "version": "1.16.1",
   "private": true,
   "description": "MiniDB",
   "author": "Dave Dankel",
