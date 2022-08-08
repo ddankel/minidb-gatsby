@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql } from "gatsby";
+import useMiniatureCollection from "./useMiniatureCollection";
 
 /**
  * Retrieve the frontmatter for one or all miniatures
@@ -11,40 +11,17 @@ import { useStaticQuery, graphql } from "gatsby";
  * @return  {Object, Array}
  */
 const useFrontmatter = (slug) => {
-  const data = useStaticQuery(query);
+  const miniCollection = useMiniatureCollection();
 
-  if (!data) return;
+  if (!miniCollection) return;
 
   if (slug) {
-    const thisMini = data.allMarkdownRemark.nodes.find((item) => item.frontmatter.slug === slug);
+    const thisMini = miniCollection.find((item) => item.frontmatter.slug === slug);
     return extendFrontmatter(thisMini.frontmatter);
   }
 
-  return data.allMarkdownRemark.nodes.map((item) => extendFrontmatter(item.frontmatter));
+  return miniCollection.map((item) => extendFrontmatter(item.frontmatter));
 };
-
-export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___name], order: ASC }) {
-      nodes {
-        frontmatter {
-          slug
-          name
-          line
-          painted
-          status
-          sku
-          race
-          archetype
-          weapons
-          armor
-          quantity
-          recipes
-        }
-      }
-    }
-  }
-`;
 
 const extendFrontmatter = (frontMatter) => ({
   ...frontMatter,

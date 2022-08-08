@@ -10184,10 +10184,10 @@ react-icons@^4.3.1:
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
   integrity sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==
 
-react-image-gallery@^1.2.7:
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-1.2.8.tgz#8f41b0ade1c115a4f34621771c182af33d2d9a62"
-  integrity sha512-7KbWcWChUMHRGyJHA/eH3injWF9/2WTlQXjV6fym1DqwrINSVIh1hLiqmujh/XANstW+osqSu5WFKKPy2F2gbA==
+react-image-gallery@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-1.2.9.tgz#35d90b9e2bf53b8e9ddbb8e3cd6aa89814ddb173"
+  integrity sha512-19Wvp5MiDvS4jAmTWIfTRJR71Cnk5541/iBUW2VEjLI+uSd+HhQStVdIYy4PWYSxRa+G/97U2f7ac+WRkOGszg==
 
 react-is@^16.13.1, react-is@^16.3.2, react-is@^16.7.0:
   version "16.13.1"
