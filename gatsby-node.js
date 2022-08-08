@@ -4,18 +4,20 @@ exports.createSchemaCustomization = ({ actions }) => {
   type MarkdownRemark implements Node @infer {
     frontmatter: Frontmatter!
   }
-  type Frontmatter @infer {
+
+  type Frontmatter implements Node {
     slug: String!
-    title: String
+    name: String!
     sku: String
-    name: String
     line: [String]
     painted: String
+    status: String
+    race: [String]
+    archetype: [String]
     weapons: [String]
     armor: [String]
-    race: [String]
     recipes: [String]
-    status: String
+    quantity: Int
   }
   `;
   createTypes(typeDefs);

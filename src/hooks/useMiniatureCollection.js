@@ -18,14 +18,15 @@ export const query = graphql`
         frontmatter {
           slug
           name
+          sku
           line
           painted
           status
-          sku
           race
           archetype
           weapons
           armor
+          recipes
           quantity
         }
       }
