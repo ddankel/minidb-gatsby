@@ -46,7 +46,7 @@
     "react-image-gallery": "^1.2.9",
     "react-use-query-param-string": "^2.0.3",
     "react-use-storage": "github:ddankel/react-use-storage#main",
-    "sass": "^1.54.3",
+    "sass": "^1.54.8",
     "styled-components": "^5.3.3",
     "zustand": "^4.0.0"
   },
