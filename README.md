@@ -38,39 +38,23 @@ Originally written using [Jekyll](https://jekyllrb.com/), this project was migra
    yarn run develop
    ```
 
-Default settings (build for node14, output to /dist) are configured in package.json and can be overwritten as needed.
-
 ## Development Scripts
 
-Since Gatsby has stricter Frontmatter formatting requirements than Jekyll, the following two scripts were created to help with the conversion
+Since Gatsby has stricter Frontmatter formatting requirements than Jekyll, development scripts were created in the miniature-data submodule and referenced in `package.json` to maintain data integrity and aid development.
 
-### Create New Draft
+For full documentation, see [https://github.com/ddankel/miniature-data](https://github.com/ddankel/miniature-data).
 
-```sh
-yarn run new
-
-# Examples:
-yarn run new single-miniuature
-yarn run new first-mini second-mini-third-mini
+```json
+// package.json
+"scripts": {
+  ...
+  "new": "npm run new --prefix ./vendor/miniature-data",
+  "listfm": "npm run listfm --prefix ./vendor/miniature-data",
+  "validate": "npm run validate --prefix ./vendor/miniature-data",
+  "status": "npm run status --prefix ./vendor/miniature-data",
+  "todo": "npm run todo --prefix ./vendor/miniature-data"
+},
 ```
-
-Creates a new folder and markdown file, named correctly, in `src/mini_drafts`, with the `slug` frontmatter value pre-populated.
-
-### Frontmatter Validation
-
-```sh
-yarn run validate-fm
-```
-
-This script reads the frontmatter schema from `scripts/validate_frontmatter/frontmatter_schema.js` and checks each mini `.md` file for missing, disallowed, or deprecated formats and values. Any errors are reported in detail for easy fixing.
-
-### Frontmatter Aggregation
-
-```sh
-yarn run list-fm
-```
-
-This script parses all of the mini `.md` pages and aggregates all current values for the frontmatter keys. This allows a quick review of current listed options as well as copying those lists into the frontmatter schema to change the allowlists if desired.
 
 ## Contact
 
