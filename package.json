@@ -29,7 +29,7 @@
     "bootswatch": "^5.2.0",
     "gatsby": "^4.22",
     "gatsby-plugin-image": "^2.22.0",
-    "gatsby-plugin-react-helmet": "^5.22.0",
+    "gatsby-plugin-react-helmet": "^5.23.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-sass": "^5.22.0",
     "gatsby-plugin-sharp": "^4.22.0",
