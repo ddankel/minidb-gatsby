@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { Helmet } from "react-helmet";
 
 import AppLayout from "../layouts/AppLayout";
 
@@ -8,9 +7,6 @@ import AppLayout from "../layouts/AppLayout";
 const NotFoundPage = () => {
   return (
     <AppLayout>
-      <Helmet>
-        <title>Page Not Found | MiniDB</title>
-      </Helmet>
       <div className="page-wrap d-flex flex-row align-items-center">
         <div className="container">
           <div className="row justify-content-center">
@@ -27,3 +23,7 @@ const NotFoundPage = () => {
 };
 
 export default NotFoundPage;
+
+export const Head = () => {
+  return <title>Page Not Found | MiniDB</title>;
+};
