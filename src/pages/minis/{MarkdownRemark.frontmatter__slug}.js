@@ -1,6 +1,5 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
 
 import MiniaturePage from "../../components/MiniaturePage";
 import AppLayout from "../../layouts/AppLayout";
@@ -44,11 +43,14 @@ const MiniaturePageTemplate = ({ data }) => {
 
   return (
     <AppLayout variant="narrow">
-      <Helmet>
-        <title>{frontmatter.sku || frontmatter.name} | MiniDB</title>
-      </Helmet>
       <MiniaturePage {...{ frontmatter, html }} />
     </AppLayout>
   );
 };
 export default MiniaturePageTemplate;
+
+export const Head = ({ data }) => {
+  const frontmatter = data.markdownRemark.frontmatter;
+
+  return <title>{frontmatter?.sku || frontmatter?.name} | MiniDB</title>;
+};
