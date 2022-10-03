@@ -9076,10 +9076,10 @@ rc@1.2.8, rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-bootstrap-typeahead@^6.0.0-rc.3:
-  version "6.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/react-bootstrap-typeahead/-/react-bootstrap-typeahead-6.0.0-rc.3.tgz#a398ffd4431d27d62565ac0d8636e27fbb30af35"
-  integrity sha512-vVAlloSJQbBpAfBHNRIeecJ91vN10/71cdHGuXBrqrIe7axCzxTzi+FjBt1qfgW2YFNFeGdYIe2IvSOMOEtPaA==
+react-bootstrap-typeahead@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-typeahead/-/react-bootstrap-typeahead-6.0.0.tgz#3b5601d30a4db2adcd3cf815fc36a0a176053f7d"
+  integrity sha512-0eTYwG8sYoY/jGO5Qxx1QMQyiVJlrSgo6xO77xxF93PqVLERgZEdbNMk+y/UX7/HTPcWN4tcCUqAEwVe1DVxog==
   dependencies:
     "@babel/runtime" "^7.14.6"
     "@popperjs/core" "^2.10.2"
