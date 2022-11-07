@@ -40,7 +40,7 @@
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-typeahead": "^6.0.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.3.1",
+    "react-icons": "^4.6.0",
     "react-image-gallery": "^1.2.11",
     "react-use-query-param-string": "^2.0.3",
     "react-use-storage": "github:ddankel/react-use-storage#main",
