@@ -5,7 +5,7 @@ import AppLayout from "../layouts/AppLayout";
 
 const IndexPage = () => {
   return (
-    <AppLayout>
+    <AppLayout variant="wide">
       <GuidedSearchPage />
     </AppLayout>
   );

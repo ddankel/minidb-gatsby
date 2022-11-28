@@ -33,7 +33,7 @@ export const query = graphql`
             publicURL
             childImageSharp {
               gatsbyImageData(
-                width: 100
+                width: 125
                 quality: 80
                 aspectRatio: 1
                 formats: [AUTO]

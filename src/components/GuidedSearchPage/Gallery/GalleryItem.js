@@ -1,9 +1,12 @@
 import React from "react";
 import { Link, navigate } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 
-import { Miniature, ImageContainer, Caption } from "./styled";
-import usePhotos from "../../../../hooks/usePhotos";
+import Miniature from "./Miniature";
+import ImageContainer from "./ImageContainer";
+import Image from "./Image";
+import Caption from "./Caption";
+
+import usePhotos from "../../../hooks/usePhotos";
 
 const GalleryItem = ({ mini }) => {
   const { slug, name } = mini.frontmatter;
@@ -13,7 +16,7 @@ const GalleryItem = ({ mini }) => {
     <Miniature onClick={() => navigate(`/minis/${slug}`)}>
       <Link to={`/minis/${slug}`}>
         <ImageContainer>
-          <GatsbyImage image={imgSrc} alt={name} />
+          <Image image={imgSrc} alt={name} />
         </ImageContainer>
       </Link>
       <Caption>
