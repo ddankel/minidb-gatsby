@@ -1,29 +1,29 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const largeImageBreakpoint = "1200px";
-const smallImageSize = "100px";
-const largeImageSize = "125px";
-
 export const Caption = styled.div`
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  height: 3.5rem;
-  background-color: #303030;
+  ${({ theme }) => {
+    return css`
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      height: 3.5rem;
+      background-color: #303030;
 
-  & > p {
-    width ${smallImageSize};
-    font-size: 75%;
-    text-align: center;
-    margin: 0;
-    padding: 0 5px 0 5px;
+      & > p {
+        width ${theme.smallImageSize};
+        font-size: 75%;
+        text-align: center;
+        margin: 0;
+        padding: 0 5px 0 5px;
 
-    @media (min-width: ${largeImageBreakpoint}) {
-      width: ${largeImageSize};
-    }
-  }
+        @media (min-width: ${theme.largeImageBreakpoint}) {
+          width: ${theme.largeImageSize};
+        }
+      }
+    `;
+  }}
 `;
 
 export const Miniature = styled.div`
@@ -41,11 +41,14 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled(GatsbyImage)`
-  height: ${smallImageSize};
-  width: ${smallImageSize};
+  ${({ theme }) =>
+    css`
+      height: ${theme.smallImageSize};
+      width: ${theme.smallImageSize};
 
-  @media (min-width: ${largeImageBreakpoint}) {
-    height: ${largeImageSize};
-    width: ${largeImageSize};
-  }
+      @media (min-width: ${theme.largeImageBreakpoint}) {
+        height: ${theme.largeImageSize};
+        width: ${theme.largeImageSize};
+      }
+    `}
 `;
