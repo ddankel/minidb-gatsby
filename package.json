@@ -1,6 +1,6 @@
 {
   "name": "mini-db",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "private": true,
   "description": "MiniDB",
   "author": "Dave Dankel",
@@ -29,6 +29,7 @@
     "bootswatch": "^5.2.2",
     "gatsby": "^4.24",
     "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-netlify": "^5.0.1",
     "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-sass": "^5.24.0",
     "gatsby-plugin-sharp": "^4.24.0",
