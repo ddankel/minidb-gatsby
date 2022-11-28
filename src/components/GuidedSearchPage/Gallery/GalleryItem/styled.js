@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const largeImageBreakpoint = "1200px";
+const smallImageSize = "100px";
+const largeImageSize = "125px";
 
 export const Caption = styled.div`
   display: flex;
@@ -12,14 +14,14 @@ export const Caption = styled.div`
   background-color: #303030;
 
   & > p {
-    width: 100px;
+    width ${smallImageSize};
     font-size: 75%;
     text-align: center;
     margin: 0;
     padding: 0 5px 0 5px;
 
     @media (min-width: ${largeImageBreakpoint}) {
-      width: 150px;
+      width: ${largeImageSize};
     }
   }
 `;
@@ -39,11 +41,11 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled(GatsbyImage)`
-  height: 100px;
-  width: 100px;
+  height: ${smallImageSize};
+  width: ${smallImageSize};
 
   @media (min-width: ${largeImageBreakpoint}) {
-    height: 150px;
-    width: 150px;
+    height: ${largeImageSize};
+    width: ${largeImageSize};
   }
 `;
