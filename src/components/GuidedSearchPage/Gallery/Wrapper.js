@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const GalleryWrapper = styled.div`
+const Wrapper = styled.div`
   display: inline-flex;
   align-items: flex-start;
   align-content: flex-start;
@@ -9,3 +9,5 @@ export const GalleryWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
 `;
+
+export default Wrapper;
