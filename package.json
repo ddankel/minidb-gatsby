@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
-    "bootstrap": "^5.2.2",
+    "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
     "bootswatch": "^5.2.2",
     "gatsby": "^4.24",
