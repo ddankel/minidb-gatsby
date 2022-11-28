@@ -3,10 +3,9 @@ import { Link } from "gatsby";
 
 import AppLayout from "../layouts/AppLayout";
 
-// markup
 const NotFoundPage = () => {
   return (
-    <AppLayout>
+    <AppLayout variant="narrow">
       <div className="page-wrap d-flex flex-row align-items-center">
         <div className="container">
           <div className="row justify-content-center">

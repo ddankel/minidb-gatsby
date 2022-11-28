@@ -1,13 +1,13 @@
 import React from "react";
 
-import { GalleryWrapper } from "./styled";
 import GalleryItem from "./GalleryItem";
+import Wrapper from "./Wrapper";
 
 const Gallery = ({ minis }) => {
   return (
-    <GalleryWrapper>
+    <Wrapper>
       {minis && minis.map((mini, index) => <GalleryItem mini={mini} key={index} />)}
-    </GalleryWrapper>
+    </Wrapper>
   );
 };
 
