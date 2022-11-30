@@ -1,4 +1,4 @@
-const exclusions = require("./vendor/miniature-data/exclusions");
+const miniExclusions = require("./vendor/miniature-data/exclusions");
 
 module.exports = {
   siteMetadata: {
@@ -16,7 +16,7 @@ module.exports = {
       options: {
         name: "minis",
         path: "./vendor/miniature-data/minis",
-        ignore: [...exclusions.nonMiniDB],
+        ignore: [...miniExclusions],
       },
     },
     "gatsby-transformer-remark",

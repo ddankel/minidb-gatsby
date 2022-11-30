@@ -20,6 +20,11 @@ exports.createSchemaCustomization = ({ actions }) => {
     armor: [String]
     recipes: [String]
     quantity: Int
+    minidb: MiniDB
+  }
+
+  type MiniDB implements Node @infer {
+    status: String
   }
   `;
   createTypes(typeDefs);
@@ -46,7 +51,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
     const slug = node.frontmatter.slug;
     actions.createPage({
-      path: `m/${slug}`,
+      path: `minis/${slug}`,
       component: require.resolve(`./src/templates/MiniaturePage.js`),
       context: { slug: slug },
     });
