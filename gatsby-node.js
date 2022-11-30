@@ -1,3 +1,5 @@
+const { isPublishedOnMiniDB } = require("./vendor/miniature-data/filters");
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
@@ -30,18 +32,18 @@ exports.createPages = async function ({ actions, graphql }) {
         nodes {
           frontmatter {
             slug
+            minidb {
+              status
+            }
           }
         }
       }
     }
   `);
 
-  // TODO: exclude based on frontmatter
-  // TODO: create exclusion function that accepts frontmatter as an argument and returns if the function is excluded/included.  Put this function in the submodule and include it.
-  // TODO: update useMinatureCollection hook with similar exclusion
-  // TODO: useMiniatureCollection exclusion should be defined in submodule.  String to inject in graphql?
-
   data.allMarkdownRemark.nodes.forEach((node) => {
+    if (!isPublishedOnMiniDB(node.frontmatter)) return;
+
     const slug = node.frontmatter.slug;
     actions.createPage({
       path: `m/${slug}`,

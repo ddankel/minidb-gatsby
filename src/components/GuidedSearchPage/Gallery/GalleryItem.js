@@ -10,16 +10,20 @@ import usePhotos from "../../../hooks/usePhotos";
 
 const GalleryItem = ({ mini }) => {
   const { slug, name } = mini.frontmatter;
+  const status = mini.frontmatter?.minidb?.status;
   const [imgSrc] = usePhotos(slug);
 
   return (
-    <Miniature onClick={() => navigate(`/minis/${slug}`)}>
+    <Miniature
+      onClick={() => navigate(`/minis/${slug}`)}
+      callout={["draft", "todo"].includes(status)}
+    >
       <Link to={`/minis/${slug}`}>
         <ImageContainer>
           <Image image={imgSrc} alt={name} />
         </ImageContainer>
       </Link>
-      <Caption>
+      <Caption callout={["draft", "todo"].includes(status)}>
         <p>{name}</p>
       </Caption>
     </Miniature>

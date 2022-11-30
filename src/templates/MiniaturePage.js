@@ -33,14 +33,15 @@ export const pageQuery = graphql`
         status
         recipes
         quantity
+        minidb {
+          status
+        }
       }
     }
   }
 `;
 
 const MiniaturePageTemplate = ({ data }) => {
-  console.log("data", data);
-
   const { frontmatter, html } = data.markdownRemark;
 
   return (

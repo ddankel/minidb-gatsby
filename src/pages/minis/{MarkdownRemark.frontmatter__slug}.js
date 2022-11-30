@@ -33,6 +33,9 @@ export const pageQuery = graphql`
         status
         recipes
         quantity
+        minidb {
+          status
+        }
       }
     }
   }
