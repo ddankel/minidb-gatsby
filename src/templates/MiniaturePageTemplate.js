@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import MiniaturePage from "../components/MiniaturePage";
 import AppLayout from "../layouts/AppLayout";
+import Miniature from "../models/Miniature";
 
 export const pageQuery = graphql`
   query ($slug: String!) {
@@ -43,6 +44,9 @@ export const pageQuery = graphql`
 
 const MiniaturePageTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
+
+  const mini = new Miniature({ frontmatter, html });
+  console.log("Mini", mini, mini.isDraft, mini.isPublished, mini.displayName);
 
   return (
     <AppLayout variant="narrow">

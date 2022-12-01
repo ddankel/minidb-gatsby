@@ -52,7 +52,7 @@ exports.createPages = async function ({ actions, graphql }) {
     const slug = node.frontmatter.slug;
     actions.createPage({
       path: `minis/${slug}`,
-      component: require.resolve(`./src/templates/MiniaturePage.js`),
+      component: require.resolve(`./src/templates/MiniaturePageTemplate.js`),
       context: { slug: slug },
     });
   });
