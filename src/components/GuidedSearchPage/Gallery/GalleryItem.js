@@ -23,7 +23,7 @@ const GalleryItem = ({ mini }) => {
           <Image image={imgSrc} alt={name} />
         </ImageContainer>
       </Link>
-      <Caption callout={["draft", "todo"].includes(status)}>
+      <Caption>
         <p>{name}</p>
       </Caption>
     </Miniature>
