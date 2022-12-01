@@ -1,12 +1,12 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import MiniaturePage from "../../components/MiniaturePage";
-import AppLayout from "../../layouts/AppLayout";
+import MiniaturePage from "../components/MiniaturePage";
+import AppLayout from "../layouts/AppLayout";
 
 export const pageQuery = graphql`
-  query ($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query ($slug: String!) {
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
         slug
@@ -33,6 +33,9 @@ export const pageQuery = graphql`
         status
         recipes
         quantity
+        minidb {
+          status
+        }
       }
     }
   }
