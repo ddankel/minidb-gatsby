@@ -1,4 +1,5 @@
 import { useStaticQuery, graphql } from "gatsby";
+import { isPublishedOnMiniDB } from "../../vendor/miniature-data/filters";
 
 /**
  * Fetch all of the miniatures and their frontmatter
@@ -7,8 +8,8 @@ import { useStaticQuery, graphql } from "gatsby";
  */
 const useMiniatureCollection = () => {
   const data = useStaticQuery(query);
-
-  return data.allMarkdownRemark.nodes;
+  const allMiniatures = data.allMarkdownRemark.nodes;
+  return allMiniatures.filter((node) => isPublishedOnMiniDB(node.frontmatter));
 };
 
 export const query = graphql`
@@ -28,6 +29,9 @@ export const query = graphql`
           armor
           recipes
           quantity
+          minidb {
+            status
+          }
         }
       }
     }
