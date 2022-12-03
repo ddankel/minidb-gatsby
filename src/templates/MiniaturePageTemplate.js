@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import MiniaturePage from "../components/MiniaturePage";
 import AppLayout from "../layouts/AppLayout";
+import Miniature from "../models/Miniature";
 
 export const pageQuery = graphql`
   query ($slug: String!) {
@@ -53,7 +54,8 @@ const MiniaturePageTemplate = ({ data }) => {
 export default MiniaturePageTemplate;
 
 export const Head = ({ data }) => {
-  const frontmatter = data.markdownRemark.frontmatter;
+  const { frontmatter, html } = data.markdownRemark;
+  const miniature = new Miniature({ frontmatter, html });
 
-  return <title>{frontmatter?.sku || frontmatter?.name} | MiniDB</title>;
+  return <title>{miniature.displayName} | MiniDB</title>;
 };

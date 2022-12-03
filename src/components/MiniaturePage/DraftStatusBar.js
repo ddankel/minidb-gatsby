@@ -21,9 +21,7 @@ const Bar = styled.hr`
   }
 `;
 
-const StatusBar = ({ status }) => {
-  if (!["draft", "todo"].includes(status)) return null;
-
-  return <Bar caption={status.toUpperCase()} />;
+const DraftStatusBar = () => {
+  return <Bar caption="DRAFT" />;
 };
-export default StatusBar;
+export default DraftStatusBar;

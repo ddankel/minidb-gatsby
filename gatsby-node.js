@@ -1,4 +1,5 @@
 const { isPublishedOnMiniDB } = require("./vendor/miniature-data/filters");
+const Miniature = require("./src/models/Miniature");
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
@@ -47,13 +48,15 @@ exports.createPages = async function ({ actions, graphql }) {
   `);
 
   data.allMarkdownRemark.nodes.forEach((node) => {
-    if (!isPublishedOnMiniDB(node.frontmatter)) return;
+    const { frontmatter, html } = node;
+    const miniature = new Miniature({ frontmatter, html });
 
-    const slug = node.frontmatter.slug;
+    if (!miniature.isVisible) return;
+
     actions.createPage({
-      path: `minis/${slug}`,
-      component: require.resolve(`./src/templates/MiniaturePage.js`),
-      context: { slug: slug },
+      path: `minis/${miniature.slug}`,
+      component: require.resolve(`./src/templates/MiniaturePageTemplate.js`),
+      context: { slug: miniature.slug },
     });
   });
 };
