@@ -8,34 +8,46 @@ import AttributeGrid from "./AttributeGrid";
 import Breadcrumbs from "./Breadcrumbs";
 import Recipes from "./Recipes";
 import Text from "./Text";
-import StatusBar from "./StatusBar";
 
-export const Title = styled.h1``;
+import Miniature from "../../models/Miniature";
+import DraftStatusBar from "./DraftStatusBar";
+
+const Title = styled.h1``;
 
 const MiniaturePage = ({ frontmatter, html }) => {
+  const miniature = new Miniature({ frontmatter, html });
+
   return (
     <>
       <div>
         {/* Wrapping div is a fix for bug in rendering single-mini pages via direct link */}
-        <Navigator current={frontmatter.slug} />
+        <Navigator current={miniature.slug} />
       </div>
-      <StatusBar status={frontmatter?.minidb?.status} />
-      <Breadcrumbs miniatureLines={frontmatter.line} name={frontmatter.name} />
+      {miniature.isDraft && <DraftStatusBar />}
+      <Breadcrumbs miniatureLines={miniature.lineArray} name={miniature.name} />
       <Row style={{ marginTop: "2rem" }}>
         <Col sm={12} md={6} lg={5} style={{ marginBottom: "2rem" }}>
-          <Gallery photos={frontmatter.photos} />
+          <Gallery photos={miniature.photos} />
         </Col>
         <Col sm={12} md={6} lg={7}>
-          <Title>{frontmatter.name}</Title>
+          <Title>{miniature.name}</Title>
           <hr />
           <Stack gap={4}>
-            <AttributeGrid {...frontmatter} />
+            <AttributeGrid
+              quantity={miniature.quantity}
+              raceTags={miniature.raceTags}
+              archtypeTags={miniature.archtypeTags}
+              weaponTags={miniature.weaponTags}
+              armorTags={miniature.armorTags}
+              paintedAt={miniature.paintedAt}
+              paintedState={miniature.paintedState}
+            />
             <Text>{html}</Text>
-            <Recipes recipes={frontmatter.recipes} />
+            <Recipes recipes={miniature.recipes} />
           </Stack>
         </Col>
       </Row>
-      <StatusBar status={frontmatter?.minidb?.status} />
+      {miniature.isDraft && <DraftStatusBar />}
     </>
   );
 };

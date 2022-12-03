@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { Container, Nav, Navbar } from "react-bootstrap";
-import { BiSearch } from "react-icons/bi";
+import { BiSearch as BiSearchIcon } from "react-icons/bi";
 
 const StyledNavBar = styled(Navbar).attrs({
   variant: "dark",
@@ -22,7 +22,7 @@ const AppLayout = ({ onSearch }) => {
         </Navbar.Brand>
         <Nav>
           <Nav.Link onClick={onSearch}>
-            <BiSearch />
+            <BiSearchIcon />
             Search
           </Nav.Link>
         </Nav>

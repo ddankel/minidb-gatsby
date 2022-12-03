@@ -12,15 +12,12 @@ const colors = {
   painted: "primary",
 };
 
-const Status = ({ status, painted }) => {
-  let label = _.upperFirst(status);
-  if (!!painted) {
-    label = `Painted: ${painted}`;
-  }
+const Status = ({ paintedAt, paintedState }) => {
+  const label = !!paintedAt ? `Painted: ${paintedAt}` : _.upperFirst(paintedState);
 
   return (
     <Attribute label="Status">
-      <Badge bg={colors[status]}>{label}</Badge>
+      <Badge bg={colors[paintedState]}>{label}</Badge>
     </Attribute>
   );
 };

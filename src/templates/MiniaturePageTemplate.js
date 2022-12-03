@@ -45,9 +45,6 @@ export const pageQuery = graphql`
 const MiniaturePageTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
 
-  const mini = new Miniature({ frontmatter, html });
-  console.log("Mini", mini, mini.isDraft, mini.isPublished, mini.displayName);
-
   return (
     <AppLayout variant="narrow">
       <MiniaturePage {...{ frontmatter, html }} />
@@ -57,7 +54,8 @@ const MiniaturePageTemplate = ({ data }) => {
 export default MiniaturePageTemplate;
 
 export const Head = ({ data }) => {
-  const frontmatter = data.markdownRemark.frontmatter;
+  const { frontmatter, html } = data.markdownRemark;
+  const miniature = new Miniature({ frontmatter, html });
 
-  return <title>{frontmatter?.sku || frontmatter?.name} | MiniDB</title>;
+  return <title>{miniature.displayName} | MiniDB</title>;
 };

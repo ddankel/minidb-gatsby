@@ -57,6 +57,10 @@ class Miniature {
     return this.#frontmatter.status || DEFAULT_PAINTED_STATUS;
   }
 
+  get photos() {
+    return this.#frontmatter.photos;
+  }
+
   get raceTags() {
     return this.#frontmatter.race || DEFAULT_RACE_TAGS;
   }
@@ -85,12 +89,12 @@ class Miniature {
     return this.#frontmatter.minidb?.status || DEFAULT_POST_STATUS;
   }
 
-  get isPublished() {
-    return this.postStatus === "published";
-  }
-
   get isDraft() {
     return ["todo", "draft"].includes(this.postStatus);
+  }
+
+  get isPublished() {
+    return this.postStatus === "published";
   }
 
   get isVisible() {
