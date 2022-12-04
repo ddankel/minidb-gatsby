@@ -1,10 +1,34 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import MiniaturePage from "../components/MiniaturePage";
-import AppLayout from "../layouts/AppLayout";
-import Miniature from "../models/Miniature";
+import Layout from "@/components/Layout";
+import Miniature from "@/models/Miniature";
+import MiniaturePageContent from "@/modules/miniature/content/MiniaturePageContent";
 
+const MiniaturePageTemplate = ({ data }) => {
+  const { frontmatter, html } = data.markdownRemark;
+
+  return (
+    <Layout variant="narrow">
+      <MiniaturePageContent frontmatter={frontmatter} html={html} />
+    </Layout>
+  );
+};
+export default MiniaturePageTemplate;
+
+/**
+ * Gatsby Head component
+ */
+export const Head = ({ data }) => {
+  const { frontmatter, html } = data.markdownRemark;
+  const miniature = new Miniature({ frontmatter, html });
+
+  return <title>{miniature.displayName} | MiniDB</title>;
+};
+
+/**
+ * Gatsby page query
+ */
 export const pageQuery = graphql`
   query ($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
@@ -41,21 +65,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-const MiniaturePageTemplate = ({ data }) => {
-  const { frontmatter, html } = data.markdownRemark;
-
-  return (
-    <AppLayout variant="narrow">
-      <MiniaturePage {...{ frontmatter, html }} />
-    </AppLayout>
-  );
-};
-export default MiniaturePageTemplate;
-
-export const Head = ({ data }) => {
-  const { frontmatter, html } = data.markdownRemark;
-  const miniature = new Miniature({ frontmatter, html });
-
-  return <title>{miniature.displayName} | MiniDB</title>;
-};

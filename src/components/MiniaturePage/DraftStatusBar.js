@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Title = styled.h1``;
-
 const Bar = styled.hr`
   border: none;
   border-top: 4px double peru;
