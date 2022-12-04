@@ -1,7 +1,7 @@
 import React from "react";
+import usePhotos from "@/hooks/usePhotos";
+import useFrontmatter from "@/hooks/useFrontmatter";
 import { NavLink, Contents, Label, LeftArrow, RightArrow, NavImage } from "./styled";
-import usePhotos from "../../../../hooks/usePhotos";
-import useFrontmatter from "../../../../hooks/useFrontmatter";
 
 const NavButton = ({ slug, variant, ...restProps }) => {
   const [imgSrc] = usePhotos(slug);

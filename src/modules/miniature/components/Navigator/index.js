@@ -7,7 +7,7 @@ import { useSessionStorage } from "react-use-storage";
 import NavButton from "./NavButton";
 import { findAdjacentMinis } from "./utils";
 import { Wrapper, Contents, ToggleButton } from "./styled";
-import useFilteredCollection from "../../../hooks/useFilteredCollection";
+import useFilteredCollection from "@/hooks/useFilteredCollection";
 
 const Navigator = ({ current }) => {
   const filteredMiniatures = useFilteredCollection();
@@ -23,7 +23,7 @@ const Navigator = ({ current }) => {
   const ToggleIcon = open ? BiCaretUp : BiCaretDown;
 
   return (
-    <Wrapper style={{ display: "flex", justifyContent: "center" }}>
+    <Wrapper>
       <div style={{ maxWidth: "650px", width: "650px" }}>
         <Collapse in={open}>
           <Contents id="navigation-buttons">
@@ -38,8 +38,6 @@ const Navigator = ({ current }) => {
             onClick={() => setOpen(!open)}
             aria-controls="navigation-buttons"
             aria-expanded={open}
-            sz="sm"
-            className="bg-primary"
           >
             {toggleLabel} <ToggleIcon />
           </ToggleButton>

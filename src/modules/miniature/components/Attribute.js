@@ -11,7 +11,7 @@ const Label = styled("div")`
 `;
 
 const Values = styled("div")`
-  width: 100%;
+  flex-grow: 1;
 `;
 
 const Attribute = ({ label, children }) => {

@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   margin-top: -3rem;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Contents = styled.div`
-  background-color: rgb(55, 90, 127);
+  background-color: var(--bs-primary);
   border-radius: 0 0 0.25rem 0.25rem;
 `;
 
@@ -18,5 +20,6 @@ export const ToggleButton = styled.div`
     line-height: 0.5;
     padding: 0.25rem 0.5rem;
     width: fit-content;
+    background-color: var(--bs-primary);
   }
 `;

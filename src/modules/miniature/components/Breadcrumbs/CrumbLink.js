@@ -1,7 +1,7 @@
 import { Link, navigate } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import { useFilterStoreItem } from "../../../hooks/useFilterStore";
+import { useFilterStoreItem } from "@/hooks/useFilterStore";
 
 export const StyledLink = styled(Link).attrs({
   className: "text-white",
