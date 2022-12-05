@@ -1,6 +1,6 @@
 const isDevelopment = process.env.NODE_ENV === "development";
 
-const DEFAULT_ARCHTYPE_TAGS = [];
+const DEFAULT_ARCHETYPE_TAGS = [];
 const DEFAULT_RACE_TAGS = [];
 const DEFAULT_WEAPON_TAGS = [];
 const DEFAULT_ARMOR_TAGS = [];
@@ -65,8 +65,8 @@ class Miniature {
     return this.#frontmatter.race || DEFAULT_RACE_TAGS;
   }
 
-  get archtypeTags() {
-    return this.#frontmatter.archtype || DEFAULT_ARCHTYPE_TAGS;
+  get archetypeTags() {
+    return this.#frontmatter.archetype || DEFAULT_ARCHETYPE_TAGS;
   }
 
   get weaponTags() {
