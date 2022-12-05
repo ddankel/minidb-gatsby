@@ -1,4 +1,3 @@
-const { isPublishedOnMiniDB } = require("./vendor/miniature-data/filters");
 const Miniature = require("./src/models/Miniature");
 
 exports.createSchemaCustomization = ({ actions }) => {
