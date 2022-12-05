@@ -1,5 +1,5 @@
 import { useMemo, useCallback } from "react";
-import useMiniatureCollection from "../../modules/gallery/hooks/useMiniatureCollection";
+import useMiniatureCollection from "../useMiniatureCollection";
 import GalleryFilter from "./GalleryFilter";
 import { useFilterStoreItem } from "@/hooks/useFilterStore";
 

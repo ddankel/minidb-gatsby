@@ -9,3 +9,5 @@ const useMiniature = (slug) => {
 
   return allMiniatures.find((mini) => mini.slug === slug);
 };
+
+export default useMiniature;
