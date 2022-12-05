@@ -29,5 +29,18 @@ module.exports = {
         policy: [{ userAgent: "*", disallow: "/" }],
       },
     },
+    {
+      resolve: "gatsby-plugin-alias-imports",
+      options: {
+        alias: {
+          "@/components": "src/components",
+          "@/hooks": "src/hooks",
+          "@/models": "src/models",
+          "@/modules": "src/modules",
+          "@/styles": "src/styles",
+        },
+        extensions: ["js"],
+      },
+    },
   ],
 };

@@ -1,11 +1,10 @@
 import * as React from "react";
 import { Link } from "gatsby";
-
-import AppLayout from "../layouts/AppLayout";
+import Layout from "@/components/Layout";
 
 const NotFoundPage = () => {
   return (
-    <AppLayout variant="narrow">
+    <Layout variant="narrow">
       <div className="page-wrap d-flex flex-row align-items-center">
         <div className="container">
           <div className="row justify-content-center">
@@ -17,7 +16,7 @@ const NotFoundPage = () => {
           </div>
         </div>
       </div>
-    </AppLayout>
+    </Layout>
   );
 };
 

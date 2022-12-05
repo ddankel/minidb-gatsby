@@ -1,18 +1,21 @@
 import * as React from "react";
 
-import GuidedSearchPage from "../components/GuidedSearchPage";
-import AppLayout from "../layouts/AppLayout";
+import Layout from "@/components/Layout";
+import GalleryPageContent from "@/modules/gallery/content/GalleryPageContent";
 
 const IndexPage = () => {
   return (
-    <AppLayout variant="wide">
-      <GuidedSearchPage />
-    </AppLayout>
+    <Layout variant="wide">
+      <GalleryPageContent />
+    </Layout>
   );
 };
 
 export default IndexPage;
 
+/**
+ * Gatsby Head component
+ */
 export const Head = () => {
   return <title>MiniDB</title>;
 };

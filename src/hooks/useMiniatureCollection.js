@@ -1,16 +1,21 @@
 import { useStaticQuery, graphql } from "gatsby";
-import { isPublishedOnMiniDB } from "../../vendor/miniature-data/filters";
+import Miniature from "@/models/Miniature";
 
 /**
- * Fetch all of the miniatures and their frontmatter
+ * Fetch an array of Miniature objects for all minis in the graphql data source
  *
- * @return  {Array}
+ * @return  {Array<Miniature>}
  */
 const useMiniatureCollection = () => {
   const data = useStaticQuery(query);
-  const allMiniatures = data.allMarkdownRemark.nodes;
-  return allMiniatures.filter((node) => isPublishedOnMiniDB(node.frontmatter));
+  const allMinisFM = data.allMarkdownRemark.nodes;
+  const allMinis = allMinisFM.map((node) => new Miniature({ frontmatter: node.frontmatter }));
+  const visibleMinis = allMinis.filter((mini) => mini.isVisible);
+
+  return visibleMinis;
 };
+
+export default useMiniatureCollection;
 
 export const query = graphql`
   query {
@@ -37,5 +42,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default useMiniatureCollection;

@@ -2,9 +2,10 @@ import React from "react";
 import { Stack } from "react-bootstrap";
 import styled from "styled-components";
 
-import GastbyImage from "../../GatsbyImage";
-import useFrontmatter from "../../../hooks/useFrontmatter";
-import usePhotos from "../../../hooks/usePhotos";
+import GastbyImage from "@/components/GatsbyImage";
+import useMiniature from "@/hooks/useMiniature";
+import usePhotos from "@/hooks/usePhotos";
+
 import { parseLabelForNeedle } from "./utils";
 
 const Match = styled.span.attrs({
@@ -13,13 +14,12 @@ const Match = styled.span.attrs({
 
 const SearchResult = ({ slug, needle }) => {
   const [imgSrc] = usePhotos(slug);
-  const { name, sku } = useFrontmatter(slug);
-  const displayName = sku || name;
-  const segments = parseLabelForNeedle(displayName, needle);
+  const miniature = useMiniature(slug);
+  const segments = parseLabelForNeedle(miniature.displayName, needle);
 
   return (
     <Stack direction="horizontal">
-      <GastbyImage image={imgSrc} alt={displayName} size="50px" />
+      <GastbyImage image={imgSrc} alt={miniature.displayName} size="50px" />
       <div className="px-2">
         {segments
           .filter((x) => x)
