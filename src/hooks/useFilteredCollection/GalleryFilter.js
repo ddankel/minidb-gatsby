@@ -23,14 +23,14 @@ class GalleryFilter {
     const frontmatter = mini.frontmatter ? mini.frontmatter : mini;
 
     return (
-      !this._isFilteredMonster(frontmatter.race) &&
-      this._matchesFilter(frontmatter.name, this.nameFilter) &&
-      this._matchesFilter(frontmatter.armor, this.armorFilter) &&
-      this._matchesFilter(frontmatter.weapons, this.weaponFilter) &&
-      this._matchesFilter(frontmatter.race, this.raceFilter) &&
-      this._matchesFilter(frontmatter.archetype, this.archetypeFilter) &&
-      this._matchesFilter(frontmatter.status || "painted", this.paintedFilter) &&
-      this._matchesLine(frontmatter.line)
+      !this._isFilteredMonster(mini.raceTags) &&
+      this._matchesFilter(mini.name, this.nameFilter) &&
+      this._matchesFilter(mini.armorTags, this.armorFilter) &&
+      this._matchesFilter(mini.weaponTags, this.weaponFilter) &&
+      this._matchesFilter(mini.raceTags, this.raceFilter) &&
+      this._matchesFilter(mini.archetypeTags, this.archetypeFilter) &&
+      this._matchesFilter(mini.paintedState, this.paintedFilter) &&
+      this._matchesLine(mini.fullLine)
     );
   }
 
@@ -61,8 +61,7 @@ class GalleryFilter {
   _matchesLine(miniatureValue) {
     if (this.lineFilter === "all") return true;
 
-    const compiledLine = [miniatureValue || ""].flat().join(" > ");
-    return compiledLine.startsWith(this.lineFilter);
+    return miniatureValue.startsWith(this.lineFilter);
   }
 
   /**

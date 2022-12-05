@@ -1,7 +1,7 @@
 import { useMemo, useCallback } from "react";
-import useMiniatureCollection from "../useMiniatureCollection";
+import useMiniatureCollection from "../../modules/gallery/hooks/useMiniatureCollection";
 import GalleryFilter from "./GalleryFilter";
-import { useFilterStoreItem } from "../useFilterStore";
+import { useFilterStoreItem } from "@/hooks/useFilterStore";
 
 /**
  * All miniatures that match the current filter values
@@ -12,7 +12,6 @@ import { useFilterStoreItem } from "../useFilterStore";
  * @return  {Array}  Matching miniature pages
  */
 const useFilteredCollection = () => {
-  // const [filteredCollection, setFilteredCollection] = useState([]);
   const fullCollection = useMiniatureCollection();
 
   const raceFilter = useFilterStoreItem("raceFilter");

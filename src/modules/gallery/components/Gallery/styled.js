@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: inline-flex;
   align-items: flex-start;
   align-content: flex-start;
@@ -9,5 +9,3 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
 `;
-
-export default Wrapper;

@@ -2,13 +2,11 @@ import React from "react";
 import { Form, Button, Stack } from "react-bootstrap";
 
 import Filter from "./Filter";
-import useAggregatedTags from "../../../hooks/useAggregatedTags";
-import useMiniatureCollection from "../../../hooks/useMiniatureCollection";
-import { useFilterStoreItem, useFilterStoreState } from "../../../hooks/useFilterStore";
+import useAggregatedTags from "../../hooks/useAggregatedTags";
+import { useFilterStoreItem, useFilterStoreState } from "@/hooks/useFilterStore";
 
 const Filters = ({ btnClass }) => {
-  const minis = useMiniatureCollection();
-  const [tagList] = React.useState(useAggregatedTags(minis));
+  const tagList = useAggregatedTags();
 
   const [raceFilter, setRaceFilter] = useFilterStoreState("raceFilter");
   const [archetypeFilter, setArchetypeFilter] = useFilterStoreState("archetypeFilter");
@@ -31,26 +29,31 @@ const Filters = ({ btnClass }) => {
 
   return (
     <Stack gap="2" className="mx-3">
-      <Filter title="Race" value={raceFilter} setValue={setRaceFilter} options={tagList.race} />
+      <Filter title="Race" value={raceFilter} setValue={setRaceFilter} options={tagList.raceTags} />
       <Filter
         title="Archetype"
         value={archetypeFilter}
         setValue={setArchetypeFilter}
-        options={tagList.archetype}
+        options={tagList.archetypeTags}
       />
       <Filter
         title="Weapon"
         value={weaponFilter}
         setValue={setWeaponFilter}
-        options={tagList.weapons}
+        options={tagList.weaponTags}
       />
-      <Filter title="Armor" value={armorFilter} setValue={setArmorFilter} options={tagList.armor} />
-      <Filter title="Line" value={lineFilter} setValue={setLineFilter} options={tagList.line} />
+      <Filter
+        title="Armor"
+        value={armorFilter}
+        setValue={setArmorFilter}
+        options={tagList.armorTags}
+      />
+      <Filter title="Line" value={lineFilter} setValue={setLineFilter} options={tagList.lines} />
       <Filter
         title="Status"
         value={paintedFilter}
         setValue={setPaintedFilter}
-        options={tagList.status}
+        options={tagList.paintedTags}
       />
       <div className="py-3">
         <Form.Check
