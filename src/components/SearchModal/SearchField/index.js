@@ -1,24 +1,26 @@
 import React from "react";
 import { navigate } from "gatsby";
 import { Typeahead } from "react-bootstrap-typeahead";
-import useFrontmatter from "../../../hooks/useFrontmatter";
+
 import SearchResult from "../SearchResult";
+import useMiniatureCollection from "@/hooks/useMiniatureCollection";
 
 const navigateTo = (selection) => navigate(`/minis/${selection.id}`);
 
 const SearchField = () => {
   const inputRef = React.useRef();
-  const miniatureNodes = useFrontmatter();
+  const miniatureCollection = useMiniatureCollection();
   const [searchNeedle, setSearchNeedle] = React.useState("");
 
   React.useEffect(() => {
     inputRef.current.focus();
   }, []);
 
-  if (!miniatureNodes) return;
-  const options = miniatureNodes.map((frontmatter) => ({
-    id: frontmatter.slug,
-    label: frontmatter.sku || frontmatter.name,
+  if (!miniatureCollection) return;
+
+  const options = miniatureCollection.map((miniature) => ({
+    id: miniature.slug,
+    label: miniature.displayName,
   }));
 
   return (
