@@ -1,7 +1,8 @@
 import { useMemo } from "react";
-import useMiniatureCollection from "../useMiniatureCollection";
-import useDedupedArray from "./useDedupedArray";
+import useMiniatureCollection from "@/hooks/useMiniatureCollection";
+
 import collectLines from "./collectLines";
+import useDedupedArray from "./useDedupedArray";
 
 const useAggregatedTags = () => {
   const collection = useMiniatureCollection();

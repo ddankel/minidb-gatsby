@@ -1,13 +1,13 @@
 import React from "react";
 
+import useFilteredCollection from "@/hooks/useFilteredCollection";
 import useQueryParamState from "@/hooks/useQueryStringState";
 
+import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
+
+import DesktopMenu from "../components/DesktopMenu";
 import Gallery from "../components/Gallery";
 import MobileMenu from "../components/MobileMenu";
-import DesktopMenu from "../components/DesktopMenu";
-
-import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
-import useFilteredCollection from "@/hooks/useFilteredCollection";
 
 const GalleryPageContent = () => {
   const filteredMiniatures = useFilteredCollection();

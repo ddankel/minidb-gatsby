@@ -20,8 +20,6 @@ class GalleryFilter {
    * @return  {Boolean}
    */
   includes(mini) {
-    const frontmatter = mini.frontmatter ? mini.frontmatter : mini;
-
     return (
       !this._isFilteredMonster(mini.raceTags) &&
       this._matchesFilter(mini.name, this.nameFilter) &&

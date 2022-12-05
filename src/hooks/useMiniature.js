@@ -1,5 +1,12 @@
 import useMiniatureCollection from "./useMiniatureCollection";
 
+/**
+ * Fetch an pre-populated instance of the Miniature model that matches the provided slug
+ *
+ * @param   {String}  slug  The slug of the miniature to fetch
+ *
+ * @return  {Miniature}
+ */
 const useMiniature = (slug) => {
   const allMiniatures = useMiniatureCollection();
 

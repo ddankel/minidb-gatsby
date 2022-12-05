@@ -1,11 +1,12 @@
 import React from "react";
+import useMiniature from "@/hooks/useMiniature";
 import usePhotos from "@/hooks/usePhotos";
-import useFrontmatter from "@/hooks/useFrontmatter";
+
 import { NavLink, Contents, Label, LeftArrow, RightArrow, NavImage } from "./styled";
 
 const NavButton = ({ slug, variant, ...restProps }) => {
   const [imgSrc] = usePhotos(slug);
-  const { name } = useFrontmatter(slug);
+  const miniature = useMiniature(slug);
 
   if (!["prev", "next"].includes(variant)) {
     throw new Error(`Variant must be 'prev' or 'next'.  Recieved: '${variant}' instead.`);
@@ -17,8 +18,8 @@ const NavButton = ({ slug, variant, ...restProps }) => {
     <NavLink to={`/minis/${slug}`} {...restProps}>
       <Contents variant={variant}>
         <Arrow />
-        <NavImage image={imgSrc} alt={name} />
-        <Label>{name}</Label>
+        <NavImage image={imgSrc} alt={miniature.name} />
+        <Label>{miniature.name}</Label>
       </Contents>
     </NavLink>
   );

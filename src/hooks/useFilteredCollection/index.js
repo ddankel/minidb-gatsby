@@ -1,7 +1,7 @@
 import { useMemo, useCallback } from "react";
-import useMiniatureCollection from "../../modules/gallery/hooks/useMiniatureCollection";
-import GalleryFilter from "./GalleryFilter";
+import useMiniatureCollection from "@/hooks/useMiniatureCollection";
 import { useFilterStoreItem } from "@/hooks/useFilterStore";
+import GalleryFilter from "./GalleryFilter";
 
 /**
  * All miniatures that match the current filter values

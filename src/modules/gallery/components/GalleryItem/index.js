@@ -1,10 +1,10 @@
 import React from "react";
 import { Link, navigate } from "gatsby";
 
-import { Caption, Image, ImageContainer, Item } from "./styled";
+import useMiniature from "@/hooks/useMiniature";
+import usePhotos from "@/hooks/usePhotos";
 
-import usePhotos from "../../hooks/usePhotos";
-import useMiniature from "../../hooks/useMiniature";
+import { Caption, Image, ImageContainer, Item } from "./styled";
 
 const GalleryItem = ({ slug }) => {
   const mini = useMiniature(slug);
