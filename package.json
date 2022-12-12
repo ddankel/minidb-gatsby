@@ -30,7 +30,7 @@
     "gatsby": "^4.25",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-image": "^2.24.0",
-    "gatsby-plugin-netlify": "^5.0.1",
+    "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-sass": "^5.24.0",
     "gatsby-plugin-sharp": "^4.24.0",
