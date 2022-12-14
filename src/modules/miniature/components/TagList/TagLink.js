@@ -1,6 +1,6 @@
 import { Link, navigate } from "gatsby";
 import React from "react";
-import { Badge } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import _ from "lodash";
 import { useFilterStoreItem } from "../../../../hooks/useFilterStore";
 
@@ -14,9 +14,16 @@ const TagLink = ({ to, attribute, tag, ...restProps }) => {
   };
 
   return (
-    <Link to={`/?${attribute}=${tag}`} onClick={handleClick} {...restProps}>
-      <Badge bg="secondary">{_.startCase(tag)}</Badge>
-    </Link>
+    <Button
+      as={Link}
+      className="badge"
+      variant="secondary"
+      to={`/?${attribute}=${tag}`}
+      onClick={handleClick}
+      {...restProps}
+    >
+      {_.startCase(tag)}
+    </Button>
   );
 };
 
