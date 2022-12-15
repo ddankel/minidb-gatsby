@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+import Accordion from "../components/Accordion";
+
 import Filters from "./Filters";
+import NewFilters from "./NewFilters";
 
 const Container = styled.div.attrs({
   className: "d-none d-md-block",
@@ -16,6 +19,10 @@ const Container = styled.div.attrs({
 const DesktopMenu = () => {
   return (
     <Container>
+      <Accordion />
+      <hr />
+      <NewFilters />
+      <hr />
       <Filters btnClass="w-100" />
     </Container>
   );

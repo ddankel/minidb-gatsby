@@ -15,6 +15,7 @@ const Filters = ({ btnClass }) => {
   const [paintedFilter, setPaintedFilter] = useFilterStoreState("paintedFilter");
   const [lineFilter, setLineFilter] = useFilterStoreState("lineFilter");
   const [ignoreMonsters, setIgnoreMonsters] = useFilterStoreState("ignoreMonsters");
+  const resetFilters = useFilterStoreItem("resetFilters");
   const isFiltered = useFilterStoreItem("isFiltered")();
 
   const resetAll = () => {
@@ -68,7 +69,8 @@ const Filters = ({ btnClass }) => {
       <Button
         size="sm"
         className={btnClass}
-        onClick={() => resetAll()}
+        // onClick={() => resetAll()}
+        onClick={() => resetFilters()}
         disabled={!isFiltered}
         variant={isFiltered ? "primary" : "secondary"}
       >

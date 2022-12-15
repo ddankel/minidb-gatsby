@@ -49,6 +49,8 @@ let store = (set, get) => ({
     set(payload);
   },
 
+  resetFilters: () => set(defaultState),
+
   isFiltered: () => {
     if (get().ignoreMonsters) return true;
 
