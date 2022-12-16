@@ -1,15 +1,23 @@
 import React from "react";
 import _ from "lodash";
 
-import { useFilterStoreState } from "@/hooks/useFilterStore";
+import { useFilterStoreItem } from "@/hooks/useFilterStore";
 import FilterBadge from "./FilterBadge";
 
 const ActiveFilters = () => {
-  const [speciesFilter, setSpeciesFilter] = useFilterStoreState("speciesFilter");
+  const isFiltered = useFilterStoreItem("isFiltered");
 
-  const handleClick = (val) => {
-    setSpeciesFilter(_.without(speciesFilter, val));
-  };
+  const speciesFilter = useFilterStoreItem("speciesFilter");
+  const removeSpeciesFilter = useFilterStoreItem("removeSpeciesFilter");
+
+  const archetypeFilter = useFilterStoreItem("archetypeFilter");
+  const removeArchetypeFilter = useFilterStoreItem("removeArchetypeFilter");
+
+  const weaponFilter = useFilterStoreItem("weaponFilter");
+  const removeWeaponFilter = useFilterStoreItem("removeWeaponFilter");
+
+  const armorFilter = useFilterStoreItem("armorFilter");
+  const removeArmorFilter = useFilterStoreItem("removeArmorFilter");
 
   return (
     <div
@@ -22,9 +30,18 @@ const ActiveFilters = () => {
         marginBottom: "1.5rem",
       }}
     >
-      {!!speciesFilter.length && <span>Active Filters:</span>}
+      {isFiltered() && <span>Active Filters:</span>}
       {speciesFilter.map((tag) => (
-        <FilterBadge key={tag} text={tag} onClick={handleClick} />
+        <FilterBadge key={tag} text={tag} onClick={() => removeSpeciesFilter(tag)} />
+      ))}
+      {archetypeFilter.map((tag) => (
+        <FilterBadge key={tag} text={tag} onClick={() => removeArchetypeFilter(tag)} />
+      ))}
+      {weaponFilter.map((tag) => (
+        <FilterBadge key={tag} text={tag} onClick={() => removeWeaponFilter(tag)} />
+      ))}
+      {armorFilter.map((tag) => (
+        <FilterBadge key={tag} text={tag} onClick={() => removeArmorFilter(tag)} />
       ))}
     </div>
   );

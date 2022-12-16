@@ -1,3 +1,5 @@
+import _ from "lodash";
+
 class GalleryFilter {
   constructor(args) {
     this.speciesFilter = args.speciesFilter;
@@ -20,7 +22,10 @@ class GalleryFilter {
    * @return  {Boolean}
    */
   includes(mini) {
-    if (!this._matchesFilter(mini.raceTags, this.speciesFilter)) return false;
+    if (!this._matchesFilterAND(mini.raceTags, this.speciesFilter)) return false;
+    if (!this._matchesFilterAND(mini.archetypeTags, this.archetypeFilter)) return false;
+    if (!this._matchesFilterOR(mini.weaponTags, this.weaponFilter)) return false;
+    if (!this._matchesFilterAND(mini.armorTags, this.armorFilter)) return false;
 
     return true;
 
@@ -37,7 +42,7 @@ class GalleryFilter {
   }
 
   /**
-   * If the currently set filter value includes the miniature's frontmater value
+   * If the miniature's frontmater includes all the currently set filter items
    *
    * If there are no tags in the filteredTags array that aren't already in
    * miniatureTags, then that means all the filtered tags are already assigned
@@ -48,8 +53,26 @@ class GalleryFilter {
    *
    * @return  {Boolean}
    */
-  _matchesFilter(miniatureTags, filteredTags) {
+  _matchesFilterAND(miniatureTags, filteredTags) {
     return miniatureTags.length === [...new Set([...miniatureTags, ...filteredTags])].length;
+  }
+
+  /**
+   * If the miniature's frontmater includes any the currently set filter items
+   *
+   * If there are no tags in the filteredTags array that aren't already in
+   * miniatureTags, then that means all the filtered tags are already assigned
+   * to the miniature.  In other words, it matches the filter.
+   *
+   * @param   {Array}  miniatureTags    Tags on the miniature to check
+   * @param   {Array}  filteredTags     Tags to filter on
+   *
+   * @return  {Boolean}
+   */
+  _matchesFilterOR(miniatureTags, filteredTags) {
+    if (!filteredTags.length) return true;
+
+    return !!_.intersection(miniatureTags, filteredTags).length;
   }
 
   /**

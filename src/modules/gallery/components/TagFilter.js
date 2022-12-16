@@ -5,23 +5,22 @@ import styled from "styled-components";
 
 const InputForm = styled(Form)({ fontSize: "14px" });
 
+const formatLabel = (rawLabel) => {
+  const parts = rawLabel.split(" > ");
+
+  if (parts.length === 1) return rawLabel;
+
+  const spacers = parts.length - 1;
+  let output = "";
+  for (let i = 0; i < spacers; i++) {
+    output = output + "&nbsp;&nbsp;&nbsp;&nbsp;   ";
+  }
+
+  output = output + _.last(parts);
+  return output;
+};
+
 const TagFilter = ({ name, options, value, onChange, onAdd, onRemove, multiple = false }) => {
-  // const handleChangeMultiple = (targetOption) => () => {
-  //   const newValue = value.includes(targetOption)
-  //     ? _.without(value, targetOption)
-  //     : [...value, targetOption];
-
-  //   onChange(newValue);
-  // };
-
-  // // Handle changes if multiple is false
-  // const handleChangeSingluar = (targetOption) => () => {
-  //   const newValue = value.includes(targetOption) ? [] : [targetOption];
-  //   return onChange(newValue);
-  // };
-
-  // const handleChange = multiple ? handleChangeMultiple : handleChangeSingluar;
-
   const handleChange = (targetOption) => () => {
     const alreadySelected = value.includes(targetOption);
     alreadySelected ? onRemove(targetOption) : onAdd(targetOption);
@@ -29,19 +28,26 @@ const TagFilter = ({ name, options, value, onChange, onAdd, onRemove, multiple =
 
   return (
     <InputForm>
-      {options.map((tagOption) => (
-        <div key={tagOption}>
-          <InputForm.Check
-            type="checkbox"
-            id={`${name}-${tagOption}`}
-            name={`${name}`}
-            label={_.startCase(tagOption)}
-            // TODO: ^ needs to work with miniature lines (ie not delete > )
-            checked={value.includes(tagOption)}
-            onChange={handleChange(tagOption)}
-          />
-        </div>
-      ))}
+      {options.map((tagOption) => {
+        const label = tagOption
+          .split(" > ")
+          .map((part) => _.startCase(part))
+          .join(" > ");
+
+        return (
+          <div key={tagOption}>
+            <InputForm.Check
+              type="checkbox"
+              id={`${name}-${tagOption}`}
+              name={`${name}`}
+              // label={label}
+              label={formatLabel(label)}
+              checked={value.includes(tagOption)}
+              onChange={handleChange(tagOption)}
+            />
+          </div>
+        );
+      })}
     </InputForm>
   );
 };
