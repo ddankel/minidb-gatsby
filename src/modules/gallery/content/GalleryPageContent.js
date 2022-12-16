@@ -1,7 +1,7 @@
 import React from "react";
 
 import useFilteredCollection from "@/hooks/useFilteredCollection";
-import useQueryParamState from "@/hooks/useQueryStringState";
+// import useQueryParamState from "@/hooks/useQueryStringState";
 
 import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
 
@@ -12,7 +12,7 @@ import MobileMenu from "../components/MobileMenu";
 const GalleryPageContent = () => {
   const filteredMiniatures = useFilteredCollection();
   const hasResults = !!filteredMiniatures.length;
-  useQueryParamState();
+  // useQueryParamState();
 
   return (
     <>

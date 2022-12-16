@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Filters from "./Filters";
+// import Filters from "./Filters";
 
 const Container = styled.div.attrs({
   className: "d-md-none mx-3",
@@ -10,11 +10,7 @@ const Container = styled.div.attrs({
 `;
 
 const MobileMenu = () => {
-  return (
-    <Container>
-      <Filters btnClass="float-end" />
-    </Container>
-  );
+  return <Container>{/* <Filters btnClass="float-end" /> */}</Container>;
 };
 
 export default MobileMenu;

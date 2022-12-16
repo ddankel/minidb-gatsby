@@ -51,8 +51,9 @@ const RadioGroup = ({ title, options, value, onChange, featuredOptions }) => {
         {visibleOptions.map((tagOption) => (
           <div key={tagOption}>
             <Form.Check
-              type="radio"
+              type="checkbox"
               id={`rad-${title}-${tagOption}`}
+              // name={`${title}-${tagOption}`}
               name={`${title}`}
               label={_.startCase(tagOption)}
               checked={value.includes(tagOption)}

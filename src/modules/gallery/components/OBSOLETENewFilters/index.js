@@ -3,7 +3,7 @@ import { Form, Button, Stack } from "react-bootstrap";
 import _ from "lodash";
 
 import useAggregatedTags from "../../hooks/useAggregatedTags";
-import { useFilterStoreItem, useFilterStoreState } from "@/hooks/useFilterStore";
+import { useFilterStoreItem, useFilterStoreState } from "@/hooks/OBSOLETEuseFilterStore";
 
 import RadioGroup from "./RadioGroup";
 
@@ -25,7 +25,7 @@ const NewFilters = ({ btnClass }) => {
     <Stack gap="2" className="mx-3">
       <RadioGroup
         title="Species"
-        value={[raceFilter]}
+        value={["elf", "human"]}
         options={tagList.raceTags}
         featuredOptions={_.take(tagList.raceTags, 5)}
         onChange={(v) => setRaceFilter(v)}
