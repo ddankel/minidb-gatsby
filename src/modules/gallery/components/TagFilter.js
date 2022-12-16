@@ -5,22 +5,27 @@ import styled from "styled-components";
 
 const InputForm = styled(Form)({ fontSize: "14px" });
 
-const TagFilter = ({ name, options, value, onChange, multiple = false }) => {
-  const handleChangeMultiple = (targetOption) => () => {
-    const newValue = value.includes(targetOption)
-      ? _.without(value, targetOption)
-      : [...value, targetOption];
+const TagFilter = ({ name, options, value, onChange, onAdd, onRemove, multiple = false }) => {
+  // const handleChangeMultiple = (targetOption) => () => {
+  //   const newValue = value.includes(targetOption)
+  //     ? _.without(value, targetOption)
+  //     : [...value, targetOption];
 
-    onChange(newValue);
+  //   onChange(newValue);
+  // };
+
+  // // Handle changes if multiple is false
+  // const handleChangeSingluar = (targetOption) => () => {
+  //   const newValue = value.includes(targetOption) ? [] : [targetOption];
+  //   return onChange(newValue);
+  // };
+
+  // const handleChange = multiple ? handleChangeMultiple : handleChangeSingluar;
+
+  const handleChange = (targetOption) => () => {
+    const alreadySelected = value.includes(targetOption);
+    alreadySelected ? onRemove(targetOption) : onAdd(targetOption);
   };
-
-  // Handle changes if multiple is false
-  const handleChangeSingluar = (targetOption) => () => {
-    const newValue = value.includes(targetOption) ? [] : [targetOption];
-    return onChange(newValue);
-  };
-
-  const handleChange = multiple ? handleChangeMultiple : handleChangeSingluar;
 
   return (
     <InputForm>

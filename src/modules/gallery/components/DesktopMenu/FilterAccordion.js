@@ -6,12 +6,16 @@ import useAggregatedTags from "../../hooks/useAggregatedTags";
 import TagFilter from "../TagFilter";
 import { Item, Header, Body } from "./FilterAccordion.styled";
 import { useSessionStorage } from "react-use-storage";
+import { useFilterStoreItem, useFilterStoreState } from "@/hooks/useFilterStore";
 
 const FilterAccordion = ({}) => {
   const tagList = useAggregatedTags();
   const [accordionKey, setAccordionKey] = useSessionStorage("filter-accordion", null);
 
   const [species, setSpecies] = React.useState([]);
+  const [speciesFilter, setSpeciesFilter] = useFilterStoreState("speciesFilter");
+  const addSpeciesFilter = useFilterStoreItem("addSpeciesFilter");
+  const removeSpeciesFilter = useFilterStoreItem("removeSpeciesFilter");
 
   return (
     <Accordion flush activeKey={accordionKey} onSelect={(key) => setAccordionKey(key)}>
@@ -20,9 +24,11 @@ const FilterAccordion = ({}) => {
         <Body>
           <TagFilter
             title="Species"
-            value={species}
+            value={speciesFilter}
             options={tagList.raceTags}
-            onChange={(val) => setSpecies(val)}
+            // onChange={(val) => setSpeciesFilter(val)}
+            onAdd={(val) => addSpeciesFilter(val)}
+            onRemove={(val) => removeSpeciesFilter(val)}
             multiple
           />
         </Body>

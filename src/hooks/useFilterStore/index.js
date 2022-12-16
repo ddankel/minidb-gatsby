@@ -1,24 +1,32 @@
 import create from "zustand";
 import { devtools, persist } from "zustand/middleware";
+import _ from "lodash";
 
 import useStoreState from "./hooks/useStoreState";
 import useStoreItem from "./hooks/useStoreItem";
 import useStoreItems from "./hooks/useStoreItems";
 
 const defaultState = {
-  raceFilter: "all",
-  archetypeFilter: "all",
-  weaponFilter: "all",
-  armorFilter: "all",
-  paintedFilter: "all",
-  nameFilter: "all",
-  lineFilter: "all",
+  speciesFilter: [],
+  archetypeFilter: [],
+  weaponFilter: [],
+  armorFilter: [],
+  paintedFilter: [],
+  nameFilter: [],
+  lineFilter: [],
 };
+
+const addFilter = (existingFilter, newItem) => [...new Set([...existingFilter, newItem])].sort();
+const removeFilter = (existingFilter, outgoingItem) => _.without(existingFilter, outgoingItem);
 
 // Build zustand store
 let store = (set, get) => ({
-  raceFilter: defaultState.raceFilter,
-  setRaceFilter: (value) => set({ raceFilter: value }),
+  speciesFilter: defaultState.speciesFilter,
+  setSpeciesFilter: (value) => set({ speciesFilter: value }),
+  addSpeciesFilter: (value) =>
+    set((state) => ({ speciesFilter: addFilter(state.speciesFilter, value) })),
+  removeSpeciesFilter: (value) =>
+    set((state) => ({ speciesFilter: removeFilter(state.speciesFilter, value) })),
 
   archetypeFilter: defaultState.archetypeFilter,
   setArchetypeFilter: (value) => set({ archetypeFilter: value }),
@@ -55,7 +63,7 @@ let store = (set, get) => ({
     if (get().ignoreMonsters) return true;
 
     const filters = [
-      get().raceFilter,
+      get().speciesFilter,
       get().archetypeFilter,
       get().weaponFilter,
       get().armorFilter,
@@ -63,7 +71,7 @@ let store = (set, get) => ({
       get().lineFilter,
     ];
 
-    return filters.some((filter) => !!filter.length);
+    return filters.some((item) => item !== "all");
   },
 });
 
