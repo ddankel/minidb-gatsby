@@ -19,6 +19,9 @@ const ActiveFilters = () => {
   const armorFilter = useFilterStoreItem("armorFilter");
   const removeArmorFilter = useFilterStoreItem("removeArmorFilter");
 
+  const lineFilter = useFilterStoreItem("lineFilter");
+  const removeLineFilter = useFilterStoreItem("removeLineFilter");
+
   return (
     <div
       style={{
@@ -42,6 +45,13 @@ const ActiveFilters = () => {
       ))}
       {armorFilter.map((tag) => (
         <FilterBadge key={tag} text={tag} onClick={() => removeArmorFilter(tag)} />
+      ))}
+      {lineFilter.map((tag) => (
+        <FilterBadge
+          key={tag}
+          text={_.last(tag.split(" > "))}
+          onClick={() => removeLineFilter(tag)}
+        />
       ))}
     </div>
   );
