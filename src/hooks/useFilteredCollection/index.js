@@ -14,7 +14,6 @@ import GalleryFilter from "./GalleryFilter";
 const useFilteredCollection = () => {
   const fullCollection = useMiniatureCollection();
 
-  // const raceFilter = useFilterStoreItem("raceFilter");
   const speciesFilter = useFilterStoreItem("speciesFilter");
   const archetypeFilter = useFilterStoreItem("archetypeFilter");
   const weaponFilter = useFilterStoreItem("weaponFilter");
