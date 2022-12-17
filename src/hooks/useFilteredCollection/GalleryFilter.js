@@ -26,6 +26,7 @@ class GalleryFilter {
     if (!this._matchesFilterAND(mini.archetypeTags, this.archetypeFilter)) return false;
     if (!this._matchesFilterOR(mini.weaponTags, this.weaponFilter)) return false;
     if (!this._matchesFilterAND(mini.armorTags, this.armorFilter)) return false;
+    if (!this._matchesLine(mini.fullLine)) return false;
 
     return true;
 
@@ -82,10 +83,10 @@ class GalleryFilter {
    *
    * @return  {Boolean}
    */
-  _matchesLine(miniatureValue) {
-    if (this.lineFilter === "all") return true;
+  _matchesLine(miniatureFullLine) {
+    if (!this.lineFilter.length) return true;
 
-    return miniatureValue.startsWith(this.lineFilter);
+    return this.lineFilter.some((line) => miniatureFullLine.startsWith(line));
   }
 
   /**

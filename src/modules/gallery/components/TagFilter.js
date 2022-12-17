@@ -36,6 +36,7 @@ const TagFilter = ({ name, options, value, onChange, onAdd, onRemove, multiple =
   return (
     <InputForm>
       {options.map((tagOption) => {
+        // only do start case if > isn't present (not a mini line)
         const capitolizedLabel = tagOption
           .split(" > ")
           .map((part) => _.startCase(part))
