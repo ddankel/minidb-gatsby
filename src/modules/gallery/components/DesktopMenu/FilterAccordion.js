@@ -32,6 +32,10 @@ const FilterAccordion = ({}) => {
   const addLineFilter = useFilterStoreItem("addLineFilter");
   const removeLineFilter = useFilterStoreItem("removeLineFilter");
 
+  const paintedFilter = useFilterStoreItem("paintedFilter");
+  const addPaintedFilter = useFilterStoreItem("addPaintedFilter");
+  const removePaintedFilter = useFilterStoreItem("removePaintedFilter");
+
   return (
     <Accordion flush activeKey={accordionKey} onSelect={(key) => setAccordionKey(key)}>
       <Item eventKey="0">
@@ -98,12 +102,13 @@ const FilterAccordion = ({}) => {
       <Item eventKey="6">
         <Header>Status</Header>
         <Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+          <TagFilter
+            title="Status"
+            value={paintedFilter}
+            options={tagList.paintedTags}
+            onAdd={(val) => addPaintedFilter(val)}
+            onRemove={(val) => removePaintedFilter(val)}
+          />
         </Body>
       </Item>
     </Accordion>

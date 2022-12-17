@@ -27,19 +27,9 @@ class GalleryFilter {
     if (!this._matchesFilterOR(mini.weaponTags, this.weaponFilter)) return false;
     if (!this._matchesFilterAND(mini.armorTags, this.armorFilter)) return false;
     if (!this._matchesLine(mini.fullLine)) return false;
+    if (!this._matchesFilterOR([mini.paintedState], this.paintedFilter)) return false;
 
     return true;
-
-    // return (
-    //   !this._isFilteredMonster(mini.raceTags) &&
-    //   this._matchesFilter(mini.name, this.nameFilter) &&
-    //   this._matchesFilter(mini.armorTags, this.armorFilter) &&
-    //   this._matchesFilter(mini.weaponTags, this.weaponFilter) &&
-    //   this._matchesFilter(mini.raceTags, this.speciesFilter) &&
-    //   this._matchesFilter(mini.archetypeTags, this.archetypeFilter) &&
-    //   this._matchesFilter(mini.paintedState, this.paintedFilter) &&
-    //   this._matchesLine(mini.fullLine)
-    // );
   }
 
   /**

@@ -22,6 +22,9 @@ const ActiveFilters = () => {
   const lineFilter = useFilterStoreItem("lineFilter");
   const removeLineFilter = useFilterStoreItem("removeLineFilter");
 
+  const paintedFilter = useFilterStoreItem("paintedFilter");
+  const removePaintedFilter = useFilterStoreItem("removePaintedFilter");
+
   return (
     <div
       style={{
@@ -52,6 +55,9 @@ const ActiveFilters = () => {
           text={_.last(tag.split(" > "))}
           onClick={() => removeLineFilter(tag)}
         />
+      ))}
+      {paintedFilter.map((tag) => (
+        <FilterBadge key={tag} text={tag} onClick={() => removePaintedFilter(tag)} />
       ))}
     </div>
   );

@@ -21,6 +21,7 @@ const Container = styled.div.attrs({
 const DesktopMenu = () => {
   return (
     <Container>
+      <h6 style={{ marginTop: "1rem" }}>Filters</h6>
       <FilterAccordion />
     </Container>
   );
