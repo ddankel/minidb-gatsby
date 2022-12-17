@@ -1,20 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import FilterAccordion from "./FilterAccordion";
-
-const Container = styled.div.attrs({
-  className: "d-none d-md-block",
-})`
-  width: 225px;
-  min-width: 225px;
-  margin-top: -33px;
-  margin-right: 1rem;
-`;
+import { Container, Title } from "./index.styled";
 
 const DesktopMenu = () => {
   return (
     <Container>
-      <h6 style={{ marginTop: "1rem" }}>Filters</h6>
+      <Title>Filter Collection</Title>
       <FilterAccordion />
     </Container>
   );
