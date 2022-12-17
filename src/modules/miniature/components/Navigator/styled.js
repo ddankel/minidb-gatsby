@@ -7,6 +7,11 @@ export const Wrapper = styled.div`
   justify-content: center;
 `;
 
+export const WidthContraint = styled.div`
+  max-width: 650px;
+  width: 650px;
+`;
+
 export const Contents = styled.div`
   background-color: var(--bs-primary);
   border-radius: 0 0 0.25rem 0.25rem;

@@ -36,7 +36,7 @@ const MiniaturePageContent = ({ frontmatter, html }) => {
             <AttributeStack>
               <Status paintedAt={miniature.paintedAt} paintedState={miniature.paintedState} />
               <Attribute label="Tags">
-                <TagList attribute="race" tags={miniature.raceTags} />
+                <TagList attribute="species" tags={miniature.raceTags} />
                 <TagList attribute="archetype" tags={miniature.archetypeTags} />
                 <TagList attribute="weapon" tags={miniature.weaponTags} />
                 <TagList attribute="armor" tags={miniature.armorTags} />
