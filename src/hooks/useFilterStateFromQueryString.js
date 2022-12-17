@@ -31,7 +31,7 @@ const useFilterStateFromQueryString = ({ path, query: rawQueryString }) => {
 
     // Then redirect to clear the querystring
     navigate(path);
-  }, []);
+  }, [path, rawQueryString, setFilter]);
 };
 
 export default useFilterStateFromQueryString;

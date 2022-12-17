@@ -1,6 +1,5 @@
 import create from "zustand";
 import { devtools, persist } from "zustand/middleware";
-import _ from "lodash";
 
 import store from "./store";
 

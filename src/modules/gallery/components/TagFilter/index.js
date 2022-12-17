@@ -1,7 +1,6 @@
 import React from "react";
 import { Form } from "react-bootstrap";
 import styled from "styled-components";
-import _ from "lodash";
 
 import Label from "./Label";
 

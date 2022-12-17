@@ -1,14 +1,13 @@
 import React from "react";
-import _ from "lodash";
 import Accordion from "react-bootstrap/Accordion";
 
 import useAggregatedTags from "../../hooks/useAggregatedTags";
 import TagFilter from "../TagFilter";
 import { Item, Header, Body } from "./FilterAccordion.styled";
 import { useSessionStorage } from "react-use-storage";
-import { useFilterStoreItem, useFilterStoreState } from "@/hooks/useFilterStore";
+import { useFilterStoreItem } from "@/hooks/useFilterStore";
 
-const FilterAccordion = ({}) => {
+const FilterAccordion = () => {
   const tagList = useAggregatedTags();
   const [accordionKey, setAccordionKey] = useSessionStorage("filter-accordion", null);
 
