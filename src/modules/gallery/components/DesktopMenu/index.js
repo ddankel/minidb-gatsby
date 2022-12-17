@@ -5,8 +5,8 @@ import FilterAccordion from "./FilterAccordion";
 const Container = styled.div.attrs({
   className: "d-none d-md-block",
 })`
-  width: 250px;
-  min-width: 250px;
+  width: 225px;
+  min-width: 225px;
   margin-top: -33px;
   margin-right: 1rem;
 `;

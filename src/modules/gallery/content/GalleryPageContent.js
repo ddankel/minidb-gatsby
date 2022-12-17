@@ -1,7 +1,6 @@
 import React from "react";
 
 import useFilteredCollection from "@/hooks/useFilteredCollection";
-// import useQueryParamState from "@/hooks/useQueryStringState";
 
 import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
 
@@ -13,7 +12,6 @@ import ActiveFilters from "../components/ActiveFilters";
 const GalleryPageContent = () => {
   const filteredMiniatures = useFilteredCollection();
   const hasResults = !!filteredMiniatures.length;
-  // useQueryParamState();
 
   return (
     <>
