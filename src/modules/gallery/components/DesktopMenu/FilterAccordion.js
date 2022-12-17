@@ -42,7 +42,7 @@ const FilterAccordion = ({}) => {
         <Header>Species</Header>
         <Body>
           <TagFilter
-            title="Species"
+            name="Species"
             value={speciesFilter}
             options={tagList.raceTags}
             onAdd={(val) => addSpeciesFilter(val)}
@@ -55,7 +55,7 @@ const FilterAccordion = ({}) => {
         <Header>Archetype</Header>
         <Body>
           <TagFilter
-            title="Archetype"
+            name="Archetype"
             value={archetypeFilter}
             options={tagList.archetypeTags}
             onAdd={(val) => addArchetypeFilter(val)}
@@ -67,7 +67,7 @@ const FilterAccordion = ({}) => {
         <Header>Weapon</Header>
         <Body>
           <TagFilter
-            title="Weapon"
+            name="Weapon"
             value={weaponFilter}
             options={tagList.weaponTags}
             onAdd={(val) => addWeaponFilter(val)}
@@ -79,7 +79,7 @@ const FilterAccordion = ({}) => {
         <Header>Armor</Header>
         <Body>
           <TagFilter
-            title="Armor"
+            name="Armor"
             value={armorFilter}
             options={tagList.armorTags}
             onAdd={(val) => addArmorFilter(val)}
@@ -91,7 +91,7 @@ const FilterAccordion = ({}) => {
         <Header>Line</Header>
         <Body>
           <TagFilter
-            title="Line"
+            name="Line"
             value={lineFilter}
             options={tagList.lines}
             onAdd={(val) => addLineFilter(val)}
@@ -103,7 +103,7 @@ const FilterAccordion = ({}) => {
         <Header>Status</Header>
         <Body>
           <TagFilter
-            title="Status"
+            name="Status"
             value={paintedFilter}
             options={tagList.paintedTags}
             onAdd={(val) => addPaintedFilter(val)}

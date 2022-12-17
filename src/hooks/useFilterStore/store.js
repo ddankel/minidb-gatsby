@@ -67,7 +67,7 @@ const store = (set, get) => ({
   setFilter: (label, value, options = {}) => {
     options = { merge: true, ...options };
     const payload = !!options.merge ? {} : { ...defaultState };
-    payload[label] = value;
+    payload[label] = [value].flat();
 
     set(payload);
   },

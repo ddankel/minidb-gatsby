@@ -1,7 +1,9 @@
 import React from "react";
-import _ from "lodash";
 import { Form } from "react-bootstrap";
 import styled from "styled-components";
+import _ from "lodash";
+
+import Label from "./Label";
 
 const InputForm = styled(Form)({ fontSize: "14px" });
 
@@ -14,14 +16,8 @@ const TagFilter = ({ name, options, value, onAdd, onRemove }) => {
   return (
     <InputForm>
       {options.map((tagOption) => {
-        // only do start case if > isn't present (not a mini line)
-        const capitolizedLabel = tagOption
-          .split(" > ")
-          .map((part) => _.startCase(part))
-          .join(" > ");
-
         return (
-          <div key={tagOption}>
+          <React.Fragment key={tagOption}>
             <InputForm.Check type="checkbox" id={`${name}-${tagOption}`} name={`${name}`}>
               <InputForm.Check.Input
                 type="checkbox"
@@ -29,15 +25,10 @@ const TagFilter = ({ name, options, value, onAdd, onRemove }) => {
                 onChange={handleChange(tagOption)}
               />
               <InputForm.Check.Label>
-                {capitolizedLabel.split(" > ").map((part, idx) => (
-                  <div key={part} style={{ marginLeft: `${idx}rem` }}>
-                    {idx > 0 && <span style={{ marginRight: "0.5rem" }}>&gt;</span>}
-                    {part}
-                  </div>
-                ))}
+                <Label>{tagOption}</Label>
               </InputForm.Check.Label>
             </InputForm.Check>
-          </div>
+          </React.Fragment>
         );
       })}
     </InputForm>

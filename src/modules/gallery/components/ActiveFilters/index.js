@@ -1,8 +1,20 @@
 import React from "react";
+import styled from "styled-components";
 import _ from "lodash";
 
 import { useFilterStoreItem } from "@/hooks/useFilterStore";
 import FilterBadge from "./FilterBadge";
+
+const BadgeContainer = styled("div")`
+  && {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+`;
 
 const ActiveFilters = () => {
   const isFiltered = useFilterStoreItem("isFiltered");
@@ -26,16 +38,7 @@ const ActiveFilters = () => {
   const removePaintedFilter = useFilterStoreItem("removePaintedFilter");
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "0.25rem 0.75rem",
-        alignItems: "center",
-        marginLeft: "1rem",
-        marginBottom: "1.5rem",
-      }}
-    >
+    <BadgeContainer>
       {isFiltered() && <span>Active Filters:</span>}
       {speciesFilter.map((tag) => (
         <FilterBadge key={tag} text={tag} onClick={() => removeSpeciesFilter(tag)} />
@@ -59,7 +62,7 @@ const ActiveFilters = () => {
       {paintedFilter.map((tag) => (
         <FilterBadge key={tag} text={tag} onClick={() => removePaintedFilter(tag)} />
       ))}
-    </div>
+    </BadgeContainer>
   );
 };
 

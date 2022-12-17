@@ -1,28 +1,27 @@
 import React from "react";
+import styled from "styled-components";
 import { Button } from "react-bootstrap";
 import { IoMdCloseCircle } from "react-icons/io";
 import _ from "lodash";
+
+const BadgeButton = styled(Button)`
+  && {
+    display: flex;
+    align-items: center;
+    border-radius: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+`;
 
 const FilterBadge = ({ text, onClick, ...restProps }) => {
   const handleClick = () => onClick(text);
 
   return (
-    <Button
-      onClick={handleClick}
-      variant="secondary"
-      size="sm"
-      {...restProps}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        borderRadius: "1.25rem",
-        paddingLeft: "1rem",
-        paddingRight: "1rem",
-      }}
-    >
-      <span>{_.startCase(text)}</span>
+    <BadgeButton onClick={handleClick} variant="secondary" size="sm" {...restProps}>
+      {_.startCase(text)}
       <IoMdCloseCircle style={{ marginLeft: "0.5rem" }} />
-    </Button>
+    </BadgeButton>
   );
 };
 

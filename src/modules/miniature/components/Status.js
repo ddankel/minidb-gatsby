@@ -18,6 +18,7 @@ const Status = ({ paintedAt, paintedState }) => {
   return (
     <Attribute label="Status">
       <Badge bg={colors[paintedState]}>{label}</Badge>
+      <Badge bg={colors[paintedState]}>{label}</Badge>
     </Attribute>
   );
 };
