@@ -1,9 +1,12 @@
-import * as React from "react";
-
+import React from "react";
 import Layout from "@/components/Layout";
 import GalleryPageContent from "@/modules/gallery/content/GalleryPageContent";
 
-const IndexPage = () => {
+import useFilterStateFromQueryString from "@/hooks/useFilterStateFromQueryString";
+
+const IndexPage = ({ location }) => {
+  useFilterStateFromQueryString({ path: location.pathname, query: location.search });
+
   return (
     <Layout variant="wide">
       <GalleryPageContent />
