@@ -9,8 +9,6 @@ const Container = styled.div.attrs({
   min-width: 250px;
   margin-top: -33px;
   margin-right: 1rem;
-  // position: sticky;
-  // top: 0;
 `;
 
 const DesktopMenu = () => {

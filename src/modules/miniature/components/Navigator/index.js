@@ -6,7 +6,7 @@ import { useSessionStorage } from "react-use-storage";
 
 import NavButton from "./NavButton";
 import { findAdjacentMinis } from "./utils";
-import { Wrapper, Contents, ToggleButton } from "./styled";
+import { Wrapper, Contents, ToggleButton, WidthContraint } from "./styled";
 import useFilteredCollection from "@/hooks/useFilteredCollection";
 
 const Navigator = ({ current }) => {
@@ -24,7 +24,7 @@ const Navigator = ({ current }) => {
 
   return (
     <Wrapper>
-      <div style={{ maxWidth: "650px", width: "650px" }}>
+      <WidthContraint>
         <Collapse in={open}>
           <Contents id="navigation-buttons">
             <Stack direction="horizontal">
@@ -42,7 +42,7 @@ const Navigator = ({ current }) => {
             {toggleLabel} <ToggleIcon />
           </ToggleButton>
         </center>
-      </div>
+      </WidthContraint>
     </Wrapper>
   );
 };
