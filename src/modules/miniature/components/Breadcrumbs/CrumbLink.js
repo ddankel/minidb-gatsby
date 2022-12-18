@@ -1,7 +1,7 @@
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import { useFilterStoreItem } from "@/hooks/useFilterStore";
+import queryString from "query-string";
 
 export const StyledLink = styled(Link).attrs({
   className: "text-white",
@@ -13,16 +13,10 @@ export const StyledLink = styled(Link).attrs({
 `;
 
 const CrumbLink = ({ to, line, children, ...restProps }) => {
-  const setFilter = useFilterStoreItem("setFilter");
-
-  const handleClick = (event) => {
-    event.preventDefault();
-    navigate(`/`);
-    setFilter("lineFilter", line, { merge: false });
-  };
+  const query = queryString.stringify({ lineFilter: line });
 
   return (
-    <StyledLink to={`/?line=${line}`} onClick={handleClick} {...restProps}>
+    <StyledLink to={`/?${query}`} {...restProps}>
       {children}
     </StyledLink>
   );

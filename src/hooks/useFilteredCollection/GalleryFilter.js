@@ -1,6 +1,8 @@
+import _ from "lodash";
+
 class GalleryFilter {
   constructor(args) {
-    this.raceFilter = args.raceFilter;
+    this.speciesFilter = args.speciesFilter;
     this.archetypeFilter = args.archetypeFilter;
     this.weaponFilter = args.weaponFilter;
     this.armorFilter = args.armorFilter;
@@ -20,33 +22,48 @@ class GalleryFilter {
    * @return  {Boolean}
    */
   includes(mini) {
-    return (
-      !this._isFilteredMonster(mini.raceTags) &&
-      this._matchesFilter(mini.name, this.nameFilter) &&
-      this._matchesFilter(mini.armorTags, this.armorFilter) &&
-      this._matchesFilter(mini.weaponTags, this.weaponFilter) &&
-      this._matchesFilter(mini.raceTags, this.raceFilter) &&
-      this._matchesFilter(mini.archetypeTags, this.archetypeFilter) &&
-      this._matchesFilter(mini.paintedState, this.paintedFilter) &&
-      this._matchesLine(mini.fullLine)
-    );
+    if (!this._matchesFilterAND(mini.raceTags, this.speciesFilter)) return false;
+    if (!this._matchesFilterAND(mini.archetypeTags, this.archetypeFilter)) return false;
+    if (!this._matchesFilterOR(mini.weaponTags, this.weaponFilter)) return false;
+    if (!this._matchesFilterAND(mini.armorTags, this.armorFilter)) return false;
+    if (!this._matchesLine(mini.fullLine)) return false;
+    if (!this._matchesFilterOR([mini.paintedState], this.paintedFilter)) return false;
+
+    return true;
   }
 
   /**
-   * If the currently set filter value includes the miniature's frontmater value
+   * If the miniature's frontmater includes all the currently set filter items
    *
-   * @param   {String}  miniatureValue
-   * @param   {String}  filterValue
+   * If there are no tags in the filteredTags array that aren't already in
+   * miniatureTags, then that means all the filtered tags are already assigned
+   * to the miniature.  In other words, it matches the filter.
+   *
+   * @param   {Array}  miniatureTags    Tags on the miniature to check
+   * @param   {Array}  filteredTags     Tags to filter on
    *
    * @return  {Boolean}
    */
-  _matchesFilter(miniatureValue, filterValue) {
-    if (filterValue === "all") return true;
-    if (!miniatureValue) return false;
+  _matchesFilterAND(miniatureTags, filteredTags) {
+    return miniatureTags.length === [...new Set([...miniatureTags, ...filteredTags])].length;
+  }
 
-    miniatureValue = [miniatureValue].flat().map((item) => item.toLowerCase());
-    filterValue = filterValue.toLowerCase();
-    return miniatureValue.includes(filterValue);
+  /**
+   * If the miniature's frontmater includes any the currently set filter items
+   *
+   * If there are no tags in the filteredTags array that aren't already in
+   * miniatureTags, then that means all the filtered tags are already assigned
+   * to the miniature.  In other words, it matches the filter.
+   *
+   * @param   {Array}  miniatureTags    Tags on the miniature to check
+   * @param   {Array}  filteredTags     Tags to filter on
+   *
+   * @return  {Boolean}
+   */
+  _matchesFilterOR(miniatureTags, filteredTags) {
+    if (!filteredTags.length) return true;
+
+    return !!_.intersection(miniatureTags, filteredTags).length;
   }
 
   /**
@@ -56,10 +73,10 @@ class GalleryFilter {
    *
    * @return  {Boolean}
    */
-  _matchesLine(miniatureValue) {
-    if (this.lineFilter === "all") return true;
+  _matchesLine(miniatureFullLine) {
+    if (!this.lineFilter.length) return true;
 
-    return miniatureValue.startsWith(this.lineFilter);
+    return this.lineFilter.some((line) => miniatureFullLine.startsWith(line));
   }
 
   /**

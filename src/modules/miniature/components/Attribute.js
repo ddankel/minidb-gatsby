@@ -14,11 +14,19 @@ const Values = styled("div")`
   flex-grow: 1;
 `;
 
+const ValueContent = styled("div")`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+`;
+
 const Attribute = ({ label, children }) => {
   return (
     <Container>
       <Label>{label}:</Label>
-      <Values>{children}</Values>
+      <Values>
+        <ValueContent>{children}</ValueContent>
+      </Values>
     </Container>
   );
 };

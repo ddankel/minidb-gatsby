@@ -14,7 +14,7 @@ import GalleryFilter from "./GalleryFilter";
 const useFilteredCollection = () => {
   const fullCollection = useMiniatureCollection();
 
-  const raceFilter = useFilterStoreItem("raceFilter");
+  const speciesFilter = useFilterStoreItem("speciesFilter");
   const archetypeFilter = useFilterStoreItem("archetypeFilter");
   const weaponFilter = useFilterStoreItem("weaponFilter");
   const armorFilter = useFilterStoreItem("armorFilter");
@@ -33,7 +33,7 @@ const useFilteredCollection = () => {
   const filterCollection = useCallback(
     (collection) => {
       const galleryFilter = new GalleryFilter({
-        raceFilter,
+        speciesFilter,
         archetypeFilter,
         weaponFilter,
         armorFilter,
@@ -46,7 +46,7 @@ const useFilteredCollection = () => {
       return collection.filter((mini) => galleryFilter.includes(mini));
     },
     [
-      raceFilter,
+      speciesFilter,
       archetypeFilter,
       weaponFilter,
       armorFilter,
