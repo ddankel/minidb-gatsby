@@ -1,8 +1,8 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 
-import useAggregatedTags from "../../hooks/useAggregatedTags";
-import TagFilter from "../TagFilter";
+import useAggregatedTags from "../hooks/useAggregatedTags";
+import TagFilter from "./TagFilter";
 import { Item, Header, Body } from "./FilterAccordion.styled";
 import { useSessionStorage } from "react-use-storage";
 import { useFilterStoreItem } from "@/hooks/useFilterStore";

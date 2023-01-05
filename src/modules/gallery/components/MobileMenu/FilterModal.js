@@ -5,7 +5,7 @@ import { Modal } from "react-bootstrap";
 import useFilteredCollection from "@/hooks/useFilteredCollection";
 import { useFilterStoreItem } from "@/hooks/useFilterStore";
 
-import FilterAccordion from "../DesktopMenu/FilterAccordion";
+import FilterAccordion from "../FilterAccordion";
 import ActiveFilters from "../ActiveFilters";
 import ResultCount from "./ResultCount";
 import { FlexWrap } from "./index.styled";
