@@ -1,6 +1,6 @@
 {
   "name": "mini-db",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "private": true,
   "description": "MiniDB",
   "author": "Dave Dankel",
@@ -25,20 +25,20 @@
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
     "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.10.2",
+    "bootstrap-icons": "^1.10.3",
     "bootswatch": "^5.2.3",
     "gatsby": "^4.25",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
-    "gatsby-plugin-sass": "^5.24.0",
-    "gatsby-plugin-sharp": "^4.24.0",
-    "gatsby-plugin-styled-components": "^5.24.0",
+    "gatsby-plugin-sass": "^5.25.0",
+    "gatsby-plugin-sharp": "^4.25.0",
+    "gatsby-plugin-styled-components": "^5.25.0",
     "gatsby-source-filesystem": "^4.25.0",
-    "gatsby-transformer-remark": "^5.25.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^4.25.0",
-    "query-string": "^8.0.3",
+    "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-bootstrap-typeahead": "^6.0.0",
@@ -46,9 +46,9 @@
     "react-icons": "^4.7.1",
     "react-image-gallery": "^1.2.11",
     "react-use-storage": "github:ddankel/react-use-storage#main",
-    "sass": "^1.56.2",
+    "sass": "^1.57.1",
     "styled-components": "^5.3.6",
-    "zustand": "^4.1.5"
+    "zustand": "^4.2.0"
   },
   "devDependencies": {
     "miniature-data": "./vendor/miniature-data"

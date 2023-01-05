@@ -23,7 +23,7 @@ const TagFilter = ({ name, options, value, onAdd, onRemove }) => {
                 checked={value.includes(tagOption)}
                 onChange={handleChange(tagOption)}
               />
-              <InputForm.Check.Label>
+              <InputForm.Check.Label style={{ display: "block" }}>
                 <Label>{tagOption}</Label>
               </InputForm.Check.Label>
             </InputForm.Check>
