@@ -4,9 +4,12 @@ import _ from "lodash";
 
 const LabelPart = styled("div")`
   && {
-    margin-left: ${(props) => `${props.indent || 0}rem`};
+    margin-left: ${(props) => `${(props.indent || 0) * 0.33}rem`};
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
-    &:not(:first-child)::before {
+    &::before {
       content: ">";
       margin-right: 0.5rem;
     }
@@ -21,15 +24,7 @@ const Label = ({ children }) => {
     return <>{_.startCase(children)}</>;
   }
 
-  return (
-    <>
-      {labelParts.map((part, idx) => (
-        <LabelPart key={part} indent={idx}>
-          {part}
-        </LabelPart>
-      ))}
-    </>
-  );
+  return <LabelPart indent={labelParts.length - 1}>{_.last(labelParts)}</LabelPart>;
 };
 
 export default Label;
