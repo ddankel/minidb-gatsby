@@ -3,9 +3,11 @@ import useMiniatureCollection from "@/hooks/useMiniatureCollection";
 
 import collectLines from "./collectLines";
 import useDedupedArray from "./useDedupedArray";
+import useFilteredCollection from "@/hooks/useFilteredCollection";
 
 const useAggregatedTags = () => {
-  const collection = useMiniatureCollection();
+  // const collection = useMiniatureCollection();
+  const collection = useFilteredCollection();
 
   const raceTags = useDedupedArray(collection.map((mini) => mini.raceTags));
   const archetypeTags = useDedupedArray(collection.map((mini) => mini.archetypeTags));
