@@ -1,5 +1,5 @@
 import create from "zustand";
-import { devtools, persist } from "zustand/middleware";
+import { devtools, persist, createJSONStorage } from "zustand/middleware";
 
 import store from "./store";
 
@@ -11,7 +11,10 @@ import useStoreItems from "./hooks/useStoreItems";
 let filterStore = store;
 
 // Wrap store in middleware to persist to sessionStorage
-filterStore = persist(filterStore, { name: "minidb-store", getStorage: () => sessionStorage });
+filterStore = persist(filterStore, {
+  name: "minidb-store",
+  storage: createJSONStorage(() => sessionStorage),
+});
 
 // Wrap store in middleware to Integrate with Redux DevTools (browser extension)
 filterStore = devtools(filterStore, { name: "MiniDB ZuStore" });
