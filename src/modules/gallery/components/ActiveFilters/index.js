@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useMemo } from "react";
 import styled from "styled-components";
 import _ from "lodash";
 
+import BadgeButton from "@/components/BadgeButton";
 import { useFilterStoreItem } from "@/hooks/useFilterStore";
+
 import FilterBadge from "./FilterBadge";
 
 const BadgeContainer = styled("div")`
@@ -37,6 +39,21 @@ const ActiveFilters = () => {
   const paintedFilter = useFilterStoreItem("paintedFilter");
   const removePaintedFilter = useFilterStoreItem("removePaintedFilter");
 
+  const showReset = useMemo(() => {
+    const filters = [
+      speciesFilter,
+      archetypeFilter,
+      weaponFilter,
+      armorFilter,
+      lineFilter,
+      paintedFilter,
+    ];
+    const filterCount = _.sum(filters.map((filterArray) => filterArray.length));
+
+    return filterCount > 1;
+  }, [speciesFilter, archetypeFilter, weaponFilter, armorFilter, lineFilter, paintedFilter]);
+  const resetFilters = useFilterStoreItem("resetFilters");
+
   return (
     <BadgeContainer>
       {isFiltered() && <span>Active Filters:</span>}
@@ -62,6 +79,11 @@ const ActiveFilters = () => {
       {paintedFilter.map((tag) => (
         <FilterBadge key={tag} text={tag} onClick={() => removePaintedFilter(tag)} />
       ))}
+      {showReset && (
+        <BadgeButton onClick={resetFilters} variant="primary">
+          Clear All
+        </BadgeButton>
+      )}
     </BadgeContainer>
   );
 };
