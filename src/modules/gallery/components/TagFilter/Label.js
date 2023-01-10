@@ -16,15 +16,31 @@ const LabelPart = styled("div")`
   }
 `;
 
-const Label = ({ children }) => {
+const CountPart = styled("span")`
+  font-size: smaller;
+  margin-left: 0.25rem;
+`;
+
+const Label = ({ count, children }) => {
   const label = children;
   const labelParts = label.split(" > ");
+  const countDisplay = !!count || count === 0 ? ` (${count})` : null;
 
   if (labelParts.length === 1) {
-    return <>{_.startCase(children)}</>;
+    return (
+      <>
+        {_.startCase(children)}
+        <CountPart>{countDisplay}</CountPart>
+      </>
+    );
   }
 
-  return <LabelPart indent={labelParts.length - 1}>{_.last(labelParts)}</LabelPart>;
+  return (
+    <LabelPart indent={labelParts.length - 1}>
+      {_.last(labelParts)}
+      {countDisplay}
+    </LabelPart>
+  );
 };
 
 export default Label;

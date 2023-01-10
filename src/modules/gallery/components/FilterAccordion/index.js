@@ -1,21 +1,20 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 
-import useAggregatedTags from "../hooks/useAggregatedTagsOBSOLETE";
-import TagFilter from "./TagFilter";
-import { Item, Header, Body } from "./FilterAccordion.styled";
+import useAggregatedTags from "../../hooks/useAggregatedTagsOBSOLETE";
+import TagFilter from "../TagFilter/index.obsolete";
+import { Item, Header, Body } from "./styled";
 import { useSessionStorage } from "react-use-storage";
 import { useFilterStoreItem } from "@/hooks/useFilterStore";
+import SpeciesFilter from "./components/SpeciesFilter";
+import StatusFilter from "./components/StatusFilter";
 
 const FilterAccordion = () => {
   const tagList = useAggregatedTags();
   const [accordionKey, setAccordionKey] = useSessionStorage("filter-accordion", null);
 
-  const speciesFilter = useFilterStoreItem("speciesFilter");
-  const addSpeciesFilter = useFilterStoreItem("addSpeciesFilter");
-  const removeSpeciesFilter = useFilterStoreItem("removeSpeciesFilter");
-
   const archetypeFilter = useFilterStoreItem("archetypeFilter");
+  const setArchetypeFilter = useFilterStoreItem("setArchetypeFilter");
   const addArchetypeFilter = useFilterStoreItem("addArchetypeFilter");
   const removeArchetypeFilter = useFilterStoreItem("removeArchetypeFilter");
 
@@ -40,14 +39,7 @@ const FilterAccordion = () => {
       <Item eventKey="0">
         <Header>Species</Header>
         <Body>
-          <TagFilter
-            name="Species"
-            value={speciesFilter}
-            options={tagList.raceTags}
-            onAdd={(val) => addSpeciesFilter(val)}
-            onRemove={(val) => removeSpeciesFilter(val)}
-            multiple
-          />
+          <SpeciesFilter />
         </Body>
       </Item>
       <Item eventKey="1">
@@ -57,7 +49,7 @@ const FilterAccordion = () => {
             name="Archetype"
             value={archetypeFilter}
             options={tagList.archetypeTags}
-            onAdd={(val) => addArchetypeFilter(val)}
+            onAdd={(val) => setArchetypeFilter([val])}
             onRemove={(val) => removeArchetypeFilter(val)}
           />
         </Body>
@@ -108,6 +100,8 @@ const FilterAccordion = () => {
             onAdd={(val) => addPaintedFilter(val)}
             onRemove={(val) => removePaintedFilter(val)}
           />
+          <hr />
+          <StatusFilter />
         </Body>
       </Item>
     </Accordion>

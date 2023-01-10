@@ -6,8 +6,8 @@ import useDedupedArray from "./useDedupedArray";
 import useFilteredCollection from "@/hooks/useFilteredCollection";
 
 const useAggregatedTags = () => {
-  // const collection = useMiniatureCollection();
-  const collection = useFilteredCollection();
+  const collection = useMiniatureCollection();
+  // const collection = useFilteredCollection();
 
   const raceTags = useDedupedArray(collection.map((mini) => mini.raceTags));
   const archetypeTags = useDedupedArray(collection.map((mini) => mini.archetypeTags));
