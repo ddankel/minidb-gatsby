@@ -5,12 +5,12 @@ import {
   useWholeCollectionTags,
 } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
+import zipTags from "../zipTags";
 
 const StatusFilter = () => {
   const { paintedTags } = useFilteredCollectionTags();
   const { paintedTags: allPaintedTags } = useWholeCollectionTags();
 
-  console.log("zip", zipTags(allPaintedTags, paintedTags));
   const zippedPaintedTags = zipTags(allPaintedTags, paintedTags);
 
   const paintedFilter = useFilterStoreItem("paintedFilter");
@@ -29,15 +29,3 @@ const StatusFilter = () => {
 };
 
 export default StatusFilter;
-
-// TODO separate file
-const zipTags = (allTags, filteredTags) => {
-  if (!allTags || !filteredTags) return [];
-
-  const result = allTags.map(({ name }) => {
-    const count = filteredTags.find((item) => item.name === name)?.count || 0;
-    return { name, count };
-  });
-
-  return result;
-};

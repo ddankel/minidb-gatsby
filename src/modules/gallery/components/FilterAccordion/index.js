@@ -8,6 +8,9 @@ import { useSessionStorage } from "react-use-storage";
 import { useFilterStoreItem } from "@/hooks/useFilterStore";
 import SpeciesFilter from "./components/SpeciesFilter";
 import StatusFilter from "./components/StatusFilter";
+import ArchetypeFilter from "./components/ArchetypeFilter";
+import ArmorFilter from "./components/ArmorFilter";
+import WeaponFilter from "./components/WeaponFilter";
 
 const FilterAccordion = () => {
   const tagList = useAggregatedTags();
@@ -45,37 +48,40 @@ const FilterAccordion = () => {
       <Item eventKey="1">
         <Header>Archetype</Header>
         <Body>
-          <TagFilter
+          <ArchetypeFilter />
+          {/* <TagFilter
             name="Archetype"
             value={archetypeFilter}
             options={tagList.archetypeTags}
             onAdd={(val) => setArchetypeFilter([val])}
             onRemove={(val) => removeArchetypeFilter(val)}
-          />
+          /> */}
         </Body>
       </Item>
       <Item eventKey="2">
         <Header>Weapon</Header>
         <Body>
-          <TagFilter
+          <WeaponFilter />
+          {/* <TagFilter
             name="Weapon"
             value={weaponFilter}
             options={tagList.weaponTags}
             onAdd={(val) => addWeaponFilter(val)}
             onRemove={(val) => removeWeaponFilter(val)}
-          />
+          /> */}
         </Body>
       </Item>
       <Item eventKey="4">
         <Header>Armor</Header>
         <Body>
-          <TagFilter
+          <ArmorFilter />
+          {/* <TagFilter
             name="Armor"
             value={armorFilter}
             options={tagList.armorTags}
             onAdd={(val) => addArmorFilter(val)}
             onRemove={(val) => removeArmorFilter(val)}
-          />
+          /> */}
         </Body>
       </Item>
       <Item eventKey="5">
@@ -93,14 +99,13 @@ const FilterAccordion = () => {
       <Item eventKey="6">
         <Header>Status</Header>
         <Body>
-          <TagFilter
+          {/* <TagFilter
             name="Status"
             value={paintedFilter}
             options={tagList.paintedTags}
             onAdd={(val) => addPaintedFilter(val)}
             onRemove={(val) => removePaintedFilter(val)}
-          />
-          <hr />
+          /> */}
           <StatusFilter />
         </Body>
       </Item>

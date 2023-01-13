@@ -12,8 +12,6 @@ const TagFilter = ({ name, tagsAvailable, currentSelections, onAdd, onRemove }) 
     alreadySelected ? onRemove(targetOption) : onAdd(targetOption);
   };
 
-  console.log("ta", tagsAvailable);
-
   if (!tagsAvailable) return;
 
   return (
