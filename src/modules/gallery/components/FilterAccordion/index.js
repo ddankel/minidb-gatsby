@@ -11,6 +11,7 @@ import StatusFilter from "./components/StatusFilter";
 import ArchetypeFilter from "./components/ArchetypeFilter";
 import ArmorFilter from "./components/ArmorFilter";
 import WeaponFilter from "./components/WeaponFilter";
+import MiniatureLineFilter from "./components/MiniatureLineFilter";
 
 const FilterAccordion = () => {
   const tagList = useAggregatedTags();
@@ -87,13 +88,14 @@ const FilterAccordion = () => {
       <Item eventKey="5">
         <Header>Line</Header>
         <Body>
-          <TagFilter
+          <MiniatureLineFilter />
+          {/* <TagFilter
             name="Line"
             value={lineFilter}
             options={tagList.lines}
             onAdd={(val) => addLineFilter(val)}
             onRemove={(val) => removeLineFilter(val)}
-          />
+          /> */}
         </Body>
       </Item>
       <Item eventKey="6">

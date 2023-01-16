@@ -2,6 +2,7 @@ import objectHash from "object-hash";
 import { useMemo } from "react";
 import { useState, useEffect, useRef } from "react";
 import _ from "lodash";
+import collectLines from "./collectLines";
 
 const useAggregation = (collection) => {
   const [data, setData] = useState([]);
@@ -14,10 +15,7 @@ const useAggregation = (collection) => {
     if (cache.current[collectionHash]) {
       setData(cache.current[collectionHash]);
     } else {
-      console.log("re calcing", collection);
       const result = aggregateOverCollection(collection);
-      console.log("res ", result);
-
       cache.current[collectionHash] = result;
       setData("setting data", result);
     }
@@ -35,6 +33,7 @@ const aggregateOverCollection = (collection) => {
     weaponTags: aggregateTagSet(collection.map((mini) => mini.weaponTags)),
     armorTags: aggregateTagSet(collection.map((mini) => mini.armorTags)),
     paintedTags: aggregateTagSet(collection.map((mini) => mini.paintedState)),
+    lines: aggregateTagSet(collectLines(collection.map((mini) => mini.lineArray))),
   };
 };
 
@@ -42,4 +41,11 @@ const aggregateTagSet = (tagsArray) => {
   const counts = _.countBy(tagsArray.flat());
   const uniqueNames = Object.keys(counts).sort();
   return uniqueNames.map((name) => ({ name, count: counts[name] }));
+};
+
+const aggregateLineCounts = (linesArray) => {
+  console.log("lA", linesArray);
+  console.log("la agg", aggregateTagSet(linesArray));
+
+  return [];
 };
