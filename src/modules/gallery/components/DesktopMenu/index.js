@@ -5,7 +5,7 @@ import { Container, Title } from "./index.styled";
 const DesktopMenu = () => {
   return (
     <Container>
-      <Title>Filter Collection</Title>
+      <Title>Filter Miniatures</Title>
       <FilterAccordion />
     </Container>
   );
