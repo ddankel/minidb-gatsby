@@ -16,7 +16,7 @@ const collectLines = (miniLines) => {
     }
   });
 
-  return [...new Set([...allLines])].sort();
+  return allLines;
 };
 
 export default collectLines;

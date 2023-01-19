@@ -1,27 +1,13 @@
-import { useMemo } from "react";
+import useFilteredCollection from "@/hooks/useFilteredCollection";
 import useMiniatureCollection from "@/hooks/useMiniatureCollection";
+import useAggregation from "./useAggregation";
 
-import collectLines from "./collectLines";
-import useDedupedArray from "./useDedupedArray";
-
-const useAggregatedTags = () => {
-  const collection = useMiniatureCollection();
-
-  const raceTags = useDedupedArray(collection.map((mini) => mini.raceTags));
-  const archetypeTags = useDedupedArray(collection.map((mini) => mini.archetypeTags));
-  const weaponTags = useDedupedArray(collection.map((mini) => mini.weaponTags));
-  const armorTags = useDedupedArray(collection.map((mini) => mini.armorTags));
-  const paintedTags = useDedupedArray(collection.map((mini) => mini.paintedState));
-  const lines = useMemo(() => collectLines(collection.map((mini) => mini.lineArray)), [collection]);
-
-  return {
-    raceTags,
-    archetypeTags,
-    weaponTags,
-    armorTags,
-    paintedTags,
-    lines,
-  };
+export const useFilteredCollectionTags = () => {
+  const collection = useFilteredCollection();
+  return useAggregation(collection);
 };
 
-export default useAggregatedTags;
+export const useWholeCollectionTags = () => {
+  const collection = useMiniatureCollection();
+  return useAggregation(collection);
+};

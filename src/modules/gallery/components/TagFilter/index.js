@@ -6,25 +6,31 @@ import Label from "./Label";
 
 const InputForm = styled(Form)({ fontSize: "14px" });
 
-const TagFilter = ({ name, options, value, onAdd, onRemove }) => {
+const TagFilter = ({ name, tagsAvailable, currentSelections, onAdd, onRemove }) => {
   const handleChange = (targetOption) => () => {
-    const alreadySelected = value.includes(targetOption);
+    const alreadySelected = currentSelections.includes(targetOption);
     alreadySelected ? onRemove(targetOption) : onAdd(targetOption);
   };
 
+  if (!tagsAvailable) return;
+
   return (
     <InputForm>
-      {options.map((tagOption) => {
+      {tagsAvailable.map((tagOption) => {
+        const { name: tagName, count: tagCount } = tagOption;
+        const disabled = tagCount < 1;
+
         return (
-          <React.Fragment key={tagOption}>
-            <InputForm.Check type="checkbox" id={`${name}-${tagOption}`} name={`${name}`}>
+          <React.Fragment key={tagName}>
+            <InputForm.Check type="checkbox" id={`${name}-${tagName}`} name={`${name}`}>
               <InputForm.Check.Input
                 type="checkbox"
-                checked={value.includes(tagOption)}
-                onChange={handleChange(tagOption)}
+                checked={currentSelections.includes(tagName)}
+                onChange={handleChange(tagName)}
+                disabled={disabled}
               />
-              <InputForm.Check.Label style={{ display: "block" }}>
-                <Label>{tagOption}</Label>
+              <InputForm.Check.Label style={{ display: "block" }} disabled={disabled}>
+                <Label count={tagCount}>{tagName}</Label>
               </InputForm.Check.Label>
             </InputForm.Check>
           </React.Fragment>

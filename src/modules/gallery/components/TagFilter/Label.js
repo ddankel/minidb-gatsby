@@ -1,30 +1,28 @@
 import React from "react";
-import styled from "styled-components";
 import _ from "lodash";
 
-const LabelPart = styled("div")`
-  && {
-    margin-left: ${(props) => `${(props.indent || 0) * 0.33}rem`};
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+import { IndentedLabel, CountPart, LabelPart } from "./Label.styled";
 
-    &::before {
-      content: ">";
-      margin-right: 0.5rem;
-    }
-  }
-`;
-
-const Label = ({ children }) => {
+const Label = ({ count, children }) => {
   const label = children;
   const labelParts = label.split(" > ");
+  const countDisplay = !!count || count === 0 ? ` (${count})` : null;
 
   if (labelParts.length === 1) {
-    return <>{_.startCase(children)}</>;
+    return (
+      <>
+        {_.startCase(children)}
+        <CountPart>{countDisplay}</CountPart>
+      </>
+    );
   }
 
-  return <LabelPart indent={labelParts.length - 1}>{_.last(labelParts)}</LabelPart>;
+  return (
+    <IndentedLabel indent={labelParts.length - 1}>
+      <LabelPart>{_.last(labelParts)}</LabelPart>
+      <CountPart>{countDisplay}</CountPart>
+    </IndentedLabel>
+  );
 };
 
 export default Label;
