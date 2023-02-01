@@ -47,9 +47,9 @@
     "react-icons": "^4.7.1",
     "react-image-gallery": "^1.2.11",
     "react-use-storage": "github:ddankel/react-use-storage#main",
-    "sass": "^1.57.1",
+    "sass": "^1.58.0",
     "styled-components": "^5.3.6",
-    "zustand": "^4.2.0"
+    "zustand": "^4.3.2"
   },
   "devDependencies": {
     "miniature-data": "./vendor/miniature-data"
