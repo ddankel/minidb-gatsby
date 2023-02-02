@@ -17,28 +17,26 @@ const useMiniatureCollection = () => {
 
 export default useMiniatureCollection;
 
-export const query = graphql`
-  query {
-    allMarkdownRemark(sort: { fields: [frontmatter___name], order: ASC }) {
-      nodes {
-        frontmatter {
-          slug
-          name
-          sku
-          line
-          painted
+export const query = graphql`{
+  allMarkdownRemark(sort: {frontmatter: {name: ASC}}) {
+    nodes {
+      frontmatter {
+        slug
+        name
+        sku
+        line
+        painted
+        status
+        race
+        archetype
+        weapons
+        armor
+        recipes
+        quantity
+        minidb {
           status
-          race
-          archetype
-          weapons
-          armor
-          recipes
-          quantity
-          minidb {
-            status
-          }
         }
       }
     }
   }
-`;
+}`;

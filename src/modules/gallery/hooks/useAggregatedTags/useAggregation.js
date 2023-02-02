@@ -1,25 +1,29 @@
+import { useState, useEffect, useMemo } from "react";
 import objectHash from "object-hash";
-import { useMemo } from "react";
-import { useState, useEffect, useRef } from "react";
 import _ from "lodash";
+
 import collectLines from "./collectLines";
+import useAggregatedTagStore from "../useAggregatedTagStore";
 
 const useAggregation = (collection) => {
   const [data, setData] = useState([]);
-  const cache = useRef({});
+  const writeCache = useAggregatedTagStore((store) => store.writeCache);
+  const readValue = useAggregatedTagStore((store) => store.readValue);
   const collectionHash = useMemo(() => objectHash.MD5(collection), [collection]);
 
   useEffect(() => {
     if (!collection) return;
 
-    if (cache.current[collectionHash]) {
-      setData(cache.current[collectionHash]);
+    const cachedValue = readValue(collectionHash);
+
+    if (cachedValue) {
+      setData(cachedValue);
     } else {
       const result = aggregateOverCollection(collection);
-      cache.current[collectionHash] = result;
-      setData("setting data", result);
+      writeCache(collectionHash, result);
+      setData(result);
     }
-  }, [collection]);
+  }, [collection, collectionHash, readValue, writeCache]);
 
   return data;
 };
@@ -41,11 +45,4 @@ const aggregateTagSet = (tagsArray) => {
   const counts = _.countBy(tagsArray.flat());
   const uniqueNames = Object.keys(counts).sort();
   return uniqueNames.map((name) => ({ name, count: counts[name] }));
-};
-
-const aggregateLineCounts = (linesArray) => {
-  console.log("lA", linesArray);
-  console.log("la agg", aggregateTagSet(linesArray));
-
-  return [];
 };

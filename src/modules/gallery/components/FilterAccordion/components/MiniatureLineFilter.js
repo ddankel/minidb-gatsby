@@ -10,8 +10,6 @@ const MiniatureLineFilter = () => {
   const addLineFilter = useFilterStoreItem("addLineFilter");
   const removeLineFilter = useFilterStoreItem("removeLineFilter");
 
-  console.log("tags", lines);
-
   return (
     <TagFilter
       name="Line"

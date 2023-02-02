@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import _ from "lodash";
 
 export const IndentedLabel = styled("div")`
   && {
