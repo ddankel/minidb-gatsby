@@ -5854,12 +5854,12 @@ gatsby-plugin-sharp@^5.5.0:
     semver "^7.3.8"
     sharp "^0.31.3"
 
-gatsby-plugin-styled-components@^6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-6.5.0.tgz#0578de632968e4ac135f501b8d8043d7b9f6d31e"
-  integrity sha512-ZMsltQANLtjG/1HXgkQeRggwXJ+Ug8YfUNOJcjoTuV2TMe+ZP7sHLd2C/E+OPon+mDznphzES6H+zr7rlxj4LQ==
+gatsby-plugin-styled-components@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-6.6.0.tgz#27a856967f47a0065fc5fb9cabb85dac145de738"
+  integrity sha512-FQENt/VHmKaHWtlvLExvCIN/fpiYv2z59uOZAZhg5ZOs+q/XiO/Ne1pwhtb6ZWXjARYI/r72zfVZeNqtO2icwQ==
   dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.20.13"
 
 gatsby-plugin-typescript@^5.6.0:
   version "5.6.0"
