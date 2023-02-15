@@ -5874,7 +5874,7 @@ gatsby-plugin-typescript@^5.6.0:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.6.0"
 
-gatsby-plugin-utils@^4.5.0, gatsby-plugin-utils@^4.6.0:
+gatsby-plugin-utils@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.6.0.tgz#b1de2cdc8e5efbba02b4e1803f825a65eb59ca42"
   integrity sha512-CR+6lGnRlMUYbqM58sNBbQxCSkGm+ltqAfWWQTlnmYSpqmKxHLMpZ0F2KfxVXQOXRbtBNx1oXZWzbEzmydoXkA==
@@ -9481,10 +9481,10 @@ react-bootstrap-typeahead@^6.0.0:
     scroll-into-view-if-needed "^2.2.20"
     warning "^4.0.1"
 
-react-bootstrap@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-2.7.0.tgz#4a8f0311bccac477dc925366763c536f46e4393b"
-  integrity sha512-Jcrn6aUuRVBeSB6dzKODKZU1TONOdhAxu0IDm4Sv74SJUm98dMdhSotF2SNvFEADANoR+stV+7TK6SNX1wWu5w==
+react-bootstrap@^2.7.2:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-2.7.2.tgz#100069ea7b4807cccbc5fef1e33bc90283262602"
+  integrity sha512-WDSln+mG4RLLFO01stkj2bEx/3MF4YihK9D/dWnHaSxOiQZLbhhlf95D2Jb20X3t2m7vMxRe888FVrfLJoGmmA==
   dependencies:
     "@babel/runtime" "^7.17.2"
     "@restart/hooks" "^0.4.6"
@@ -10110,10 +10110,10 @@ sass-loader@^10.4.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.58.0:
-  version "1.58.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.58.0.tgz#ee8aea3ad5ea5c485c26b3096e2df6087d0bb1cc"
-  integrity sha512-PiMJcP33DdKtZ/1jSjjqVIKihoDc6yWmYr9K/4r3fVVIEDAluD0q7XZiRKrNJcPK3qkLRF/79DND1H5q1LBjgg==
+sass@^1.58.1:
+  version "1.58.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.58.1.tgz#17ab0390076a50578ed0733f1cc45429e03405f6"
+  integrity sha512-bnINi6nPXbP1XNRaranMFEBZWUfdW/AF16Ql5+ypRxfTvCRTTKrLsMIakyDcayUt2t/RZotmL4kgJwNH5xO+bg==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
@@ -11879,10 +11879,10 @@ yurnalist@^2.1.0:
     read "^1.0.7"
     strip-ansi "^5.2.0"
 
-zustand@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.3.2.tgz#bb121fcad84c5a569e94bd1a2695e1a93ba85d39"
-  integrity sha512-rd4haDmlwMTVWVqwvgy00ny8rtti/klRoZjFbL/MAcDnmD5qSw/RZc+Vddstdv90M5Lv6RPgWvm1Hivyn0QgJw==
+zustand@^4.3.3:
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/zustand/-/zustand-4.3.3.tgz#c9113499074dde2d6d99c1b5f591e9329572c224"
+  integrity sha512-x2jXq8S0kfLGNwGh87nhRfEc2eZy37tSatpSoSIN+O6HIaBhgQHSONV/F9VNrNcBcKQu/E80K1DeHDYQC/zCrQ==
   dependencies:
     use-sync-external-store "1.2.0"
 
