@@ -44,7 +44,7 @@
     "react-bootstrap": "^2.7.2",
     "react-bootstrap-typeahead": "^6.0.2",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
+    "react-icons": "^4.8.0",
     "react-image-gallery": "^1.2.11",
     "react-use-storage": "github:ddankel/react-use-storage#main",
     "sass": "^1.58.3",
