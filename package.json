@@ -27,7 +27,7 @@
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
     "bootswatch": "^5.2.3",
-    "gatsby": "^5.7.0",
+    "gatsby": "^5.8.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-netlify": "^5.1.0",
