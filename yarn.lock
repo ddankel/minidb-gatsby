@@ -3557,15 +3557,10 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400:
-  version "1.0.30001414"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001414.tgz#5f1715e506e71860b4b07c50060ea6462217611e"
-  integrity sha512-t55jfSaWjCdocnFdKQoO+d2ct9C59UZg4dY3OnUlSZ447r8pUtIKdp0hpAzrGFultmTC+Us+KpKi4GZl/LXlFg==
-
-caniuse-lite@^1.0.30001426:
-  version "1.0.30001450"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001450.tgz#022225b91200589196b814b51b1bbe45144cf74f"
-  integrity sha512-qMBmvmQmFXaSxexkjjfMvD5rnDL0+m+dUMZKoDYsGG8iZN29RuYh9eRoMvKsT6uMAWlyUUGDEQGJJYjzCIO9ew==
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001426:
+  version "1.0.30001470"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001470.tgz"
+  integrity sha512-065uNwY6QtHCBOExzbV6m236DDhYCCtPmQUCoQtwkVqzud8v5QPidoMr6CoMkC2nfp6nksjttqWQRRh75LqUmA==
 
 capital-case@^1.0.4:
   version "1.0.4"
@@ -9594,7 +9589,6 @@ react-transition-group@^4.4.2:
 
 "react-use-storage@github:ddankel/react-use-storage#main":
   version "1.0.2"
-  uid "70ced79869c6af1eb075aa9d6cbac9ccaa43bd31"
   resolved "https://codeload.github.com/ddankel/react-use-storage/tar.gz/70ced79869c6af1eb075aa9d6cbac9ccaa43bd31"
   dependencies:
     jest-environment-jsdom "^29.5.0"
