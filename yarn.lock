@@ -5674,7 +5674,7 @@ gatsby-cli@^5.8.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.7.0, gatsby-core-utils@^4.8.0:
+gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.8.0:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.8.0.tgz#b9baac9f9434d0c789e470e8caf8003edf91d7ac"
   integrity sha512-C2uOZBd9j6AYIyiB+DdxRtbQgAa3kMDRsKR5eCwALp0Bkg3W5I/YiXhSF7zQxVckaqNXzXvmedJESKCJNIvO7w==
@@ -5824,10 +5824,10 @@ gatsby-plugin-sass@^6.8.0:
     resolve-url-loader "^3.1.5"
     sass-loader "^10.4.1"
 
-gatsby-plugin-sharp@^5.7.0:
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.7.0.tgz#70a87512ea89a3486ab6a0606e7804e62fafbae5"
-  integrity sha512-LU1OwWwA3Drhk6BCAGN+OhoNJ0Gft/lz6vS/hPIS9stn41gCyOyN/qAMzgz2k4BYF5H9Dh+iRGBUrQ34b9wKcA==
+gatsby-plugin-sharp@^5.8.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.8.0.tgz#033d81f02829959ab16c11015ee2f60e0f5d1699"
+  integrity sha512-cOhSEShJI8La2z3GXaOxPEWLRZraupQGOAYXtSO1fIfyB2NSITv5XWjsPutCjIX6fRyPRqb9LsvArDo7B9DG1A==
   dependencies:
     "@babel/runtime" "^7.20.13"
     async "^3.2.4"
@@ -5835,8 +5835,8 @@ gatsby-plugin-sharp@^5.7.0:
     debug "^4.3.4"
     filenamify "^4.3.0"
     fs-extra "^11.1.0"
-    gatsby-core-utils "^4.7.0"
-    gatsby-plugin-utils "^4.7.0"
+    gatsby-core-utils "^4.8.0"
+    gatsby-plugin-utils "^4.8.0"
     lodash "^4.17.21"
     probe-image-size "^7.2.3"
     semver "^7.3.8"
@@ -5862,7 +5862,7 @@ gatsby-plugin-typescript@^5.8.0:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.8.0"
 
-gatsby-plugin-utils@^4.7.0, gatsby-plugin-utils@^4.8.0:
+gatsby-plugin-utils@^4.8.0:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.8.0.tgz#d88824bec89cef1192246358a9b1c0171f7f4432"
   integrity sha512-zRdqP2t2W+j8ujHYtXFYnXKUS1JkjjM59Lh39bl6u9opgAByfK3jab1NpmxFQ220TAmqHrDSwOqiiB7GyuJQ/w==
