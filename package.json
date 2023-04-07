@@ -33,7 +33,7 @@
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^6.8.0",
-    "gatsby-plugin-sharp": "^5.8.0",
+    "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-plugin-styled-components": "^6.8.0",
     "gatsby-source-filesystem": "^5.8.0",
     "gatsby-transformer-remark": "^6.8.0",
@@ -42,14 +42,14 @@
     "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
-    "react-bootstrap-typeahead": "^6.0.2",
+    "react-bootstrap-typeahead": "^6.1.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-image-gallery": "^1.2.11",
     "react-use-storage": "github:ddankel/react-use-storage#main",
     "sass": "^1.60.0",
     "styled-components": "^5.3.9",
-    "zustand": "^4.3.6"
+    "zustand": "^4.3.7"
   },
   "devDependencies": {
     "miniature-data": "./vendor/miniature-data"
