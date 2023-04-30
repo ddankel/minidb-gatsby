@@ -48,7 +48,7 @@
     "react-image-gallery": "^1.2.11",
     "react-use-storage": "github:ddankel/react-use-storage#main",
     "sass": "^1.60.0",
-    "styled-components": "^5.3.9",
+    "styled-components": "^5.3.10",
     "zustand": "^4.3.7"
   },
   "devDependencies": {
