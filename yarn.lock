@@ -2074,12 +2074,7 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
-"@popperjs/core@^2.10.2", "@popperjs/core@^2.8.6":
-  version "2.11.5"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
-  integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
-
-"@popperjs/core@^2.11.6":
+"@popperjs/core@^2.10.2", "@popperjs/core@^2.11.6", "@popperjs/core@^2.8.6":
   version "2.11.7"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.7.tgz#ccab5c8f7dc557a52ca3288c10075c9ccd37fff7"
   integrity sha512-Cr4OjIkipTtcXKjAsm8agyleBuDHvxzeBoa1v543lbv1YaIwQjESsVcmjiWiPEbC1FIeHOG/Op9kdCmAmiS3Kw==
@@ -9481,10 +9476,10 @@ rc@1.2.8, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-bootstrap-typeahead@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/react-bootstrap-typeahead/-/react-bootstrap-typeahead-6.1.1.tgz#a59da523b702b3bc30316bba0de6385e62bdd4c6"
-  integrity sha512-iSEyLv5BU7kimHBKUSW1e6/rponly6sIfpxEVSyC/MTfjpOEi40kcuDA8MQsPxthqYm7imPY3ipVx7RxjgTYCA==
+react-bootstrap-typeahead@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/react-bootstrap-typeahead/-/react-bootstrap-typeahead-6.1.2.tgz#75d96d289d173075c56bb3270296c2ca4632dae6"
+  integrity sha512-waIWRQ4CUZld69iL+EFiuL/2B+N4LecaAKcRTMQey0NDOM7Sxmtl+iELFzGltt2/DK6yvrxEUCbZI8pTztPFXA==
   dependencies:
     "@babel/runtime" "^7.14.6"
     "@popperjs/core" "^2.10.2"
