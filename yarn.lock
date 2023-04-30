@@ -9637,8 +9637,9 @@ react-transition-group@^4.4.5:
     prop-types "^15.6.2"
 
 "react-use-storage@github:ddankel/react-use-storage#main":
-  version "1.0.2"
-  resolved "https://codeload.github.com/ddankel/react-use-storage/tar.gz/70ced79869c6af1eb075aa9d6cbac9ccaa43bd31"
+  version "1.0.3"
+  uid "9fd64f8a50a91c1169d7ada0dff2d0ebfaa24cf6"
+  resolved "https://codeload.github.com/ddankel/react-use-storage/tar.gz/9fd64f8a50a91c1169d7ada0dff2d0ebfaa24cf6"
   dependencies:
     jest-environment-jsdom "^29.5.0"
 
