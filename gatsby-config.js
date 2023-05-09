@@ -35,6 +35,7 @@ module.exports = {
       options: {
         // TOOD: remove unused aliases
         alias: {
+          "@/app": "src/app",
           "@/common": "src/common",
           "@/components": "src/components",
           "@/hooks": "src/hooks",
