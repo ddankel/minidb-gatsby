@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 
-import GatsbyImage from "@/components/GatsbyImage";
+import GatsbyImage from "@/common/components/GatsbyImage";
 
 export const Contents = styled.div`
   align-items: center;

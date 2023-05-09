@@ -2,7 +2,7 @@ import React from "react";
 import { Stack } from "react-bootstrap";
 import styled from "styled-components";
 
-import GastbyImage from "@/components/GatsbyImage";
+import GastbyImage from "@/common/components/GatsbyImage";
 import useMiniature from "@/hooks/useMiniature";
 import usePhotos from "@/hooks/usePhotos";
 
