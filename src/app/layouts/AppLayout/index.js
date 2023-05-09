@@ -2,7 +2,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import SSRProvider from "react-bootstrap/SSRProvider";
 
-import theme from "@/styles/theme";
+import theme from "@/app/styles/theme";
 import SearchModal from "../../../components/SearchModal";
 
 import AppBar from "./components/AppBar";
