@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Stack } from "react-bootstrap";
 import styled from "styled-components";
 
-import { useFilterStoreItem } from "@/hooks/useFilterStore";
+import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
 import FilterModal from "./FilterModal";
 
 const Container = styled.div.attrs({

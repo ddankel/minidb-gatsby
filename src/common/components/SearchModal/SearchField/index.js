@@ -3,7 +3,7 @@ import { navigate } from "gatsby";
 import { Typeahead } from "react-bootstrap-typeahead";
 
 import SearchResult from "../SearchResult";
-import useMiniatureCollection from "@/hooks/useMiniatureCollection";
+import useMiniatureCollection from "@/common/hooks/useMiniatureCollection";
 
 const navigateTo = (selection) => navigate(`/minis/${selection.id}`);
 

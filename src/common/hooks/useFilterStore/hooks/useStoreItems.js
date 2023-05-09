@@ -1,4 +1,4 @@
-import useStore from "../";
+import useStore from "..";
 import shallow from "zustand/shallow";
 
 /**

@@ -1,5 +1,5 @@
-import useFilteredCollection from "@/hooks/useFilteredCollection";
-import useMiniatureCollection from "@/hooks/useMiniatureCollection";
+import useFilteredCollection from "@/common/hooks/useFilteredCollection";
+import useMiniatureCollection from "@/common/hooks/useMiniatureCollection";
 import useAggregation from "./useAggregation";
 
 export const useFilteredCollectionTags = () => {

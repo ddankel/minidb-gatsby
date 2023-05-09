@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, navigate } from "gatsby";
 
-import useMiniature from "@/hooks/useMiniature";
-import usePhotos from "@/hooks/usePhotos";
+import useMiniature from "@/common/hooks/useMiniature";
+import usePhotos from "@/common/hooks/usePhotos";
 
 import { Caption, Image, ImageContainer, Item } from "./styled";
 

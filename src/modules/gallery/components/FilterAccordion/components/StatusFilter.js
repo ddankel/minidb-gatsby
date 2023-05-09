@@ -1,5 +1,5 @@
 import React from "react";
-import { useFilterStoreItem } from "@/hooks/useFilterStore";
+import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
 import {
   useFilteredCollectionTags,
   useWholeCollectionTags,
