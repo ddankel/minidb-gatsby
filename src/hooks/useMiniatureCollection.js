@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from "gatsby";
-import Miniature from "@/models/Miniature";
+import Miniature from "@/common/models/Miniature";
 
 /**
  * Fetch an array of Miniature objects for all minis in the graphql data source
@@ -17,26 +17,28 @@ const useMiniatureCollection = () => {
 
 export default useMiniatureCollection;
 
-export const query = graphql`{
-  allMarkdownRemark(sort: {frontmatter: {name: ASC}}) {
-    nodes {
-      frontmatter {
-        slug
-        name
-        sku
-        line
-        painted
-        status
-        race
-        archetype
-        weapons
-        armor
-        recipes
-        quantity
-        minidb {
+export const query = graphql`
+  {
+    allMarkdownRemark(sort: { frontmatter: { name: ASC } }) {
+      nodes {
+        frontmatter {
+          slug
+          name
+          sku
+          line
+          painted
           status
+          race
+          archetype
+          weapons
+          armor
+          recipes
+          quantity
+          minidb {
+            status
+          }
         }
       }
     }
   }
-}`;
+`;

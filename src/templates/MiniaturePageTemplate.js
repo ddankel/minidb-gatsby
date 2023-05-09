@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "@/components/Layout";
-import Miniature from "@/models/Miniature";
+import Miniature from "@/common/models/Miniature";
 import MiniaturePageContent from "@/modules/miniature/content/MiniaturePageContent";
 
 const MiniaturePageTemplate = ({ data }) => {

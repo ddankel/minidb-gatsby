@@ -8,6 +8,8 @@ const DEFAULT_POST_STATUS = "published";
 const DEFAULT_PAINTED_STATUS = "painted";
 const DEFAULT_QUANTITY = 1;
 
+// TODO document this class thouroughly
+
 class Miniature {
   #frontmatter = {};
   #html = "";

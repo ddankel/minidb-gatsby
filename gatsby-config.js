@@ -33,7 +33,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-alias-imports",
       options: {
+        // TOOD: remove unused aliases
         alias: {
+          "@/common": "src/common",
           "@/components": "src/components",
           "@/hooks": "src/hooks",
           "@/models": "src/models",
