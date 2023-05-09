@@ -3,7 +3,7 @@ import { Button, Stack } from "react-bootstrap";
 import styled from "styled-components";
 
 import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
-import FilterModal from "./FilterModal";
+import FilterModal from "./components/FilterModal";
 
 const Container = styled.div.attrs({
   className: "d-md-none mx-3",
