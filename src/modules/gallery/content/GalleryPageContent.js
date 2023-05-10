@@ -1,6 +1,6 @@
 import React from "react";
 
-import useFilteredCollection from "@/hooks/useFilteredCollection";
+import useFilteredCollection from "@/common/hooks/useFilteredCollection";
 
 import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
 

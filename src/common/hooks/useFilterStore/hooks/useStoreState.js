@@ -1,6 +1,6 @@
 import shallow from "zustand/shallow";
 import _ from "lodash";
-import useStore from "../";
+import useStore from "..";
 
 /**
  * A hook to wrap zustand's useStore in such a way to be used similar to React.useState

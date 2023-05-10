@@ -1,4 +1,4 @@
-import useStore from "../";
+import useStore from "..";
 
 /**
  * Shorthand to simplify using a single value from the Zustand store

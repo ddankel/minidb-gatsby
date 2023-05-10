@@ -1,4 +1,4 @@
-const Miniature = require("./src/models/Miniature");
+const Miniature = require("./src/common/models/Miniature");
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;

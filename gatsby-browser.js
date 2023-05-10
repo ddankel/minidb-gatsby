@@ -5,4 +5,4 @@ import "bootstrap/dist/js/bootstrap.min";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootswatch/dist/darkly/bootstrap.min.css";
 
-import "./src/styles/global.css";
+import "./src/app/styles/global.css";

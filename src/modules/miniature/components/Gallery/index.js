@@ -2,7 +2,7 @@ import React from "react";
 import { getImage } from "gatsby-plugin-image";
 import ImageGallery from "react-image-gallery";
 
-import GatsbyImage from "@/components/GatsbyImage";
+import GatsbyImage from "@/common/components/GatsbyImage";
 
 import styled from "styled-components";
 import "./styles.css";

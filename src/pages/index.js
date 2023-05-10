@@ -1,16 +1,16 @@
 import React from "react";
-import Layout from "@/components/Layout";
+import AppLayout from "@/app/layouts/AppLayout";
 import GalleryPageContent from "@/modules/gallery/content/GalleryPageContent";
 
-import useFilterStateFromQueryString from "@/hooks/useFilterStateFromQueryString";
+import useFilterStateFromQueryString from "@/common/hooks/useFilterStateFromQueryString";
 
 const IndexPage = ({ location }) => {
   useFilterStateFromQueryString({ path: location.pathname, query: location.search });
 
   return (
-    <Layout variant="wide">
+    <AppLayout variant="wide">
       <GalleryPageContent />
-    </Layout>
+    </AppLayout>
   );
 };
 

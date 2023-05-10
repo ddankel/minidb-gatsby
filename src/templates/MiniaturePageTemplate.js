@@ -1,17 +1,17 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "@/components/Layout";
-import Miniature from "@/models/Miniature";
+import AppLayout from "@/app/layouts/AppLayout";
+import Miniature from "@/common/models/Miniature";
 import MiniaturePageContent from "@/modules/miniature/content/MiniaturePageContent";
 
 const MiniaturePageTemplate = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
 
   return (
-    <Layout variant="narrow">
+    <AppLayout variant="narrow">
       <MiniaturePageContent frontmatter={frontmatter} html={html} />
-    </Layout>
+    </AppLayout>
   );
 };
 export default MiniaturePageTemplate;
