@@ -2,14 +2,14 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import SSRProvider from "react-bootstrap/SSRProvider";
 
-import SearchModal from "../SearchModal";
+import theme from "@/app/styles/theme";
+import SearchModal from "@/common/components/SearchModal";
 
-import AppBar from "./AppBar";
-import ContentContainer from "./ContentContainer";
-import theme from "@/styles/theme";
-import useSearchModalState from "./useSearchModalState";
+import AppBar from "./components/AppBar";
+import ContentContainer from "./components/ContentContainer";
+import useSearchModalState from "./hooks/useSearchModalState";
 
-const Layout = ({ children, variant }) => {
+const AppLayout = ({ children, variant }) => {
   const { isModalOpen, openModal, closeModal } = useSearchModalState();
 
   return (
@@ -23,4 +23,4 @@ const Layout = ({ children, variant }) => {
   );
 };
 
-export default Layout;
+export default AppLayout;

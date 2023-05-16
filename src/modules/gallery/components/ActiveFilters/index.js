@@ -2,8 +2,8 @@ import React, { useMemo } from "react";
 import styled from "styled-components";
 import _ from "lodash";
 
-import BadgeButton from "@/components/BadgeButton";
-import { useFilterStoreItem } from "@/hooks/useFilterStore";
+import BadgeButton from "@/common/components/BadgeButton";
+import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
 
 import FilterBadge from "./FilterBadge";
 

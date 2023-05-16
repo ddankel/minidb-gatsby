@@ -2,7 +2,7 @@ import React from "react";
 import { IoMdCloseCircle } from "react-icons/io";
 import _ from "lodash";
 
-import BadgeButton from "@/components/BadgeButton";
+import BadgeButton from "@/common/components/BadgeButton";
 
 const FilterBadge = ({ text, onClick, ...restProps }) => {
   const handleClick = () => onClick(text);

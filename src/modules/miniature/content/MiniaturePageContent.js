@@ -1,6 +1,6 @@
 import React from "react";
 
-import Miniature from "@/models/Miniature";
+import Miniature from "@/common/models/Miniature";
 
 import { AttributeStack, DraftStatusBar, InfoStack } from "./MiniaturePageContent.styled";
 import { ResponsiveContent, PhotoSection, InfoSection } from "./MiniaturePageContent.styled";

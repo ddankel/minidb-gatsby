@@ -2,13 +2,13 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 
-import useFilteredCollection from "@/hooks/useFilteredCollection";
-import { useFilterStoreItem } from "@/hooks/useFilterStore";
+import useFilteredCollection from "@/common/hooks/useFilteredCollection";
+import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
 
-import FilterAccordion from "../FilterAccordion";
-import ActiveFilters from "../ActiveFilters";
+import FilterAccordion from "../../FilterAccordion";
+import ActiveFilters from "../../ActiveFilters";
 import ResultCount from "./ResultCount";
-import { FlexWrap } from "./index.styled";
+import { FlexWrap } from "../index.styled";
 
 const FilterModal = ({ show, onHide }) => {
   const isFiltered = useFilterStoreItem("isFiltered");

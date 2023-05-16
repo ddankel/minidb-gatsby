@@ -7,7 +7,7 @@ import { useSessionStorage } from "react-use-storage";
 import NavButton from "./NavButton";
 import { findAdjacentMinis } from "./utils";
 import { Wrapper, Contents, ToggleButton, WidthContraint } from "./styled";
-import useFilteredCollection from "@/hooks/useFilteredCollection";
+import useFilteredCollection from "@/common/hooks/useFilteredCollection";
 
 const Navigator = ({ current }) => {
   const filteredMiniatures = useFilteredCollection();
