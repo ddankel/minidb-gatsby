@@ -1,7 +1,7 @@
-import { useMemo, useCallback } from "react";
+import { useMemo } from "react";
+
 import useMiniatureCollection from "@/common/hooks/useMiniatureCollection";
-import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
-import GalleryFilter from "./GalleryFilter";
+import useGalleryFilter from "./useGalleryFilter";
 
 /**
  * All miniatures that match the current filter values
@@ -13,49 +13,7 @@ import GalleryFilter from "./GalleryFilter";
  */
 const useFilteredCollection = () => {
   const fullCollection = useMiniatureCollection();
-
-  const speciesFilter = useFilterStoreItem("speciesFilter");
-  const archetypeFilter = useFilterStoreItem("archetypeFilter");
-  const weaponFilter = useFilterStoreItem("weaponFilter");
-  const armorFilter = useFilterStoreItem("armorFilter");
-  const paintedFilter = useFilterStoreItem("paintedFilter");
-  const nameFilter = useFilterStoreItem("nameFilter");
-  const lineFilter = useFilterStoreItem("lineFilter");
-  const ignoreMonsters = useFilterStoreItem("ignoreMonsters");
-
-  /**
-   * Apply the filters to the provided collection
-   *
-   * @param   {Array}  collection  Collection of miniatures
-   *
-   * @return  {Array}              Only values of +collection+ matching the filters
-   */
-  const filterCollection = useCallback(
-    (collection) => {
-      const galleryFilter = new GalleryFilter({
-        speciesFilter,
-        archetypeFilter,
-        weaponFilter,
-        armorFilter,
-        paintedFilter,
-        nameFilter,
-        lineFilter,
-        ignoreMonsters,
-      });
-
-      return collection.filter((mini) => galleryFilter.includes(mini));
-    },
-    [
-      speciesFilter,
-      archetypeFilter,
-      weaponFilter,
-      armorFilter,
-      paintedFilter,
-      nameFilter,
-      lineFilter,
-      ignoreMonsters,
-    ]
-  );
+  const galleryFilter = useGalleryFilter();
 
   /**
    * Memoized application of GalleryFilter to the entire collection
@@ -63,8 +21,8 @@ const useFilteredCollection = () => {
    * @return  {Array}  Filtered miniatures
    */
   const filteredCollection = useMemo(
-    () => filterCollection(fullCollection),
-    [fullCollection, filterCollection]
+    () => fullCollection.filter((mini) => galleryFilter.includes(mini)),
+    [fullCollection, galleryFilter]
   );
 
   return filteredCollection;
