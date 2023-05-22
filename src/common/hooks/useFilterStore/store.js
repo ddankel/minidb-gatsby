@@ -15,6 +15,9 @@ const removeFilter = (existingFilter, outgoingItem) => _.without(existingFilter,
 
 // Build zustand store
 const store = (set, get) => ({
+  filteredCollection: [],
+  setFilteredCollection: (value) => set({ filteredCollection: value }),
+
   speciesFilter: defaultState.speciesFilter,
   setSpeciesFilter: (value) => set({ speciesFilter: value }),
   addSpeciesFilter: (value) =>
