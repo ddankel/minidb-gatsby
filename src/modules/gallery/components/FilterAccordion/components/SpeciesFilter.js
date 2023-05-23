@@ -1,14 +1,12 @@
 import React from "react";
-import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
 import { useFilteredCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
+import { useFilterActions, useSpeciesFilter } from "@/common/hooks/useFilterStore";
 
 const SpeciesFilter = () => {
   const { raceTags } = useFilteredCollectionTags();
-
-  const speciesFilter = useFilterStoreItem("speciesFilter");
-  const addSpeciesFilter = useFilterStoreItem("addSpeciesFilter");
-  const removeSpeciesFilter = useFilterStoreItem("removeSpeciesFilter");
+  const speciesFilter = useSpeciesFilter();
+  const { addSpeciesFilter, removeSpeciesFilter } = useFilterActions();
 
   return (
     <TagFilter

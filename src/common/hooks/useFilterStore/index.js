@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { devtools, persist, createJSONStorage, subscribeWithSelector } from "zustand/middleware";
 
+import { shallow } from "zustand/shallow";
 import store from "./store";
 
 import useStoreState from "./hooks/useStoreState";
@@ -14,11 +15,15 @@ let filterStore = store;
 filterStore = persist(filterStore, {
   name: "minidb-store",
   storage: createJSONStorage(() => sessionStorage),
+  partialize: (state) =>
+    // Don't persist actions
+    Object.fromEntries(Object.entries(state).filter(([key]) => !["actions"].includes(key))),
 });
 
 // Wrap store in middleware to Integrate with Redux DevTools (browser extension)
 filterStore = devtools(filterStore, { name: "MiniDB ZuStore" });
 
+// Wrap with middleware to allow subscriptions
 filterStore = subscribeWithSelector(filterStore);
 
 // Build main hook
@@ -34,5 +39,65 @@ export const useFilterStoreItems = useStoreItems;
 // Example -- subscribe to filter changes to update filtered minis?
 const unsubscribe = useFilterStore.subscribe(
   (state) => [state.archetypeFilter, state.weaponFilter],
-  (token) => console.log("archtypeFilter", token)
+  (token) => console.log("archtypeFilter", token),
+  { equalityFn: shallow }
 );
+
+const f = useFilterStore.subscribe(
+  (state) => [
+    state.speciesFilter,
+    state.archetypeFilter,
+    state.weaponFilter,
+    state.armorFilter,
+    state.paintedFilter,
+    state.nameFilter,
+    state.lineFilter,
+    // state.actions,
+    // state,
+  ],
+  (token) => {
+    const [
+      speciesFilter,
+      archetypeFilter,
+      weaponFilter,
+      armorFilter,
+      paintedFilter,
+      nameFilter,
+      lineFilter,
+      // actions,
+      // state,
+    ] = token;
+
+    const areSomeFilters = [
+      speciesFilter,
+      archetypeFilter,
+      weaponFilter,
+      armorFilter,
+      paintedFilter,
+      nameFilter,
+      lineFilter,
+    ].some((item) => !!item.length);
+
+    useFilterStore.setState((state) => ({ areFiltered: areSomeFilters }));
+
+    // console.log("actions", actions.addSpeciesFilter);
+    console.log("udateisfiltered", areSomeFilters);
+    // return setIsFiltered(areSomeFilters);
+  },
+  { equalityFn: shallow }
+);
+
+const d = useFilterStore.subscribe(
+  (state) => state.areFiltered,
+  (token) => console.log("areFiltered", token)
+);
+
+export const useSpeciesFilter = () => useFilterStore((state) => state.speciesFilter);
+export const useArchetypeFilter = () => useFilterStore((state) => state.archetypeFilter);
+export const useWeaponFilter = () => useFilterStore((state) => state.weaponFilter);
+export const useArmorFilter = () => useFilterStore((state) => state.armorFilter);
+export const usePaintedFilter = () => useFilterStore((state) => state.paintedFilter);
+export const useNameFilter = () => useFilterStore((state) => state.nameFilter);
+export const useLineFilter = () => useFilterStore((state) => state.lineFilter);
+export const useIgnoreMonsters = () => useFilterStore((state) => state.ignoreMonsters);
+export const useFilterActions = () => useFilterStore((state) => state.actions);
