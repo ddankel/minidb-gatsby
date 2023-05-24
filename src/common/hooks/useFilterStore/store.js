@@ -27,7 +27,7 @@ const store = (set, get) => ({
   nameFilter: defaultState.nameFilter,
   lineFilter: defaultState.lineFilter,
   ignoreMonsters: false,
-  areFiltered: false,
+  isFiltered: false,
 
   actions: {
     addSpeciesFilter: (value) =>
@@ -74,33 +74,25 @@ const store = (set, get) => ({
       set(payload);
     },
 
+    // setIsFiltered: (value) => set((state) => ({ isFiltered: value })),
+
     resetFilters: () => set(defaultState),
   },
 
-  setFilter: (label, value, options = {}) => {
-    options = { merge: true, ...options };
-    const payload = !!options.merge ? {} : { ...defaultState };
-    payload[label] = [value].flat();
+  // isFiltered: () => {
+  //   if (get().ignoreMonsters) return true;
 
-    set(payload);
-  },
+  //   const filters = [
+  //     get().speciesFilter,
+  //     get().archetypeFilter,
+  //     get().weaponFilter,
+  //     get().armorFilter,
+  //     get().paintedFilter,
+  //     get().lineFilter,
+  //   ];
 
-  resetFilters: () => set(defaultState),
-
-  isFiltered: () => {
-    if (get().ignoreMonsters) return true;
-
-    const filters = [
-      get().speciesFilter,
-      get().archetypeFilter,
-      get().weaponFilter,
-      get().armorFilter,
-      get().paintedFilter,
-      get().lineFilter,
-    ];
-
-    return filters.some((item) => !!item.length);
-  },
+  //   return filters.some((item) => !!item.length);
+  // },
 });
 
 export default store;

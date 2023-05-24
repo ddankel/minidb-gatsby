@@ -32,16 +32,16 @@ const useFilterStore = create(filterStore);
 export default useFilterStore;
 
 // Helper hooks
-export const useFilterStoreState = useStoreState;
+// export const useFilterStoreState = useStoreState;
 export const useFilterStoreItem = useStoreItem;
-export const useFilterStoreItems = useStoreItems;
+// export const useFilterStoreItems = useStoreItems;
 
-// Example -- subscribe to filter changes to update filtered minis?
-const unsubscribe = useFilterStore.subscribe(
-  (state) => [state.archetypeFilter, state.weaponFilter],
-  (token) => console.log("archtypeFilter", token),
-  { equalityFn: shallow }
-);
+// // Example -- subscribe to filter changes to update filtered minis?
+// const unsubscribe = useFilterStore.subscribe(
+//   (state) => [state.archetypeFilter, state.weaponFilter],
+//   (token) => console.log("archtypeFilter", token),
+//   { equalityFn: shallow }
+// );
 
 const f = useFilterStore.subscribe(
   (state) => [
@@ -52,8 +52,6 @@ const f = useFilterStore.subscribe(
     state.paintedFilter,
     state.nameFilter,
     state.lineFilter,
-    // state.actions,
-    // state,
   ],
   (token) => {
     const [
@@ -78,19 +76,20 @@ const f = useFilterStore.subscribe(
       lineFilter,
     ].some((item) => !!item.length);
 
-    useFilterStore.setState((state) => ({ areFiltered: areSomeFilters }));
+    useFilterStore.setState((state) => ({ isFiltered: areSomeFilters }));
 
     // console.log("actions", actions.addSpeciesFilter);
-    console.log("udateisfiltered", areSomeFilters);
+    // console.log("udateisfiltered", areSomeFilters);
+
     // return setIsFiltered(areSomeFilters);
   },
-  { equalityFn: shallow }
+  { equalityFn: shallow, fireImmediately: true }
 );
 
-const d = useFilterStore.subscribe(
-  (state) => state.areFiltered,
-  (token) => console.log("areFiltered", token)
-);
+// const d = useFilterStore.subscribe(
+//   (state) => state.areFiltered,
+//   (token) => console.log("areFiltered", token)
+// );
 
 export const useSpeciesFilter = () => useFilterStore((state) => state.speciesFilter);
 export const useArchetypeFilter = () => useFilterStore((state) => state.archetypeFilter);
@@ -100,4 +99,5 @@ export const usePaintedFilter = () => useFilterStore((state) => state.paintedFil
 export const useNameFilter = () => useFilterStore((state) => state.nameFilter);
 export const useLineFilter = () => useFilterStore((state) => state.lineFilter);
 export const useIgnoreMonsters = () => useFilterStore((state) => state.ignoreMonsters);
+export const useIsFiltered = () => useFilterStore((state) => state.isFiltered);
 export const useFilterActions = () => useFilterStore((state) => state.actions);
