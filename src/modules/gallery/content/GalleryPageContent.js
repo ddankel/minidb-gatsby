@@ -8,9 +8,11 @@ import DesktopMenu from "../components/DesktopMenu";
 import Gallery from "../components/Gallery";
 import MobileMenu from "../components/MobileMenu";
 import ActiveFilters from "../components/ActiveFilters";
+import useCollectionStore from "@/common/hooks/useCollectionStore";
 
 const GalleryPageContent = () => {
-  const filteredMiniatures = useFilteredCollection();
+  // const filteredMiniatures = useFilteredCollection();
+  const filteredMiniatures = useCollectionStore((state) => state.filteredCollection);
   const hasResults = !!filteredMiniatures.length;
 
   return (

@@ -3,10 +3,13 @@ import { devtools, persist, createJSONStorage, subscribeWithSelector } from "zus
 
 import { shallow } from "zustand/shallow";
 import store from "./store";
+import GalleryFilter from "../useFilteredCollection/GalleryFilter";
 
 import useStoreState from "./hooks/useStoreState";
 import useStoreItem from "./hooks/useStoreItem";
 import useStoreItems from "./hooks/useStoreItems";
+import useCollectionStore from "../useCollectionStore";
+import objectHash from "object-hash";
 
 // Start with base store definition
 let filterStore = store;
@@ -43,6 +46,9 @@ export const useFilterStoreItem = useStoreItem;
 //   { equalityFn: shallow }
 // );
 
+// - watch: on filter change,
+//     - update useCollectionStore’s filter object
+//     - Update isFiltered
 const f = useFilterStore.subscribe(
   (state) => [
     state.speciesFilter,
@@ -52,6 +58,7 @@ const f = useFilterStore.subscribe(
     state.paintedFilter,
     state.nameFilter,
     state.lineFilter,
+    state.ignoreMonsters,
   ],
   (token) => {
     const [
@@ -62,6 +69,7 @@ const f = useFilterStore.subscribe(
       paintedFilter,
       nameFilter,
       lineFilter,
+      ignoreMonsters,
       // actions,
       // state,
     ] = token;
@@ -76,14 +84,34 @@ const f = useFilterStore.subscribe(
       lineFilter,
     ].some((item) => !!item.length);
 
-    useFilterStore.setState((state) => ({ isFiltered: areSomeFilters }));
+    console.log("Detected filter changes");
+    useFilterStore.setState({ isFiltered: areSomeFilters });
+    useCollectionStore.setState({
+      galleryFilter: new GalleryFilter({
+        speciesFilter,
+        archetypeFilter,
+        weaponFilter,
+        armorFilter,
+        paintedFilter,
+        nameFilter,
+        lineFilter,
+        ignoreMonsters,
+      }),
+    });
 
     // console.log("actions", actions.addSpeciesFilter);
     // console.log("udateisfiltered", areSomeFilters);
 
     // return setIsFiltered(areSomeFilters);
   },
-  { equalityFn: shallow, fireImmediately: true }
+  {
+    equalityFn: shallow,
+    // equalityFn: (oldValue, newValue) => {
+    //   console.log("comparing", oldValue, newValue);
+    //   return objectHash(oldValue) === objectHash(newValue);
+    // },
+    fireImmediately: true,
+  }
 );
 
 // const d = useFilterStore.subscribe(
