@@ -1,4 +1,3 @@
-import _ from "lodash";
 import addToFilter from "./utils/addToFilter";
 import removeFromFilter from "./utils/removeFromFilter";
 
