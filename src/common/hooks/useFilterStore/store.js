@@ -1,4 +1,6 @@
 import _ from "lodash";
+import addToFilter from "./utils/addToFilter";
+import removeFromFilter from "./utils/removeFromFilter";
 
 const defaultState = {
   speciesFilter: [],
@@ -10,15 +12,8 @@ const defaultState = {
   lineFilter: [],
 };
 
-// TODO: move to util functions i think
-const addFilter = (existingFilter, newItem) => [...new Set([...existingFilter, newItem])].sort();
-const removeFilter = (existingFilter, outgoingItem) => _.without(existingFilter, outgoingItem);
-
 // Build zustand store
 const store = (set, get) => ({
-  filteredCollection: [],
-  setFilteredCollection: (value) => set({ filteredCollection: value }),
-
   speciesFilter: defaultState.speciesFilter,
   archetypeFilter: defaultState.archetypeFilter,
   weaponFilter: defaultState.weaponFilter,
@@ -31,38 +26,40 @@ const store = (set, get) => ({
 
   actions: {
     addSpeciesFilter: (value) =>
-      set((state) => ({ speciesFilter: addFilter(state.speciesFilter, value) })),
+      set((state) => ({ speciesFilter: addToFilter(state.speciesFilter, value) })),
     removeSpeciesFilter: (value) =>
-      set((state) => ({ speciesFilter: removeFilter(state.speciesFilter, value) })),
+      set((state) => ({ speciesFilter: removeFromFilter(state.speciesFilter, value) })),
 
     addArchetypeFilter: (value) =>
-      set((state) => ({ archetypeFilter: addFilter(state.archetypeFilter, value) })),
+      set((state) => ({ archetypeFilter: addToFilter(state.archetypeFilter, value) })),
     removeArchetypeFilter: (value) =>
-      set((state) => ({ archetypeFilter: removeFilter(state.archetypeFilter, value) })),
+      set((state) => ({ archetypeFilter: removeFromFilter(state.archetypeFilter, value) })),
 
     addWeaponFilter: (value) =>
-      set((state) => ({ weaponFilter: addFilter(state.weaponFilter, value) })),
+      set((state) => ({ weaponFilter: addToFilter(state.weaponFilter, value) })),
     removeWeaponFilter: (value) =>
-      set((state) => ({ weaponFilter: removeFilter(state.weaponFilter, value) })),
+      set((state) => ({ weaponFilter: removeFromFilter(state.weaponFilter, value) })),
 
     addArmorFilter: (value) =>
-      set((state) => ({ armorFilter: addFilter(state.armorFilter, value) })),
+      set((state) => ({ armorFilter: addToFilter(state.armorFilter, value) })),
     removeArmorFilter: (value) =>
-      set((state) => ({ armorFilter: removeFilter(state.armorFilter, value) })),
+      set((state) => ({ armorFilter: removeFromFilter(state.armorFilter, value) })),
 
     setPaintedFilter: (value) => set({ paintedFilter: value }),
     addPaintedFilter: (value) =>
-      set((state) => ({ paintedFilter: addFilter(state.paintedFilter, value) })),
+      set((state) => ({ paintedFilter: addToFilter(state.paintedFilter, value) })),
     removePaintedFilter: (value) =>
-      set((state) => ({ paintedFilter: removeFilter(state.paintedFilter, value) })),
+      set((state) => ({ paintedFilter: removeFromFilter(state.paintedFilter, value) })),
 
-    addNameFilter: (value) => set((state) => ({ nameFilter: addFilter(state.nameFilter, value) })),
+    addNameFilter: (value) =>
+      set((state) => ({ nameFilter: addToFilter(state.nameFilter, value) })),
     removeNameFilter: (value) =>
-      set((state) => ({ nameFilter: removeFilter(state.nameFilter, value) })),
+      set((state) => ({ nameFilter: removeFromFilter(state.nameFilter, value) })),
 
-    addLineFilter: (value) => set((state) => ({ lineFilter: addFilter(state.lineFilter, value) })),
+    addLineFilter: (value) =>
+      set((state) => ({ lineFilter: addToFilter(state.lineFilter, value) })),
     removeLineFilter: (value) =>
-      set((state) => ({ lineFilter: removeFilter(state.lineFilter, value) })),
+      set((state) => ({ lineFilter: removeFromFilter(state.lineFilter, value) })),
 
     setIgnoreMonsters: (value) => set({ ignoreMonsters: value }),
 
@@ -74,25 +71,8 @@ const store = (set, get) => ({
       set(payload);
     },
 
-    // setIsFiltered: (value) => set((state) => ({ isFiltered: value })),
-
     resetFilters: () => set(defaultState),
   },
-
-  // isFiltered: () => {
-  //   if (get().ignoreMonsters) return true;
-
-  //   const filters = [
-  //     get().speciesFilter,
-  //     get().archetypeFilter,
-  //     get().weaponFilter,
-  //     get().armorFilter,
-  //     get().paintedFilter,
-  //     get().lineFilter,
-  //   ];
-
-  //   return filters.some((item) => !!item.length);
-  // },
 });
 
 export default store;
