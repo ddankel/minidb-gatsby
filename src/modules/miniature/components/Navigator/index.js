@@ -7,18 +7,18 @@ import { useSessionStorage } from "react-use-storage";
 import NavButton from "./NavButton";
 import { findAdjacentMinis } from "./utils";
 import { Wrapper, Contents, ToggleButton, WidthContraint } from "./styled";
-import useFilteredCollection from "@/common/hooks/useFilteredCollection";
+import { useFilteredCollection } from "@/common/hooks/useCollectionStore";
 
 const Navigator = ({ current }) => {
-  const filteredMiniatures = useFilteredCollection();
+  const filteredCollection = useFilteredCollection();
   const [open, setOpen] = useSessionStorage("show-mini-nav", false);
 
-  if (!filteredMiniatures.length) {
+  if (!filteredCollection.length) {
     // No miniatures (Gatsby is building)
     return <></>;
   }
 
-  const { prevMini, nextMini } = findAdjacentMinis(filteredMiniatures, current);
+  const { prevMini, nextMini } = findAdjacentMinis(filteredCollection, current);
   const toggleLabel = open ? "Hide Navigation" : "Show Navigation";
   const ToggleIcon = open ? BiCaretUp : BiCaretDown;
 

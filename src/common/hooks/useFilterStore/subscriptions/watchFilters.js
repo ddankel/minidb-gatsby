@@ -1,6 +1,6 @@
 import { shallow } from "zustand/shallow";
 import useCollectionStore from "@/common/hooks/useCollectionStore";
-import GalleryFilter from "@/common/hooks/useFilteredCollection/GalleryFilter";
+import GalleryFilter from "@/common/models/GalleryFilter";
 
 /**
  * Watch miniature filters for change

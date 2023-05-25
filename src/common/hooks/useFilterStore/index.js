@@ -5,8 +5,6 @@ import store from "./store";
 import watchFilters from "./subscriptions/watchFilters";
 import excludeStateAttributes from "./utils/excludeStateAttributes";
 
-import useStoreItem from "./hooks/useStoreItem";
-
 // Set up store and middleware
 let filterStore = store;
 filterStore = persist(filterStore, {
@@ -20,12 +18,6 @@ filterStore = subscribeWithSelector(filterStore);
 // TODO: don't export store as default(move to named for cross-store)
 const useFilterStore = create(filterStore);
 export default useFilterStore;
-
-// TODO: Remove when they've been refactored out
-// Helper hooks
-// export const useFilterStoreState = useStoreState;
-export const useFilterStoreItem = useStoreItem;
-// export const useFilterStoreItems = useStoreItems;
 
 // Add Subscriptions
 useFilterStore.subscribe(...watchFilters(useFilterStore));

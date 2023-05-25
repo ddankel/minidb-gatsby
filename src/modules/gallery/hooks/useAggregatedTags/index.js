@@ -1,5 +1,5 @@
-import useFilteredCollection from "@/common/hooks/useFilteredCollection";
-import useMiniatureCollection from "@/common/hooks/useMiniatureCollection";
+import { useFilteredCollection, useEntireCollection } from "@/common/hooks/useCollectionStore";
+
 import useAggregation from "./useAggregation";
 
 export const useFilteredCollectionTags = () => {
@@ -8,6 +8,6 @@ export const useFilteredCollectionTags = () => {
 };
 
 export const useWholeCollectionTags = () => {
-  const collection = useMiniatureCollection();
+  const collection = useEntireCollection();
   return useAggregation(collection);
 };
