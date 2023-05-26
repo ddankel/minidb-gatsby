@@ -13,7 +13,7 @@ const usePopulateEntireCollectionStore = () => {
     console.log("Populating Entire Collection Store-----");
 
     setEntireCollection(collection);
-  }, [collection]);
+  }, [collection, entireCollection, setEntireCollection]);
 };
 
 export default usePopulateEntireCollectionStore;

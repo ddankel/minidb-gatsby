@@ -1,7 +1,3 @@
-import { shallow } from "zustand/shallow";
-import useCollectionStore from "@/common/hooks/useCollectionStore";
-import GalleryFilter from "@/common/models/GalleryFilter";
-
 const extractFiltersFromToken = (token) => {
   const [
     speciesFilter,
