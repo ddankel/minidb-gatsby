@@ -6,7 +6,7 @@ import Miniature from "@/common/models/Miniature";
  *
  * @return  {Array<Miniature>}
  */
-const useMiniatureCollection = () => {
+const useMiniatureCollectionQuery = () => {
   const data = useStaticQuery(query);
   const allMinisFM = data.allMarkdownRemark.nodes;
   const allMinis = allMinisFM.map((node) => new Miniature({ frontmatter: node.frontmatter }));
@@ -15,7 +15,7 @@ const useMiniatureCollection = () => {
   return visibleMinis;
 };
 
-export default useMiniatureCollection;
+export default useMiniatureCollectionQuery;
 
 export const query = graphql`
   {
