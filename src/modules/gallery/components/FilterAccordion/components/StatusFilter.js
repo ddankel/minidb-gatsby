@@ -1,21 +1,20 @@
 import React from "react";
-import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
 import {
   useFilteredCollectionTags,
   useWholeCollectionTags,
 } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
 import zipTags from "../zipTags";
+import { useFilterActions, usePaintedFilter } from "@/common/hooks/useFilterStore";
 
 const StatusFilter = () => {
   const { paintedTags } = useFilteredCollectionTags();
   const { paintedTags: allPaintedTags } = useWholeCollectionTags();
 
-  const zippedPaintedTags = zipTags(allPaintedTags, paintedTags);
+  const paintedFilter = usePaintedFilter();
+  const { setPaintedFilter, removePaintedFilter } = useFilterActions();
 
-  const paintedFilter = useFilterStoreItem("paintedFilter");
-  const setPaintedFilter = useFilterStoreItem("setPaintedFilter");
-  const removePaintedFilter = useFilterStoreItem("removePaintedFilter");
+  const zippedPaintedTags = zipTags(allPaintedTags, paintedTags);
 
   return (
     <TagFilter

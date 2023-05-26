@@ -1,14 +1,12 @@
 import React from "react";
-import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
 import { useFilteredCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
+import { useFilterActions, useWeaponFilter } from "@/common/hooks/useFilterStore";
 
 const WeaponFilter = () => {
   const { weaponTags } = useFilteredCollectionTags();
-
-  const weaponFilter = useFilterStoreItem("weaponFilter");
-  const addWeaponFilter = useFilterStoreItem("addWeaponFilter");
-  const removeWeaponFilter = useFilterStoreItem("removeWeaponFilter");
+  const weaponFilter = useWeaponFilter();
+  const { addWeaponFilter, removeWeaponFilter } = useFilterActions();
 
   return (
     <TagFilter

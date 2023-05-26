@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { navigate } from "gatsby";
 import queryString from "query-string";
 
-import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
+import { useFilterActions } from "@/common/hooks/useFilterStore";
 
 /**
  * Update the filter zustand states from the querystring
@@ -14,7 +14,7 @@ import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
  * filters.
  */
 const useFilterStateFromQueryString = ({ path, query: rawQueryString }) => {
-  const setFilter = useFilterStoreItem("setFilter");
+  const { setFilter } = useFilterActions();
 
   useEffect(() => {
     if (!rawQueryString) return;
