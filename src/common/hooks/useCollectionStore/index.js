@@ -2,7 +2,7 @@ import { create } from "zustand";
 import { devtools, subscribeWithSelector } from "zustand/middleware";
 
 import store from "./store";
-import updateFilteredCollection from "./subscriptions/updateFilteredCollection";
+import { filterCollectionWhenFiltersChange } from "./subscriptions";
 
 // Set up store and middleware
 let collectionStore = store;
@@ -14,7 +14,7 @@ const useCollectionStore = create(collectionStore);
 export default useCollectionStore;
 
 // Add Subscriptions
-useCollectionStore.subscribe(...updateFilteredCollection(useCollectionStore));
+filterCollectionWhenFiltersChange(useCollectionStore);
 
 // Export hooks
 export const useEntireCollection = () => useCollectionStore((state) => state.entireCollection);

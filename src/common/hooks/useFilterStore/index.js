@@ -2,15 +2,18 @@ import { create } from "zustand";
 import { createJSONStorage, devtools, persist, subscribeWithSelector } from "zustand/middleware";
 
 import store from "./store";
-import watchFilters from "./subscriptions/watchFilters";
 import excludeStateAttributes from "./utils/excludeStateAttributes";
+import {
+  updateGalleryFilterWhenFiltersChange,
+  updateIsFilteredWhenFiltersChange,
+} from "./subscriptions";
 
 // Set up store and middleware
 let filterStore = store;
 filterStore = persist(filterStore, {
   name: "minidb-store",
   storage: createJSONStorage(() => sessionStorage),
-  partialize: excludeStateAttributes("actions"),
+  partialize: excludeStateAttributes("actions", "triggers"),
 });
 filterStore = devtools(filterStore, { name: "MiniDB ZuStore" });
 filterStore = subscribeWithSelector(filterStore);
@@ -20,7 +23,8 @@ const useFilterStore = create(filterStore);
 export default useFilterStore;
 
 // Add Subscriptions
-useFilterStore.subscribe(...watchFilters(useFilterStore));
+updateIsFilteredWhenFiltersChange(useFilterStore);
+updateGalleryFilterWhenFiltersChange(useFilterStore);
 
 // Export hooks
 export const useSpeciesFilter = () => useFilterStore((state) => state.speciesFilter);

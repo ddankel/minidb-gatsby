@@ -1,5 +1,5 @@
-import addToFilter from "./utils/addToFilter";
-import removeFromFilter from "./utils/removeFromFilter";
+import addToFilter from "./utils/store/addToFilter";
+import removeFromFilter from "./utils/store/removeFromFilter";
 
 const defaultState = {
   speciesFilter: [],
@@ -71,6 +71,22 @@ const store = (set, get) => ({
     },
 
     resetFilters: () => set(defaultState),
+  },
+
+  triggers: {
+    updateIsFiltered: () => {
+      const arrayFilters = [
+        get().speciesFilter,
+        get().archetypeFilter,
+        get().weaponFilter,
+        get().armorFilter,
+        get().paintedFilter,
+        get().nameFilter,
+        get().lineFilter,
+      ];
+
+      set({ isFiltered: arrayFilters.some((item) => !!item.length) });
+    },
   },
 });
 
