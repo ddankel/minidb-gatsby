@@ -1,62 +1,47 @@
-import React, { useMemo } from "react";
-import styled from "styled-components";
-import _ from "lodash";
+import React from "react";
+import { last } from "lodash";
 
 import BadgeButton from "@/common/components/BadgeButton";
-import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
+import {
+  useArchetypeFilter,
+  useArmorFilter,
+  useFilterActions,
+  useIsFiltered,
+  useLineFilter,
+  usePaintedFilter,
+  useSpeciesFilter,
+  useWeaponFilter,
+} from "@/common/hooks/useFilterStore";
 
-import FilterBadge from "./FilterBadge";
-
-const BadgeContainer = styled("div")`
-  && {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem 0.75rem;
-    align-items: center;
-    margin-left: 1rem;
-    margin-bottom: 1.5rem;
-  }
-`;
+import FilterBadge from "./components/FilterBadge";
+import BadgeContainer from "./components/BadgeContainer";
+import useShowReset from "./hooks/useShowReset";
 
 const ActiveFilters = () => {
-  const isFiltered = useFilterStoreItem("isFiltered");
+  const isFiltered = useIsFiltered();
 
-  const speciesFilter = useFilterStoreItem("speciesFilter");
-  const removeSpeciesFilter = useFilterStoreItem("removeSpeciesFilter");
+  const speciesFilter = useSpeciesFilter();
+  const archetypeFilter = useArchetypeFilter();
+  const weaponFilter = useWeaponFilter();
+  const armorFilter = useArmorFilter();
+  const lineFilter = useLineFilter();
+  const paintedFilter = usePaintedFilter();
 
-  const archetypeFilter = useFilterStoreItem("archetypeFilter");
-  const removeArchetypeFilter = useFilterStoreItem("removeArchetypeFilter");
+  const {
+    removeSpeciesFilter,
+    removeArchetypeFilter,
+    removeWeaponFilter,
+    removeArmorFilter,
+    removeLineFilter,
+    removePaintedFilter,
+    resetFilters,
+  } = useFilterActions();
 
-  const weaponFilter = useFilterStoreItem("weaponFilter");
-  const removeWeaponFilter = useFilterStoreItem("removeWeaponFilter");
-
-  const armorFilter = useFilterStoreItem("armorFilter");
-  const removeArmorFilter = useFilterStoreItem("removeArmorFilter");
-
-  const lineFilter = useFilterStoreItem("lineFilter");
-  const removeLineFilter = useFilterStoreItem("removeLineFilter");
-
-  const paintedFilter = useFilterStoreItem("paintedFilter");
-  const removePaintedFilter = useFilterStoreItem("removePaintedFilter");
-
-  const showReset = useMemo(() => {
-    const filters = [
-      speciesFilter,
-      archetypeFilter,
-      weaponFilter,
-      armorFilter,
-      lineFilter,
-      paintedFilter,
-    ];
-    const filterCount = _.sum(filters.map((filterArray) => filterArray.length));
-
-    return filterCount > 1;
-  }, [speciesFilter, archetypeFilter, weaponFilter, armorFilter, lineFilter, paintedFilter]);
-  const resetFilters = useFilterStoreItem("resetFilters");
+  const showReset = useShowReset();
 
   return (
     <BadgeContainer>
-      {isFiltered() && <span>Active Filters:</span>}
+      {isFiltered && <span>Active Filters:</span>}
       {speciesFilter.map((tag) => (
         <FilterBadge key={tag} text={tag} onClick={() => removeSpeciesFilter(tag)} />
       ))}
@@ -72,7 +57,7 @@ const ActiveFilters = () => {
       {lineFilter.map((tag) => (
         <FilterBadge
           key={tag}
-          text={_.last(tag.split(" > "))}
+          text={last(tag.split(" > "))}
           onClick={() => removeLineFilter(tag)}
         />
       ))}

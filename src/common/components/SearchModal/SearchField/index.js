@@ -3,22 +3,22 @@ import { navigate } from "gatsby";
 import { Typeahead } from "react-bootstrap-typeahead";
 
 import SearchResult from "../SearchResult";
-import useMiniatureCollection from "@/common/hooks/useMiniatureCollection";
+import { useEntireCollection } from "@/common/hooks/useCollectionStore";
 
 const navigateTo = (selection) => navigate(`/minis/${selection.id}`);
 
 const SearchField = () => {
   const inputRef = React.useRef();
-  const miniatureCollection = useMiniatureCollection();
+  const entireCollection = useEntireCollection();
   const [searchNeedle, setSearchNeedle] = React.useState("");
 
   React.useEffect(() => {
     inputRef.current.focus();
   }, []);
 
-  if (!miniatureCollection) return;
+  if (!entireCollection) return;
 
-  const options = miniatureCollection.map((miniature) => ({
+  const options = entireCollection.map((miniature) => ({
     id: miniature.slug,
     label: miniature.displayName,
   }));

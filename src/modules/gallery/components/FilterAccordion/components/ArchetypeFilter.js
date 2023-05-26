@@ -1,14 +1,12 @@
 import React from "react";
-import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
+import { useArchetypeFilter, useFilterActions } from "@/common/hooks/useFilterStore";
 import { useFilteredCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
 
 const ArchetypeFilter = () => {
   const { archetypeTags } = useFilteredCollectionTags();
-
-  const archetypeFilter = useFilterStoreItem("archetypeFilter");
-  const addArchetypeFilter = useFilterStoreItem("addArchetypeFilter");
-  const removeArchetypeFilter = useFilterStoreItem("removeArchetypeFilter");
+  const archetypeFilter = useArchetypeFilter();
+  const { addArchetypeFilter, removeArchetypeFilter } = useFilterActions();
 
   return (
     <TagFilter

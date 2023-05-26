@@ -1,14 +1,12 @@
 import React from "react";
-import { useFilterStoreItem } from "@/common/hooks/useFilterStore";
 import { useFilteredCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
+import { useFilterActions, useLineFilter } from "@/common/hooks/useFilterStore";
 
 const MiniatureLineFilter = () => {
   const { lines } = useFilteredCollectionTags();
-
-  const lineFilter = useFilterStoreItem("lineFilter");
-  const addLineFilter = useFilterStoreItem("addLineFilter");
-  const removeLineFilter = useFilterStoreItem("removeLineFilter");
+  const lineFilter = useLineFilter();
+  const { addLineFilter, removeLineFilter } = useFilterActions();
 
   return (
     <TagFilter
