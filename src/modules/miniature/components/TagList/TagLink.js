@@ -1,8 +1,7 @@
 import { Link } from "gatsby";
-import React from "react";
-import { Button } from "react-bootstrap";
 import _ from "lodash";
 import queryString from "query-string";
+import { Button } from "react-bootstrap";
 
 const TagLink = ({ to, attribute, tag, ...restProps }) => {
   const filter = { [`${attribute}Filter`]: tag };

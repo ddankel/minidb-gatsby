@@ -1,4 +1,3 @@
-import React from "react";
 import { useArchetypeFilter, useFilterActions } from "@/common/hooks/useFilterStore";
 import { useFilteredCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";

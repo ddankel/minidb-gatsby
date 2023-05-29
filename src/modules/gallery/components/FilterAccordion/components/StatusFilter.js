@@ -1,11 +1,10 @@
-import React from "react";
+import { useFilterActions, usePaintedFilter } from "@/common/hooks/useFilterStore";
 import {
   useFilteredCollectionTags,
   useWholeCollectionTags,
 } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
 import zipTags from "../zipTags";
-import { useFilterActions, usePaintedFilter } from "@/common/hooks/useFilterStore";
 
 const StatusFilter = () => {
   const { paintedTags } = useFilteredCollectionTags();

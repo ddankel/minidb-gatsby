@@ -1,4 +1,3 @@
-import React from "react";
 import AppLayout from "@/app/layouts/AppLayout";
 import GalleryPageContent from "@/modules/gallery/content/GalleryPageContent";
 

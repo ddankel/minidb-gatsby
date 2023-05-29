@@ -1,9 +1,13 @@
-import React from "react";
-
 import Miniature from "@/common/models/Miniature";
 
-import { AttributeStack, DraftStatusBar, InfoStack } from "./MiniaturePageContent.styled";
-import { ResponsiveContent, PhotoSection, InfoSection } from "./MiniaturePageContent.styled";
+import {
+  AttributeStack,
+  DraftStatusBar,
+  InfoSection,
+  InfoStack,
+  PhotoSection,
+  ResponsiveContent,
+} from "./MiniaturePageContent.styled";
 
 import Attribute from "../components/Attribute";
 import Breadcrumbs from "../components/Breadcrumbs";

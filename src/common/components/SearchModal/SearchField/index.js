@@ -1,18 +1,18 @@
-import React from "react";
 import { navigate } from "gatsby";
+import { useEffect, useRef, useState } from "react";
 import { Typeahead } from "react-bootstrap-typeahead";
 
-import SearchResult from "../SearchResult";
 import { useEntireCollection } from "@/common/hooks/useCollectionStore";
+import SearchResult from "../SearchResult";
 
 const navigateTo = (selection) => navigate(`/minis/${selection.id}`);
 
 const SearchField = () => {
-  const inputRef = React.useRef();
+  const inputRef = useRef();
   const entireCollection = useEntireCollection();
-  const [searchNeedle, setSearchNeedle] = React.useState("");
+  const [searchNeedle, setSearchNeedle] = useState("");
 
-  React.useEffect(() => {
+  useEffect(() => {
     inputRef.current.focus();
   }, []);
 
