@@ -1,4 +1,4 @@
-import { useFilteredCollection, useEntireCollection } from "@/common/hooks/useCollectionStore";
+import { useEntireCollection, useFilteredCollection } from "@/common/hooks/useCollectionStore";
 
 import useAggregation from "./useAggregation";
 

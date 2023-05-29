@@ -1,4 +1,3 @@
-import { sum } from "lodash";
 import {
   useArchetypeFilter,
   useArmorFilter,
@@ -7,6 +6,7 @@ import {
   useSpeciesFilter,
   useWeaponFilter,
 } from "@/common/hooks/useFilterStore";
+import { sum } from "lodash";
 
 const useShowReset = () => {
   const speciesFilter = useSpeciesFilter();

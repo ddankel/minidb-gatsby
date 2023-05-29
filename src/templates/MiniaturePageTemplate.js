@@ -1,4 +1,3 @@
-import * as React from "react";
 import { graphql } from "gatsby";
 
 import AppLayout from "@/app/layouts/AppLayout";

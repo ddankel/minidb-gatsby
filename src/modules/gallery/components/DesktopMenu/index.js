@@ -1,4 +1,3 @@
-import React from "react";
 import FilterAccordion from "../FilterAccordion";
 import { Container, Title } from "./index.styled";
 

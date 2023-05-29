@@ -1,4 +1,3 @@
-import React from "react";
 import Attribute from "./Attribute";
 
 const Quantity = ({ count }) => {

@@ -1,6 +1,5 @@
-import React from "react";
-import { IoMdCloseCircle } from "react-icons/io";
 import _ from "lodash";
+import { IoMdCloseCircle } from "react-icons/io";
 
 import BadgeButton from "@/common/components/BadgeButton";
 

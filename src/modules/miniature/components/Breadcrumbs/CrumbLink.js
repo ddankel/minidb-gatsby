@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
-import React from "react";
-import styled from "styled-components";
 import queryString from "query-string";
+import styled from "styled-components";
 
 export const StyledLink = styled(Link).attrs({
   className: "text-white",

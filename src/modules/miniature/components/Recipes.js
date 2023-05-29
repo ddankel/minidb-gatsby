@@ -1,5 +1,3 @@
-import React from "react";
-
 const RecipeItem = ({ recipe }) => {
   const [title, ...mixes] = recipe.split(" - ");
   return (

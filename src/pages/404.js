@@ -1,6 +1,5 @@
-import * as React from "react";
-import { Link } from "gatsby";
 import AppLayout from "@/app/layouts/AppLayout";
+import { Link } from "gatsby";
 
 const NotFoundPage = () => {
   return (

@@ -1,8 +1,7 @@
-import React from "react";
 import useMiniature from "@/common/hooks/useMiniature";
 import usePhotos from "@/common/hooks/usePhotos";
 
-import { NavLink, Contents, Label, LeftArrow, RightArrow, NavImage } from "./styled";
+import { Contents, Label, LeftArrow, NavImage, NavLink, RightArrow } from "./styled";
 
 const NavButton = ({ slug, variant, ...restProps }) => {
   const [imgSrc] = usePhotos(slug);

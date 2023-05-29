@@ -1,9 +1,11 @@
+import { useMemo } from "react";
+
 import { useFilterActions, useLineFilter } from "@/common/hooks/useFilterStore";
 import {
   useFilteredCollectionTags,
   useWholeCollectionTags,
 } from "@/modules/gallery/hooks/useAggregatedTags";
-import React, { useMemo } from "react";
+
 import TagFilter from "../../TagFilter";
 
 const MiniatureLineFilter = () => {
@@ -28,7 +30,7 @@ const MiniatureLineFilter = () => {
       const sharesParentWithCurrent = (line) => line.name.startsWith(lineFilter[0].split(" > ")[0]);
       return allLines.filter(sharesParentWithCurrent);
     }
-  }, [lines, lineFilter]);
+  }, [allLines, lines, lineFilter]);
 
   return (
     <TagFilter
