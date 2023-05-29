@@ -1,4 +1,3 @@
-import React from "react";
 import { getImage } from "gatsby-plugin-image";
 import ImageGallery from "react-image-gallery";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { last } from "lodash";
 
 import BadgeButton from "@/common/components/BadgeButton";
@@ -13,8 +12,8 @@ import {
   useWeaponFilter,
 } from "@/common/hooks/useFilterStore";
 
-import FilterBadge from "./components/FilterBadge";
 import BadgeContainer from "./components/BadgeContainer";
+import FilterBadge from "./components/FilterBadge";
 import useShowReset from "./hooks/useShowReset";
 
 const ActiveFilters = () => {

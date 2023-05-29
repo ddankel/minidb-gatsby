@@ -1,7 +1,6 @@
-import React from "react";
 import _ from "lodash";
 
-import { IndentedLabel, CountPart, LabelPart } from "./Label.styled";
+import { CountPart, IndentedLabel, LabelPart } from "./Label.styled";
 
 const Label = ({ count, children }) => {
   const label = children;

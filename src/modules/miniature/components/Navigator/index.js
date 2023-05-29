@@ -1,13 +1,11 @@
-import React from "react";
-
 import { Collapse, Stack } from "react-bootstrap";
-import { BiCaretUp, BiCaretDown } from "react-icons/bi";
+import { BiCaretDown, BiCaretUp } from "react-icons/bi";
 import { useSessionStorage } from "react-use-storage";
 
-import NavButton from "./NavButton";
-import { findAdjacentMinis } from "./utils";
-import { Wrapper, Contents, ToggleButton, WidthContraint } from "./styled";
 import { useFilteredCollection } from "@/common/hooks/useCollectionStore";
+import NavButton from "./NavButton";
+import { Contents, ToggleButton, WidthContraint, Wrapper } from "./styled";
+import { findAdjacentMinis } from "./utils";
 
 const Navigator = ({ current }) => {
   const filteredCollection = useFilteredCollection();

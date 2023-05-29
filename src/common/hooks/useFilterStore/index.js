@@ -2,11 +2,11 @@ import { create } from "zustand";
 import { createJSONStorage, devtools, persist, subscribeWithSelector } from "zustand/middleware";
 
 import store from "./store";
-import excludeStateAttributes from "./utils/excludeStateAttributes";
 import {
   updateGalleryFilterWhenFiltersChange,
   updateIsFilteredWhenFiltersChange,
 } from "./subscriptions";
+import excludeStateAttributes from "./utils/excludeStateAttributes";
 
 // Set up store and middleware
 let filterStore = store;

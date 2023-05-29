@@ -1,6 +1,6 @@
-import { useEffect } from "react";
 import { navigate } from "gatsby";
 import queryString from "query-string";
+import { useEffect } from "react";
 
 import { useFilterActions } from "@/common/hooks/useFilterStore";
 

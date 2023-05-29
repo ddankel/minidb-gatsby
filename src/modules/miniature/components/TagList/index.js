@@ -1,4 +1,3 @@
-import React from "react";
 import TagLink from "./TagLink";
 
 const TagList = ({ attribute, tags = [] }) => {

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Text = ({ children }) => {
   if (!children) return null;
 
