@@ -55,6 +55,7 @@ const store = (set, get) => ({
     removeNameFilter: (value) =>
       set((state) => ({ nameFilter: removeFromFilter(state.nameFilter, value) })),
 
+    setLineFilter: (value) => set({ lineFilter: [value] }),
     addLineFilter: (value) =>
       set((state) => ({ lineFilter: addToFilter(state.lineFilter, value) })),
     removeLineFilter: (value) =>
