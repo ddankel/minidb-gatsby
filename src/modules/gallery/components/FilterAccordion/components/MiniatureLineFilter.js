@@ -1,45 +1,34 @@
-import React, { useMemo } from "react";
+import { useFilterActions, useLineFilter } from "@/common/hooks/useFilterStore";
 import {
   useFilteredCollectionTags,
   useWholeCollectionTags,
 } from "@/modules/gallery/hooks/useAggregatedTags";
+import React, { useMemo } from "react";
 import TagFilter from "../../TagFilter";
-import { useFilterActions, useLineFilter } from "@/common/hooks/useFilterStore";
 
 const MiniatureLineFilter = () => {
   const { lines } = useFilteredCollectionTags();
   const lineFilter = useLineFilter();
-  const { addLineFilter, removeLineFilter, setLineFilter } = useFilterActions();
+  const { removeLineFilter, setLineFilter } = useFilterActions();
   const { lines: allLines } = useWholeCollectionTags();
 
-  console.log("all line tags", allLines);
-
   const visibleLines = useMemo(() => {
-    if (!lines) return;
+    // If the lines haven't been collected, an empty array
+    if (!lines) return [];
 
     if (!lineFilter.length) {
+      // If there's at least one line, show it and any other lines under the
+      // same "top level" line.  IE if "Reaper Miniatures > Bones" is selected,
+      // show any lines that start with "Reaper Miniatures"
       const isTopLevel = (line) => line.name.split(">").length === 1;
-      return lines.filter((line) => isTopLevel(line));
+      return lines.filter(isTopLevel);
     } else {
-      console.log("else");
-
-      return allLines.filter((line) => {
-        console.log(
-          "checking line",
-          line.name,
-          "|",
-          lineFilter[0],
-          "|",
-          lineFilter[0].split(" > ")[0]
-        );
-
-        return line.name.startsWith(lineFilter[0].split(" > ")[0]);
-      });
+      // If there are no selected filters, only show "top level" lines.
+      // IE show "Privateer Press" but not "Privateer Press > Mecenaries"
+      const sharesParentWithCurrent = (line) => line.name.startsWith(lineFilter[0].split(" > ")[0]);
+      return allLines.filter(sharesParentWithCurrent);
     }
   }, [lines, lineFilter]);
-
-  console.log("lineFilter", lineFilter);
-  console.log("visibleLines", visibleLines);
 
   return (
     <TagFilter
