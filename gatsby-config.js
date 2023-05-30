@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: "https://minidb.dankelzahn.com",
     title: "MiniDB",
   },
+  jsxRuntime: "automatic",
   trailingSlash: "always",
   plugins: [
     "gatsby-plugin-netlify",

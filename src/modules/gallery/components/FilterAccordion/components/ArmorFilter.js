@@ -1,7 +1,6 @@
-import React from "react";
+import { useArmorFilter, useFilterActions } from "@/common/hooks/useFilterStore";
 import { useFilteredCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
-import { useArmorFilter, useFilterActions } from "@/common/hooks/useFilterStore";
 
 const ArmorFilter = () => {
   const { armorTags } = useFilteredCollectionTags();

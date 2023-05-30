@@ -1,12 +1,10 @@
-import React from "react";
-
 import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
 
+import { useFilteredCollection } from "@/common/hooks/useCollectionStore";
+import ActiveFilters from "../components/ActiveFilters";
 import DesktopMenu from "../components/DesktopMenu";
 import Gallery from "../components/Gallery";
 import MobileMenu from "../components/MobileMenu";
-import ActiveFilters from "../components/ActiveFilters";
-import { useFilteredCollection } from "@/common/hooks/useCollectionStore";
 
 const GalleryPageContent = () => {
   const filteredCollection = useFilteredCollection();

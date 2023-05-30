@@ -1,6 +1,6 @@
-import styled from "styled-components";
 import { Link } from "gatsby";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
+import styled from "styled-components";
 
 import GatsbyImage from "@/common/components/GatsbyImage";
 

@@ -1,6 +1,5 @@
-import React from "react";
-import { Badge } from "react-bootstrap";
 import _ from "lodash";
+import { Badge } from "react-bootstrap";
 
 import Attribute from "./Attribute";
 

@@ -40,4 +40,8 @@ const TagFilter = ({ name, tagsAvailable, currentSelections, onAdd, onRemove }) 
   );
 };
 
-export default TagFilter;
+const compareProps = (prevProps, nextProps) => {
+  return JSON.stringify(prevProps) === JSON.stringify(nextProps);
+};
+
+export default React.memo(TagFilter, compareProps);

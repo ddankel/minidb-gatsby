@@ -1,14 +1,13 @@
-import React from "react";
 import Accordion from "react-bootstrap/Accordion";
-
-import { Item, Header, Body } from "./styled";
 import { useSessionStorage } from "react-use-storage";
-import SpeciesFilter from "./components/SpeciesFilter";
-import StatusFilter from "./components/StatusFilter";
+
 import ArchetypeFilter from "./components/ArchetypeFilter";
 import ArmorFilter from "./components/ArmorFilter";
-import WeaponFilter from "./components/WeaponFilter";
 import MiniatureLineFilter from "./components/MiniatureLineFilter";
+import SpeciesFilter from "./components/SpeciesFilter";
+import StatusFilter from "./components/StatusFilter";
+import WeaponFilter from "./components/WeaponFilter";
+import { Body, Header, Item } from "./styled";
 
 const FilterAccordion = () => {
   const [accordionKey, setAccordionKey] = useSessionStorage("filter-accordion", null);

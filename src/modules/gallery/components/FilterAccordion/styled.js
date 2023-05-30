@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import Accordion from "react-bootstrap/Accordion";
+import styled from "styled-components";
 
 export const Item = styled(Accordion.Item)`
   && {

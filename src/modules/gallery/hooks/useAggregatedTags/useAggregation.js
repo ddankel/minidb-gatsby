@@ -1,9 +1,9 @@
-import { useState, useEffect, useMemo } from "react";
-import objectHash from "object-hash";
 import _ from "lodash";
+import objectHash from "object-hash";
+import { useEffect, useMemo, useState } from "react";
 
-import collectLines from "./collectLines";
 import useAggregatedTagStore from "../useAggregatedTagStore";
+import collectLines from "./collectLines";
 
 const useAggregation = (collection) => {
   const [data, setData] = useState([]);

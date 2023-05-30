@@ -1,5 +1,5 @@
-import { useStaticQuery, graphql } from "gatsby";
 import Miniature from "@/common/models/Miniature";
+import { graphql, useStaticQuery } from "gatsby";
 
 /**
  * Fetch an array of Miniature objects for all minis in the graphql data source
