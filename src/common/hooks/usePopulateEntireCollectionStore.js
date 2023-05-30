@@ -10,8 +10,6 @@ const usePopulateEntireCollectionStore = () => {
   useEffect(() => {
     if (entireCollection.length && collection.length) return;
 
-    console.log("Populating Entire Collection Store-----");
-
     setEntireCollection(collection);
   }, [collection, entireCollection, setEntireCollection]);
 };
