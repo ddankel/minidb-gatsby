@@ -1,13 +1,13 @@
 import { useEntireCollection, useFilteredCollection } from "@/common/hooks/useCollectionStore";
 
-import useAggregation from "./useAggregation";
+import aggregateCollectionTags from "./utils/aggregateCollectionTags";
 
 export const useFilteredCollectionTags = () => {
   const collection = useFilteredCollection();
-  return useAggregation(collection);
+  return aggregateCollectionTags(collection);
 };
 
 export const useWholeCollectionTags = () => {
   const collection = useEntireCollection();
-  return useAggregation(collection);
+  return aggregateCollectionTags(collection);
 };
