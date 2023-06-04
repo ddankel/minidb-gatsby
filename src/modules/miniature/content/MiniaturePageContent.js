@@ -1,3 +1,4 @@
+import usePopulateEntireCollectionStore from "@/common/hooks/usePopulateEntireCollectionStore";
 import Miniature from "@/common/models/Miniature";
 
 import {
@@ -22,6 +23,7 @@ import Text from "../components/Text";
 
 const MiniaturePageContent = ({ frontmatter, html }) => {
   const miniature = new Miniature({ frontmatter, html });
+  usePopulateEntireCollectionStore();
 
   return (
     <>
