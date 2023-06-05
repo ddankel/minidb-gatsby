@@ -2,10 +2,10 @@ import SSRProvider from "react-bootstrap/SSRProvider";
 import { ThemeProvider } from "styled-components";
 
 import theme from "@/app/styles/theme";
-import SearchModal from "@/common/components/SearchModal";
 
 import AppBar from "./components/AppBar";
 import ContentContainer from "./components/ContentContainer";
+import SearchModal from "./components/SearchModal";
 import useSearchModalState from "./hooks/useSearchModalState";
 
 const AppLayout = ({ children, variant }) => {
