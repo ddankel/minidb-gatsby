@@ -47,6 +47,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-image-gallery": "^1.2.11",
+    "react-tooltip": "^5.13.1",
     "react-use-storage": "github:ddankel/react-use-storage#main",
     "sass": "^1.62.1",
     "styled-components": "^5.3.11",
