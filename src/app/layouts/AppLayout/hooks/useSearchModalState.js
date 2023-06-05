@@ -3,15 +3,24 @@ import { useEffect, useState } from "react";
 const useSearchModalState = () => {
   const [modalShow, setModalShow] = useState(false);
 
-  useEffect(() => {
-    const handleSearchShortcut = (e) => {
-      if (e.key !== "/") return;
+  const handleKeyPress = (e) => {
+    switch (e.key) {
+      case "/":
+        e.preventDefault();
+        setModalShow(true);
+        break;
+      case "Escape":
+        e.preventDefault();
+        setModalShow(false);
+        break;
+      default:
+        return;
+    }
+  };
 
-      e.preventDefault();
-      setModalShow(true);
-    };
-    window.addEventListener("keydown", handleSearchShortcut);
-    return () => window.removeEventListener("keydown", handleSearchShortcut);
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyPress);
+    return () => window.removeEventListener("keydown", handleKeyPress);
   }, []);
 
   return {
