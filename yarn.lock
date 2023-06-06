@@ -1266,6 +1266,18 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@floating-ui/core@^1.2.6":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.2.6.tgz#d21ace437cc919cdd8f1640302fa8851e65e75c0"
+  integrity sha512-EvYTiXet5XqweYGClEmpu3BoxmsQ4hkj3QaYA6qEnigCWffTP3vNRwBReTdrwDwo7OoJ3wM8Uoe9Uk4n+d4hfg==
+
+"@floating-ui/dom@^1.0.0":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.2.9.tgz#b9ed1c15d30963419a6736f1b7feb350dd49c603"
+  integrity sha512-sosQxsqgxMNkV3C+3UqTS6LxP7isRLwX8WMepp843Rb3/b0Wz8+MdUkxJksByip3C2WwLugLHN1b4ibn//zKwQ==
+  dependencies:
+    "@floating-ui/core" "^1.2.6"
+
 "@gatsbyjs/parcel-namer-relative-to-cwd@^2.10.0":
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-2.10.0.tgz#3ad8ba465cde801282809559190893aab1f42e8e"
@@ -3739,7 +3751,7 @@ ci-info@^3.2.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.3.2.tgz#6d2967ffa407466481c6c90b6e16b3098f080128"
   integrity sha512-xmDt/QIAdeZ9+nfdPsaBCpMvHNLFiLdjj59qjqn+6iPe6YmHGQ35sBnQ8uslRBXFmXkiZQOJRjvQeoGppoTjjg==
 
-classnames@^2.2.0, classnames@^2.3.2:
+classnames@^2.2.0, classnames@^2.3.0, classnames@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -4325,6 +4337,11 @@ date-fns@^2.30.0:
   integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
   dependencies:
     "@babel/runtime" "^7.21.0"
+
+debounce@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
+  integrity sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==
 
 debug@2, debug@2.6.9, debug@^2.6.0:
   version "2.6.9"
@@ -9626,6 +9643,14 @@ react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825:
     loose-envify "^1.1.0"
     neo-async "^2.6.1"
 
+react-tooltip@^5.13.1:
+  version "5.13.1"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.13.1.tgz#d0b64d6c783301fa87248b45c662299a0a1276f9"
+  integrity sha512-9NstDFdjyy6cIH9zjeT70zXTHlW/TIGCOWQmhkAyqLFeQioLg1FXvb9ec7AxSpn0zyFUkFSLdFYxZRuewti3Aw==
+  dependencies:
+    "@floating-ui/dom" "^1.0.0"
+    classnames "^2.3.0"
+
 react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
@@ -9638,7 +9663,6 @@ react-transition-group@^4.4.5:
 
 "react-use-storage@github:ddankel/react-use-storage#main":
   version "1.0.3"
-  uid "9fd64f8a50a91c1169d7ada0dff2d0ebfaa24cf6"
   resolved "https://codeload.github.com/ddankel/react-use-storage/tar.gz/9fd64f8a50a91c1169d7ada0dff2d0ebfaa24cf6"
   dependencies:
     jest-environment-jsdom "^29.5.0"
