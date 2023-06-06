@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-const useSearchModalState = () => {
+const useFilterModalState = () => {
   const [modalShow, setModalShow] = useState(false);
 
   useEffect(() => {
     const handleKeyPress = (e) => {
-      if (e.key !== "/") return;
+      if (!["f", "F"].includes(e.key)) return;
 
       e.preventDefault();
       setModalShow(true);
@@ -22,4 +22,4 @@ const useSearchModalState = () => {
   };
 };
 
-export default useSearchModalState;
+export default useFilterModalState;

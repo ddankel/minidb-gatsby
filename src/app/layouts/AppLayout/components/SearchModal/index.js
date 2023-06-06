@@ -3,7 +3,7 @@ import SearchField from "./SearchField";
 
 function SearchModal(props) {
   return (
-    <Modal keyboard={false} size="lg" {...props}>
+    <Modal keyboard={true} size="lg" {...props}>
       <Modal.Body>
         <h5>Search by name</h5>
         <SearchField />
