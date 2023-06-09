@@ -6,14 +6,15 @@ import { useRef, useState, useEffect } from "react";
 import { Typeahead, Token } from "react-bootstrap-typeahead";
 import { startCase, last } from "lodash";
 import useFilterOptions from "./useFilterOptions";
+import useUpdateFilters from "./useUpdateFilters";
 
 const FilterField = () => {
   console.log("rendering filter field");
   const inputRef = useRef();
 
-  const foo = useFilteredCollectionTags();
   const [selected, setSelected] = useState([]);
   const [needle, setNeedle] = useState("");
+  const updateFilters = useUpdateFilters();
 
   // TODO: on change, update filters
 
@@ -44,6 +45,7 @@ const FilterField = () => {
         setSelected(newSelection);
         setNeedle("");
         doUpdate(newSelection);
+        updateFilters(newSelection);
       }}
       options={options}
       placeholder="Filter"
