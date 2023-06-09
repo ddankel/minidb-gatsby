@@ -7,6 +7,7 @@ import { Typeahead, Token } from "react-bootstrap-typeahead";
 import { startCase, last } from "lodash";
 import useFilterOptions from "./useFilterOptions";
 import useUpdateFilters from "./useUpdateFilters";
+import useSelectionFromFilters from "./useSelectionFromFilters";
 
 const FilterField = () => {
   console.log("rendering filter field");
@@ -27,6 +28,7 @@ const FilterField = () => {
   };
 
   const options = useFilterOptions();
+  const selectionFromFilters = useSelectionFromFilters(options);
 
   return (
     <Typeahead
@@ -49,7 +51,9 @@ const FilterField = () => {
       }}
       options={options}
       placeholder="Filter"
-      selected={selected}
+      // selected={selected}
+      selected={selectionFromFilters}
+
       // renderToken={(option, props, idx) => {
       //   console.log("render options", props.onRemove);
 
