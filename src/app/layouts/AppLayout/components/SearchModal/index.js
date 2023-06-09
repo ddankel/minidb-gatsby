@@ -5,8 +5,6 @@ import { useModalStateContext } from "../../contexts/ModalStateProvider";
 function SearchModal(props) {
   const { isSearchOpen, closeSearch } = useModalStateContext();
 
-  console.log("cs", closeSearch);
-
   return (
     <Modal keyboard={true} size="lg" show={isSearchOpen} onHide={closeSearch} {...props}>
       <Modal.Body>
