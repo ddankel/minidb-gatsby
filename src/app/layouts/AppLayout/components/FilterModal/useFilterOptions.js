@@ -1,11 +1,12 @@
 import { useFilteredCollectionZippedTags } from "@/modules/gallery/hooks/useAggregatedTags";
-import { startCase } from "lodash";
+import { startCase, last } from "lodash";
 
 const convertTagsToOptions = (type, tags) => {
   return tags.map((item) => ({
-    label: `${startCase(type)}: ${startCase(item.name)}`,
+    label: startCase(last(item.name.split(" > "))),
+
     value: item.name,
-    count: item.count,
+    // count: item.count,
     type,
   }));
 };

@@ -8,6 +8,27 @@ import { startCase, last } from "lodash";
 import useFilterOptions from "./useFilterOptions";
 import useUpdateFilters from "./useUpdateFilters";
 import useSelectionFromFilters from "./useSelectionFromFilters";
+import styled from "styled-components";
+import { useFilterActions } from "@/common/hooks/useFilterStore";
+
+const Match = styled.span.attrs({
+  className: "bg-primary",
+})``;
+
+const FilterResults = ({ option }) => {
+  console.log("OPTION", option);
+
+  const formattedValue = option.value
+    .split(" > ")
+    .map((segment) => startCase(segment))
+    .join(" > ");
+
+  return (
+    <span>
+      {startCase(option.type)}: {formattedValue} (TODO COUNT)
+    </span>
+  );
+};
 
 const FilterField = () => {
   console.log("rendering filter field");
@@ -32,9 +53,9 @@ const FilterField = () => {
 
   return (
     <Typeahead
-      labelKey={(option) =>
-        `${startCase(option.type)}: ${startCase(option.value)} (${option.count})`
-      }
+      // labelKey={(option) =>
+      //   `${startCase(option.type)}: ${startCase(option.value)} (${option.count})`
+      // }
       multiple
       ref={inputRef}
       open={needle.length > 0}
@@ -53,6 +74,9 @@ const FilterField = () => {
       placeholder="Filter"
       // selected={selected}
       selected={selectionFromFilters}
+      renderMenuItemChildren={(option, _props, index) => (
+        <FilterResults option={option} needle={needle} key={index} />
+      )}
 
       // renderToken={(option, props, idx) => {
       //   console.log("render options", props.onRemove);
