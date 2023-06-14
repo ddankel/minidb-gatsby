@@ -1,10 +1,10 @@
 import { Link } from "gatsby";
 import styled from "styled-components";
 
+import DestktopTooltip from "@/common/components/DesktopTooltip";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { BiSearch as BiSearchIcon } from "react-icons/bi";
-import { FiFilter as FiFilterIcon } from "react-icons/fi";
-import DestktopTooltip from "@/common/components/DesktopTooltip";
+import { useModalStateContext } from "../contexts/ModalStateProvider";
 
 const StyledNavBar = styled(Navbar).attrs({
   variant: "dark",
@@ -14,7 +14,9 @@ const StyledNavBar = styled(Navbar).attrs({
   margin-bottom: 3rem;
 `;
 
-const AppLayout = ({ onSearch, onFilter }) => {
+const AppBar = () => {
+  const { openSearch } = useModalStateContext();
+
   return (
     <StyledNavBar>
       <Container>
@@ -24,16 +26,7 @@ const AppLayout = ({ onSearch, onFilter }) => {
         <Nav>
           <DestktopTooltip id="nav-tooltip" variant="info" />
           <Nav.Link
-            onClick={onFilter}
-            data-tooltip-id="nav-tooltip"
-            data-tooltip-html="Press <kbd>F</kbd> to filter"
-            data-tooltip-place="bottom"
-          >
-            <FiFilterIcon className="me-2" />
-            Filter
-          </Nav.Link>
-          <Nav.Link
-            onClick={onSearch}
+            onClick={openSearch}
             data-tooltip-id="nav-tooltip"
             data-tooltip-html="Press <kbd>/</kbd> to Search"
             data-tooltip-place="bottom"
@@ -48,4 +41,4 @@ const AppLayout = ({ onSearch, onFilter }) => {
   );
 };
 
-export default AppLayout;
+export default AppBar;
