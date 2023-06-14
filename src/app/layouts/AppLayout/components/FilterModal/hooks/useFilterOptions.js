@@ -1,18 +1,22 @@
-import { useFilteredCollectionZippedTags } from "@/modules/gallery/hooks/useAggregatedTags";
+import { useWholeCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
 import { startCase, last } from "lodash";
 
 const convertTagsToOptions = (type, tags) => {
   return tags.map((item) => ({
     label: startCase(last(item.name.split(" > "))),
-
     value: item.name,
-    // count: item.count,
     type,
   }));
 };
 
+/**
+ * Compile the list of tags over the library into options for the filter field
+ *
+ * @return  {Array<Object>}
+ */
 const useFilterOptions = () => {
-  const zippedTags = useFilteredCollectionZippedTags();
+  // const zippedTags = useFilteredCollectionZippedTags();
+  const zippedTags = useWholeCollectionTags();
 
   const speciesOptions = convertTagsToOptions("species", zippedTags.raceTags);
   const archetypeOptions = convertTagsToOptions("archetype", zippedTags.archetypeTags);

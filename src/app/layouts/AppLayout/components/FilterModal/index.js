@@ -1,17 +1,10 @@
 import { Modal } from "react-bootstrap";
-import FilterField from "./FilterField";
+
 import { useModalStateContext } from "../../contexts/ModalStateProvider";
-import { useFilteredCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
-import { useEffect } from "react";
+import FilterField from "./components/FilterField";
 
 const FilterModal = (props) => {
   const { isFilterOpen, closeFilter } = useModalStateContext();
-
-  // const foo = useFilteredCollectionTags();
-
-  // useEffect(() => {
-  //   console.log("tags", foo);
-  // }, [foo]);
 
   return (
     <Modal keyboard={true} size="lg" show={isFilterOpen} onHide={closeFilter} {...props}>
