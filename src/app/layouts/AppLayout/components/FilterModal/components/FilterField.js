@@ -1,20 +1,10 @@
 import { useEffect, useRef, useState } from "react";
-import { Typeahead } from "react-bootstrap-typeahead";
 
 import useFilterOptions from "../hooks/useFilterOptions";
 import useSelectionFromFilters from "../hooks/useSelectionFromFilters";
 import useUpdateFilters from "../hooks/useUpdateFilters";
 import FilterResults from "./FilterResults";
-import styled from "styled-components";
-
-const StyledTypeahead = styled(Typeahead)`
-  & * .btn-close {
-    color: black;
-    &:hover {
-      color: black;
-    }
-  }
-`;
+import StyledTypeahead from "./StyledTypeahead";
 
 const FilterField = () => {
   const inputRef = useRef();
