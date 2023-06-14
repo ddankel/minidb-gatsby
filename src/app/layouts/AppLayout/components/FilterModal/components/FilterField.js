@@ -18,6 +18,11 @@ const FilterField = () => {
   const options = useFilterOptions();
   const currentSelection = useSelectionFromFilters(options);
 
+  const handleChange = (newSelection) => {
+    setNeedle("");
+    updateFilters(newSelection);
+  };
+
   return (
     <StyledTypeahead
       clearButton={true}
@@ -28,10 +33,7 @@ const FilterField = () => {
       onFocus={(e) => e.target.select()}
       id="miniature-keyboard-filter"
       onInputChange={(e) => setNeedle(e)}
-      onChange={(newSelection) => {
-        setNeedle("");
-        updateFilters(newSelection);
-      }}
+      onChange={handleChange}
       options={options}
       placeholder="Filter"
       selected={currentSelection}
