@@ -4,7 +4,7 @@ import {
   useWholeCollectionTags,
 } from "@/modules/gallery/hooks/useAggregatedTags";
 import TagFilter from "../../TagFilter";
-import zipTags from "../zipTags";
+import zipTags from "../../../utils/zipTags";
 
 const StatusFilter = () => {
   const { paintedTags } = useFilteredCollectionTags();

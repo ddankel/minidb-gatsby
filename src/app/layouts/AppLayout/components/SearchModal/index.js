@@ -1,9 +1,12 @@
 import { Modal } from "react-bootstrap";
 import SearchField from "./SearchField";
+import { useModalStateContext } from "../../contexts/ModalStateProvider";
 
 function SearchModal(props) {
+  const { isSearchOpen, closeSearch } = useModalStateContext();
+
   return (
-    <Modal keyboard={false} size="lg" {...props}>
+    <Modal keyboard={true} size="lg" show={isSearchOpen} onHide={closeSearch} {...props}>
       <Modal.Body>
         <h5>Search by name</h5>
         <SearchField />

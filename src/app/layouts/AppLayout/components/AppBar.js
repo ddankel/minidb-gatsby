@@ -1,9 +1,10 @@
 import { Link } from "gatsby";
 import styled from "styled-components";
 
+import DestktopTooltip from "@/common/components/DesktopTooltip";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { BiSearch as BiSearchIcon } from "react-icons/bi";
-import DestktopTooltip from "@/common/components/DesktopTooltip";
+import { useModalStateContext } from "../contexts/ModalStateProvider";
 
 const StyledNavBar = styled(Navbar).attrs({
   variant: "dark",
@@ -13,7 +14,9 @@ const StyledNavBar = styled(Navbar).attrs({
   margin-bottom: 3rem;
 `;
 
-const AppLayout = ({ onSearch }) => {
+const AppBar = () => {
+  const { openSearch } = useModalStateContext();
+
   return (
     <StyledNavBar>
       <Container>
@@ -21,12 +24,13 @@ const AppLayout = ({ onSearch }) => {
           Miniature DB
         </Navbar.Brand>
         <Nav>
-          <DestktopTooltip id="search-tooltip" variant="info" />
+          <DestktopTooltip id="nav-tooltip" variant="info" />
           <Nav.Link
-            onClick={onSearch}
-            data-tooltip-id="search-tooltip"
+            onClick={openSearch}
+            data-tooltip-id="nav-tooltip"
             data-tooltip-html="Press <kbd>/</kbd> to Search"
             data-tooltip-place="bottom"
+            className="ms-4"
           >
             <BiSearchIcon className="me-2" />
             Search
@@ -37,4 +41,4 @@ const AppLayout = ({ onSearch }) => {
   );
 };
 
-export default AppLayout;
+export default AppBar;

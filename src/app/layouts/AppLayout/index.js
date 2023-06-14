@@ -5,18 +5,20 @@ import theme from "@/app/styles/theme";
 
 import AppBar from "./components/AppBar";
 import ContentContainer from "./components/ContentContainer";
+import FilterModal from "./components/FilterModal";
 import SearchModal from "./components/SearchModal";
-import useSearchModalState from "./hooks/useSearchModalState";
+import { ModalStateProvider } from "./contexts/ModalStateProvider";
 
-const AppLayout = ({ children, variant }) => {
-  const { isModalOpen, openModal, closeModal } = useSearchModalState();
-
+const AppLayout = ({ children, variant, enableFilter = false }) => {
   return (
     <ThemeProvider theme={theme}>
       <SSRProvider>
-        <AppBar onSearch={openModal} />
-        <SearchModal show={isModalOpen} onHide={closeModal} />
-        <ContentContainer variant={variant}>{children}</ContentContainer>
+        <ModalStateProvider enableFilter={enableFilter}>
+          <AppBar />
+          <SearchModal />
+          <FilterModal />
+          <ContentContainer variant={variant}>{children}</ContentContainer>
+        </ModalStateProvider>
       </SSRProvider>
     </ThemeProvider>
   );
