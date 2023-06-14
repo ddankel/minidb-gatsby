@@ -19,8 +19,6 @@ const useSelectionFromFilters = (options) => {
   const lineFilter = useLineFilter();
   const paintedFilter = usePaintedFilter();
 
-  // console.log("OPTIONS", options);
-
   const speciesOptions = options.filter((item) => speciesFilter.includes(item.value));
   const archetypeOptions = options.filter((item) => archetypeFilter.includes(item.value));
   const weaponOptions = options.filter((item) => weaponFilter.includes(item.value));
@@ -28,7 +26,6 @@ const useSelectionFromFilters = (options) => {
   const lineOptions = pickSelectedOptions(options, lineFilter);
   const paintedOptions = pickSelectedOptions(options, paintedFilter);
 
-  // const selectionFromFilters = options.filter((item) => speciesFilter.includes(item.value));
   const selectionFromFilters = [
     ...speciesOptions,
     ...archetypeOptions,

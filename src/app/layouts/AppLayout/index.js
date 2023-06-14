@@ -9,7 +9,7 @@ import FilterModal from "./components/FilterModal";
 import SearchModal from "./components/SearchModal";
 import { ModalStateProvider } from "./contexts/ModalStateProvider";
 
-const AppLayout = ({ children, variant, enableFilter = true }) => {
+const AppLayout = ({ children, variant, enableFilter = false }) => {
   return (
     <ThemeProvider theme={theme}>
       <SSRProvider>

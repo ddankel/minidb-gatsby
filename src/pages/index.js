@@ -9,7 +9,7 @@ const IndexPage = ({ location }) => {
   usePopulateEntireCollectionStore();
 
   return (
-    <AppLayout variant="wide">
+    <AppLayout variant="wide" enableFilter={true}>
       <GalleryPageContent />
     </AppLayout>
   );
