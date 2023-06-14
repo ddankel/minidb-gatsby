@@ -5,6 +5,16 @@ import useFilterOptions from "../hooks/useFilterOptions";
 import useSelectionFromFilters from "../hooks/useSelectionFromFilters";
 import useUpdateFilters from "../hooks/useUpdateFilters";
 import FilterResults from "./FilterResults";
+import styled from "styled-components";
+
+const StyledTypeahead = styled(Typeahead)`
+  & * .btn-close {
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+`;
 
 const FilterField = () => {
   const inputRef = useRef();
@@ -19,7 +29,8 @@ const FilterField = () => {
   const currentSelection = useSelectionFromFilters(options);
 
   return (
-    <Typeahead
+    <StyledTypeahead
+      clearButton={true}
       multiple
       ref={inputRef}
       open={needle.length > 0}
