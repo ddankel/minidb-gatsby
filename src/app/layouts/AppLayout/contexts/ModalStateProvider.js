@@ -10,30 +10,31 @@ export const ModalStateProvider = ({ children, enableFilter = false }) => {
   // If a filter is open, don't process futher keypresses
   const suppressKeyListening = isSearchOpen || isFilterOpen;
 
-  const handleKeyPress = (e) => {
-    // Don't process keypresses if suppressKeyListening
-    if (suppressKeyListening) return;
-
-    switch (e.key) {
-      case "f":
-      case "F":
-        // Don't enable filters unless enableFilter is true
-        if (!enableFilter) return;
-
-        e.preventDefault();
-        setIsFilterOpen(true);
-        break;
-      case "/":
-        e.preventDefault();
-        setIsSearchOpen(true);
-        break;
-    }
-  };
-
   useEffect(() => {
+    const handleKeyPress = (e) => {
+      // Don't process keypresses if suppressKeyListening
+      if (suppressKeyListening) return;
+
+      switch (e.key) {
+        case "f":
+        case "F":
+          // Don't enable filters unless enableFilter is true
+          if (!enableFilter) return;
+
+          e.preventDefault();
+          setIsFilterOpen(true);
+          break;
+        case "/":
+          e.preventDefault();
+          setIsSearchOpen(true);
+          break;
+        default:
+      }
+    };
+
     window.addEventListener("keydown", handleKeyPress);
     return () => window.removeEventListener("keydown", handleKeyPress);
-  }, [handleKeyPress]);
+  }, [enableFilter, suppressKeyListening]);
 
   const state = {
     isSearchOpen,

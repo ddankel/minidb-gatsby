@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
+import { Tooltip } from "react-tooltip";
 import styled from "styled-components";
 
-import DestktopTooltip from "@/common/components/DesktopTooltip";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { BiSearch as BiSearchIcon } from "react-icons/bi";
 import { useModalStateContext } from "../contexts/ModalStateProvider";
@@ -24,7 +24,7 @@ const AppBar = () => {
           Miniature DB
         </Navbar.Brand>
         <Nav>
-          <DestktopTooltip id="nav-tooltip" variant="info" />
+          <Tooltip id="nav-tooltip" variant="info" />
           <Nav.Link
             onClick={openSearch}
             data-tooltip-id="nav-tooltip"

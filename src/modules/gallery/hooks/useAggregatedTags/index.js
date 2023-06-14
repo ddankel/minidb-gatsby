@@ -22,7 +22,7 @@ export const useFilteredCollectionZippedTags = () => {
 
   const zippedTags = {};
 
-  for (const [key, value] of Object.entries(allTags)) {
+  for (const [key] of Object.entries(allTags)) {
     zippedTags[key] = zipTags(allTags[key], filteredTags[key]);
   }
 

@@ -24,6 +24,7 @@ const useCountForOption = ({ type, value }) => {
     case "weapon":
       tagsForType = zippedTags.weaponTags;
       break;
+    default:
   }
 
   const matchingTag = tagsForType.find((item) => item.name === value);
