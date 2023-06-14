@@ -1,9 +1,7 @@
 import { useEntireCollection, useFilteredCollection } from "@/common/hooks/useCollectionStore";
 
+import zipTags from "../../utils/zipTags";
 import aggregateCollectionTags from "./utils/aggregateCollectionTags";
-
-// TODO: move
-import zipTags from "../../components/FilterAccordion/zipTags";
 
 export const useFilteredCollectionTags = () => {
   const collection = useFilteredCollection();
