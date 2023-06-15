@@ -9,6 +9,8 @@ import {
 } from "@/common/hooks/useAggregationStore";
 
 export const useFilteredCollectionTags = () => {
+  throw new Error("bad fxn");
+
   return uFCT();
 
   console.log("useFilteredCollectionTags");

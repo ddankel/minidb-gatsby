@@ -1,5 +1,5 @@
 import { useArchetypeFilter, useFilterActions } from "@/common/hooks/useFilterStore";
-import { useFilteredCollectionTags } from "@/modules/gallery/hooks/useAggregatedTags";
+import { useFilteredCollectionTags } from "@/common/hooks/useAggregationStore";
 import TagFilter from "../../TagFilter";
 
 const ArchetypeFilter = () => {
