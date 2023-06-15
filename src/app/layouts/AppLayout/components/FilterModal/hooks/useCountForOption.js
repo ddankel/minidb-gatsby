@@ -1,7 +1,7 @@
-import { useFilteredCollectionZippedTags } from "@/modules/gallery/hooks/useAggregatedTags";
+import { useZippedCollectionTags } from "@/common/hooks/useAggregationStore";
 
 const useCountForOption = ({ type, value }) => {
-  const zippedTags = useFilteredCollectionZippedTags();
+  const zippedTags = useZippedCollectionTags();
 
   let tagsForType = [];
   switch (type) {

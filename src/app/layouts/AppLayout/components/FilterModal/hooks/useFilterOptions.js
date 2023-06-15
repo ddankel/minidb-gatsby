@@ -15,7 +15,6 @@ const convertTagsToOptions = (type, tags) => {
  * @return  {Array<Object>}
  */
 const useFilterOptions = () => {
-  // const zippedTags = useFilteredCollectionZippedTags();
   const zippedTags = useWholeCollectionTags();
 
   const speciesOptions = convertTagsToOptions("species", zippedTags.raceTags);

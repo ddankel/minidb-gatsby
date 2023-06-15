@@ -23,22 +23,3 @@ export const useWholeCollectionTags = () => {
   const collection = useEntireCollection();
   return aggregateCollectionTags(collection);
 };
-
-export const useFilteredCollectionZippedTags = () => {
-  return useZippedCollectionTags();
-
-  console.log("useFilteredCollectionZippedTags");
-  const filteredCollection = useFilteredCollection();
-  const entireCollection = useEntireCollection();
-
-  const filteredTags = aggregateCollectionTags(filteredCollection);
-  const allTags = aggregateCollectionTags(entireCollection);
-
-  const zippedTags = {};
-
-  for (const [key] of Object.entries(allTags)) {
-    zippedTags[key] = zipTags(allTags[key], filteredTags[key]);
-  }
-
-  return zippedTags;
-};
