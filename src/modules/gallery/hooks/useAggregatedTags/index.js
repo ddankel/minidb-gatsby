@@ -15,11 +15,3 @@ export const useFilteredCollectionTags = () => {
   const collection = useFilteredCollection();
   return aggregateCollectionTags(collection);
 };
-
-export const useWholeCollectionTags = () => {
-  return useEntireCollectionTags();
-
-  console.log("useWholeCollectionTags");
-  const collection = useEntireCollection();
-  return aggregateCollectionTags(collection);
-};
