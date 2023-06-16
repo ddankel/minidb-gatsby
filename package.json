@@ -33,7 +33,7 @@
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
-    "gatsby-plugin-sass": "^6.10.0",
+    "gatsby-plugin-sass": "^6.11.0",
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-plugin-styled-components": "^6.10.0",
     "gatsby-source-filesystem": "^5.10.0",
