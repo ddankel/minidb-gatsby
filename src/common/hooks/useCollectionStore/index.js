@@ -2,7 +2,12 @@ import { create } from "zustand";
 import { devtools, subscribeWithSelector } from "zustand/middleware";
 
 import store from "./store";
-import { filterCollectionWhenFiltersChange } from "./subscriptions";
+import {
+  aggregateEntireCollectionTagsWhenCollectionChanges,
+  aggregateFilteredCollectionTagsWhenCollectionChanges,
+  aggregateZippedCollectionTagsWhenCollectionChanges,
+  filterCollectionWhenFiltersChange,
+} from "./subscriptions";
 
 // Set up store and middleware
 let collectionStore = store;
@@ -15,6 +20,9 @@ export default useCollectionStore;
 
 // Add Subscriptions
 filterCollectionWhenFiltersChange(useCollectionStore);
+aggregateEntireCollectionTagsWhenCollectionChanges(useCollectionStore);
+aggregateFilteredCollectionTagsWhenCollectionChanges(useCollectionStore);
+aggregateZippedCollectionTagsWhenCollectionChanges(useCollectionStore);
 
 // Export hooks
 export const useEntireCollection = () => useCollectionStore((state) => state.entireCollection);

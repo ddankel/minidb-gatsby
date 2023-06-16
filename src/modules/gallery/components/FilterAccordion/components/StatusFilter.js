@@ -1,14 +1,12 @@
 import { useFilterActions, usePaintedFilter } from "@/common/hooks/useFilterStore";
-import {
-  useFilteredCollectionTags,
-  useWholeCollectionTags,
-} from "@/modules/gallery/hooks/useAggregatedTags";
+import { useFilteredCollectionTags } from "@/common/hooks/useAggregationStore";
 import TagFilter from "../../TagFilter";
 import zipTags from "../../../utils/zipTags";
+import { useEntireCollectionTags } from "@/common/hooks/useAggregationStore";
 
 const StatusFilter = () => {
   const { paintedTags } = useFilteredCollectionTags();
-  const { paintedTags: allPaintedTags } = useWholeCollectionTags();
+  const { paintedTags: allPaintedTags } = useEntireCollectionTags();
 
   const paintedFilter = usePaintedFilter();
   const { setPaintedFilter, removePaintedFilter } = useFilterActions();
