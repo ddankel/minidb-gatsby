@@ -5717,7 +5717,7 @@ gatsby-cli@^5.11.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.10.0, gatsby-core-utils@^4.11.0:
+gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.11.0:
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.11.0.tgz#16d300129d0d143a79ad32816b8837630d7e7fae"
   integrity sha512-W7pfrKgBchdk19g802IuPkCA2iJ69lRR1GzkfYjB8d1TuIQqf0l1z0lv7e+2kQqO+uQ5Yt3sGMMN2qMYMWfLXg==
@@ -5867,10 +5867,10 @@ gatsby-plugin-sass@^6.11.0:
     resolve-url-loader "^3.1.5"
     sass-loader "^10.4.1"
 
-gatsby-plugin-sharp@^5.10.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.10.0.tgz#abd9fd8d761a12924fb5876a04609efc130899d4"
-  integrity sha512-hG95JQrpByH8w7Ey25zlFsvgyi99NFmk1+0hmKjMkfh43BxNsTuvhcB2kcbcO2FaZdO9OK89pilRGbLaeA0gew==
+gatsby-plugin-sharp@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-5.11.0.tgz#4a030293278bf7f3869e55536aed011f6008e45b"
+  integrity sha512-/7so6DUiDbTKEwQ/lTzJRIw8wPYLoFkmVOZ8ACXhVQ/2Gq/pDc8ToLgDF1MyPQ40BZcfN2nmsPgHYdq5lFsCTg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     async "^3.2.4"
@@ -5878,11 +5878,11 @@ gatsby-plugin-sharp@^5.10.0:
     debug "^4.3.4"
     filenamify "^4.3.0"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.10.0"
-    gatsby-plugin-utils "^4.10.0"
+    gatsby-core-utils "^4.11.0"
+    gatsby-plugin-utils "^4.11.0"
     lodash "^4.17.21"
     probe-image-size "^7.2.3"
-    semver "^7.5.0"
+    semver "^7.5.1"
     sharp "^0.32.1"
 
 gatsby-plugin-styled-components@^6.11.0:
