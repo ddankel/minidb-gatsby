@@ -14,9 +14,7 @@ let collectionStore = store;
 collectionStore = devtools(collectionStore, { name: "MiniDB Collection Store" });
 collectionStore = subscribeWithSelector(collectionStore);
 
-// TODO: Don't export store as default... move to named for cross-store
-const useCollectionStore = create(collectionStore);
-export default useCollectionStore;
+export const useCollectionStore = create(collectionStore);
 
 // Add Subscriptions
 filterCollectionWhenFiltersChange(useCollectionStore);

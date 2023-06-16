@@ -18,9 +18,7 @@ filterStore = persist(filterStore, {
 filterStore = devtools(filterStore, { name: "MiniDB ZuStore" });
 filterStore = subscribeWithSelector(filterStore);
 
-// TODO: don't export store as default(move to named for cross-store)
-const useFilterStore = create(filterStore);
-export default useFilterStore;
+export const useFilterStore = create(filterStore);
 
 // Add Subscriptions
 updateIsFilteredWhenFiltersChange(useFilterStore);
