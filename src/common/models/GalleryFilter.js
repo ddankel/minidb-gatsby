@@ -24,7 +24,7 @@ class GalleryFilter {
   includes(mini) {
     if (!this._matchesFilterAND(mini.raceTags, this.speciesFilter)) return false;
     if (!this._matchesFilterAND(mini.archetypeTags, this.archetypeFilter)) return false;
-    if (!this._matchesFilterOR(mini.weaponTags, this.weaponFilter)) return false;
+    if (!this._matchesFilterAND(mini.weaponTags, this.weaponFilter)) return false;
     if (!this._matchesFilterAND(mini.armorTags, this.armorFilter)) return false;
     if (!this._matchesLine(mini.fullLine)) return false;
     if (!this._matchesFilterOR([mini.paintedState], this.paintedFilter)) return false;

@@ -21,3 +21,14 @@ h5 {
 h6 {
   font-size: 1.15rem;
 }
+
+kbd {
+  border: 1px solid var(--bs-nav-link-color);
+  background-color: transparent;
+  color: var(--bs-nav-link-color);
+}
+
+:root {
+  --rt-color-info: #3498db;
+  --rt-opacity: 0.9;
+}

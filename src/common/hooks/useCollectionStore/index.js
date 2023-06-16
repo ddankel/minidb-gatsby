@@ -2,19 +2,25 @@ import { create } from "zustand";
 import { devtools, subscribeWithSelector } from "zustand/middleware";
 
 import store from "./store";
-import { filterCollectionWhenFiltersChange } from "./subscriptions";
+import {
+  aggregateEntireCollectionTagsWhenCollectionChanges,
+  aggregateFilteredCollectionTagsWhenCollectionChanges,
+  aggregateZippedCollectionTagsWhenCollectionChanges,
+  filterCollectionWhenFiltersChange,
+} from "./subscriptions";
 
 // Set up store and middleware
 let collectionStore = store;
 collectionStore = devtools(collectionStore, { name: "MiniDB Collection Store" });
 collectionStore = subscribeWithSelector(collectionStore);
 
-// TODO: Don't export store as default... move to named for cross-store
-const useCollectionStore = create(collectionStore);
-export default useCollectionStore;
+export const useCollectionStore = create(collectionStore);
 
 // Add Subscriptions
 filterCollectionWhenFiltersChange(useCollectionStore);
+aggregateEntireCollectionTagsWhenCollectionChanges(useCollectionStore);
+aggregateFilteredCollectionTagsWhenCollectionChanges(useCollectionStore);
+aggregateZippedCollectionTagsWhenCollectionChanges(useCollectionStore);
 
 // Export hooks
 export const useEntireCollection = () => useCollectionStore((state) => state.entireCollection);
