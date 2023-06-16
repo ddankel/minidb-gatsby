@@ -2,31 +2,32 @@ const Miniature = require("./src/common/models/Miniature");
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
-  const typeDefs = `
-  type MarkdownRemark implements Node @infer {
-    frontmatter: Frontmatter!
-  }
+  const typeDefs = [
+    `type MarkdownRemark implements Node @dontInfer {
+      frontmatter: Frontmatter!
+    }`,
 
-  type Frontmatter implements Node {
-    slug: String!
-    name: String!
-    sku: String
-    line: [String]
-    painted: String
-    status: String
-    race: [String]
-    archetype: [String]
-    weapons: [String]
-    armor: [String]
-    recipes: [String]
-    quantity: Int
-    minidb: MiniDB
-  }
+    `type Frontmatter implements Node @dontInfer {
+      slug: String!
+      name: String!
+      sku: String
+      line: [String]
+      painted: String
+      status: String
+      race: [String]
+      archetype: [String]
+      weapons: [String]
+      armor: [String]
+      recipes: [String]
+      quantity: Int
+      minidb: MiniDB
+      photos: [File!]! @fileByRelativePath
+    }`,
 
-  type MiniDB implements Node @infer {
-    status: String
-  }
-  `;
+    `type MiniDB implements Node @infer {
+      status: String
+    }`,
+  ];
   createTypes(typeDefs);
 };
 
