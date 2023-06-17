@@ -2,12 +2,12 @@ import GalleryFilter from "@/common/models/GalleryFilter";
 
 const store = (set, get) => ({
   entireCollection: [],
-  galleyFilter: undefined,
+  galleryFilter: undefined,
   filteredCollection: [],
 
   actions: {
     setEntireCollection: (value) => set({ entireCollection: value }),
-    setGalleryFilter: (value) => set({ galleyFilter: value }),
+    setGalleryFilter: (value) => set({ galleryFilter: value }),
     setFilteredCollection: (value) => set({ filteredCollection: value }),
   },
 

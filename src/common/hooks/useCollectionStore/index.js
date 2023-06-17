@@ -24,7 +24,7 @@ aggregateZippedCollectionTagsWhenCollectionChanges(useCollectionStore);
 
 // Export hooks
 export const useEntireCollection = () => useCollectionStore((state) => state.entireCollection);
-export const useGalleryFilter = () => useCollectionStore((state) => state.galleyFilter);
+export const useGalleryFilter = () => useCollectionStore((state) => state.galleryFilter);
 export const useFilteredCollection = () => useCollectionStore((state) => state.filteredCollection);
 
 export const useCollectionActions = () => useCollectionStore((state) => state.actions);

@@ -1,6 +1,6 @@
-import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
-
 import { useFilteredCollection } from "@/common/hooks/useCollectionStore";
+
+import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
 import ActiveFilters from "../components/ActiveFilters";
 import DesktopMenu from "../components/DesktopMenu";
 import Gallery from "../components/Gallery";
