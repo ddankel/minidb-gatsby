@@ -1,6 +1,11 @@
 import { shallow } from "zustand/shallow";
 import { useAggregationStore } from "../useAggregationStore";
 
+const subscriptionOptions = {
+  equalityFn: shallow,
+  fireImmediately: true,
+};
+
 /**
  * @see https://github.com/pmndrs/zustand#using-subscribe-with-selector
  */
@@ -12,10 +17,7 @@ export const filterCollectionWhenFiltersChange = (useCollectionStore) => {
       const galleryFilter = token[0];
       if (!!galleryFilter) useCollectionStore.getState().triggers.filterCollection();
     },
-    {
-      equalityFn: shallow,
-      fireImmediately: true,
-    }
+    subscriptionOptions
   );
 };
 
@@ -28,10 +30,7 @@ export const aggregateEntireCollectionTagsWhenCollectionChanges = (useCollection
 
       useAggregationStore.getState().triggers.aggregateEntireCollectionTags(entireCollection);
     },
-    {
-      equalityFn: shallow,
-      fireImmediately: true,
-    }
+    subscriptionOptions
   );
 };
 
@@ -44,10 +43,7 @@ export const aggregateFilteredCollectionTagsWhenCollectionChanges = (useCollecti
 
       useAggregationStore.getState().triggers.aggregateFilteredCollectionTags(filteredCollection);
     },
-    {
-      equalityFn: shallow,
-      fireImmediately: true,
-    }
+    subscriptionOptions
   );
 };
 
@@ -62,9 +58,6 @@ export const aggregateZippedCollectionTagsWhenCollectionChanges = (useCollection
         .getState()
         .triggers.aggregateZippedColelctionTags({ filteredCollection, entireCollection });
     },
-    {
-      equalityFn: shallow,
-      fireImmediately: true,
-    }
+    subscriptionOptions
   );
 };

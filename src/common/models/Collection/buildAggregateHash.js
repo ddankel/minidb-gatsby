@@ -1,35 +1,5 @@
 import _ from "lodash";
 
-class Collection {
-  #miniatures = [];
-
-  constructor(miniatures) {
-    this.#miniatures = miniatures;
-  }
-
-  get isEmpty() {
-    return !this.#miniatures.length;
-  }
-
-  aggregateTags() {
-    return this.isEmpty ? {} : buildAggregateHash(this.#miniatures);
-  }
-
-  applyFilter(galleryFilter) {
-    if (!galleryFilter) return;
-
-    return this.#miniatures.filter((item) => galleryFilter.includes(item));
-  }
-
-  toArray() {
-    return this.#miniatures;
-  }
-}
-
-export default Collection;
-
-//////////////////////
-
 /**
  * Aggregate all tag categories across a collection
  *
@@ -47,6 +17,8 @@ const buildAggregateHash = (collection) => {
     lines: aggregateTagSet(collectLines(collection.map((mini) => mini.lineArray))),
   };
 };
+
+export default buildAggregateHash;
 
 /**
  * Aggregate and count an array of tags
