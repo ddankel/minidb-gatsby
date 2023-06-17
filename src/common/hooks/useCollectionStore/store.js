@@ -2,13 +2,13 @@ import GalleryFilter from "@/common/models/GalleryFilter";
 
 const store = (set, get) => ({
   entireCollectionData: [],
-  galleryFilter: undefined,
   filteredCollectionData: [],
+  galleryFilter: undefined,
 
   actions: {
     setEntireCollection: (value) => set({ entireCollectionData: value }),
-    setGalleryFilter: (value) => set({ galleryFilter: value }),
     setFilteredCollection: (value) => set({ filteredCollectionData: value }),
+    setGalleryFilter: (value) => set({ galleryFilter: value }),
   },
 
   triggers: {

@@ -1,6 +1,6 @@
 import { Button, Modal } from "react-bootstrap";
 
-import { useFilteredCollectionData } from "@/common/hooks/useCollectionStore";
+import { useFilteredCollection } from "@/common/hooks/useCollections";
 import { useIsFiltered } from "@/common/hooks/useFilterStore";
 
 import ActiveFilters from "../../ActiveFilters";
@@ -9,8 +9,8 @@ import { FlexWrap } from "../index.styled";
 import ResultCount from "./ResultCount";
 
 const FilterModal = ({ show, onHide }) => {
+  const filteredCollection = useFilteredCollection();
   const isFiltered = useIsFiltered();
-  const matches = useFilteredCollectionData();
 
   return (
     <Modal show={show} fullscreen={"md-down"} onHide={onHide} scrollable={true}>
@@ -23,7 +23,7 @@ const FilterModal = ({ show, onHide }) => {
       <Modal.Footer style={{ justifyContent: "flex-start" }}>
         {isFiltered && <ActiveFilters />}
         <FlexWrap>
-          <ResultCount count={matches.length} />
+          <ResultCount count={filteredCollection.length} />
           <Button onClick={onHide}>Apply</Button>
         </FlexWrap>
       </Modal.Footer>

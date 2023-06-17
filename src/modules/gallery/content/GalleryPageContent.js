@@ -1,5 +1,4 @@
-import { useFilteredCollectionData } from "@/common/hooks/useCollectionStore";
-
+import { useFilteredCollection } from "@/common/hooks/useCollections";
 import ActiveFilters from "../components/ActiveFilters";
 import DesktopMenu from "../components/DesktopMenu";
 import Gallery from "../components/Gallery";
@@ -7,8 +6,9 @@ import MobileMenu from "../components/MobileMenu";
 import { FlexContainer, GalleryContainer } from "./GalleryPageContent.styled";
 
 const GalleryPageContent = () => {
-  const filteredCollectionData = useFilteredCollectionData();
-  const hasResults = !!filteredCollectionData.length;
+  const filteredCollection = useFilteredCollection();
+
+  const hasResults = !!filteredCollection.length;
 
   return (
     <>
@@ -17,7 +17,7 @@ const GalleryPageContent = () => {
         <DesktopMenu />
         <GalleryContainer>
           <ActiveFilters />
-          {hasResults && <Gallery minis={filteredCollectionData} />}
+          {hasResults && <Gallery collection={filteredCollection} />}
           {hasResults || <div>No matching results.</div>}
         </GalleryContainer>
       </FlexContainer>

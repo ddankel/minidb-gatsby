@@ -12,8 +12,8 @@ class Collection {
    *
    * @return  {Boolean}
    */
-  get isEmpty() {
-    return !this.#miniatures.length;
+  get length() {
+    return this.#miniatures.length;
   }
 
   /**
@@ -36,6 +36,35 @@ class Collection {
     if (!galleryFilter) return;
 
     return this.#miniatures.filter((item) => galleryFilter.includes(item));
+  }
+
+  /**
+   * Find the miniature immediately before and after the provided miniature slug
+   *
+   * @param   {string}  slug
+   *
+   * @return  {Object<{prevMini, nextMini}>}
+   */
+  findAdjacentMinis(slug) {
+    const thisIndex = this.#miniatures.findIndex((mini) => mini.slug === slug);
+    const prevIndex = (thisIndex + this.length - 1) % this.length;
+    const nextIndex = (thisIndex + 1) % this.length;
+
+    const prevMini = this.#miniatures[prevIndex];
+    const nextMini = this.#miniatures[nextIndex];
+
+    return { prevMini, nextMini };
+  }
+
+  /**
+   * Find the miniature in the collection with the provided slug
+   *
+   * @param   {string}    slug
+   *
+   * @return  {Miniature, undefined}
+   */
+  findMini(slug) {
+    return this.#miniatures.find((mini) => mini.slug === slug);
   }
 
   /**
