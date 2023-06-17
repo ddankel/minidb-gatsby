@@ -1,6 +1,6 @@
 import { Button, Modal } from "react-bootstrap";
 
-import { useFilteredCollection } from "@/common/hooks/useCollectionStore";
+import { useFilteredCollectionData } from "@/common/hooks/useCollectionStore";
 import { useIsFiltered } from "@/common/hooks/useFilterStore";
 
 import ActiveFilters from "../../ActiveFilters";
@@ -10,7 +10,7 @@ import ResultCount from "./ResultCount";
 
 const FilterModal = ({ show, onHide }) => {
   const isFiltered = useIsFiltered();
-  const matches = useFilteredCollection();
+  const matches = useFilteredCollectionData();
 
   return (
     <Modal show={show} fullscreen={"md-down"} onHide={onHide} scrollable={true}>

@@ -9,16 +9,16 @@ const store = (set, get) => ({
   actions: {},
 
   triggers: {
-    aggregateFilteredCollectionTags: (filteredCollection) => {
-      set({ filteredCollectionTags: aggregateCollectionTags(filteredCollection) });
+    aggregateFilteredCollectionTags: (filteredCollectionData) => {
+      set({ filteredCollectionTags: aggregateCollectionTags(filteredCollectionData) });
     },
 
     aggregateEntireCollectionTags: (entireCollectionData) => {
       set({ entireCollectionTags: aggregateCollectionTags(entireCollectionData) });
     },
 
-    aggregateZippedColelctionTags: ({ filteredCollection, entireCollectionData }) => {
-      const filteredTags = aggregateCollectionTags(filteredCollection);
+    aggregateZippedColelctionTags: ({ filteredCollectionData, entireCollectionData }) => {
+      const filteredTags = aggregateCollectionTags(filteredCollectionData);
       const allTags = aggregateCollectionTags(entireCollectionData);
 
       const zippedTags = {};

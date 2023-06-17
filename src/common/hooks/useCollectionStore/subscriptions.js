@@ -36,12 +36,14 @@ export const aggregateEntireCollectionTagsWhenCollectionChanges = (useCollection
 
 export const aggregateFilteredCollectionTagsWhenCollectionChanges = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => state.filteredCollection,
+    (state) => state.filteredCollectionData,
     (token, _previousToken) => {
-      const filteredCollection = token;
-      if (!filteredCollection) return;
+      const filteredCollectionData = token;
+      if (!filteredCollectionData) return;
 
-      useAggregationStore.getState().triggers.aggregateFilteredCollectionTags(filteredCollection);
+      useAggregationStore
+        .getState()
+        .triggers.aggregateFilteredCollectionTags(filteredCollectionData);
     },
     subscriptionOptions
   );
@@ -49,14 +51,14 @@ export const aggregateFilteredCollectionTagsWhenCollectionChanges = (useCollecti
 
 export const aggregateZippedCollectionTagsWhenCollectionChanges = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => [state.entireCollectionData, state.filteredCollection],
+    (state) => [state.entireCollectionData, state.filteredCollectionData],
     (token, _previousToken) => {
-      const [entireCollectionData, filteredCollection] = token;
-      if (!entireCollectionData || !filteredCollection) return;
+      const [entireCollectionData, filteredCollectionData] = token;
+      if (!entireCollectionData || !filteredCollectionData) return;
 
       useAggregationStore
         .getState()
-        .triggers.aggregateZippedColelctionTags({ filteredCollection, entireCollectionData });
+        .triggers.aggregateZippedColelctionTags({ filteredCollectionData, entireCollectionData });
     },
     subscriptionOptions
   );
