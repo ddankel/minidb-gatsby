@@ -23,7 +23,8 @@ aggregateFilteredCollectionTagsWhenCollectionChanges(useCollectionStore);
 aggregateZippedCollectionTagsWhenCollectionChanges(useCollectionStore);
 
 // Export hooks
-export const useEntireCollection = () => useCollectionStore((state) => state.entireCollection);
+export const useEntireCollectionData = () =>
+  useCollectionStore((state) => state.entireCollectionData);
 export const useGalleryFilter = () => useCollectionStore((state) => state.galleryFilter);
 export const useFilteredCollection = () => useCollectionStore((state) => state.filteredCollection);
 

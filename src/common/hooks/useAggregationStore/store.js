@@ -13,13 +13,13 @@ const store = (set, get) => ({
       set({ filteredCollectionTags: aggregateCollectionTags(filteredCollection) });
     },
 
-    aggregateEntireCollectionTags: (entireCollection) => {
-      set({ entireCollectionTags: aggregateCollectionTags(entireCollection) });
+    aggregateEntireCollectionTags: (entireCollectionData) => {
+      set({ entireCollectionTags: aggregateCollectionTags(entireCollectionData) });
     },
 
-    aggregateZippedColelctionTags: ({ filteredCollection, entireCollection }) => {
+    aggregateZippedColelctionTags: ({ filteredCollection, entireCollectionData }) => {
       const filteredTags = aggregateCollectionTags(filteredCollection);
-      const allTags = aggregateCollectionTags(entireCollection);
+      const allTags = aggregateCollectionTags(entireCollectionData);
 
       const zippedTags = {};
 

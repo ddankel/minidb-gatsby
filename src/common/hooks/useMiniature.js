@@ -1,4 +1,4 @@
-import { useEntireCollection } from "./useCollectionStore";
+import { useEntireCollectionData } from "./useCollectionStore";
 
 /**
  * Fetch an pre-populated instance of the Miniature model that matches the provided slug
@@ -8,13 +8,13 @@ import { useEntireCollection } from "./useCollectionStore";
  * @return  {Miniature}
  */
 const useMiniature = (slug) => {
-  const entireCollection = useEntireCollection();
+  const entireCollectionData = useEntireCollectionData();
 
   if (!slug) {
     throw new Error("useMiniature requires a slug passed in as an argument");
   }
 
-  return entireCollection.find((mini) => mini.slug === slug);
+  return entireCollectionData.find((mini) => mini.slug === slug);
 };
 
 export default useMiniature;

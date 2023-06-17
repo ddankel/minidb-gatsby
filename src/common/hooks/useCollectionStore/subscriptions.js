@@ -12,7 +12,7 @@ const subscriptionOptions = {
 
 export const filterCollectionWhenFiltersChange = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => [state.galleryFilter, state.entireCollection],
+    (state) => [state.galleryFilter, state.entireCollectionData],
     (token, _previousToken) => {
       const galleryFilter = token[0];
       if (!!galleryFilter) useCollectionStore.getState().triggers.filterCollection();
@@ -23,12 +23,12 @@ export const filterCollectionWhenFiltersChange = (useCollectionStore) => {
 
 export const aggregateEntireCollectionTagsWhenCollectionChanges = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => state.entireCollection,
+    (state) => state.entireCollectionData,
     (token, _previousToken) => {
-      const entireCollection = token;
-      if (!entireCollection) return;
+      const entireCollectionData = token;
+      if (!entireCollectionData) return;
 
-      useAggregationStore.getState().triggers.aggregateEntireCollectionTags(entireCollection);
+      useAggregationStore.getState().triggers.aggregateEntireCollectionTags(entireCollectionData);
     },
     subscriptionOptions
   );
@@ -49,14 +49,14 @@ export const aggregateFilteredCollectionTagsWhenCollectionChanges = (useCollecti
 
 export const aggregateZippedCollectionTagsWhenCollectionChanges = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => [state.entireCollection, state.filteredCollection],
+    (state) => [state.entireCollectionData, state.filteredCollection],
     (token, _previousToken) => {
-      const [entireCollection, filteredCollection] = token;
-      if (!entireCollection || !filteredCollection) return;
+      const [entireCollectionData, filteredCollection] = token;
+      if (!entireCollectionData || !filteredCollection) return;
 
       useAggregationStore
         .getState()
-        .triggers.aggregateZippedColelctionTags({ filteredCollection, entireCollection });
+        .triggers.aggregateZippedColelctionTags({ filteredCollection, entireCollectionData });
     },
     subscriptionOptions
   );
