@@ -2,5 +2,16 @@
   "entry": ["src/pages/**/*.js", "src/templates/**/*.js"],
   "extensions": [".ts", ".js"],
   "ignorePatterns": ["**/node_modules/**", "private/**"],
-  "ignoreUnused": ["bootstrap", "bootstrap-icons", "bootswatch"]
+  "ignoreUnused": [
+    "bootstrap",
+    "bootstrap-icons",
+    "bootswatch",
+    "gatsby-plugin-alias-imports",
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-styled-components",
+    "gatsby-transformer-remark",
+    "gatsby-transformer-sharp"
+  ]
 }
