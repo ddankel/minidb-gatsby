@@ -1,4 +1,4 @@
-import aggregateCollectionTags from "./utils/actions/aggregateCollectionTags";
+import Collection from "@/common/models/Collection";
 import zipTags from "@/modules/gallery/utils/zipTags";
 
 const store = (set, get) => ({
@@ -10,16 +10,22 @@ const store = (set, get) => ({
 
   triggers: {
     aggregateFilteredCollectionTags: (filteredCollectionData) => {
-      set({ filteredCollectionTags: aggregateCollectionTags(filteredCollectionData) });
+      const filteredCollection = new Collection(filteredCollectionData);
+      const aggregatedTags = filteredCollection.aggregateTags();
+      set({ filteredCollectionTags: aggregatedTags });
     },
 
     aggregateEntireCollectionTags: (entireCollectionData) => {
-      set({ entireCollectionTags: aggregateCollectionTags(entireCollectionData) });
+      const entireCollection = new Collection(entireCollectionData);
+      const aggregatedTags = entireCollection.aggregateTags();
+      set({ entireCollectionTags: aggregatedTags });
     },
 
     aggregateZippedColelctionTags: ({ filteredCollectionData, entireCollectionData }) => {
-      const filteredTags = aggregateCollectionTags(filteredCollectionData);
-      const allTags = aggregateCollectionTags(entireCollectionData);
+      const filteredCollection = new Collection(filteredCollectionData);
+      const filteredTags = filteredCollection.aggregateTags();
+      const entireCollection = new Collection(entireCollectionData);
+      const allTags = entireCollection.aggregateTags();
 
       const zippedTags = {};
 
