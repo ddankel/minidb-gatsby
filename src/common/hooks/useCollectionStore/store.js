@@ -1,14 +1,14 @@
 import GalleryFilter from "@/common/models/GalleryFilter";
 
 const store = (set, get) => ({
-  entireCollection: [],
-  galleyFilter: undefined,
-  filteredCollection: [],
+  entireCollectionData: [],
+  filteredCollectionData: [],
+  galleryFilter: undefined,
 
   actions: {
-    setEntireCollection: (value) => set({ entireCollection: value }),
-    setGalleryFilter: (value) => set({ galleyFilter: value }),
-    setFilteredCollection: (value) => set({ filteredCollection: value }),
+    setEntireCollection: (value) => set({ entireCollectionData: value }),
+    setFilteredCollection: (value) => set({ filteredCollectionData: value }),
+    setGalleryFilter: (value) => set({ galleryFilter: value }),
   },
 
   triggers: {
@@ -16,10 +16,10 @@ const store = (set, get) => ({
       const galleryFilter = get().galleryFilter;
       if (!galleryFilter) return;
 
-      const filteredCollection = get().entireCollection.filter((item) =>
+      const filteredCollectionData = get().entireCollectionData.filter((item) =>
         galleryFilter.includes(item)
       );
-      set({ filteredCollection });
+      set({ filteredCollectionData });
     },
 
     updateGalleryFilter: (filters) => set({ galleryFilter: new GalleryFilter(filters) }),

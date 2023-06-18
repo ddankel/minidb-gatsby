@@ -1,17 +1,17 @@
 import { useEffect } from "react";
-import { useCollectionActions, useEntireCollection } from "./useCollectionStore";
+import { useCollectionActions, useEntireCollectionData } from "./useCollectionStore";
 import useMiniatureCollectionQuery from "./useMiniatureCollectionQuery";
 
 const usePopulateEntireCollectionStore = () => {
   const collection = useMiniatureCollectionQuery();
-  const entireCollection = useEntireCollection();
+  const entireCollectionData = useEntireCollectionData();
   const { setEntireCollection } = useCollectionActions();
 
   useEffect(() => {
-    if (entireCollection.length && collection.length) return;
+    if (entireCollectionData.length && collection.length) return;
 
     setEntireCollection(collection);
-  }, [collection, entireCollection, setEntireCollection]);
+  }, [collection, entireCollectionData, setEntireCollection]);
 };
 
 export default usePopulateEntireCollectionStore;
