@@ -1,0 +1,6 @@
+{
+  "entry": ["src/pages/**/*.js", "src/templates/**/*.js"],
+  "extensions": [".ts", ".js"],
+  "ignorePatterns": ["**/node_modules/**", "private/**"],
+  "ignoreUnused": ["bootstrap", "bootstrap-icons", "bootswatch"]
+}
