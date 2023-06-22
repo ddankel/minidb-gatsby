@@ -22,7 +22,7 @@ class Collection {
    * @return  {Object}  Tag aggregation
    */
   aggregateTags() {
-    return this.isEmpty ? {} : buildAggregateHash(this.#miniatures);
+    return this.length ? buildAggregateHash(this.#miniatures) : {};
   }
 
   /**
