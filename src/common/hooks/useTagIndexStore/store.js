@@ -18,8 +18,6 @@ const store = (set, get) => ({
     aggregateEntireCollectionTags: (entireCollectionData) => {
       const entireCollection = new Collection(entireCollectionData);
       const tagIndex = entireCollection.indexTags();
-      console.log("tagIndex", tagIndex);
-
       set({ entireCollectionTagData: tagIndex.toHash() });
     },
 
