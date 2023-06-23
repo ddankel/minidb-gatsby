@@ -1,4 +1,5 @@
 import buildAggregateHash from "./buildAggregateHash";
+import { zipAllTags } from "./zipTags";
 
 class TagIndex {
   #speciesTags = [];
@@ -52,10 +53,10 @@ export default TagIndex;
 
 TagAggregation.fromCollection = function (collection) {
   const dataHash = buildAggregateHash(collection);
-  return new TagAggregation(dataHash);
+  return new TagIndex(dataHash);
 };
 
-TagAggregation.zipTogether = function (a, b) {
-  // taghash = zip(a,b)
-  // return new TagAggregation(taghash)
+TagAggregation.zipTogether = function (allTags, filteredTags) {
+  const dataHash = zipAllTags(allTags, filteredTags);
+  return new TagIndex(dataHash);
 };

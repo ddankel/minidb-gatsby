@@ -35,7 +35,7 @@
  * @return  {Array<Object>}               Array with entry for all tags in the
  *                                        whole collection
  */
-const zipTags = (allTags, filteredTags) => {
+export const zipTags = (allTags, filteredTags) => {
   if (!filteredTags) return allTags;
 
   const result = allTags.map(({ name }) => {
@@ -46,4 +46,18 @@ const zipTags = (allTags, filteredTags) => {
   return result;
 };
 
-export default zipTags;
+/**
+ * Call zipTags on all keys in the allTags object
+ *
+ * @param   {Object}  allTags
+ * @param   {Object}  filteredTags
+ *
+ * @return  {Object}
+ */
+export const zipAllTags = (allTags, filteredTags) => {
+  const zippedTags = {};
+  for (const [key] of Object.entries(allTags)) {
+    zippedTags[key] = zipTags(allTags[key], filteredTags[key]);
+  }
+  return zippedTags;
+};
