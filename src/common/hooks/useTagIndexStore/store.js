@@ -21,15 +21,10 @@ const store = (set, get) => ({
       set({ entireCollectionTagData: tagIndex.toHash() });
     },
 
-    aggregateZippedColelctionTags: ({ filteredCollectionData, entireCollectionData }) => {
-      // TODO: update to use a class methhod on the index
-      const filteredCollection = new Collection(filteredCollectionData);
-      const filteredTags = filteredCollection.aggregateTags();
-      const entireCollection = new Collection(entireCollectionData);
-      const allTags = entireCollection.aggregateTags();
-
+    aggregateZippedCollectionTags: ({ filteredCollectionData, entireCollectionData }) => {
+      const filteredTags = new Collection(filteredCollectionData).indexTags();
+      const allTags = new Collection(entireCollectionData).indexTags();
       const zippedIndex = TagIndex.zipTogether(allTags, filteredTags);
-
       set({ zippedCollectionTagData: zippedIndex.toHash() });
     },
   },

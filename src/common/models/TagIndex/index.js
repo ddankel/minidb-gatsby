@@ -51,6 +51,15 @@ class TagIndex {
 
 export default TagIndex;
 
+TagIndex.tagKeys = [
+  "speciesTags",
+  "archetypeTags",
+  "weaponTags",
+  "armorTags",
+  "statusTags",
+  "lines",
+];
+
 TagIndex.fromCollection = function (collection) {
   const dataHash = buildAggregateHash(collection);
   return new TagIndex(dataHash);

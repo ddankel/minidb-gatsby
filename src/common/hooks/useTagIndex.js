@@ -10,7 +10,7 @@ export const useEntireCollectionTagIndex = () => {
   return new TagIndex(tagData);
 };
 
-export const useFilterCollectionTagIndex = () => {
+export const useFilteredCollectionTagIndex = () => {
   const tagData = useFilteredCollectionTagData();
   return new TagIndex(tagData);
 };

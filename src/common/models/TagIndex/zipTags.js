@@ -1,3 +1,5 @@
+import TagIndex from ".";
+
 /**
  * Zip tags together to display filters
  *
@@ -56,7 +58,7 @@ export const zipTags = (allTags, filteredTags) => {
  */
 export const zipAllTags = (allTags, filteredTags) => {
   const zippedTags = {};
-  for (const [key] of Object.entries(allTags)) {
+  for (const key of TagIndex.tagKeys) {
     zippedTags[key] = zipTags(allTags[key], filteredTags[key]);
   }
   return zippedTags;

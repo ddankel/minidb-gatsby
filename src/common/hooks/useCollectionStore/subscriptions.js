@@ -62,11 +62,11 @@ export const aggregateZippedCollectionTagsWhenCollectionChanges = (useCollection
 
       useAggregationStore
         .getState()
-        .triggers.aggregateZippedColelctionTags({ filteredCollectionData, entireCollectionData });
+        .triggers.aggregateZippedCollectionTags({ filteredCollectionData, entireCollectionData });
 
       useTagIndexStore
         .getState()
-        .triggers.aggregateZippedColelctionTags({ filteredCollectionData, entireCollectionData });
+        .triggers.aggregateZippedCollectionTags({ filteredCollectionData, entireCollectionData });
     },
     subscriptionOptions
   );

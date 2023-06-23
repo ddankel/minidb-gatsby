@@ -11,11 +11,11 @@ const buildAggregateHash = (collection) => {
   if (!collection.length) return {};
 
   return {
-    raceTags: aggregateTagSet(collection.map((mini) => mini.raceTags)),
+    speciesTags: aggregateTagSet(collection.map((mini) => mini.raceTags)),
     archetypeTags: aggregateTagSet(collection.map((mini) => mini.archetypeTags)),
     weaponTags: aggregateTagSet(collection.map((mini) => mini.weaponTags)),
     armorTags: aggregateTagSet(collection.map((mini) => mini.armorTags)),
-    paintedTags: aggregateTagSet(collection.map((mini) => mini.paintedState)),
+    statusTags: aggregateTagSet(collection.map((mini) => mini.paintedState)),
     lines: aggregateTagSet(collectLines(collection.map((mini) => mini.lineArray))),
   };
 };

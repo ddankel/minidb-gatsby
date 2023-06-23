@@ -21,7 +21,7 @@ const store = (set, get) => ({
       set({ entireCollectionTags: aggregatedTags });
     },
 
-    aggregateZippedColelctionTags: ({ filteredCollectionData, entireCollectionData }) => {
+    aggregateZippedCollectionTags: ({ filteredCollectionData, entireCollectionData }) => {
       const filteredCollection = new Collection(filteredCollectionData);
       const filteredTags = filteredCollection.aggregateTags();
       const entireCollection = new Collection(entireCollectionData);
