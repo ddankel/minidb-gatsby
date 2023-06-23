@@ -1,4 +1,5 @@
 import Collection from "@/common/models/Collection";
+import TagIndex from "@/common/models/TagIndex";
 
 const store = (set, get) => ({
   filteredCollectionTagData: {},
@@ -17,6 +18,8 @@ const store = (set, get) => ({
     aggregateEntireCollectionTags: (entireCollectionData) => {
       const entireCollection = new Collection(entireCollectionData);
       const tagIndex = entireCollection.indexTags();
+      console.log("tagIndex", tagIndex);
+
       set({ entireCollectionTagData: tagIndex.toHash() });
     },
 
@@ -27,7 +30,7 @@ const store = (set, get) => ({
       const entireCollection = new Collection(entireCollectionData);
       const allTags = entireCollection.aggregateTags();
 
-      const zippedIndex = TagIndex.zipTags(allTags, filteredTags);
+      const zippedIndex = TagIndex.zipTogether(allTags, filteredTags);
 
       set({ zippedCollectionTagData: zippedIndex.toHash() });
     },

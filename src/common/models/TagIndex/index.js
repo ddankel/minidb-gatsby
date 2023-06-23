@@ -51,12 +51,12 @@ class TagIndex {
 
 export default TagIndex;
 
-TagAggregation.fromCollection = function (collection) {
+TagIndex.fromCollection = function (collection) {
   const dataHash = buildAggregateHash(collection);
   return new TagIndex(dataHash);
 };
 
-TagAggregation.zipTogether = function (allTags, filteredTags) {
+TagIndex.zipTogether = function (allTags, filteredTags) {
   const dataHash = zipAllTags(allTags, filteredTags);
   return new TagIndex(dataHash);
 };

@@ -8,6 +8,8 @@ import _ from "lodash";
  * @return  {Object}             Hashed tag aggregations
  */
 const buildAggregateHash = (collection) => {
+  if (!collection.length) return {};
+
   return {
     raceTags: aggregateTagSet(collection.map((mini) => mini.raceTags)),
     archetypeTags: aggregateTagSet(collection.map((mini) => mini.archetypeTags)),
