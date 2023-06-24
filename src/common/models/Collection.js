@@ -1,5 +1,4 @@
-import TagIndex from "../TagIndex";
-import buildAggregateHash from "./buildAggregateHash";
+import TagIndex from "./TagIndex";
 
 class Collection {
   #miniatures = [];
