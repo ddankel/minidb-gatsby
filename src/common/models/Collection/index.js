@@ -1,3 +1,4 @@
+import TagIndex from "../TagIndex";
 import buildAggregateHash from "./buildAggregateHash";
 
 class Collection {
@@ -17,12 +18,12 @@ class Collection {
   }
 
   /**
-   * Aggregate and count tags on miniatures in this collection
+   * Create a TagIndex instance from this model to index and count tags over the collection
    *
-   * @return  {Object}  Tag aggregation
+   * @return  {TagIndex}
    */
-  aggregateTags() {
-    return this.isEmpty ? {} : buildAggregateHash(this.#miniatures);
+  indexTags() {
+    return TagIndex.fromCollection(this);
   }
 
   /**
@@ -65,6 +66,17 @@ class Collection {
    */
   findMini(slug) {
     return this.#miniatures.find((mini) => mini.slug === slug);
+  }
+
+  /**
+   * Map the provided function across the array of Miniatures in this collection
+   *
+   * @param   {Function}  mapFunction
+   *
+   * @return  {Array}
+   */
+  map(mapFunction) {
+    return this.#miniatures.map(mapFunction);
   }
 
   /**

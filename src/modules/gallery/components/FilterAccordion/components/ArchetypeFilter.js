@@ -1,9 +1,9 @@
 import { useArchetypeFilter, useFilterActions } from "@/common/hooks/useFilterStore";
-import { useFilteredCollectionTags } from "@/common/hooks/useAggregationStore";
+import { useFilteredCollectionTagIndex } from "@/common/hooks/useTagIndex";
 import TagFilter from "../../TagFilter";
 
 const ArchetypeFilter = () => {
-  const { archetypeTags } = useFilteredCollectionTags();
+  const { archetypeTags } = useFilteredCollectionTagIndex();
   const archetypeFilter = useArchetypeFilter();
   const { addArchetypeFilter, removeArchetypeFilter } = useFilterActions();
 

@@ -1,7 +1,7 @@
-import { useZippedCollectionTags } from "@/common/hooks/useAggregationStore";
+import { useZippedCollectionTagIndex } from "@/common/hooks/useTagIndex";
 
 const useCountForOption = ({ type, value }) => {
-  const zippedTags = useZippedCollectionTags();
+  const zippedTags = useZippedCollectionTagIndex();
 
   let tagsForType = [];
   switch (type) {
@@ -15,11 +15,11 @@ const useCountForOption = ({ type, value }) => {
       tagsForType = zippedTags.lines;
       break;
     case "painted":
-      tagsForType = zippedTags.paintedTags;
+      tagsForType = zippedTags.statusTags;
       break;
     case "race":
     case "species":
-      tagsForType = zippedTags.raceTags;
+      tagsForType = zippedTags.speciesTags;
       break;
     case "weapon":
       tagsForType = zippedTags.weaponTags;

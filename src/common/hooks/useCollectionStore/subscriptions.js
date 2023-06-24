@@ -1,5 +1,5 @@
 import { shallow } from "zustand/shallow";
-import { useAggregationStore } from "../useAggregationStore";
+import { useTagIndexStore } from "../useTagIndexStore";
 
 const subscriptionOptions = {
   equalityFn: shallow,
@@ -28,7 +28,7 @@ export const aggregateEntireCollectionTagsWhenCollectionChanges = (useCollection
       const entireCollectionData = token;
       if (!entireCollectionData) return;
 
-      useAggregationStore.getState().triggers.aggregateEntireCollectionTags(entireCollectionData);
+      useTagIndexStore.getState().triggers.aggregateEntireCollectionTags(entireCollectionData);
     },
     subscriptionOptions
   );
@@ -41,9 +41,7 @@ export const aggregateFilteredCollectionTagsWhenCollectionChanges = (useCollecti
       const filteredCollectionData = token;
       if (!filteredCollectionData) return;
 
-      useAggregationStore
-        .getState()
-        .triggers.aggregateFilteredCollectionTags(filteredCollectionData);
+      useTagIndexStore.getState().triggers.aggregateFilteredCollectionTags(filteredCollectionData);
     },
     subscriptionOptions
   );
@@ -56,9 +54,9 @@ export const aggregateZippedCollectionTagsWhenCollectionChanges = (useCollection
       const [entireCollectionData, filteredCollectionData] = token;
       if (!entireCollectionData || !filteredCollectionData) return;
 
-      useAggregationStore
+      useTagIndexStore
         .getState()
-        .triggers.aggregateZippedColelctionTags({ filteredCollectionData, entireCollectionData });
+        .triggers.aggregateZippedCollectionTags({ filteredCollectionData, entireCollectionData });
     },
     subscriptionOptions
   );
