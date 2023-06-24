@@ -1,13 +1,15 @@
 import { useMemo } from "react";
 
 import { useFilterActions, useLineFilter } from "@/common/hooks/useFilterStore";
-import { useFilteredCollectionTags } from "@/common/hooks/useAggregationStore";
 
+import {
+  useEntireCollectionTagIndex,
+  useFilteredCollectionTagIndex,
+} from "@/common/hooks/useTagIndex";
 import TagFilter from "../../TagFilter";
-import { useEntireCollectionTagIndex } from "@/common/hooks/useTagIndex";
 
 const MiniatureLineFilter = () => {
-  const { lines } = useFilteredCollectionTags();
+  const { lines } = useFilteredCollectionTagIndex();
   const lineFilter = useLineFilter();
   const { removeLineFilter, setLineFilter } = useFilterActions();
 
