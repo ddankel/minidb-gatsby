@@ -18,14 +18,10 @@ class Collection {
   }
 
   /**
-   * Aggregate and count tags on miniatures in this collection
+   * Create a TagIndex instance from this model to index and count tags over the collection
    *
-   * @return  {Object}  Tag aggregation
+   * @return  {TagIndex}
    */
-  aggregateTags() {
-    return this.length ? buildAggregateHash(this.#miniatures) : {};
-  }
-
   indexTags() {
     return TagIndex.fromCollection(this);
   }
