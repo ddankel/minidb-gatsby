@@ -1,4 +1,4 @@
-import { useEntireCollectionTags } from "@/common/hooks/useAggregationStore";
+import { useEntireCollectionTagIndex } from "@/common/hooks/useTagIndex";
 import { startCase, last } from "lodash";
 
 const convertTagsToOptions = (type, tags) => {
@@ -15,14 +15,14 @@ const convertTagsToOptions = (type, tags) => {
  * @return  {Array<Object>}
  */
 const useFilterOptions = () => {
-  const tags = useEntireCollectionTags();
+  const tagIndex = useEntireCollectionTagIndex();
 
-  const speciesOptions = convertTagsToOptions("species", tags.raceTags);
-  const archetypeOptions = convertTagsToOptions("archetype", tags.archetypeTags);
-  const weaponOptions = convertTagsToOptions("weapon", tags.weaponTags);
-  const armorOptions = convertTagsToOptions("armor", tags.armorTags);
-  const paintedOptions = convertTagsToOptions("painted", tags.paintedTags);
-  const lineOptions = convertTagsToOptions("line", tags.lines);
+  const speciesOptions = convertTagsToOptions("species", tagIndex.speciesTags);
+  const archetypeOptions = convertTagsToOptions("archetype", tagIndex.archetypeTags);
+  const weaponOptions = convertTagsToOptions("weapon", tagIndex.weaponTags);
+  const armorOptions = convertTagsToOptions("armor", tagIndex.armorTags);
+  const paintedOptions = convertTagsToOptions("painted", tagIndex.statusTags);
+  const lineOptions = convertTagsToOptions("line", tagIndex.lines);
 
   const options = [
     ...speciesOptions,

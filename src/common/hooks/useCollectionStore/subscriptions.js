@@ -1,5 +1,10 @@
 import { shallow } from "zustand/shallow";
-import { useAggregationStore } from "../useAggregationStore";
+import { useTagIndexStore } from "../useTagIndexStore";
+
+const subscriptionOptions = {
+  equalityFn: shallow,
+  fireImmediately: true,
+};
 
 /**
  * @see https://github.com/pmndrs/zustand#using-subscribe-with-selector
@@ -7,64 +12,52 @@ import { useAggregationStore } from "../useAggregationStore";
 
 export const filterCollectionWhenFiltersChange = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => [state.galleryFilter, state.entireCollection],
+    (state) => [state.galleryFilter, state.entireCollectionData],
     (token, _previousToken) => {
       const galleryFilter = token[0];
       if (!!galleryFilter) useCollectionStore.getState().triggers.filterCollection();
     },
-    {
-      equalityFn: shallow,
-      fireImmediately: true,
-    }
+    subscriptionOptions
   );
 };
 
 export const aggregateEntireCollectionTagsWhenCollectionChanges = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => state.entireCollection,
+    (state) => state.entireCollectionData,
     (token, _previousToken) => {
-      const entireCollection = token;
-      if (!entireCollection) return;
+      const entireCollectionData = token;
+      if (!entireCollectionData) return;
 
-      useAggregationStore.getState().triggers.aggregateEntireCollectionTags(entireCollection);
+      useTagIndexStore.getState().triggers.aggregateEntireCollectionTags(entireCollectionData);
     },
-    {
-      equalityFn: shallow,
-      fireImmediately: true,
-    }
+    subscriptionOptions
   );
 };
 
 export const aggregateFilteredCollectionTagsWhenCollectionChanges = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => state.filteredCollection,
+    (state) => state.filteredCollectionData,
     (token, _previousToken) => {
-      const filteredCollection = token;
-      if (!filteredCollection) return;
+      const filteredCollectionData = token;
+      if (!filteredCollectionData) return;
 
-      useAggregationStore.getState().triggers.aggregateFilteredCollectionTags(filteredCollection);
+      useTagIndexStore.getState().triggers.aggregateFilteredCollectionTags(filteredCollectionData);
     },
-    {
-      equalityFn: shallow,
-      fireImmediately: true,
-    }
+    subscriptionOptions
   );
 };
 
 export const aggregateZippedCollectionTagsWhenCollectionChanges = (useCollectionStore) => {
   useCollectionStore.subscribe(
-    (state) => [state.entireCollection, state.filteredCollection],
+    (state) => [state.entireCollectionData, state.filteredCollectionData],
     (token, _previousToken) => {
-      const [entireCollection, filteredCollection] = token;
-      if (!entireCollection || !filteredCollection) return;
+      const [entireCollectionData, filteredCollectionData] = token;
+      if (!entireCollectionData || !filteredCollectionData) return;
 
-      useAggregationStore
+      useTagIndexStore
         .getState()
-        .triggers.aggregateZippedColelctionTags({ filteredCollection, entireCollection });
+        .triggers.aggregateZippedCollectionTags({ filteredCollectionData, entireCollectionData });
     },
-    {
-      equalityFn: shallow,
-      fireImmediately: true,
-    }
+    subscriptionOptions
   );
 };

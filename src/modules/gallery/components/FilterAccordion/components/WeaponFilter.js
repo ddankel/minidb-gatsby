@@ -1,9 +1,9 @@
 import { useFilterActions, useWeaponFilter } from "@/common/hooks/useFilterStore";
-import { useFilteredCollectionTags } from "@/common/hooks/useAggregationStore";
 import TagFilter from "../../TagFilter";
+import { useFilteredCollectionTagIndex } from "@/common/hooks/useTagIndex";
 
 const WeaponFilter = () => {
-  const { weaponTags } = useFilteredCollectionTags();
+  const { weaponTags } = useFilteredCollectionTagIndex();
   const weaponFilter = useWeaponFilter();
   const { addWeaponFilter, removeWeaponFilter } = useFilterActions();
 

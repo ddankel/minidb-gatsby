@@ -1,22 +1,16 @@
 import { useFilterActions, usePaintedFilter } from "@/common/hooks/useFilterStore";
-import { useFilteredCollectionTags } from "@/common/hooks/useAggregationStore";
+import { useZippedCollectionTagIndex } from "@/common/hooks/useTagIndex";
 import TagFilter from "../../TagFilter";
-import zipTags from "../../../utils/zipTags";
-import { useEntireCollectionTags } from "@/common/hooks/useAggregationStore";
 
 const StatusFilter = () => {
-  const { paintedTags } = useFilteredCollectionTags();
-  const { paintedTags: allPaintedTags } = useEntireCollectionTags();
-
+  const { statusTags: zippedStatusTags } = useZippedCollectionTagIndex();
   const paintedFilter = usePaintedFilter();
   const { setPaintedFilter, removePaintedFilter } = useFilterActions();
-
-  const zippedPaintedTags = zipTags(allPaintedTags, paintedTags);
 
   return (
     <TagFilter
       name="Species"
-      tagsAvailable={zippedPaintedTags}
+      tagsAvailable={zippedStatusTags}
       currentSelections={paintedFilter}
       onAdd={(val) => setPaintedFilter([val])}
       onRemove={(val) => removePaintedFilter(val)}

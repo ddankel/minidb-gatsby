@@ -2,21 +2,19 @@ import { Collapse, Stack } from "react-bootstrap";
 import { BiCaretDown, BiCaretUp } from "react-icons/bi";
 import { useSessionStorage } from "react-use-storage";
 
-import { useFilteredCollection } from "@/common/hooks/useCollectionStore";
+import { useFilteredCollection } from "@/common/hooks/useCollections";
 import NavButton from "./NavButton";
 import { Contents, ToggleButton, WidthContraint, Wrapper } from "./styled";
-import { findAdjacentMinis } from "./utils";
 
-const Navigator = ({ current }) => {
+const Navigator = ({ current: currentSlug }) => {
   const filteredCollection = useFilteredCollection();
   const [open, setOpen] = useSessionStorage("show-mini-nav", false);
 
-  if (!filteredCollection.length) {
-    // No miniatures (Gatsby is building)
-    return <></>;
-  }
+  // No miniatures (Gatsby is building)
+  if (!filteredCollection.length) return <></>;
 
-  const { prevMini, nextMini } = findAdjacentMinis(filteredCollection, current);
+  const { prevMini, nextMini } = filteredCollection.findAdjacentMinis(currentSlug);
+
   const toggleLabel = open ? "Hide Navigation" : "Show Navigation";
   const ToggleIcon = open ? BiCaretUp : BiCaretDown;
 

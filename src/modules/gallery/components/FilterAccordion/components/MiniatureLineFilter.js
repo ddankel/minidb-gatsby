@@ -1,16 +1,19 @@
 import { useMemo } from "react";
 
 import { useFilterActions, useLineFilter } from "@/common/hooks/useFilterStore";
-import { useFilteredCollectionTags } from "@/common/hooks/useAggregationStore";
 
+import {
+  useEntireCollectionTagIndex,
+  useFilteredCollectionTagIndex,
+} from "@/common/hooks/useTagIndex";
 import TagFilter from "../../TagFilter";
-import { useEntireCollectionTags } from "@/common/hooks/useAggregationStore";
 
 const MiniatureLineFilter = () => {
-  const { lines } = useFilteredCollectionTags();
+  const { lines } = useFilteredCollectionTagIndex();
   const lineFilter = useLineFilter();
   const { removeLineFilter, setLineFilter } = useFilterActions();
-  const { lines: allLines } = useEntireCollectionTags();
+
+  const { lines: allLines } = useEntireCollectionTagIndex();
 
   const visibleLines = useMemo(() => {
     // If the lines haven't been collected, an empty array
