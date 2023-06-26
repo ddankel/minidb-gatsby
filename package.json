@@ -43,7 +43,7 @@
     "react-bootstrap": "^2.7.4",
     "react-bootstrap-typeahead": "^6.2.3",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.9.0",
+    "react-icons": "^4.10.1",
     "react-image-gallery": "^1.2.12",
     "react-tooltip": "^5.14.0",
     "react-use-storage": "github:ddankel/react-use-storage#main",
