@@ -7,8 +7,6 @@ const GenreFilter = () => {
   const genreFilter = useGenreFilter();
   const { addGenreFilter, removeGenreFilter } = useFilterActions();
 
-  console.log("genreFilter", genreFilter, genreTags);
-
   return (
     <TagFilter
       name="Genre"
