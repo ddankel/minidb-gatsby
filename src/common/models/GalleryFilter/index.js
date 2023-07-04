@@ -2,6 +2,7 @@ import { matchesFilterAND, matchesFilterOR, matchesLine } from "./utils";
 
 class GalleryFilter {
   constructor(args) {
+    this.genreFilter = args.genreFilter;
     this.speciesFilter = args.speciesFilter;
     this.archetypeFilter = args.archetypeFilter;
     this.weaponFilter = args.weaponFilter;
@@ -22,6 +23,7 @@ class GalleryFilter {
    * @return  {Boolean}
    */
   includes(mini) {
+    if (!matchesFilterAND(mini.genreTags, this.genreFilter)) return false;
     if (!matchesFilterAND(mini.raceTags, this.speciesFilter)) return false;
     if (!matchesFilterAND(mini.archetypeTags, this.archetypeFilter)) return false;
     if (!matchesFilterAND(mini.weaponTags, this.weaponFilter)) return false;

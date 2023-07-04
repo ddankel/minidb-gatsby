@@ -2,6 +2,7 @@ import addToFilter from "./utils/store/addToFilter";
 import removeFromFilter from "./utils/store/removeFromFilter";
 
 const defaultState = {
+  genreFilter: [],
   speciesFilter: [],
   archetypeFilter: [],
   weaponFilter: [],
@@ -13,6 +14,7 @@ const defaultState = {
 
 // Build zustand store
 const store = (set, get) => ({
+  genreFilter: defaultState.genreFilter,
   speciesFilter: defaultState.speciesFilter,
   archetypeFilter: defaultState.archetypeFilter,
   weaponFilter: defaultState.weaponFilter,
@@ -24,6 +26,11 @@ const store = (set, get) => ({
   isFiltered: false,
 
   actions: {
+    addGenreFilter: (value) =>
+      set((state) => ({ genreFilter: addToFilter(state.genreFilter, value) })),
+    removeGenreFilter: (value) =>
+      set((state) => ({ genreFilter: removeFromFilter(state.genreFilter, value) })),
+
     addSpeciesFilter: (value) =>
       set((state) => ({ speciesFilter: addToFilter(state.speciesFilter, value) })),
     removeSpeciesFilter: (value) =>
@@ -77,6 +84,7 @@ const store = (set, get) => ({
   triggers: {
     updateIsFiltered: () => {
       const arrayFilters = [
+        get().genreFilter,
         get().speciesFilter,
         get().archetypeFilter,
         get().weaponFilter,

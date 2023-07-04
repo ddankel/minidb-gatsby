@@ -15,7 +15,7 @@ filterStore = persist(filterStore, {
   storage: createJSONStorage(() => sessionStorage),
   partialize: excludeStateAttributes("actions", "triggers"),
 });
-filterStore = devtools(filterStore, { name: "MiniDB ZuStore" });
+filterStore = devtools(filterStore, { name: "MiniDB Filter Store" });
 filterStore = subscribeWithSelector(filterStore);
 
 export const useFilterStore = create(filterStore);
@@ -25,6 +25,7 @@ updateIsFilteredWhenFiltersChange(useFilterStore);
 updateGalleryFilterWhenFiltersChange(useFilterStore);
 
 // Export hooks
+export const useGenreFilter = () => useFilterStore((state) => state.genreFilter);
 export const useSpeciesFilter = () => useFilterStore((state) => state.speciesFilter);
 export const useArchetypeFilter = () => useFilterStore((state) => state.archetypeFilter);
 export const useWeaponFilter = () => useFilterStore((state) => state.weaponFilter);

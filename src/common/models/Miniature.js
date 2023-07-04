@@ -1,5 +1,6 @@
 const isDevelopment = process.env.NODE_ENV === "development";
 
+const DEFAULT_GENRE_TAGS = ["fantasy"];
 const DEFAULT_ARCHETYPE_TAGS = [];
 const DEFAULT_RACE_TAGS = [];
 const DEFAULT_WEAPON_TAGS = [];
@@ -61,6 +62,10 @@ class Miniature {
 
   get photos() {
     return this.#frontmatter.photos;
+  }
+
+  get genreTags() {
+    return this.#frontmatter.genre || DEFAULT_GENRE_TAGS;
   }
 
   get raceTags() {
