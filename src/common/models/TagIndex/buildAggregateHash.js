@@ -11,6 +11,7 @@ const buildAggregateHash = (collection) => {
   if (!collection.length) return {};
 
   return {
+    genreTags: aggregateTagSet(collection.map((mini) => mini.genreTags)),
     speciesTags: aggregateTagSet(collection.map((mini) => mini.raceTags)),
     archetypeTags: aggregateTagSet(collection.map((mini) => mini.archetypeTags)),
     weaponTags: aggregateTagSet(collection.map((mini) => mini.weaponTags)),

@@ -14,6 +14,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       line: [String]
       painted: String
       status: String
+      genre: [String]
       race: [String]
       archetype: [String]
       weapons: [String]

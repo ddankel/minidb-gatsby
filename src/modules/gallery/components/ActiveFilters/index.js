@@ -2,6 +2,7 @@ import { last } from "lodash";
 
 import BadgeButton from "@/common/components/BadgeButton";
 import {
+  useGenreFilter,
   useArchetypeFilter,
   useArmorFilter,
   useFilterActions,
@@ -19,6 +20,7 @@ import useShowReset from "./hooks/useShowReset";
 const ActiveFilters = () => {
   const isFiltered = useIsFiltered();
 
+  const genreFilter = useGenreFilter();
   const speciesFilter = useSpeciesFilter();
   const archetypeFilter = useArchetypeFilter();
   const weaponFilter = useWeaponFilter();
@@ -27,6 +29,7 @@ const ActiveFilters = () => {
   const paintedFilter = usePaintedFilter();
 
   const {
+    removeGenreFilter,
     removeSpeciesFilter,
     removeArchetypeFilter,
     removeWeaponFilter,
@@ -41,6 +44,9 @@ const ActiveFilters = () => {
   return (
     <BadgeContainer>
       {isFiltered && <span>Active Filters:</span>}
+      {genreFilter.map((tag) => (
+        <FilterBadge key={tag} text={tag} onClick={() => removeGenreFilter(tag)} />
+      ))}
       {speciesFilter.map((tag) => (
         <FilterBadge key={tag} text={tag} onClick={() => removeSpeciesFilter(tag)} />
       ))}
