@@ -28,6 +28,7 @@ export const query = graphql`
           line
           painted
           status
+          genre
           race
           archetype
           weapons

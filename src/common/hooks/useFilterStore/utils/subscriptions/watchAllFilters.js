@@ -1,4 +1,5 @@
 const watchAllFilters = (state) => [
+  state.genreFilter,
   state.speciesFilter,
   state.archetypeFilter,
   state.weaponFilter,

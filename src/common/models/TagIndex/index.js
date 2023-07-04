@@ -2,6 +2,7 @@ import buildAggregateHash from "./buildAggregateHash";
 import { zipAllTags } from "./zipTags";
 
 class TagIndex {
+  #genreTags = [];
   #speciesTags = [];
   #archetypeTags = [];
   #weaponTags = [];
@@ -10,12 +11,17 @@ class TagIndex {
   #lines = [];
 
   constructor(data) {
+    this.#genreTags = data.genreTags;
     this.#speciesTags = data.speciesTags;
     this.#archetypeTags = data.archetypeTags;
     this.#weaponTags = data.weaponTags;
     this.#armorTags = data.armorTags;
     this.#statusTags = data.statusTags;
     this.#lines = data.lines;
+  }
+
+  get genreTags() {
+    return this.#genreTags;
   }
 
   get speciesTags() {
@@ -39,6 +45,7 @@ class TagIndex {
 
   toHash() {
     return {
+      genreTags: this.#genreTags,
       speciesTags: this.#speciesTags,
       archetypeTags: this.#archetypeTags,
       weaponTags: this.#weaponTags,

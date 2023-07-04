@@ -1,5 +1,6 @@
 const extractFiltersFromToken = (token) => {
   const [
+    genreFilter,
     speciesFilter,
     archetypeFilter,
     weaponFilter,
@@ -11,6 +12,7 @@ const extractFiltersFromToken = (token) => {
   ] = token;
 
   return {
+    genreFilter,
     speciesFilter,
     archetypeFilter,
     weaponFilter,

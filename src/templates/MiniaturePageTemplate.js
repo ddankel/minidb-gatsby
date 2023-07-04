@@ -50,6 +50,7 @@ export const pageQuery = graphql`
             )
           }
         }
+        genre
         race
         archetype
         weapons
