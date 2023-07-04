@@ -49,7 +49,7 @@
     "react-use-storage": "github:ddankel/react-use-storage#main",
     "sass": "^1.63.4",
     "styled-components": "^5.3.11",
-    "zustand": "^4.3.8"
+    "zustand": "^4.3.9"
   },
   "devDependencies": {
     "miniature-data": "./vendor/miniature-data"
