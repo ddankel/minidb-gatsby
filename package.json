@@ -48,7 +48,7 @@
     "react-tooltip": "^5.18.0",
     "react-use-storage": "github:ddankel/react-use-storage#main",
     "sass": "^1.63.6",
-    "styled-components": "^6.0.2",
+    "styled-components": "^6.0.3",
     "zustand": "^4.3.9"
   },
   "devDependencies": {
