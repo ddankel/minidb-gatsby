@@ -5,6 +5,9 @@ const useCountForOption = ({ type, value }) => {
 
   let tagsForType = [];
   switch (type) {
+    case "genre":
+      tagsForType = zippedTags.genreTags;
+      break;
     case "archetype":
       tagsForType = zippedTags.archetypeTags;
       break;

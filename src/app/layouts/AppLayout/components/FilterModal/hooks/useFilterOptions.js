@@ -17,6 +17,7 @@ const convertTagsToOptions = (type, tags) => {
 const useFilterOptions = () => {
   const tagIndex = useEntireCollectionTagIndex();
 
+  const genreOptions = convertTagsToOptions("genre", tagIndex.genreTags);
   const speciesOptions = convertTagsToOptions("species", tagIndex.speciesTags);
   const archetypeOptions = convertTagsToOptions("archetype", tagIndex.archetypeTags);
   const weaponOptions = convertTagsToOptions("weapon", tagIndex.weaponTags);
@@ -25,6 +26,7 @@ const useFilterOptions = () => {
   const lineOptions = convertTagsToOptions("line", tagIndex.lines);
 
   const options = [
+    ...genreOptions,
     ...speciesOptions,
     ...archetypeOptions,
     ...weaponOptions,
