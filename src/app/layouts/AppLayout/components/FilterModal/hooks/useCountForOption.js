@@ -1,17 +1,21 @@
 import { useZippedCollectionTagIndex } from "@/common/hooks/useTagIndex";
+import { last } from "lodash";
 
 const useCountForOption = ({ type, value }) => {
   const zippedTags = useZippedCollectionTagIndex();
 
   let tagsForType = [];
   switch (type) {
+    case "genre":
+      tagsForType = zippedTags.genreTags;
+      break;
     case "archetype":
       tagsForType = zippedTags.archetypeTags;
       break;
     case "armor":
       tagsForType = zippedTags.armorTags;
       break;
-    case "lines":
+    case "line":
       tagsForType = zippedTags.lines;
       break;
     case "painted":
@@ -29,6 +33,6 @@ const useCountForOption = ({ type, value }) => {
 
   const matchingTag = tagsForType.find((item) => item.name === value);
 
-  return !!matchingTag ? matchingTag.count : "";
+  return !!matchingTag ? matchingTag.count : 0;
 };
 export default useCountForOption;

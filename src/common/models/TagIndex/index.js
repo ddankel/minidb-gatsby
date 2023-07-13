@@ -59,6 +59,7 @@ class TagIndex {
 export default TagIndex;
 
 TagIndex.tagKeys = [
+  "genreTags",
   "speciesTags",
   "archetypeTags",
   "weaponTags",
