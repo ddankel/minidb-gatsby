@@ -10,7 +10,7 @@ const GalleryItem = ({ slug }) => {
   const [imgSrc] = usePhotos(slug);
 
   return (
-    <Item onClick={() => navigate(`/minis/${mini.slug}`)} callout={mini.isDraft}>
+    <Item onClick={() => navigate(`/minis/${mini.slug}`)} $callout={mini.isDraft}>
       <Link to={`/minis/${mini.slug}`}>
         <ImageContainer>
           <Image image={imgSrc} alt={mini.name} />

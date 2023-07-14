@@ -7,10 +7,10 @@ import GatsbyImage from "@/common/components/GatsbyImage";
 export const Contents = styled.div`
   align-items: center;
   display: flex;
-  flex-direction: ${({ variant }) => (variant === "prev" ? "row" : "row-reverse")};
+  flex-direction: ${({ $variant }) => ($variant === "prev" ? "row" : "row-reverse")};
 
   & > div {
-    text-align: ${({ variant }) => (variant === "prev" ? "left" : "right")};
+    text-align: ${({ $variant }) => ($variant === "prev" ? "left" : "right")};
   }
 `;
 
