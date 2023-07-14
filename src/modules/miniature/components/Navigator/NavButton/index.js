@@ -15,7 +15,7 @@ const NavButton = ({ slug, variant, ...restProps }) => {
 
   return (
     <NavLink to={`/minis/${slug}`} {...restProps}>
-      <Contents variant={variant}>
+      <Contents $variant={variant}>
         <Arrow />
         <NavImage image={imgSrc} alt={miniature.name} />
         <Label>{miniature.name}</Label>

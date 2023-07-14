@@ -9,6 +9,9 @@ const useUpdateFilters = () => {
       return selectedOptions.filter((item) => item.type === type).map((item) => item.value);
     };
 
+    const genreValues = convertFiltersToValues("genre");
+    setFilter("genreFilter", genreValues);
+
     const speciesValues = convertFiltersToValues("species");
     setFilter("speciesFilter", speciesValues);
 
