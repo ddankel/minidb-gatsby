@@ -9,3 +9,7 @@ export const FlexContainer = styled.div`
 export const GalleryContainer = styled.div`
   flex-grow: 1;
 `;
+
+export const StatusMessage = styled.div`
+  margin-left: 50px;
+`;
