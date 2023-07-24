@@ -1,5 +1,4 @@
 import { useZippedCollectionTagIndex } from "@/common/hooks/useTagIndex";
-import { last } from "lodash";
 
 const useCountForOption = ({ type, value }) => {
   const zippedTags = useZippedCollectionTagIndex();
