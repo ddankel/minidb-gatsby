@@ -24,9 +24,9 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^2.1.4",
-    "bootstrap": "^5.3.0",
+    "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
-    "bootswatch": "^5.3.0",
+    "bootswatch": "^5.3.1",
     "gatsby": "^5.11.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-image": "^3.11.0",
@@ -47,8 +47,8 @@
     "react-image-gallery": "^1.2.12",
     "react-tooltip": "^5.18.1",
     "react-use-storage": "github:ddankel/react-use-storage#main",
-    "sass": "^1.64.1",
-    "styled-components": "^6.0.5",
+    "sass": "^1.65.1",
+    "styled-components": "^6.0.7",
     "zustand": "^4.3.9"
   },
   "devDependencies": {
