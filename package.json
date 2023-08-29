@@ -47,7 +47,7 @@
     "react-image-gallery": "^1.3.0",
     "react-tooltip": "^5.20.0",
     "react-use-storage": "github:ddankel/react-use-storage#main",
-    "sass": "^1.65.1",
+    "sass": "^1.66.1",
     "styled-components": "^6.0.7",
     "zustand": "^4.4.1"
   },
