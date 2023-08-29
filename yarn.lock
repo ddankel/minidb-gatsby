@@ -6086,7 +6086,7 @@ gatsby-plugin-typescript@^5.12.0:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.12.0"
 
-gatsby-plugin-utils@^4.11.0, gatsby-plugin-utils@^4.12.0:
+gatsby-plugin-utils@^4.12.0:
   version "4.12.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.12.0.tgz#1f6143a4ffb223fb1d4988a12285c0d2403ed074"
   integrity sha512-lU84VmWC9qGojROMZkBgGjCAzxcAUlyGAsd75vjj2y3yqGYtyvqInvK5tZvDyNNVvU21u040Ps4AKIvRVgMV/Q==
@@ -9824,10 +9824,10 @@ react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825:
     loose-envify "^1.1.0"
     neo-async "^2.6.1"
 
-react-tooltip@^5.20.0:
-  version "5.20.0"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.20.0.tgz#d8c183f66976fb793ce79d9a35283dd18018f844"
-  integrity sha512-LWBIHEZjwDW9ZJ/Dn2xeZrsz+WKMii61CIsx2XPfs1IiIRnWyvKJXrgy6uEGOXYvrnCd4jiEvurn8Y+zJ1bw5Q==
+react-tooltip@^5.21.1:
+  version "5.21.1"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.21.1.tgz#bc49d9662a4b90ed1ed4417b7de535cb5bee1d01"
+  integrity sha512-wJqF/yzK1wuJuy5/zAkVErFA609fVv1ZukhGjw44PcMvg9wL0jomnpQyz3qH1H7TWjz/wqO/OMc3ipQNjZ8zYg==
   dependencies:
     "@floating-ui/dom" "^1.0.0"
     classnames "^2.3.0"
@@ -10335,10 +10335,10 @@ sass-loader@^10.4.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.65.1:
-  version "1.65.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.65.1.tgz#8f283b0c26335a88246a448d22e1342ba2ea1432"
-  integrity sha512-9DINwtHmA41SEd36eVPQ9BJKpn7eKDQmUHmpI0y5Zv2Rcorrh0zS+cFrt050hdNbmmCNKTW3hV5mWfuegNRsEA==
+sass@^1.66.1:
+  version "1.66.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.66.1.tgz#04b51c4671e4650aa393740e66a4e58b44d055b1"
+  integrity sha512-50c+zTsZOJVgFfTgwwEzkjA3/QACgdNsKueWPyAR0mRINIvLAStVQBbPg14iuqEQ74NPDbXzJARJ/O4SI1zftA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
