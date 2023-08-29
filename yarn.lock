@@ -6121,20 +6121,20 @@ gatsby-sharp@^1.12.0:
   dependencies:
     sharp "^0.32.1"
 
-gatsby-source-filesystem@^5.11.0:
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.11.0.tgz#59c48cf86a8578627997747f7ec377dfa99fb1a4"
-  integrity sha512-42CXNzKgGvkZtqmFIIMbEJW5ZpQ5b4TQT7Rk21XsEMkoZT9QchqMG1S2VPK/LPe7LicvGv6zBziGrtn6ttch7w==
+gatsby-source-filesystem@^5.12.0:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.12.0.tgz#5f970fccc3102a4c62d99575c55a2a167912bb02"
+  integrity sha512-0BZkgADBu56vTzZ6TLvrMXhp8MzpEqvtpsI+VRtNTlsu6ULaHRjoMClomlAqWecjBXTkujhwpSjnIfEmpmCaLQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chokidar "^3.5.3"
     file-type "^16.5.4"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.11.0"
+    gatsby-core-utils "^4.12.0"
     mime "^3.0.0"
     pretty-bytes "^5.6.0"
     valid-url "^1.0.9"
-    xstate "^4.37.2"
+    xstate "^4.38.0"
 
 gatsby-telemetry@^4.12.0:
   version "4.12.0"
