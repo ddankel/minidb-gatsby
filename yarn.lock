@@ -3576,10 +3576,10 @@ bootstrap@^5.3.2:
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.2.tgz#97226583f27aae93b2b28ab23f4c114757ff16ae"
   integrity sha512-D32nmNWiQHo94BKHLmOrdjlL05q1c8oxbtBphQFb9Z5to6eGRDCm0QgeaZ4zFBHzfg2++rqa2JkqCcxDy0sH0g==
 
-bootswatch@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/bootswatch/-/bootswatch-5.3.1.tgz#7eb1e8c39b9c049d4d4617e1ba222561758e1e8b"
-  integrity sha512-WRO3SmPjyST5D+mAnhZ75bUn46/jAxlff8Z//PcrYW1KN5bHTl7c50cd7XUa9Hr7IwuffQB3U9xEdnVPmUfCSA==
+bootswatch@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/bootswatch/-/bootswatch-5.3.2.tgz#b59aa9d37671cb25dd781e4a6d6773008d6c9356"
+  integrity sha512-r05xOSLSx7MJvjpk/uoU8wPYgkPHWLV+uenLaRsS7yBsqSUcWYPjeUkz+tmrRv6s1eFxkF08NvQfBSSPCTyYaA==
 
 boxen@^5.1.2:
   version "5.1.2"
@@ -6608,9 +6608,9 @@ graphql-type-json@0.3.2:
   integrity sha512-J+vjof74oMlCWXSvt0DOf2APEdZOCdubEvGDUAlqH//VBYcOYsGgRW7Xzorr44LvkjiuvecWc8fChxuZZbChtg==
 
 graphql@^16.7.1:
-  version "16.8.0"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.8.0.tgz#374478b7f27b2dc6153c8f42c1b80157f79d79d4"
-  integrity sha512-0oKGaR+y3qcS5mCu1vb7KG+a89vjn06C7Ihq/dDl3jA+A8B3TKomvi3CiEcVLJQGalbu8F52LxkOym7U5sSfbg==
+  version "16.8.1"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.8.1.tgz#1930a965bef1170603702acdb68aedd3f3cf6f07"
+  integrity sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw==
 
 gray-matter@^4.0.3:
   version "4.0.3"
@@ -10335,10 +10335,10 @@ sass-loader@^10.4.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.67.0:
-  version "1.67.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.67.0.tgz#fed84d74b9cd708db603b1380d6dc1f71bb24f6f"
-  integrity sha512-SVrO9ZeX/QQyEGtuZYCVxoeAL5vGlYjJ9p4i4HFuekWl8y/LtJ7tJc10Z+ck1c8xOuoBm2MYzcLfTAffD0pl/A==
+sass@^1.68.0:
+  version "1.68.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.68.0.tgz#0034b0cc9a50248b7d1702ac166fd25990023669"
+  integrity sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
