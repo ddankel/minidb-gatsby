@@ -1,5 +1,5 @@
 import Accordion from "react-bootstrap/Accordion";
-import { useSessionStorage } from "react-use-storage";
+import { useSessionStorage } from "usehooks-ts";
 
 import ArchetypeFilter from "./components/ArchetypeFilter";
 import ArmorFilter from "./components/ArmorFilter";
