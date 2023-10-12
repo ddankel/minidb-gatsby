@@ -1,6 +1,6 @@
 import { Collapse, Stack } from "react-bootstrap";
 import { BiCaretDown, BiCaretUp } from "react-icons/bi";
-import { useSessionStorage } from "react-use-storage";
+import { useSessionStorage } from "usehooks-ts";
 
 import { useFilteredCollection } from "@/common/hooks/useCollections";
 import NavButton from "./NavButton";
