@@ -5695,7 +5695,7 @@ gatsby-cli@^5.12.4:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.12.0, gatsby-core-utils@^4.12.1:
+gatsby-core-utils@^4.0.0, gatsby-core-utils@^4.12.1:
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.12.1.tgz#8bfa0d65033cfa4c47dd199482589e458bf4fc9d"
   integrity sha512-YW7eCK2M6yGQerT5LkdOHLZTNYMsDvcgeDMRy0q66FWKj7twPZX428I6NaLCMeF5dYoj1HOOO0u96iNlW5jcKQ==
@@ -5883,7 +5883,7 @@ gatsby-plugin-typescript@^5.12.1:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.12.1"
 
-gatsby-plugin-utils@^4.12.0, gatsby-plugin-utils@^4.12.3:
+gatsby-plugin-utils@^4.12.3:
   version "4.12.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.12.3.tgz#685bb26c073ac0ecf50efe6cba5fa879905c0f75"
   integrity sha512-AMagRfVAIwc3w66RZzq9cGPma3pkrGe/iyhktmHWDOtu45tOt0zlbSY91juuCw2Oov17WzJp2TWKQ/i0nkuLbA==
@@ -5951,13 +5951,13 @@ gatsby-telemetry@^4.12.1:
     lodash "^4.17.21"
     node-fetch "^2.6.11"
 
-gatsby-transformer-remark@^6.12.0:
-  version "6.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-6.12.0.tgz#4095828cc40a5403b3e2f6e75f66ca0ea95cca68"
-  integrity sha512-W7euQegQ3EzRvVntEldQWeCirInnhzKir2cMhFeAlqZm74h7fn2vlDr7CnHMncFsjZllj0AA73c+35+60Msntg==
+gatsby-transformer-remark@^6.12.3:
+  version "6.12.3"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-6.12.3.tgz#b6e5d2832128b3cc74a90094bc7e899d898c9208"
+  integrity sha512-/9eHBduRXok6Jq8hJaKUq7GOxhOnD0sDRTy/F+j3zdYe+rSVUAsgJsE9FpfvDVwb5pgbFA85wQIhOqGdf/ldYw==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    gatsby-core-utils "^4.12.0"
+    gatsby-core-utils "^4.12.1"
     gray-matter "^4.0.3"
     hast-util-raw "^6.1.0"
     hast-util-to-html "^7.1.3"
@@ -10119,7 +10119,7 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.32.1, sharp@^0.32.6:
+sharp@^0.32.6:
   version "0.32.6"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.32.6.tgz#6ad30c0b7cd910df65d5f355f774aa4fce45732a"
   integrity sha512-KyLTWwgcR9Oe4d9HwCwNM2l7+J0dUQwn/yf7S0EnTtb0eVS4RxO0eUSvxPtzT4F3SY+C4K6fqdv/DO27sJ/v/w==
