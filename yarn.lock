@@ -9459,10 +9459,10 @@ react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825:
     loose-envify "^1.1.0"
     neo-async "^2.6.1"
 
-react-tooltip@^5.21.6:
-  version "5.21.6"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.21.6.tgz#2287b12010c6b931ffe2b432d9961691a8cc74b3"
-  integrity sha512-WbND5ee8Kr5HaSuDDiAmSyRp5jH77PSk8M0CUzmVfD+1WST8XOm1StJndK/wOQIP5GPvDVPy96ylLxY/V+VpqA==
+react-tooltip@^5.23.0:
+  version "5.23.0"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.23.0.tgz#dbbc950194a10e00c1b3072e71cbe0b3fcb84dfe"
+  integrity sha512-MYqn6n+Af8NHHDL3zrSqzVSoK2LLqTNFp30CuuHCYlBEf+q88FWfg+8pSO+0GnDvOa5ZaryNDq9sAVQeNhnsgw==
   dependencies:
     "@floating-ui/dom" "^1.0.0"
     classnames "^2.3.0"
