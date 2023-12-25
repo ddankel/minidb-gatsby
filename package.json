@@ -37,7 +37,7 @@
     "gatsby-plugin-styled-components": "^6.13.0",
     "gatsby-source-filesystem": "^5.12.1",
     "gatsby-transformer-remark": "^6.13.0",
-    "gatsby-transformer-sharp": "^5.12.3",
+    "gatsby-transformer-sharp": "^5.13.0",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
