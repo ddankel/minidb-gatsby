@@ -58,7 +58,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
     actions.createPage({
       path: `minis/${miniature.slug}`,
-      component: path.resolve(`./src/templates/MiniaturePageTemplate.js`),
+      component: path.resolve(`./src/templates/MiniaturePageTemplate.tsx`),
       context: { slug: miniature.slug },
     });
   });

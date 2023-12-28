@@ -1,10 +1,25 @@
-import { graphql } from "gatsby";
+import { PageProps, graphql } from "gatsby";
 
 import AppLayout from "@/app/layouts/AppLayout";
 import { Miniature } from "@/common/models/Miniature";
 import MiniaturePageContent from "@/modules/miniature/content/MiniaturePageContent";
 
-const MiniaturePageTemplate = ({ data }) => {
+type DataProps = {
+  data: {
+    markdownRemark: {
+      frontmatter: {
+        slug: string;
+        name: string;
+        photos: string[];
+        line: string[];
+      };
+      html: string;
+    };
+  };
+};
+type MiniaturePageTemplateProps = PageProps & DataProps;
+
+const MiniaturePageTemplate = ({ data }: MiniaturePageTemplateProps) => {
   const { frontmatter, html } = data.markdownRemark;
 
   return (
@@ -18,7 +33,7 @@ export default MiniaturePageTemplate;
 /**
  * Gatsby Head component
  */
-export const Head = ({ data }) => {
+export const Head = ({ data }: MiniaturePageTemplateProps) => {
   const { frontmatter, html } = data.markdownRemark;
   const miniature = new Miniature(frontmatter, html);
 
