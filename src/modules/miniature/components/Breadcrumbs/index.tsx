@@ -1,7 +1,12 @@
 import React from "react";
 import CrumbLink from "./CrumbLink";
 
-const Breadcrumbs = ({ miniatureLines = [], name }) => {
+type BreadcrumbsProps = {
+  miniatureLines?: string[];
+  name: string;
+};
+
+const Breadcrumbs = ({ miniatureLines = [], name }: BreadcrumbsProps) => {
   return (
     <>
       {miniatureLines.map((item, index) => {
