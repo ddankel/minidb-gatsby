@@ -1,4 +1,5 @@
-import TagIndex from ".";
+import { TagIndex } from ".";
+import { CategorizedTagCounts, TagCount } from "./types";
 
 /**
  * Zip tags together to display filters
@@ -28,16 +29,8 @@ import TagIndex from ".";
  *  { name: Unpainted,   count: 3  }
  *  { name: Wip,         count: 0  }]
  *
- * The following output is expected:
- *
- * @param   {Array<Object>}  allTags      Tags for the whole collection
- * @param   {Array<Object>}  filteredTags Tag counts for only the filtered
- *                                        miniatures
- *
- * @return  {Array<Object>}               Array with entry for all tags in the
- *                                        whole collection
  */
-export const zipTags = (allTags, filteredTags) => {
+export const zipTags = (allTags: TagCount[], filteredTags: TagCount[]) => {
   if (!filteredTags) return allTags;
 
   const result = allTags.map(({ name }) => {
@@ -50,14 +43,9 @@ export const zipTags = (allTags, filteredTags) => {
 
 /**
  * Call zipTags on all keys in the allTags object
- *
- * @param   {Object}  allTags
- * @param   {Object}  filteredTags
- *
- * @return  {Object}
  */
-export const zipAllTags = (allTags, filteredTags) => {
-  const zippedTags = {};
+export const zipAllTags = (allTags: CategorizedTagCounts, filteredTags: CategorizedTagCounts) => {
+  const zippedTags: { [key: string]: TagCount[] } = {};
   for (const key of TagIndex.tagKeys) {
     zippedTags[key] = zipTags(allTags[key], filteredTags[key]);
   }

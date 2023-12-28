@@ -1,6 +1,6 @@
 import GalleryFilter from "./GalleryFilter";
 import { Miniature } from "./Miniature";
-import TagIndex from "./TagIndex";
+import { TagIndex } from "./TagIndex";
 
 export class Collection {
   constructor(readonly miniatures: Miniature[]) {}

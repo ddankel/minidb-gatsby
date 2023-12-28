@@ -1,14 +1,11 @@
-import _ from "lodash";
+import { countBy } from "lodash";
 import { Collection } from "../Collection";
+import { CategorizedTagCounts, TagCount } from "./types";
 
 /**
  * Aggregate all tag categories across a collection
- *
- * @param   {Array}  collection  Array of miniatures
- *
- * @return  {Object}             Hashed tag aggregations
  */
-const buildAggregateHash = (collection: Collection) => {
+const buildAggregateHash = (collection: Collection): CategorizedTagCounts => {
   if (!collection.length) return {};
 
   return {
@@ -24,28 +21,8 @@ const buildAggregateHash = (collection: Collection) => {
 
 export default buildAggregateHash;
 
-/**
- * Aggregate and count an array of tags
- *
- * @example
- *  const tagsArray = [sword, bow, sword, axe]
- *  console.log(aggregateTagSet(tagsArray))
- *
- *  [
- *    { name: "axe",
- *      count: "1"},
- *    { name: "bow",
- *      count: "1"},
- *    { name: "sword",
- *      count: "2"},
- *  ]
- *
- * @param   {Array<String>}  tagsArray  Array of tags to aggregate
- *
- * @return  {Array<Object>}             Unique counts of each tag
- */
-const aggregateTagSet = (tagsArray) => {
-  const counts = _.countBy(tagsArray.flat());
+const aggregateTagSet = (tagsArray: string[][] | string[]): TagCount[] => {
+  const counts = countBy(tagsArray.flat());
   const uniqueNames = Object.keys(counts).sort();
   return uniqueNames.map((name) => ({ name, count: counts[name] }));
 };
@@ -58,8 +35,8 @@ const aggregateTagSet = (tagsArray) => {
  * "Manufacturer > Game", and Manufacturer > Game > Faction" will all
  * be added to the aggregate collection.
  */
-const collectLines = (miniLines) => {
-  const allLines = [];
+const collectLines = (miniLines: string[][]) => {
+  const allLines: string[] = [];
 
   miniLines.forEach((lineArray) => {
     const length = lineArray.length;

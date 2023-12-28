@@ -1,5 +1,5 @@
 import { Collection } from "@/common/models/Collection";
-import TagIndex from "@/common/models/TagIndex";
+import { TagIndex } from "@/common/models/TagIndex";
 
 const store = (set, get) => ({
   filteredCollectionTagData: {},
