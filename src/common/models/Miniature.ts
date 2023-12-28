@@ -33,7 +33,7 @@ type MiniatureFrontmatter = {
 };
 
 export class Miniature {
-  constructor(readonly frontmatter: MiniatureFrontmatter, readonly html: string) {}
+  constructor(readonly frontmatter: MiniatureFrontmatter, readonly html?: string) {}
 
   get slug() {
     return this.frontmatter.slug;

@@ -4,6 +4,11 @@ import { useEffect } from "react";
 
 import { useFilterActions } from "@/common/stores/useFilterStore";
 
+type HookProps = {
+  path: string;
+  query: string;
+};
+
 /**
  * Update the filter zustand states from the querystring
  *
@@ -13,7 +18,7 @@ import { useFilterActions } from "@/common/stores/useFilterStore";
  * querystring in the browser so a browser page refresh won't reset the
  * filters.
  */
-const useFilterStateFromQueryString = ({ path, query: rawQueryString }) => {
+const useFilterStateFromQueryString = ({ path, query: rawQueryString }: HookProps) => {
   const { setFilter } = useFilterActions();
 
   useEffect(() => {
