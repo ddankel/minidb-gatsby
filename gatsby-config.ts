@@ -7,6 +7,7 @@ module.exports = {
   },
   jsxRuntime: "automatic",
   trailingSlash: "always",
+  graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-netlify",
     "gatsby-plugin-sass",

@@ -1,3 +1,5 @@
+import path from "path";
+
 const Miniature = require("./src/common/models/Miniature");
 
 exports.createSchemaCustomization = ({ actions }) => {
@@ -56,7 +58,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
     actions.createPage({
       path: `minis/${miniature.slug}`,
-      component: require.resolve(`./src/templates/MiniaturePageTemplate.js`),
+      component: path.resolve(`./src/templates/MiniaturePageTemplate.js`),
       context: { slug: miniature.slug },
     });
   });
