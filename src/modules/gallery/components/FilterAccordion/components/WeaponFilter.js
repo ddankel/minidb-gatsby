@@ -1,4 +1,4 @@
-import { useFilterActions, useWeaponFilter } from "@/common/hooks/useFilterStore";
+import { useFilterActions, useWeaponFilter } from "@/common/stores/useFilterStore";
 import TagFilter from "../../TagFilter";
 import { useFilteredCollectionTagIndex } from "@/common/hooks/useTagIndex";
 

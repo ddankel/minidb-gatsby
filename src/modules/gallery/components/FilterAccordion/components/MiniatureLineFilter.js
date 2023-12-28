@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-import { useFilterActions, useLineFilter } from "@/common/hooks/useFilterStore";
+import { useFilterActions, useLineFilter } from "@/common/stores/useFilterStore";
 
 import {
   useEntireCollectionTagIndex,

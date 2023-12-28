@@ -6,7 +6,7 @@ import {
   usePaintedFilter,
   useSpeciesFilter,
   useWeaponFilter,
-} from "@/common/hooks/useFilterStore";
+} from "@/common/stores/useFilterStore";
 
 const pickSelectedOptions = (options, filter) => {
   return options.filter((item) => filter.includes(item.value));

@@ -11,7 +11,7 @@ import {
   usePaintedFilter,
   useSpeciesFilter,
   useWeaponFilter,
-} from "@/common/hooks/useFilterStore";
+} from "@/common/stores/useFilterStore";
 
 import BadgeContainer from "./components/BadgeContainer";
 import FilterBadge from "./components/FilterBadge";

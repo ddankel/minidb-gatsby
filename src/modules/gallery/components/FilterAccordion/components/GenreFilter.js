@@ -1,4 +1,4 @@
-import { useGenreFilter, useFilterActions } from "@/common/hooks/useFilterStore";
+import { useGenreFilter, useFilterActions } from "@/common/stores/useFilterStore";
 import { useFilteredCollectionTagIndex } from "@/common/hooks/useTagIndex";
 import TagFilter from "../../TagFilter";
 

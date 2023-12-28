@@ -1,4 +1,4 @@
-import { useCollectionStore } from "@/common/hooks/useCollectionStore";
+import { useCollectionStore } from "@/common/stores/useCollectionStore";
 
 import extractFiltersFromToken from "./utils/subscriptions/extractFiltersFromToken";
 import subscriptionOptions from "./utils/subscriptions/subscriptionOptions";

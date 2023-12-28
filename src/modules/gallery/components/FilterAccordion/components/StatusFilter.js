@@ -1,4 +1,4 @@
-import { useFilterActions, usePaintedFilter } from "@/common/hooks/useFilterStore";
+import { useFilterActions, usePaintedFilter } from "@/common/stores/useFilterStore";
 import { useZippedCollectionTagIndex } from "@/common/hooks/useTagIndex";
 import TagFilter from "../../TagFilter";
 

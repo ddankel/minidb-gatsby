@@ -5,7 +5,7 @@ import {
   usePaintedFilter,
   useSpeciesFilter,
   useWeaponFilter,
-} from "@/common/hooks/useFilterStore";
+} from "@/common/stores/useFilterStore";
 import { sum } from "lodash";
 
 const useShowReset = () => {

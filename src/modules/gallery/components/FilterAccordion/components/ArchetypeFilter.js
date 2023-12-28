@@ -1,4 +1,4 @@
-import { useArchetypeFilter, useFilterActions } from "@/common/hooks/useFilterStore";
+import { useArchetypeFilter, useFilterActions } from "@/common/stores/useFilterStore";
 import { useFilteredCollectionTagIndex } from "@/common/hooks/useTagIndex";
 import TagFilter from "../../TagFilter";
 

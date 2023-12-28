@@ -1,5 +1,5 @@
 import { Collection } from "../models/Collection";
-import { useEntireCollectionData, useFilteredCollectionData } from "./useCollectionStore";
+import { useEntireCollectionData, useFilteredCollectionData } from "../stores/useCollectionStore";
 
 export const useEntireCollection = () => {
   const entireCollectionData = useEntireCollectionData();

@@ -1,7 +1,7 @@
 import { Button, Modal } from "react-bootstrap";
 
 import { useFilteredCollection } from "@/common/hooks/useCollections";
-import { useIsFiltered } from "@/common/hooks/useFilterStore";
+import { useIsFiltered } from "@/common/stores/useFilterStore";
 
 import ActiveFilters from "../../ActiveFilters";
 import FilterAccordion from "../../FilterAccordion";

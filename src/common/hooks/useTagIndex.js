@@ -3,7 +3,7 @@ import {
   useEntireCollectionTagData,
   useFilteredCollectionTagData,
   useZippedCollectionTagData,
-} from "./useTagIndexStore";
+} from "../stores/useTagIndexStore";
 
 export const useEntireCollectionTagIndex = () => {
   const tagData = useEntireCollectionTagData();

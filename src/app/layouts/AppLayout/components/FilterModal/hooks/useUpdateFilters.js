@@ -1,4 +1,4 @@
-import { useFilterActions } from "@/common/hooks/useFilterStore";
+import { useFilterActions } from "@/common/stores/useFilterStore";
 import { last } from "lodash";
 
 const useUpdateFilters = () => {

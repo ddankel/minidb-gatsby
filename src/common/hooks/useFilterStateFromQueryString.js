@@ -2,7 +2,7 @@ import { navigate } from "gatsby";
 import queryString from "query-string";
 import { useEffect } from "react";
 
-import { useFilterActions } from "@/common/hooks/useFilterStore";
+import { useFilterActions } from "@/common/stores/useFilterStore";
 
 /**
  * Update the filter zustand states from the querystring

@@ -1,4 +1,4 @@
-import { useFilterActions, useSpeciesFilter } from "@/common/hooks/useFilterStore";
+import { useFilterActions, useSpeciesFilter } from "@/common/stores/useFilterStore";
 import { useFilteredCollectionTagIndex } from "@/common/hooks/useTagIndex";
 import TagFilter from "../../TagFilter";
 

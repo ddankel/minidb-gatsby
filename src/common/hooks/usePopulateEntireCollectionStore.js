@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useCollectionActions, useEntireCollectionData } from "./useCollectionStore";
+import { useCollectionActions, useEntireCollectionData } from "../stores/useCollectionStore";
 import useMiniatureCollectionQuery from "./useMiniatureCollectionQuery";
 
 const usePopulateEntireCollectionStore = () => {
