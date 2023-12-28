@@ -1,5 +1,12 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
+import { ImageDataLike, getImage } from "gatsby-plugin-image";
+
+type Node = {
+  frontmatter: {
+    slug: string;
+    photos: ImageDataLike[];
+  };
+};
 
 /**
  * Fetch the array of gatsby-image objects for the specified miniature
@@ -11,16 +18,13 @@ import { getImage } from "gatsby-plugin-image";
  *
  * Or capture the entire array to retrieve all of the images
  *     const photos = usePhotos(miniatureSlug)
- *
- * @param   {String}  slug  The slug of the miniature to find
- *
- * @return  {Array}
  */
-const usePhotos = (slug) => {
+const usePhotos = (slug: string) => {
   const data = useStaticQuery(query);
-  const thisMini = data.allMarkdownRemark.nodes.find((item) => item.frontmatter.slug === slug);
+  const nodes: Node[] = data.allMarkdownRemark.nodes;
+  const thisMini = nodes.find((item) => item.frontmatter.slug === slug);
 
-  return thisMini.frontmatter.photos.map((photo) => getImage(photo));
+  return thisMini?.frontmatter.photos.map((photo) => getImage(photo));
 };
 
 export const query = graphql`
