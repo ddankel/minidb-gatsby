@@ -3,34 +3,28 @@ import ImageGallery from "react-image-gallery";
 
 import GatsbyImage from "@/common/components/GatsbyImage";
 
-import styled from "styled-components";
+import GalleryWrapper from "./GalleryWrapper";
 import "./styles.css";
+import { Photo } from "./types";
+import { parsePhotosForGallery } from "./utils";
 
-const GalleryWrapper = styled.div`
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  align-contents: center;
-`;
+type GalleryProps = {
+  photos: Photo[];
+};
 
-const Gallery = ({ photos }) => {
-  const miniImages = [];
-
+const Gallery = ({ photos }: GalleryProps) => {
   if (photos.length === 1) {
     const photo = getImage(photos[0]);
+    if (!photo) return null;
+
     return (
-      <center>
+      <div className="text-center">
         <GatsbyImage image={photo} alt="" />
-      </center>
+      </div>
     );
   }
 
-  photos.forEach((src) => {
-    miniImages.push({
-      original: src.publicURL,
-      thumbnail: getImage(src).images.fallback.src,
-    });
-  });
+  const miniImages = parsePhotosForGallery(photos);
 
   return (
     <GalleryWrapper>
