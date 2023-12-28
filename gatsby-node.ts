@@ -1,6 +1,6 @@
 import path from "path";
 
-const Miniature = require("./src/common/models/Miniature");
+const Miniature = require("./src/common/models/Miniature").Miniature;
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
