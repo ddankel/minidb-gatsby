@@ -13,7 +13,7 @@ type GalleryFilterData = {
   ignoreMonsters: string[];
 };
 
-class GalleryFilter {
+export class GalleryFilter {
   public genreFilter;
   public speciesFilter;
   public archetypeFilter;
@@ -52,5 +52,3 @@ class GalleryFilter {
     return true;
   }
 }
-
-export default GalleryFilter;

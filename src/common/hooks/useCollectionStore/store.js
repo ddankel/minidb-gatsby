@@ -1,4 +1,4 @@
-import GalleryFilter from "@/common/models/GalleryFilter";
+import { GalleryFilter } from "@/common/models/GalleryFilter";
 
 const store = (set, get) => ({
   entireCollectionData: [],
