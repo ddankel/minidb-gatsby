@@ -1,4 +1,4 @@
-import TagIndex from "../models/TagIndex";
+import { TagIndex } from "../models/TagIndex";
 import {
   useEntireCollectionTagData,
   useFilteredCollectionTagData,

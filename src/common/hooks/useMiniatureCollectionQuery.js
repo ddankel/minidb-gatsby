@@ -1,4 +1,4 @@
-import Miniature from "@/common/models/Miniature";
+import { Miniature } from "@/common/models/Miniature";
 import { graphql, useStaticQuery } from "gatsby";
 
 /**
@@ -9,7 +9,7 @@ import { graphql, useStaticQuery } from "gatsby";
 const useMiniatureCollectionQuery = () => {
   const data = useStaticQuery(query);
   const allMinisFM = data.allMarkdownRemark.nodes;
-  const allMinis = allMinisFM.map((node) => new Miniature({ frontmatter: node.frontmatter }));
+  const allMinis = allMinisFM.map((node) => new Miniature(node.frontmatter));
   const visibleMinis = allMinis.filter((mini) => mini.isVisible);
 
   return visibleMinis;

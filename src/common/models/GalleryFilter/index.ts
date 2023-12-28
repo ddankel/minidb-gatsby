@@ -1,7 +1,30 @@
+import { Miniature } from "../Miniature";
 import { matchesFilterAND, matchesFilterOR, matchesLine } from "./utils";
 
-class GalleryFilter {
-  constructor(args) {
+type GalleryFilterData = {
+  genreFilter: string[];
+  speciesFilter: string[];
+  archetypeFilter: string[];
+  weaponFilter: string[];
+  armorFilter: string[];
+  paintedFilter: string[];
+  nameFilter: string[];
+  lineFilter: string[];
+  ignoreMonsters: string[];
+};
+
+export class GalleryFilter {
+  public genreFilter;
+  public speciesFilter;
+  public archetypeFilter;
+  public weaponFilter;
+  public armorFilter;
+  public paintedFilter;
+  public nameFilter;
+  public lineFilter;
+  public ignoreMonsters;
+
+  constructor(args: GalleryFilterData) {
     this.genreFilter = args.genreFilter;
     this.speciesFilter = args.speciesFilter;
     this.archetypeFilter = args.archetypeFilter;
@@ -16,13 +39,8 @@ class GalleryFilter {
   /**
    * If the provided mini matches the filter criteria
    *
-   * The mini can be an entire miniature record or just the frontmatter
-   *
-   * @param   {Object}  mini  The mini to check against the filters
-   *
-   * @return  {Boolean}
    */
-  includes(mini) {
+  includes(mini: Miniature) {
     if (!matchesFilterAND(mini.genreTags, this.genreFilter)) return false;
     if (!matchesFilterAND(mini.raceTags, this.speciesFilter)) return false;
     if (!matchesFilterAND(mini.archetypeTags, this.archetypeFilter)) return false;
@@ -34,5 +52,3 @@ class GalleryFilter {
     return true;
   }
 }
-
-export default GalleryFilter;

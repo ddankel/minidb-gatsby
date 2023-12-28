@@ -52,7 +52,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
   data.allMarkdownRemark.nodes.forEach((node) => {
     const { frontmatter, html } = node;
-    const miniature = new Miniature({ frontmatter, html });
+    const miniature = new Miniature(frontmatter, html);
 
     if (!miniature.isVisible) return;
 

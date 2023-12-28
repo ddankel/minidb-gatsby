@@ -1,7 +1,7 @@
 import { graphql } from "gatsby";
 
 import AppLayout from "@/app/layouts/AppLayout";
-import Miniature from "@/common/models/Miniature";
+import { Miniature } from "@/common/models/Miniature";
 import MiniaturePageContent from "@/modules/miniature/content/MiniaturePageContent";
 
 const MiniaturePageTemplate = ({ data }) => {
@@ -20,7 +20,7 @@ export default MiniaturePageTemplate;
  */
 export const Head = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark;
-  const miniature = new Miniature({ frontmatter, html });
+  const miniature = new Miniature(frontmatter, html);
 
   return <title>{miniature.displayName} | MiniDB</title>;
 };
