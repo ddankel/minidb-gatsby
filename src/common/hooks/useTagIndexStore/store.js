@@ -1,4 +1,4 @@
-import Collection from "@/common/models/Collection";
+import { Collection } from "@/common/models/Collection";
 import TagIndex from "@/common/models/TagIndex";
 
 const store = (set, get) => ({

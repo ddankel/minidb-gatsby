@@ -1,4 +1,5 @@
 import _ from "lodash";
+import { Collection } from "../Collection";
 
 /**
  * Aggregate all tag categories across a collection
@@ -7,7 +8,7 @@ import _ from "lodash";
  *
  * @return  {Object}             Hashed tag aggregations
  */
-const buildAggregateHash = (collection) => {
+const buildAggregateHash = (collection: Collection) => {
   if (!collection.length) return {};
 
   return {

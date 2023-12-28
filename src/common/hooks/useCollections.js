@@ -1,4 +1,4 @@
-import Collection from "../models/Collection";
+import { Collection } from "../models/Collection";
 import { useEntireCollectionData, useFilteredCollectionData } from "./useCollectionStore";
 
 export const useEntireCollection = () => {
