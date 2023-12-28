@@ -1,15 +1,35 @@
 import { Miniature } from "@/common/models/Miniature";
 import { graphql, useStaticQuery } from "gatsby";
 
+type Node = {
+  frontmatter: {
+    slug: string;
+    name: string;
+    sku: string;
+    line: string[];
+    painted?: string;
+    status?: string;
+    photos: string[];
+    genre?: string[];
+    race?: string[];
+    archetype?: string[];
+    weapons?: string[];
+    armor?: string[];
+    recipes?: string[];
+    quantity?: number;
+    minidb: {
+      status: string;
+    };
+  };
+};
+
 /**
  * Fetch an array of Miniature objects for all minis in the graphql data source
- *
- * @return  {Array<Miniature>}
  */
-const useMiniatureCollectionQuery = () => {
+const useMiniatureCollectionQuery = (): Miniature[] => {
   const data = useStaticQuery(query);
-  const allMinisFM = data.allMarkdownRemark.nodes;
-  const allMinis = allMinisFM.map((node) => new Miniature(node.frontmatter));
+  const allMinisFM: Node[] = data.allMarkdownRemark.nodes;
+  const allMinis = allMinisFM.map((fmNode) => new Miniature(fmNode.frontmatter));
   const visibleMinis = allMinis.filter((mini) => mini.isVisible);
 
   return visibleMinis;
