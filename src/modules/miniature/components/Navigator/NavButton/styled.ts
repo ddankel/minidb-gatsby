@@ -4,7 +4,10 @@ import styled from "styled-components";
 
 import GatsbyImage from "@/common/components/GatsbyImage";
 
-export const Contents = styled.div`
+type ContentsProps = {
+  $variant: string;
+};
+export const Contents = styled.div<ContentsProps>`
   align-items: center;
   display: flex;
   flex-direction: ${({ $variant }) => ($variant === "prev" ? "row" : "row-reverse")};

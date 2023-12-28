@@ -7,6 +7,7 @@ import GalleryWrapper from "./GalleryWrapper";
 import "./styles.css";
 import { Photo } from "./types";
 import { parsePhotosForGallery } from "./utils";
+import Center from "@/common/components/Center";
 
 type GalleryProps = {
   photos: Photo[];
@@ -18,9 +19,9 @@ const Gallery = ({ photos }: GalleryProps) => {
     if (!photo) return null;
 
     return (
-      <div className="text-center">
+      <Center>
         <GatsbyImage image={photo} alt="" />
-      </div>
+      </Center>
     );
   }
 

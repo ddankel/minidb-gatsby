@@ -1,9 +1,9 @@
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 
 type ModifyGatsbyImageProps = {
-  height?: number;
-  width?: number;
-  size?: number;
+  height?: string;
+  width?: string;
+  size?: string;
   image: IGatsbyImageData;
   alt: string;
 };
