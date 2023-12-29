@@ -5,7 +5,11 @@ const Divider = styled.hr`
   margin-top: 0;
 `;
 
-const Header = ({ title }) => {
+type HeaderProps = {
+  title: string;
+};
+
+const Header = ({ title }: HeaderProps) => {
   return (
     <>
       <Title>{title}</Title>
