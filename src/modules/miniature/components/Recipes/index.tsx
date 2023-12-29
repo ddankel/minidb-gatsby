@@ -1,7 +1,7 @@
 import RecipeItem from "./RecipeItem";
 
 type RecipesProps = {
-  recipes: string[];
+  recipes?: (string[] | string)[];
 };
 
 const Recipes = ({ recipes }: RecipesProps) => {

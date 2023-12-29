@@ -1,6 +1,6 @@
 import { getImage } from "gatsby-plugin-image";
 import "./styles.css";
-import { Photo } from "./types";
+import { Photo } from "../../../../types/Photo";
 
 type GalleryItem = {
   original: string;

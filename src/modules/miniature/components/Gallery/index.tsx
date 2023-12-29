@@ -5,7 +5,7 @@ import GatsbyImage from "@/common/components/GatsbyImage";
 
 import GalleryWrapper from "./GalleryWrapper";
 import "./styles.css";
-import { Photo } from "./types";
+import { Photo } from "../../../../types/Photo";
 import { parsePhotosForGallery } from "./utils";
 import Center from "@/common/components/Center";
 

@@ -20,8 +20,14 @@ import Recipes from "../components/Recipes";
 import Status from "../components/Status";
 import TagList from "../components/TagList";
 import Text from "../components/Text";
+import { MiniatureFrontmatter } from "@/types/MiniatureFrontmatter";
 
-const MiniaturePageContent = ({ frontmatter, html }) => {
+type MiniaturePageContentProps = {
+  frontmatter: MiniatureFrontmatter;
+  html: string;
+};
+
+const MiniaturePageContent = ({ frontmatter, html }: MiniaturePageContentProps) => {
   const miniature = new Miniature(frontmatter, html);
   usePopulateEntireCollectionStore();
 

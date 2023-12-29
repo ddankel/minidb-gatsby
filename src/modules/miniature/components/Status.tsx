@@ -12,7 +12,7 @@ const colors: { [index: string]: string } = {
 };
 
 type StatusProps = {
-  paintedAt: string;
+  paintedAt?: string;
   paintedState: string;
 };
 
