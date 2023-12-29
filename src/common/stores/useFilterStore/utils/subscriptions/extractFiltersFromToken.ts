@@ -1,4 +1,4 @@
-const extractFiltersFromToken = (token) => {
+const extractFiltersFromToken = (token: (boolean | string[])[]) => {
   const [
     genreFilter,
     speciesFilter,
