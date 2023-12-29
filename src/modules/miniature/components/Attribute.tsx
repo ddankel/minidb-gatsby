@@ -19,7 +19,12 @@ const ValueContent = styled("div")`
   gap: 5px;
 `;
 
-const Attribute = ({ label, children }) => {
+type AttributeProps = {
+  label: string;
+  children: React.ReactNode;
+};
+
+const Attribute = ({ label, children }: AttributeProps) => {
   return (
     <Container>
       <Label>{label}:</Label>
