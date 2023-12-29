@@ -16,6 +16,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "type:check": "tsc",
     "mini:new": "npm run mini:new --prefix ./vendor/miniature-data",
     "mini:status": "npm run mini:status --prefix ./vendor/miniature-data",
     "mini:todo": "npm run mini:todo --prefix ./vendor/miniature-data",
