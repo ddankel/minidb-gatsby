@@ -8,6 +8,18 @@ export type FilterLabel =
   | "nameFilter"
   | "lineFilter";
 
+export type FilterToken = [
+  string[],
+  string[],
+  string[],
+  string[],
+  string[],
+  string[],
+  string[],
+  string[],
+  boolean
+];
+
 export type FilterStateValues = {
   genreFilter: string[];
   speciesFilter: string[];

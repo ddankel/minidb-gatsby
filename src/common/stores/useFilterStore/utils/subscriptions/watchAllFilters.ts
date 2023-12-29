@@ -1,6 +1,6 @@
-import { FilterState } from "../../types";
+import { FilterState, FilterToken } from "../../types";
 
-const watchAllFilters = (state: FilterState) => [
+const watchAllFilters = (state: FilterState): FilterToken => [
   state.genreFilter,
   state.speciesFilter,
   state.archetypeFilter,
