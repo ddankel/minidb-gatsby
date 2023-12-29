@@ -1,26 +1,9 @@
 import { Miniature } from "@/common/models/Miniature";
+import { MiniatureFrontmatter } from "@/types/MiniatureFrontmatter";
 import { graphql, useStaticQuery } from "gatsby";
 
 type Node = {
-  frontmatter: {
-    slug: string;
-    name: string;
-    sku: string;
-    line: string[];
-    painted?: string;
-    status?: string;
-    photos: string[];
-    genre?: string[];
-    race?: string[];
-    archetype?: string[];
-    weapons?: string[];
-    armor?: string[];
-    recipes?: string[];
-    quantity?: number;
-    minidb: {
-      status: string;
-    };
-  };
+  frontmatter: MiniatureFrontmatter;
 };
 
 /**

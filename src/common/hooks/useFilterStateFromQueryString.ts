@@ -3,6 +3,7 @@ import queryString from "query-string";
 import { useEffect } from "react";
 
 import { useFilterActions } from "@/common/stores/useFilterStore";
+import { FilterLabel } from "../stores/useFilterStore/types";
 
 type HookProps = {
   path: string;
@@ -31,7 +32,13 @@ const useFilterStateFromQueryString = ({ path, query: rawQueryString }: HookProp
 
     // Then merge in any filters that came in on the query string
     for (const [key, value] of Object.entries(qs)) {
-      setFilter(key, value);
+      if (value === null) {
+        // Do nothing
+      } else if (Array.isArray(value)) {
+        setFilter(key as FilterLabel, value as string[]);
+      } else if (value !== null) {
+        setFilter(key as FilterLabel, value);
+      }
     }
 
     // Then redirect to clear the querystring
