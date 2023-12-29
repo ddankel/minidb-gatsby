@@ -1,9 +1,9 @@
-import _ from "lodash";
 import { Badge } from "react-bootstrap";
+import { upperFirst } from "lodash";
 
 import Attribute from "./Attribute";
 
-const colors = {
+const colors: { [index: string]: string } = {
   unassembled: "light",
   unpainted: "light",
   prepainted: "success",
@@ -11,8 +11,13 @@ const colors = {
   painted: "primary",
 };
 
-const Status = ({ paintedAt, paintedState }) => {
-  const label = !!paintedAt ? `Painted: ${paintedAt}` : _.upperFirst(paintedState);
+type StatusProps = {
+  paintedAt: string;
+  paintedState: string;
+};
+
+const Status = ({ paintedAt, paintedState }: StatusProps) => {
+  const label = !!paintedAt ? `Painted: ${paintedAt}` : upperFirst(paintedState);
 
   return (
     <Attribute label="Status">
