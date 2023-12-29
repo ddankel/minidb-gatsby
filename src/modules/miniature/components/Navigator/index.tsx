@@ -2,11 +2,17 @@ import { Collapse, Stack } from "react-bootstrap";
 import { BiCaretDown, BiCaretUp } from "react-icons/bi";
 import { useSessionStorage } from "usehooks-ts";
 
+import Center from "@/common/components/Center";
 import { useFilteredCollection } from "@/common/hooks/useCollections";
+
 import NavButton from "./NavButton";
 import { Contents, ToggleButton, WidthContraint, Wrapper } from "./styled";
 
-const Navigator = ({ current: currentSlug }) => {
+type NavigatorProps = {
+  current: string;
+};
+
+const Navigator = ({ current: currentSlug }: NavigatorProps) => {
   const filteredCollection = useFilteredCollection();
   const [open, setOpen] = useSessionStorage("show-mini-nav", false);
 
@@ -29,7 +35,7 @@ const Navigator = ({ current: currentSlug }) => {
             </Stack>
           </Contents>
         </Collapse>
-        <center>
+        <Center>
           <ToggleButton
             onClick={() => setOpen(!open)}
             aria-controls="navigation-buttons"
@@ -37,7 +43,7 @@ const Navigator = ({ current: currentSlug }) => {
           >
             {toggleLabel} <ToggleIcon />
           </ToggleButton>
-        </center>
+        </Center>
       </WidthContraint>
     </Wrapper>
   );

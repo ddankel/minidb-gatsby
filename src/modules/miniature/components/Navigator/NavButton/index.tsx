@@ -3,7 +3,13 @@ import usePhotos from "@/common/hooks/usePhotos";
 
 import { Contents, Label, LeftArrow, NavImage, NavLink, RightArrow } from "./styled";
 
-const NavButton = ({ slug, variant, ...restProps }) => {
+type NavButtonProps = {
+  slug: string;
+  variant: string;
+  className?: string;
+};
+
+const NavButton = ({ slug, variant, className }: NavButtonProps) => {
   const [imgSrc] = usePhotos(slug);
   const miniature = useMiniature(slug);
 
@@ -12,13 +18,14 @@ const NavButton = ({ slug, variant, ...restProps }) => {
   }
 
   const Arrow = variant === "prev" ? LeftArrow : RightArrow;
+  const alt = miniature?.name || "thumbnail";
 
   return (
-    <NavLink to={`/minis/${slug}`} {...restProps}>
+    <NavLink to={`/minis/${slug}`} className={className}>
       <Contents $variant={variant}>
         <Arrow />
-        <NavImage image={imgSrc} alt={miniature.name} />
-        <Label>{miniature.name}</Label>
+        {imgSrc && <NavImage image={imgSrc} alt={alt} />}
+        <Label>{miniature?.name}</Label>
       </Contents>
     </NavLink>
   );

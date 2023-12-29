@@ -24,7 +24,9 @@ const usePhotos = (slug: string) => {
   const nodes: Node[] = data.allMarkdownRemark.nodes;
   const thisMini = nodes.find((item) => item.frontmatter.slug === slug);
 
-  return thisMini?.frontmatter.photos.map((photo) => getImage(photo));
+  if (!thisMini) return [];
+
+  return thisMini.frontmatter.photos.map((photo) => getImage(photo));
 };
 
 export const query = graphql`

@@ -3,6 +3,7 @@ import { PageProps, graphql } from "gatsby";
 import AppLayout from "@/app/layouts/AppLayout";
 import { Miniature } from "@/common/models/Miniature";
 import MiniaturePageContent from "@/modules/miniature/content/MiniaturePageContent";
+import { Photo } from "@/types/Photo";
 
 type DataProps = {
   data: {
@@ -10,7 +11,7 @@ type DataProps = {
       frontmatter: {
         slug: string;
         name: string;
-        photos: string[];
+        photos: Photo[];
         line: string[];
       };
       html: string;

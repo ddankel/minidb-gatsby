@@ -1,6 +1,10 @@
 import Attribute from "./Attribute";
 
-const Quantity = ({ count }) => {
+type QuantityProps = {
+  count: number;
+};
+
+const Quantity = ({ count }: QuantityProps) => {
   if (count === 1) return null;
 
   return <Attribute label="Quantity">{count}</Attribute>;

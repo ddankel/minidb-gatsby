@@ -1,3 +1,5 @@
+import { MiniatureFrontmatter } from "@/types/MiniatureFrontmatter";
+
 const isDevelopment = process.env.NODE_ENV === "development";
 
 const DEFAULT_GENRE_TAGS: string[] = ["fantasy"];
@@ -8,29 +10,6 @@ const DEFAULT_ARMOR_TAGS: string[] = [];
 const DEFAULT_POST_STATUS = "published";
 const DEFAULT_PAINTED_STATUS = "painted";
 const DEFAULT_QUANTITY = 1;
-
-type MiniatureStatus = {
-  status: string;
-};
-
-type MiniatureFrontmatter = {
-  slug: string;
-  name: string;
-  sku?: string;
-  line: string[];
-  painted?: string;
-  status?: string;
-  photos: string[];
-  genre?: string[];
-  race?: string[];
-  archetype?: string[];
-  weapons?: string[];
-  armor?: string[];
-  quantity?: number;
-  recipes?: (string | string[])[];
-  minidb?: MiniatureStatus;
-  gallery?: MiniatureStatus;
-};
 
 export class Miniature {
   constructor(readonly frontmatter: MiniatureFrontmatter, readonly html?: string) {}
