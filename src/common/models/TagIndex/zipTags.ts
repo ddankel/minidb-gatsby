@@ -1,5 +1,5 @@
 import { TagIndex } from ".";
-import { CategorizedTagCounts, TagCount } from "./types";
+import { CategorizedTagCounts, TagCount, TagIndexData } from "./types";
 
 /**
  * Zip tags together to display filters
@@ -44,10 +44,12 @@ export const zipTags = (allTags: TagCount[], filteredTags: TagCount[]) => {
 /**
  * Call zipTags on all keys in the allTags object
  */
-export const zipAllTags = (allTags: CategorizedTagCounts, filteredTags: CategorizedTagCounts) => {
+export const zipAllTags = (allTags: TagIndex, filteredTags: TagIndex): TagIndexData => {
   const zippedTags: { [key: string]: TagCount[] } = {};
   for (const key of TagIndex.tagKeys) {
-    zippedTags[key] = zipTags(allTags[key], filteredTags[key]);
+    const allTagsOfThisKey = allTags[key as keyof TagIndex] as TagCount[];
+    const filteredTagsOfThisKey = filteredTags[key as keyof TagIndex] as TagCount[];
+    zippedTags[key] = zipTags(allTagsOfThisKey, filteredTagsOfThisKey);
   }
   return zippedTags;
 };

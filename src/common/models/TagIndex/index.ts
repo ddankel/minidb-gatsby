@@ -72,7 +72,7 @@ export class TagIndex {
     return new TagIndex(dataHash);
   }
 
-  static zipTogether(allTags: CategorizedTagCounts, filteredTags: CategorizedTagCounts) {
+  static zipTogether(allTags: TagIndex, filteredTags: TagIndex) {
     const dataHash = zipAllTags(allTags, filteredTags);
     return new TagIndex(dataHash);
   }

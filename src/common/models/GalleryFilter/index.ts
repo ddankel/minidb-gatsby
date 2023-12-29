@@ -1,7 +1,7 @@
 import { Miniature } from "../Miniature";
 import { matchesFilterAND, matchesFilterOR, matchesLine } from "./utils";
 
-type GalleryFilterData = {
+export type GalleryFilterData = {
   genreFilter: string[];
   speciesFilter: string[];
   archetypeFilter: string[];
@@ -10,7 +10,7 @@ type GalleryFilterData = {
   paintedFilter: string[];
   nameFilter: string[];
   lineFilter: string[];
-  ignoreMonsters: string[];
+  ignoreMonsters: boolean;
 };
 
 export class GalleryFilter {
