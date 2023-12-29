@@ -62,7 +62,7 @@ const ActiveFilters = () => {
       {lineFilter.map((tag) => (
         <FilterBadge
           key={tag}
-          text={last(tag.split(" > "))}
+          text={last(tag.split(" > ")) || ""}
           onClick={() => removeLineFilter(tag)}
         />
       ))}
