@@ -1,4 +1,6 @@
-const extractFiltersFromToken = (token) => {
+import { FilterToken } from "../../types";
+
+const extractFiltersFromToken = (token: FilterToken) => {
   const [
     genreFilter,
     speciesFilter,

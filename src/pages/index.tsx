@@ -1,10 +1,12 @@
+import { PageProps } from "gatsby";
+
 import AppLayout from "@/app/layouts/AppLayout";
 import GalleryPageContent from "@/modules/gallery/content/GalleryPageContent";
 
 import useFilterStateFromQueryString from "@/common/hooks/useFilterStateFromQueryString";
 import usePopulateEntireCollectionStore from "@/common/hooks/usePopulateEntireCollectionStore";
 
-const IndexPage = ({ location }) => {
+const IndexPage = ({ location }: PageProps) => {
   useFilterStateFromQueryString({ path: location.pathname, query: location.search });
   usePopulateEntireCollectionStore();
 

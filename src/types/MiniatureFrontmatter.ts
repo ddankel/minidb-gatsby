@@ -15,7 +15,7 @@ export type MiniatureFrontmatter = {
   weapons?: string[];
   armor?: string[];
   quantity?: number;
-  recipes?: (string | string[])[];
+  recipes?: string[];
   minidb?: MiniatureStatus;
   gallery?: MiniatureStatus;
 };

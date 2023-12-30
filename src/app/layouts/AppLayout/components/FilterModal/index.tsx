@@ -3,11 +3,11 @@ import { Modal } from "react-bootstrap";
 import { useModalStateContext } from "../../contexts/ModalStateProvider";
 import FilterField from "./components/FilterField";
 
-const FilterModal = (props) => {
+const FilterModal = () => {
   const { isFilterOpen, closeFilter } = useModalStateContext();
 
   return (
-    <Modal keyboard={true} size="lg" show={isFilterOpen} onHide={closeFilter} {...props}>
+    <Modal keyboard={true} size="lg" show={isFilterOpen} onHide={closeFilter}>
       <Modal.Body>
         <h5>Apply Filter</h5>
         <FilterField />

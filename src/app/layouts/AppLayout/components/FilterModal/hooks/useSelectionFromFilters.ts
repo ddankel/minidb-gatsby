@@ -7,12 +7,13 @@ import {
   useSpeciesFilter,
   useWeaponFilter,
 } from "@/common/stores/useFilterStore";
+import { FilterOption } from "../types/FilterOption";
 
-const pickSelectedOptions = (options, filter) => {
+const pickSelectedOptions = (options: FilterOption[], filter: string[]) => {
   return options.filter((item) => filter.includes(item.value));
 };
 
-const useSelectionFromFilters = (options) => {
+const useSelectionFromFilters = (options: FilterOption[]) => {
   const genreFilter = useGenreFilter();
   const speciesFilter = useSpeciesFilter();
   const archetypeFilter = useArchetypeFilter();

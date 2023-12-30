@@ -17,7 +17,12 @@ const WideContainer = styled(Container)`
   `}
 `;
 
-const ContentContainer = ({ children, variant, ...restProps }) => {
+type ContentContainerProps = {
+  children: React.ReactNode;
+  variant: string;
+};
+
+const ContentContainer = ({ children, variant, ...restProps }: ContentContainerProps) => {
   let Wrapper = Container;
   if (variant === "narrow") Wrapper = NarrowContainer;
   if (variant === "wide") Wrapper = WideContainer;
