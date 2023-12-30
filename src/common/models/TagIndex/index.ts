@@ -1,6 +1,6 @@
 import { Collection } from "../Collection";
 import buildAggregateHash from "./buildAggregateHash";
-import { CategorizedTagCounts, TagCount, TagIndexData } from "./types";
+import { TagCount, TagIndexData } from "./types";
 import { zipAllTags } from "./zipTags";
 
 export class TagIndex {
