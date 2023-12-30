@@ -2,10 +2,10 @@ import { last } from "lodash";
 
 import BadgeButton from "@/common/components/BadgeButton";
 import {
-  useGenreFilter,
   useArchetypeFilter,
   useArmorFilter,
   useFilterActions,
+  useGenreFilter,
   useIsFiltered,
   useLineFilter,
   usePaintedFilter,
@@ -16,7 +16,6 @@ import {
 import BadgeContainer from "./components/BadgeContainer";
 import FilterBadge from "./components/FilterBadge";
 import useShowReset from "./hooks/useShowReset";
-import { Button } from "react-bootstrap";
 
 const ActiveFilters = () => {
   const isFiltered = useIsFiltered();
