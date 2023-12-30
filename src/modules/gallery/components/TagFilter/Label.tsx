@@ -1,8 +1,13 @@
-import _ from "lodash";
+import { last, startCase } from "lodash";
 
 import { CountPart, IndentedLabel, LabelPart } from "./Label.styled";
 
-const Label = ({ count, children }) => {
+type LabelProps = {
+  count: number;
+  children: string;
+};
+
+const Label = ({ count, children }: LabelProps) => {
   const label = children;
   const labelParts = label.split(" > ");
   const countDisplay = !!count || count === 0 ? ` (${count})` : null;
@@ -10,7 +15,7 @@ const Label = ({ count, children }) => {
   if (labelParts.length === 1) {
     return (
       <>
-        {_.startCase(children)}
+        {startCase(children)}
         <CountPart>{countDisplay}</CountPart>
       </>
     );
@@ -18,7 +23,7 @@ const Label = ({ count, children }) => {
 
   return (
     <IndentedLabel indent={labelParts.length - 1}>
-      <LabelPart>{_.last(labelParts)}</LabelPart>
+      <LabelPart>{last(labelParts)}</LabelPart>
       <CountPart>{countDisplay}</CountPart>
     </IndentedLabel>
   );

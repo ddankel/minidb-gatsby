@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const IndentedLabel = styled("div")`
+type IndentedLabelProps = {
+  indent: number;
+};
+
+export const IndentedLabel = styled("div")<IndentedLabelProps>`
   && {
     margin-left: ${(props) => `${(props.indent || 0) * 0.33}rem`};
     white-space: nowrap;
