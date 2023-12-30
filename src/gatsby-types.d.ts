@@ -3010,7 +3010,7 @@ type GatsbyImageSharpFluidLimitPresentationSizeFragment = { readonly maxHeight: 
 type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type Unnamed_1_Query = { readonly allMarkdownRemark: { readonly nodes: ReadonlyArray<{ readonly frontmatter: { readonly slug: string, readonly minidb: { readonly status: string | null } | null } }> } };
+type Unnamed_1_Query = { readonly allMarkdownRemark: { readonly nodes: ReadonlyArray<{ readonly html: string | null, readonly frontmatter: { readonly slug: string, readonly minidb: { readonly status: string | null } | null } }> } };
 
 
 }
