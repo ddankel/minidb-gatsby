@@ -16,6 +16,7 @@ import {
 import BadgeContainer from "./components/BadgeContainer";
 import FilterBadge from "./components/FilterBadge";
 import useShowReset from "./hooks/useShowReset";
+import { Button } from "react-bootstrap";
 
 const ActiveFilters = () => {
   const isFiltered = useIsFiltered();
