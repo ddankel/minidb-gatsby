@@ -1,7 +1,12 @@
+import { Collection } from "@/common/models/Collection";
 import GalleryItem from "../GalleryItem";
 import { Wrapper } from "./styled";
 
-const Gallery = ({ collection }) => {
+type GalleryProps = {
+  collection: Collection;
+};
+
+const Gallery = ({ collection }: GalleryProps) => {
   const minis = collection.toArray();
 
   return (

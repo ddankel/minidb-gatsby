@@ -2,10 +2,10 @@ import { last } from "lodash";
 
 import BadgeButton from "@/common/components/BadgeButton";
 import {
-  useGenreFilter,
   useArchetypeFilter,
   useArmorFilter,
   useFilterActions,
+  useGenreFilter,
   useIsFiltered,
   useLineFilter,
   usePaintedFilter,
@@ -62,7 +62,7 @@ const ActiveFilters = () => {
       {lineFilter.map((tag) => (
         <FilterBadge
           key={tag}
-          text={last(tag.split(" > "))}
+          text={last(tag.split(" > ")) || ""}
           onClick={() => removeLineFilter(tag)}
         />
       ))}

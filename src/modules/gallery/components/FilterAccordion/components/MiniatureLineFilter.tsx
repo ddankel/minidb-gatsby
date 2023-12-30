@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 
+import { TagCount } from "@/common/models/TagIndex/types";
 import { useFilterActions, useLineFilter } from "@/common/stores/useFilterStore";
 
 import {
@@ -23,12 +24,14 @@ const MiniatureLineFilter = () => {
       // If there's at least one line, show it and any other lines under the
       // same "top level" line.  IE if "Reaper Miniatures > Bones" is selected,
       // show any lines that start with "Reaper Miniatures"
-      const isTopLevel = (line) => line.name.split(">").length === 1;
+      const isTopLevel = (line: TagCount) => line.name.split(">").length === 1;
       return lines.filter(isTopLevel);
     } else {
       // If there are no selected filters, only show "top level" lines.
       // IE show "Privateer Press" but not "Privateer Press > Mecenaries"
-      const sharesParentWithCurrent = (line) => line.name.startsWith(lineFilter[0].split(" > ")[0]);
+      const sharesParentWithCurrent = (line: TagCount) => {
+        return line.name.startsWith(lineFilter[0].split(" > ")[0]);
+      };
       return allLines.filter(sharesParentWithCurrent);
     }
   }, [allLines, lines, lineFilter]);

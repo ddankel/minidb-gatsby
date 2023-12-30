@@ -43,7 +43,10 @@ export const ImageContainer = styled.div`
   overflow: hidden;
 `;
 
-export const Item = styled.div`
+type ItemProps = {
+  $callout: boolean;
+};
+export const Item = styled.div<ItemProps>`
   padding: 0.25rem;
   cursor: pointer;
   outline: ${(props) => (!!props.$callout ? "1px solid peru" : null)};

@@ -1,4 +1,5 @@
 import Accordion from "react-bootstrap/Accordion";
+import { AccordionEventKey } from "react-bootstrap/esm/AccordionContext";
 import { useSessionStorage } from "usehooks-ts";
 
 import ArchetypeFilter from "./components/ArchetypeFilter";
@@ -11,7 +12,10 @@ import WeaponFilter from "./components/WeaponFilter";
 import { Body, Header, Item } from "./styled";
 
 const FilterAccordion = () => {
-  const [accordionKey, setAccordionKey] = useSessionStorage("filter-accordion", null);
+  const [accordionKey, setAccordionKey] = useSessionStorage<AccordionEventKey | null>(
+    "filter-accordion",
+    null
+  );
 
   return (
     <Accordion flush activeKey={accordionKey} onSelect={(key) => setAccordionKey(key)}>

@@ -8,7 +8,12 @@ import FilterAccordion from "../../FilterAccordion";
 import { FlexWrap } from "../index.styled";
 import ResultCount from "./ResultCount";
 
-const FilterModal = ({ show, onHide }) => {
+type FilterModalProps = {
+  show: boolean;
+  onHide: () => void;
+};
+
+const FilterModal = ({ show, onHide }: FilterModalProps) => {
   const filteredCollection = useFilteredCollection();
   const isFiltered = useIsFiltered();
 
