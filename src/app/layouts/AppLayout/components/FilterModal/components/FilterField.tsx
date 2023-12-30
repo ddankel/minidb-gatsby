@@ -33,7 +33,6 @@ const FilterField = () => {
       ref={inputRef}
       open={needle.length > 0}
       highlightOnlyResult={true}
-      // onFocus={(e) => e.target.select()}
       id="miniature-keyboard-filter"
       onInputChange={(e) => setNeedle(e)}
       onChange={handleChange}
