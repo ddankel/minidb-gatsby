@@ -1,12 +1,10 @@
 import { startCase } from "lodash";
 
 import useCountForOption from "../hooks/useCountForOption";
+import { FilterOption } from "../types/FilterOption";
 
 type FilteResultsProps = {
-  option: {
-    name: string;
-    value: string;
-  };
+  option: FilterOption;
 };
 
 const FilterResults = ({ option }: FilteResultsProps) => {
