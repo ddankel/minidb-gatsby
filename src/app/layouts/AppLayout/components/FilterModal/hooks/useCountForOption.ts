@@ -1,9 +1,11 @@
 import { useZippedCollectionTagIndex } from "@/common/hooks/useTagIndex";
+import { TagCount } from "@/common/models/TagIndex/types";
+import { FilterOption } from "../types/FilterOption";
 
-const useCountForOption = ({ type, value }) => {
+const useCountForOption = ({ type, value }: FilterOption) => {
   const zippedTags = useZippedCollectionTagIndex();
 
-  let tagsForType = [];
+  let tagsForType: TagCount[] = [];
   switch (type) {
     case "genre":
       tagsForType = zippedTags.genreTags;

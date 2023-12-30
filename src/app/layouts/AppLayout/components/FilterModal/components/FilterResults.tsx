@@ -2,7 +2,14 @@ import { startCase } from "lodash";
 
 import useCountForOption from "../hooks/useCountForOption";
 
-const FilterResults = ({ option }) => {
+type FilteResultsProps = {
+  option: {
+    name: string;
+    value: string;
+  };
+};
+
+const FilterResults = ({ option }: FilteResultsProps) => {
   const count = useCountForOption(option);
 
   const formattedValue = option.value

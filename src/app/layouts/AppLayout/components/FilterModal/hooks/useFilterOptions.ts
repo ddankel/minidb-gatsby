@@ -1,7 +1,9 @@
 import { useEntireCollectionTagIndex } from "@/common/hooks/useTagIndex";
+import { TagCount } from "@/common/models/TagIndex/types";
 import { startCase, last } from "lodash";
+import { FilterOption } from "../types/FilterOption";
 
-const convertTagsToOptions = (type, tags) => {
+const convertTagsToOptions = (type: string, tags: TagCount[]) => {
   return tags.map((item) => ({
     label: startCase(last(item.name.split(" > "))),
     value: item.name,
@@ -11,10 +13,8 @@ const convertTagsToOptions = (type, tags) => {
 
 /**
  * Compile the list of tags over the library into options for the filter field
- *
- * @return  {Array<Object>}
  */
-const useFilterOptions = () => {
+const useFilterOptions = (): FilterOption[] => {
   const tagIndex = useEntireCollectionTagIndex();
 
   const genreOptions = convertTagsToOptions("genre", tagIndex.genreTags);
