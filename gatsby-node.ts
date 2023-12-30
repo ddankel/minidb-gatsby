@@ -1,8 +1,14 @@
+import {
+  CreatePagesArgs,
+  CreateSchemaCustomizationArgs,
+  GatsbyGraphQLType,
+  GatsbyNode,
+} from "gatsby";
 import path from "path";
 
 const Miniature = require("./src/common/models/Miniature").Miniature;
 
-exports.createSchemaCustomization = ({ actions }) => {
+exports.createSchemaCustomization = ({ actions }: CreateSchemaCustomizationArgs) => {
   const { createTypes } = actions;
   const typeDefs = [
     `type MarkdownRemark implements Node @dontInfer {
@@ -34,8 +40,22 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(typeDefs);
 };
 
-exports.createPages = async function ({ actions, graphql }) {
-  const { data } = await graphql(`
+type PageResponseData = {
+  allMarkdownRemark: {
+    nodes: {
+      frontmatter: {
+        slug: string;
+        minidb: {
+          status: string;
+        };
+      };
+      html: string;
+    }[];
+  };
+};
+
+exports.createPages = async function ({ actions, graphql }: CreatePagesArgs) {
+  const { data } = await graphql<PageResponseData>(`
     query {
       allMarkdownRemark {
         nodes {
@@ -45,10 +65,13 @@ exports.createPages = async function ({ actions, graphql }) {
               status
             }
           }
+          html
         }
       }
     }
   `);
+
+  if (!data) return;
 
   data.allMarkdownRemark.nodes.forEach((node) => {
     const { frontmatter, html } = node;
