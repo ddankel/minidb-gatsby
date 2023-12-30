@@ -11,14 +11,22 @@ const Match = styled.span.attrs({
   className: "bg-primary",
 })``;
 
-const SearchResult = ({ slug, needle }) => {
+type SearchResultProps = {
+  slug: string;
+  needle: string;
+};
+
+const SearchResult = ({ slug, needle }: SearchResultProps) => {
   const [imgSrc] = usePhotos(slug);
   const miniature = useMiniature(slug);
+
+  if (!miniature) return null;
+
   const segments = parseLabelForNeedle(miniature.displayName, needle);
 
   return (
     <Stack direction="horizontal">
-      <GastbyImage image={imgSrc} alt={miniature.displayName} size="50px" />
+      {imgSrc && <GastbyImage image={imgSrc} alt={miniature.displayName} size="50px" />}
       <div className="px-2">
         {segments
           .filter((x) => x)

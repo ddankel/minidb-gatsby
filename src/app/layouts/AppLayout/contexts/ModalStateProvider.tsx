@@ -1,9 +1,34 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-export const ModalStateContext = createContext();
+type ModalStateProviderState = {
+  isSearchOpen: boolean;
+  openSearch: () => void;
+  closeSearch: () => void;
+
+  isFilterOpen: boolean;
+  openFilter: () => void;
+  closeFilter: () => void;
+};
+
+type ModelStateProviderProps = {
+  children: React.ReactNode;
+  enableFilter?: boolean;
+};
+
+const defaultState: ModalStateProviderState = {
+  isSearchOpen: false,
+  openSearch: () => {},
+  closeSearch: () => {},
+
+  isFilterOpen: false,
+  openFilter: () => {},
+  closeFilter: () => {},
+};
+
+export const ModalStateContext = createContext<ModalStateProviderState>(defaultState);
 export const useModalStateContext = () => useContext(ModalStateContext);
 
-export const ModalStateProvider = ({ children, enableFilter = false }) => {
+export const ModalStateProvider = ({ children, enableFilter = false }: ModelStateProviderProps) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
@@ -11,7 +36,7 @@ export const ModalStateProvider = ({ children, enableFilter = false }) => {
   const suppressKeyListening = isSearchOpen || isFilterOpen;
 
   useEffect(() => {
-    const handleKeyPress = (e) => {
+    const handleKeyPress = (e: KeyboardEvent) => {
       // Don't process keypresses if suppressKeyListening
       if (suppressKeyListening) return;
 
