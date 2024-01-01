@@ -1,5 +1,13 @@
-import { MiniatureStatus } from "./MiniatureStatus";
-import { Photo } from "./Photo";
+import { ImageDataLike } from "gatsby-plugin-image";
+
+export type MiniaturePhoto = ImageDataLike & {
+  childImageSharp: {};
+  publicURL: string;
+};
+
+export type MiniatureStatus = {
+  status: string;
+};
 
 export type MiniatureFrontmatter = {
   slug: string;
@@ -8,7 +16,7 @@ export type MiniatureFrontmatter = {
   line: string[];
   painted?: string;
   status?: string;
-  photos: Photo[];
+  photos: MiniaturePhoto[];
   genre?: string[];
   race?: string[];
   archetype?: string[];

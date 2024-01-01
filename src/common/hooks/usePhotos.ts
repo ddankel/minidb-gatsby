@@ -1,12 +1,6 @@
+import { MultipleMiniatureQueryData } from "@/types/MiniatureQuery.types";
 import { graphql, useStaticQuery } from "gatsby";
-import { ImageDataLike, getImage } from "gatsby-plugin-image";
-
-type Node = {
-  frontmatter: {
-    slug: string;
-    photos: ImageDataLike[];
-  };
-};
+import { getImage } from "gatsby-plugin-image";
 
 /**
  * Fetch the array of gatsby-image objects for the specified miniature
@@ -20,8 +14,8 @@ type Node = {
  *     const photos = usePhotos(miniatureSlug)
  */
 const usePhotos = (slug: string) => {
-  const data = useStaticQuery(query);
-  const nodes: Node[] = data.allMarkdownRemark.nodes;
+  const data = useStaticQuery<MultipleMiniatureQueryData>(query);
+  const nodes = data.allMarkdownRemark.nodes;
   const thisMini = nodes.find((item) => item.frontmatter.slug === slug);
 
   if (!thisMini) return [];

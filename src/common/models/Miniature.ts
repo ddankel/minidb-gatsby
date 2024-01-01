@@ -1,4 +1,4 @@
-import { MiniatureFrontmatter } from "@/types/MiniatureFrontmatter";
+import { MiniatureFrontmatter } from "@/types/MiniatureFrontmatter.types";
 
 const isDevelopment = process.env.NODE_ENV === "development";
 
