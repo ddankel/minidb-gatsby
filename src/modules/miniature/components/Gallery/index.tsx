@@ -1,16 +1,16 @@
 import { getImage } from "gatsby-plugin-image";
 import ImageGallery from "react-image-gallery";
 
+import Center from "@/common/components/Center";
 import GatsbyImage from "@/common/components/GatsbyImage";
+import { MiniaturePhoto } from "@/types/MiniatureFrontmatter.types";
 
 import GalleryWrapper from "./GalleryWrapper";
 import "./styles.css";
-import { Photo } from "../../../../types/Photo";
 import { parsePhotosForGallery } from "./utils";
-import Center from "@/common/components/Center";
 
 type GalleryProps = {
-  photos: Photo[];
+  photos: MiniaturePhoto[];
 };
 
 const Gallery = ({ photos }: GalleryProps) => {

@@ -1,13 +1,13 @@
 import { getImage } from "gatsby-plugin-image";
 import "./styles.css";
-import { Photo } from "../../../../types/Photo";
+import { MiniaturePhoto } from "@/types/MiniatureFrontmatter.types";
 
 type GalleryItem = {
   original: string;
   thumbnail: string | undefined;
 };
 
-export const parsePhotosForGallery = (photos: Photo[]) => {
+export const parsePhotosForGallery = (photos: MiniaturePhoto[]) => {
   const miniImages: GalleryItem[] = [];
 
   photos.forEach((src) => {

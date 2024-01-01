@@ -1,5 +1,6 @@
 import usePopulateEntireCollectionStore from "@/common/hooks/usePopulateEntireCollectionStore";
 import { Miniature } from "@/common/models/Miniature";
+import { MiniatureNode } from "@/types/MiniatureQuery.types";
 
 import {
   AttributeStack,
@@ -20,12 +21,8 @@ import Recipes from "../components/Recipes";
 import Status from "../components/Status";
 import TagList from "../components/TagList";
 import Text from "../components/Text";
-import { MiniatureFrontmatter } from "@/types/MiniatureFrontmatter";
 
-type MiniaturePageContentProps = {
-  frontmatter: MiniatureFrontmatter;
-  html: string;
-};
+type MiniaturePageContentProps = MiniatureNode;
 
 const MiniaturePageContent = ({ frontmatter, html }: MiniaturePageContentProps) => {
   const miniature = new Miniature(frontmatter, html);
