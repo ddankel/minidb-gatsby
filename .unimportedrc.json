@@ -1,6 +1,11 @@
 {
-  "entry": ["src/pages/**/*.js", "src/templates/**/*.js"],
-  "extensions": [".ts", ".js"],
+  "entry": [
+    "src/pages/**/*.js",
+    "src/pages/**/*.ts*",
+    "src/templates/**/*.js",
+    "src/templates/**/*.ts*"
+  ],
+  "extensions": [".ts", ".tsx", ".js"],
   "ignorePatterns": ["**/node_modules/**", "private/**"],
   "ignoreUnused": [
     "bootstrap",
@@ -13,5 +18,6 @@
     "gatsby-plugin-styled-components",
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp"
-  ]
+  ],
+  "ignoreUnimported": ["src/gatsby-types.d.ts"]
 }
