@@ -16,6 +16,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "type:check": "tsc --noEmit",
     "mini:new": "npm run mini:new --prefix ./vendor/miniature-data",
     "mini:status": "npm run mini:status --prefix ./vendor/miniature-data",
     "mini:todo": "npm run mini:todo --prefix ./vendor/miniature-data",
@@ -52,6 +53,9 @@
     "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "miniature-data": "./vendor/miniature-data"
+    "@types/node": "^20.10.5",
+    "@types/react-image-gallery": "^1.2.4",
+    "miniature-data": "./vendor/miniature-data",
+    "typescript": "^5.3.3"
   }
 }
