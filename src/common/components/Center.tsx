@@ -1,9 +1,8 @@
-type CenterProps = {
-  children: React.ReactNode;
-};
+import styled from "styled-components";
 
-const Center = ({ children }: CenterProps) => {
-  return <div className="text-center">{children}</div>;
-};
+const Center = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 export default Center;
