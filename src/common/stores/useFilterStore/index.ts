@@ -81,7 +81,7 @@ export const useFilterStore = create<FilterState>()(
 
             setFilter: (label, value) => {
               const newValue = [value].flat();
-              const payload: FilterStateValues = { ...defaultState };
+              const payload: Partial<FilterStateValues> = {};
               payload[label] = newValue;
 
               set(payload);
