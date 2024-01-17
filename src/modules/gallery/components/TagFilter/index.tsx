@@ -18,7 +18,6 @@ type TagFilterProps = {
 
 const TagFilter = ({ name, tagsAvailable, currentSelections, onAdd, onRemove }: TagFilterProps) => {
   const handleChange = (targetOption: string) => () => {
-    console.log("handleChange", targetOption);
     const alreadySelected = currentSelections.includes(targetOption);
     alreadySelected ? onRemove(targetOption) : onAdd(targetOption);
   };
