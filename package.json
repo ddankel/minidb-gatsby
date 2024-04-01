@@ -50,7 +50,7 @@
     "sass": "^1.70.0",
     "styled-components": "^6.1.8",
     "usehooks-ts": "^2.9.5",
-    "zustand": "^4.5.0"
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/node": "^20.12.2",
