@@ -19,7 +19,9 @@ export class Miniature {
   }
 
   get name() {
-    return this.frontmatter.name;
+    if (!this.isDraft) return this.frontmatter.name;
+
+    return `${this.frontmatter.name} [DRAFT]`;
   }
 
   get sku() {

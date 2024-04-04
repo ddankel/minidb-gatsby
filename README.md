@@ -44,15 +44,15 @@ Since Gatsby has stricter Frontmatter formatting requirements than Jekyll, devel
 
 For full documentation, see [https://github.com/ddankel/miniature-data](https://github.com/ddankel/miniature-data).
 
-```json
+```js
 // package.json
 "scripts": {
-  ...
-  "new": "npm run new --prefix ./vendor/miniature-data",
-  "listfm": "npm run listfm --prefix ./vendor/miniature-data",
-  "validate": "npm run validate --prefix ./vendor/miniature-data",
-  "status": "npm run status --prefix ./vendor/miniature-data",
-  "todo": "npm run todo --prefix ./vendor/miniature-data"
+  // ...
+  "mini:new": "npm run mini:new --prefix ./vendor/miniature-data",
+  "mini:status": "npm run mini:status --prefix ./vendor/miniature-data",
+  "mini:todo": "npm run mini:todo --prefix ./vendor/miniature-data",
+  "frontmatter:list": "npm run frontmatter:list --prefix ./vendor/miniature-data",
+  "frontmatter:validate": "npm run frontmatter:validate --prefix ./vendor/miniature-data"
 },
 ```
 
