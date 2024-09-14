@@ -8138,7 +8138,7 @@ mini-css-extract-plugin@1.6.2:
     schema-utils "^3.0.0"
     webpack-sources "^1.1.0"
 
-miniature-data@./vendor/miniature-data:
+"miniature-data@file:vendor/miniature-data":
   version "0.1.0"
 
 minimatch@3.0.4:
