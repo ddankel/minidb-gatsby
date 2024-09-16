@@ -56,6 +56,6 @@
     "@types/node": "^22.0.0",
     "@types/react-image-gallery": "^1.2.4",
     "miniature-data": "file:vendor/miniature-data",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.2"
   }
 }
