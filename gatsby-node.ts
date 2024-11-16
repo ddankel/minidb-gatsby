@@ -1,10 +1,6 @@
-import {
-  CreatePagesArgs,
-  CreateSchemaCustomizationArgs,
-  GatsbyGraphQLType,
-  GatsbyNode,
-} from "gatsby";
 import path from "path";
+
+import { CreatePagesArgs, CreateSchemaCustomizationArgs } from "gatsby";
 
 const Miniature = require("./src/common/models/Miniature").Miniature;
 
