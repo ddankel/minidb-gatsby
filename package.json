@@ -53,7 +53,7 @@
     "zustand": "^5.0.1"
   },
   "devDependencies": {
-    "@types/node": "^22.9.0",
+    "@types/node": "^22.10.1",
     "@types/react-image-gallery": "^1.2.4",
     "miniature-data": "file:vendor/miniature-data",
     "typescript": "^5.6.3"
