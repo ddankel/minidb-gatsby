@@ -10,7 +10,9 @@
   "engines": {
     "node": ">=20"
   },
+  "type": "module",
   "scripts": {
+    "poc": "tsx ./poc/test.ts",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -55,7 +57,10 @@
   "devDependencies": {
     "@types/node": "^22.10.5",
     "@types/react-image-gallery": "^1.2.4",
+    "@types/webpack-env": "^1.18.5",
+    "directory-import": "^3.3.2",
     "miniature-data": "file:vendor/miniature-data",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }
