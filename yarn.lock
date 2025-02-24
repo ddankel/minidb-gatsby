@@ -9823,15 +9823,15 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
-react-icons@^5.4.0:
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.4.0.tgz#443000f6e5123ee1b21ea8c0a716f6e7797f7416"
-  integrity sha512-7eltJxgVt7X64oHh6wSWNwwbKTCtMfK35hcjvJS0yxEAhPM8oUKdS3+kqaW1vicIltw+kR2unHaa12S9pPALoQ==
+react-icons@^5.5.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-5.5.0.tgz#8aa25d3543ff84231685d3331164c00299cdfaf2"
+  integrity sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==
 
-react-image-gallery@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-1.3.0.tgz#789035b12d8149bdd2ab296c155f989205077ffb"
-  integrity sha512-lKnPaOzxqSdujPFyl+CkVw0j1aYoNCHk61cvr1h7aahf5aWqmPcR9YhUB4cYrt5Tn5KHDaPUzYm5/+cX9WxzaA==
+react-image-gallery@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-1.4.0.tgz#ceb16273b9163831a11579d37d036272a0a38b4b"
+  integrity sha512-m7xLq7+g6/xh+BhVMAxvRU0132sNcEFglYsVsgthrnItl9VtLE7MuVvVWD9pvzcI+WBP5+p9HvnRwIiyhPkBDg==
 
 react-is@^16.13.1, react-is@^16.3.2:
   version "16.13.1"
@@ -10390,10 +10390,10 @@ sass-loader@^10.4.1:
     schema-utils "^3.0.0"
     semver "^7.3.2"
 
-sass@^1.84.0:
-  version "1.84.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.84.0.tgz#da9154cbccb2d2eac7a9486091b6d9ba93ef5bad"
-  integrity sha512-XDAbhEPJRxi7H0SxrnOpiXFQoUJHwkR2u3Zc4el+fK/Tt5Hpzw5kkQ59qVDfvdaUq6gCrEZIbySFBM2T9DNKHg==
+sass@^1.85.0:
+  version "1.85.0"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.85.0.tgz#0127ef697d83144496401553f0a0e87be83df45d"
+  integrity sha512-3ToiC1xZ1Y8aU7+CkgCI/tqyuPXEmYGJXO7H4uqp0xkLXUqp88rQQ4j1HmP37xSJLbCJPaIiv+cT1y+grssrww==
   dependencies:
     chokidar "^4.0.0"
     immutable "^5.0.2"
