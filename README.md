@@ -1,5 +1,9 @@
 # Miniature DB
 
+> This site has been deprecated.
+>
+> see: https://github.com/ddankel/miniature-collection
+
 [View Site](https://minidb.dankelzahn.com/)
 
 A visual miniature database. Its main purpose was to provide my gaming group a way to find miniatures for use in roleplaying and tabletop games.
